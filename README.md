@@ -1,0 +1,2 @@
+# NixosA
+My modular NixOS
