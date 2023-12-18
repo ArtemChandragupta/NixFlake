@@ -1,2 +1,2 @@
 # NixFlake
-My modular NixOS
+My modular Flaked NixOS with Gruvbox theme.
