@@ -1,2 +1,2 @@
-# NixosA
+# NixFlake
 My modular NixOS
