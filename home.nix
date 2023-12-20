@@ -19,18 +19,14 @@
 
   programs = { 
     home-manager.enable = true;
-   # btop = {
-    #  enable = true;
-     # settings = {
-      #  color_theme = "gruvbox_dark_v2";
-     # };
-   # };
   };
 
   imports = [
     ./hm/hyprland/hyprland.nix
     ./hm/lf/lf.nix
     ./hm/btop/btop.nix
+    ./hm/kitty/kitty.nix
+    ./hm/waybar/waybar.nix
   ];
 
   gtk = {

@@ -11,7 +11,6 @@ exec-once = hyprpaper & waybar
 # Source a file (multi-file configs)
 # source = ~/.config/hypr/myColors.conf
 
-# Some default env vars.
 env = XCURSOR_SIZE,24
 
 # For all categories, see https://wiki.hyprland.org/Configuring/Variables/
@@ -28,35 +27,34 @@ input {
         natural_scroll = false
     }
 
-    sensitivity = 0 # -1.0 - 1.0, 0 means no modification.
+    sensitivity = 0
 }
 
 general {
-    gaps_in = 5
-    gaps_out = 10
+    gaps_in = 2
+    gaps_out = 5
     border_size = 0
-    col.active_border = rgb(000000) 
-    col.inactive_border = rgb(000000)
+    col.active_border = rgb(d5c4a1) 
+    col.inactive_border = rgb(d5c4a1)
 
     layout = dwindle
 
-    # Please see https://wiki.hyprland.org/Configuring/Tearing/ before you turn this on
     allow_tearing = false
 }
 
 decoration {
-    rounding = 10
+    rounding = 5
 
     blur {
-        enabled = true
+        enabled = false
         size = 3
         passes = 1
         
         vibrancy = 0.1696
     }
     
-    active_opacity= 1.95
-    inactive_opacity= 1.9
+    active_opacity= 1
+    inactive_opacity= 1
 
     drop_shadow = false
    
@@ -67,8 +65,6 @@ decoration {
 
 animations {
     enabled = true
-
-    # Some default animations, see https://wiki.hyprland.org/Configuring/Animations/ for more
 
     bezier = myBezier, 0.05, 0.9, 0.1, 1.05
 
@@ -81,24 +77,22 @@ animations {
 }
 
 dwindle {
-    # See https://wiki.hyprland.org/Configuring/Dwindle-Layout/ for more
-    pseudotile = true # master switch for pseudotiling. Enabling is bound to mainMod + P in the keybinds section below
-    preserve_split = true # you probably want this
+    pseudotile = true
+    preserve_split = true
 }
 
 master {
-    # See https://wiki.hyprland.org/Configuring/Master-Layout/ for more
     new_is_master = true
 }
 
 gestures {
-    # See https://wiki.hyprland.org/Configuring/Variables/ for more
     workspace_swipe = false
 }
 
 misc {
-    # See https://wiki.hyprland.org/Configuring/Variables/ for more
-    force_default_wallpaper = 0 # Set to 0 to disable the anime mascot wallpapers
+    force_default_wallpaper = 0
+    disable_hyprland_logo = true
+    background_color = rgb(d5c4a1)
 }
 
 # Example per-device config
@@ -107,42 +101,34 @@ device:epic-mouse-v1 {
     sensitivity = -0.5
 }
 
-# Example windowrule v1
-windowrule = float, ^(gnome-calculator)$
-# Example windowrule v2
-# windowrulev2 = float,class:^(kitty)$,title:^(kitty)$
-# See https://wiki.hyprland.org/Configuring/Window-Rules/ for more
-windowrulev2 = nomaximizerequest, class:.* # You'll probably like this.
+windowrule = float, ^(gnome.gnome-calculator)$
+windowrulev2 = nomaximizerequest, class:.*
 
-# Brightness
 bind = , XF86MonBrightnessUp   , exec , brightnessctl set +5%
 bind = , XF86MonBrightnessDown , exec , brightnessctl set 5%-
 
-# Volume
 binde =, XF86AudioRaiseVolume, exec, wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%+
 binde =, XF86AudioLowerVolume, exec, wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%- 
 bind =, XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
 
 $mainMod = SUPER
 
-# Example binds, see https://wiki.hyprland.org/Configuring/Binds/ for more
 bind = $mainMod, Q, exec, kitty
 bind = $mainMod, C, killactive,
+bind = $mainMod, L, exec, lf
 bind = $mainMod, M, exit,
 bind = $mainMod, F, fullscreen
 bind = $mainMod, V, togglefloating,
 bind = $mainMod, R, exec, rofi -show drun
-bind = $mainMod, P, pseudo, # dwindle
-bind = $mainMod, J, togglesplit, # dwindle
+bind = $mainMod, P, pseudo, 
+bind = $mainMod, J, togglesplit,
 bind = , XF86Calculator, exec, gnome-calculator
 
-# Move focus with mainMod + arrow keys
 bind = $mainMod, left, movefocus, l
 bind = $mainMod, right, movefocus, r
 bind = $mainMod, up, movefocus, u
 bind = $mainMod, down, movefocus, d
 
-# Switch workspaces with mainMod + [0-9]
 bind = $mainMod, 1, workspace, 1
 bind = $mainMod, 2, workspace, 2
 bind = $mainMod, 3, workspace, 3

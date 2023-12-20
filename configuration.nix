@@ -141,7 +141,6 @@
     # apps
     firefox
     cinnamon.nemo
-    gnome.gedit
     gnome-photos
     gnome.gnome-calculator
     drawio
@@ -156,7 +155,13 @@
     font-awesome
     iosevka
     material-design-icons
+    nerdfonts
   ];
+
+  xdg.portal = {
+    enable = true;
+    wlr.enable = true;
+  };
 
   powerManagement.enable = true;
 
