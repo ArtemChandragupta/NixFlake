@@ -129,6 +129,7 @@
     kitty
     btop
     neofetch
+    ranger
     
     # wayland staff
     rofi
@@ -148,6 +149,12 @@
     obsidian
     telegram-desktop
     ppsspp
+    nyxt
+
+    # java
+    jre8
+    jdk8
+    jdk8_headless
     
   ];
 

@@ -8,12 +8,11 @@ monitor=eDP-1,2560x1600,0x0,1
 
 exec-once = hyprpaper & waybar 
 
-# Source a file (multi-file configs)
-# source = ~/.config/hypr/myColors.conf
-
 env = XCURSOR_SIZE,24
+env = XDG_CURRENT_DESKTOP, Hyprland
+env = XDG_SESSION_TYPE, wayland
+env = XDG_SESSION_DESKTOP, Hyprland
 
-# For all categories, see https://wiki.hyprland.org/Configuring/Variables/
 input {
     kb_layout = us,ru
     kb_variant =
@@ -31,9 +30,9 @@ input {
 }
 
 general {
-    gaps_in = 2
-    gaps_out = 5
-    border_size = 0
+    gaps_in = 0
+    gaps_out = 0
+    border_size = 1
     col.active_border = rgb(d5c4a1) 
     col.inactive_border = rgb(d5c4a1)
 
@@ -43,7 +42,7 @@ general {
 }
 
 decoration {
-    rounding = 5
+    rounding = 0
 
     blur {
         enabled = false
@@ -73,7 +72,7 @@ animations {
     animation = border, 1, 10, default
     animation = borderangle, 1, 8, default
     animation = fade, 1, 7, default
-    animation = workspaces, 1, 6, default, slidevert
+   # animation = workspaces, 1, 6, default, sidefadevert
 }
 
 dwindle {
@@ -95,23 +94,21 @@ misc {
     background_color = rgb(d5c4a1)
 }
 
-# Example per-device config
-# See https://wiki.hyprland.org/Configuring/Keywords/#per-device-input-configs for more
 device:epic-mouse-v1 {
     sensitivity = -0.5
 }
 
-windowrule = float, ^(gnome.gnome-calculator)$
+windowrule = float, ^(gnome-calculator)$
 windowrulev2 = nomaximizerequest, class:.*
 
-bind = , XF86MonBrightnessUp   , exec , brightnessctl set +5%
-bind = , XF86MonBrightnessDown , exec , brightnessctl set 5%-
-
-binde =, XF86AudioRaiseVolume, exec, wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%+
-binde =, XF86AudioLowerVolume, exec, wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%- 
-bind =, XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+####################################################################################
+#                                                                                  #
+#                                    KEYBINDS                                      #
+#                                                                                  #
+####################################################################################
 
 $mainMod = SUPER
+$altMod = ALT
 
 bind = $mainMod, Q, exec, kitty
 bind = $mainMod, C, killactive,
@@ -123,6 +120,9 @@ bind = $mainMod, R, exec, rofi -show drun
 bind = $mainMod, P, pseudo, 
 bind = $mainMod, J, togglesplit,
 bind = , XF86Calculator, exec, gnome-calculator
+
+bind = $mainMod SHIFT, W, exec, pkill waybar && waybar  
+bind = $mainMod, W, exec, waybar
 
 bind = $mainMod, left, movefocus, l
 bind = $mainMod, right, movefocus, r
@@ -140,7 +140,6 @@ bind = $mainMod, 8, workspace, 8
 bind = $mainMod, 9, workspace, 9
 bind = $mainMod, 0, workspace, 10
 
-# Move active window to a workspace with mainMod + SHIFT + [0-9]
 bind = $mainMod SHIFT, 1, movetoworkspace, 1
 bind = $mainMod SHIFT, 2, movetoworkspace, 2
 bind = $mainMod SHIFT, 3, movetoworkspace, 3
@@ -152,19 +151,23 @@ bind = $mainMod SHIFT, 8, movetoworkspace, 8
 bind = $mainMod SHIFT, 9, movetoworkspace, 9
 bind = $mainMod SHIFT, 0, movetoworkspace, 10
 
-# Example special workspace (scratchpad)
-bind = $mainMod, S, togglespecialworkspace, magic
-bind = $mainMod SHIFT, S, movetoworkspace, special:magic
-
-# Scroll through existing workspaces with mainMod + scroll
 bind = $mainMod, mouse_down, workspace, e+1
-bind = $mainMod, mouse_up, workspace, e-1
+bind = $mainMod, mouse_up,   workspace, e-1
 
-# Move/resize windows with mainMod + LMB/RMB and dragging
 bindm = $mainMod, mouse:272, movewindow
 bindm = $mainMod, mouse:273, resizewindow
 
-# screenshots
+bind = $altMod SHIFT, right, resizeactive, 20 0
+bind = $altMod SHIFT, left, resizeactive, -20 0
+bind = $altMod SHIFT, up, resizeactive, 0 -20
+bind = $altMod SHIFT, down, resizeactive, 0 20
+
+bind =, XF86MonBrightnessUp,   exec, brightnessctl set +5%
+bind =, XF86MonBrightnessDown, exec, brightnessctl set 5%-
+bind =, XF86AudioRaiseVolume,  exec, wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%+
+bind =, XF86AudioLowerVolume,  exec, wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%- 
+bind =, XF86AudioMute,         exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+
 bind = CTRL, Y, exec, grim -g "$(slurp)" $(xdg-user-dir PICTURES)/Screenshots/$(date +'%s_grim.png')
     '';
   };
