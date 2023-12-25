@@ -111,6 +111,13 @@
     wireplumber.enable = true;
   };
 
+  # users.defaultUserShell = pkgs.zsh;
+  programs.zsh = {
+    enable = true;
+    ohMyZsh.enable = true;
+    ohMyZsh.theme = "agnoster";
+  };
+
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
     
@@ -124,6 +131,7 @@
     usbutils
     udiskie
     udisks
+    xdg-user-dirs
     
     # terminal
     kitty
@@ -150,6 +158,7 @@
     telegram-desktop
     ppsspp
     nyxt
+    viewnior
 
     # java
     jre8

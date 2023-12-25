@@ -15,30 +15,15 @@
 
     commands = {
 
-      editor-open = ''$$EDITOR $f'';
-
-      zathura = ''zathura "$f"'';
-
       op = ''
       ''${{
-        case $(file --mime-type -bL -- "$f") in
-          text/*|application/json)
-            lf -remote "send $id \$$EDITOR \$fx" ;;
-          image/*)
-            imv $fx ;;
-          audio/*)
-            mpv --no-terminal $fx ;;
-          video/*)
-            mpv --no-terminal "$f" ;;
-          application/pdf|application/epub+zip)
-            zathura "$f" ;;
-          *)
-            for f in $fx; do
-                xdg-open "$f" > /dev/null 2>&1 &
-            done ;;
-        esac
-      }}
-      '';
+          case $(${pkgs.file}/bin/file --mime-type "$f" -bL) in
+              text/*|application/json) $EDITOR "$f";;
+              application/pdf) ${pkgs.zathura}/bin/zathura "$f";;
+              image/*) viewnior "$f";;
+              *) xdg-open "$f" ;;
+          esac
+      }}'';
 
       mkdir = ''
       ''${{
@@ -81,7 +66,7 @@
     };
 
     keybindings = {
-      "<enter>" = "editor-open";
+      "<enter>" = "op";
       m = "";
       md = "mkdir";
       mf = "mkfile";
@@ -89,8 +74,6 @@
       au = "unarchive";
       az = "zip";
       r = "rename";
-      mz = "zathura";
-      mp = "op";
     };
 
     extraConfig = let
