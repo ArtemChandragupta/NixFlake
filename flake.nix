@@ -8,6 +8,9 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+#    nix-colours.url = "github:misterio77/nix-colours";
+
   };
 
   outputs = { self, nixpkgs, ... }@inputs:

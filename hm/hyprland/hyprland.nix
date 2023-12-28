@@ -8,6 +8,7 @@ monitor=eDP-1,2560x1600,0x0,1
 
 exec-once = waybar
 exec-once = dunst 
+exec-once = kitty
 
 env = XCURSOR_SIZE,24
 env = XDG_CURRENT_DESKTOP, Hyprland
@@ -32,7 +33,7 @@ input {
 
 general {
     gaps_in = 0
-    gaps_out = 0
+    gaps_out = 1
     border_size = 1
     col.active_border = rgb(d5c4a1) 
     col.inactive_border = rgb(d5c4a1)
@@ -170,8 +171,8 @@ bind =, XF86AudioLowerVolume,  exec, wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK
 bind =, XF86AudioMute,         exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
 
 # You need to create ~/Screenshots
-bind = $mainMod, Y, exec, grim -g "$(slurp)" $(xdg-user-dir PICTURES)/Screenshots/$(date +'%s_grim.png')
-bind = $mainMod SHIFT, Y, exec, grim $(xdg-user-dir PICTURES)/Screenshots/$(date +'%s_grim.png')
+bind = $mainMod, Y, exec, grim -g "$(slurp)" - | convert - -shave 1x1 PNG:- | swappy -f -
+bind = $mainMod SHIFT, Y, exec, grim -| swappy -f -
     '';
   };
 }

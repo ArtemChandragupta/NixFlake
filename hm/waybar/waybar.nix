@@ -36,7 +36,7 @@
         window#waybar {
           background-color: @background;
           border-radius: 0px;
-          border: 1px solid rgb(213, 196, 161);
+          border: 0px solid rgb(213, 196, 161);
           color: @alt_green;
           opacity: 1;
           transition-property: background-color;
@@ -67,10 +67,10 @@
         #battery,
         #network,
         #tray {
-          background-color: @alt_background;
+          background-color: @background;
           padding: 0 10px;
           margin: 5px 2px 5px 2px;
-          border: 1px solid rgb(0, 0, 0);
+          border: 0px solid rgb(0, 0, 0);
           border-radius: 0px;
           background-clip: padding-box;
         }
@@ -185,7 +185,7 @@
             background-color: @background;
             font-size: 25px;
             margin: 1px;
-            padding: 0px 0px 0px 5px;
+            padding: 1px 1px 1px 5px;
         }
 
         #network.disconnected {
@@ -195,7 +195,7 @@
     '';
     settings = {
       mainBar = {
-        margin = "0px 0px 0px 0px";
+        margin = "2px 2px 0px 2px";
         layer = "top";
 
         modules-left = ["hyprland/workspaces" "hyprland/window"];

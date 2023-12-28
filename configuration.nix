@@ -98,7 +98,9 @@
       enable = true;
       xwayland.enable = true;
     };
+    virt-manager.enable = true;
   };
+  virtualisation.libvirtd.enable = true;
 
   sound.enable = true;
   hardware.pulseaudio.enable = false;
@@ -137,7 +139,6 @@
     kitty
     btop
     neofetch
-    ranger
     
     # wayland staff
     rofi
@@ -146,11 +147,12 @@
     grim
     slurp
     wl-clipboard
+    imagemagick
+    swappy
 
     # apps
     firefox
     cinnamon.nemo
-    gnome-photos
     gnome.gnome-calculator
     drawio
     inkscape
@@ -159,6 +161,8 @@
     ppsspp
     nyxt
     viewnior
+    bottles
+    lutris
 
     # java
     jre8

@@ -27,6 +27,9 @@
     ./hm/btop/btop.nix
     ./hm/kitty/kitty.nix
     ./hm/waybar/waybar.nix
+    ./hm/zathura/zathura.nix
+    ./hm/dunst/dunst.nix
+    ./hm/dconf/dconf.nix
   ];
 
   gtk = {
@@ -44,4 +47,12 @@
       package = pkgs.bibata-cursors;
     };
   };
+
+  xdg.mimeApps.defaultApplications = {
+    "application/pdf" = [ "zathura.desktop" ];
+    "image/*" = [ "viewnior.desktop" ];
+    "video/png" = [ "mpv.desktop" ];
+    "video/jpg" = [ "mpv.desktop" ];
+    "video/*" = [ "mpv.desktop" ];
+  };      
 }
