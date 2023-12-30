@@ -22,14 +22,14 @@
   };
 
   imports = [
-    ./hm/hyprland/hyprland.nix
-    ./hm/lf/lf.nix
-    ./hm/btop/btop.nix
-    ./hm/kitty/kitty.nix
-    ./hm/waybar/waybar.nix
-    ./hm/zathura/zathura.nix
-    ./hm/dunst/dunst.nix
-    ./hm/dconf/dconf.nix
+    ./home_modules/hyprland/hyprland.nix
+    ./home_modules/lf/lf.nix
+    ./home_modules/btop/btop.nix
+    ./home_modules/kitty/kitty.nix
+    ./home_modules/waybar/waybar.nix
+    ./home_modules/zathura/zathura.nix
+    ./home_modules/dunst/dunst.nix
+    ./home_modules/dconf/dconf.nix
   ];
 
   gtk = {

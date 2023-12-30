@@ -4,6 +4,11 @@
     [
       ./hardware-configuration.nix
       inputs.home-manager.nixosModules.default
+      ./modules/kernel.nix
+      ./modules/system.nix
+      ./modules/sound.nix
+      ./modules/locales.nix
+      ./modules/pkgs.nix
     ];
 
   boot = { 
@@ -11,54 +16,12 @@
       systemd-boot.enable = true;
       efi.canTouchEfiVariables = true;
     };
-    kernelPackages = pkgs.linuxPackages_latest;
-    kernelParams = [
-      "quiet"
-      "amd_pstate=active"
-    ];
-    extraModulePackages = with config.boot.kernelPackages; [ zenpower ];
   };
 
   networking.hostName = "nixos";
   networking.networkmanager.enable = true;
 
-  time.timeZone = "Europe/Moscow";
-  i18n = {
-    defaultLocale = "en_US.UTF-8";
-    supportedLocales = [ "ru_RU.UTF-8/UTF-8" "en_US.UTF-8/UTF-8" ];
-    extraLocaleSettings = {
-      LC_ADDRESS = "ru_RU.UTF-8";
-      LC_IDENTIFICATION = "ru_RU.UTF-8";
-      LC_MEASUREMENT = "ru_RU.UTF-8";
-      LC_MONETARY = "ru_RU.UTF-8";
-      LC_NAME = "ru_RU.UTF-8";
-      LC_NUMERIC = "ru_RU.UTF-8";
-      LC_PAPER = "ru_RU.UTF-8";
-      LC_TELEPHONE = "ru_RU.UTF-8";
-      LC_TIME = "ru_RU.UTF-8";
-    };
-  };
-
-  nix = {
-    settings = { 
-      auto-optimise-store = true;
-      experimental-features = "nix-command flakes";
-    };
-    gc = {
-      automatic = true;
-      dates = "weekly";
-      options = "--delete-older-than 7d";
-    };
-  };
-  nixpkgs.config.permittedInsecurePackages = [
-    "electron-25.9.0"
-  ];
-
   services = { 
-    xserver = {
-      layout = "us,ru";
-      xkbVariant = "";
-    };
     getty.autologinUser = "artem";
     mpd.enable = true;
     gvfs.enable = true;
@@ -102,81 +65,12 @@
   };
   virtualisation.libvirtd.enable = true;
 
-  sound.enable = true;
-  hardware.pulseaudio.enable = false;
-  security.rtkit.enable = true;
-  services.pipewire = {
-    enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
-    wireplumber.enable = true;
-  };
-
   # users.defaultUserShell = pkgs.zsh;
   programs.zsh = {
     enable = true;
     ohMyZsh.enable = true;
     ohMyZsh.theme = "agnoster";
   };
-
-  nixpkgs.config.allowUnfree = true;
-  environment.systemPackages = with pkgs; [
-    
-    # utils  
-    wget
-    git
-    zip
-    unzip
-    rar
-    brightnessctl
-    usbutils
-    udiskie
-    udisks
-    xdg-user-dirs
-    
-    # terminal
-    kitty
-    btop
-    neofetch
-    
-    # wayland staff
-    rofi
-    hyprpaper
-    waybar
-    grim
-    slurp
-    wl-clipboard
-    imagemagick
-    swappy
-
-    # apps
-    firefox
-    cinnamon.nemo
-    gnome.gnome-calculator
-    drawio
-    inkscape
-    obsidian
-    telegram-desktop
-    ppsspp
-    nyxt
-    viewnior
-    bottles
-    lutris
-
-    # java
-    jre8
-    jdk8
-    jdk8_headless
-    
-  ];
-
-  fonts.packages = with pkgs; [
-    font-awesome
-    iosevka
-    material-design-icons
-    nerdfonts
-  ];
 
   xdg.portal = {
     enable = true;
