@@ -5,14 +5,12 @@
     homeDirectory = "/home/artem";
     stateVersion = "23.11";
 
-    packages = [
-    
-    ];
+    packages = [];
 
     file = {};
 
     sessionVariables = {
-      EDITOR = "nano";
+      EDITOR = "micro";
     };
 
   };

@@ -9,75 +9,25 @@
       ./modules/sound.nix
       ./modules/locales.nix
       ./modules/pkgs.nix
+      ./modules/usb.nix
+      ./modules/power.nix
+      ./modules/boot.nix # + autologin artem
+      ./modules/virtualisation.nix
+      ./modules/flatpak.nix
+      ./modules/xdg.nix
+      ./modules/desktop.nix
+      ./modules/networking.nix
+      ./modules/user.nix
     ];
 
-  boot = { 
-    loader = {
-      systemd-boot.enable = true;
-      efi.canTouchEfiVariables = true;
-    };
-  };
-
-  networking.hostName = "nixos";
-  networking.networkmanager.enable = true;
-
-  services = { 
-    getty.autologinUser = "artem";
-    mpd.enable = true;
-    gvfs.enable = true;
-    udisks2.enable = true;
-    auto-cpufreq = { 
-      enable = true;
-      settings = {
-        battery =  { 
-          governor = "powersave";
-          turbo = "never";
-        };
-        charger = {
-          governor = "powersave";
-          turbo = "auto";
-        };
-      };
-    };
-  };
-
-  users.users.artem = {
-    isNormalUser = true;
-    description = "artem";
-    extraGroups = [ "networkmanager" "wheel" "audio" "video" "input" "libvirtd" ];
-    packages = with pkgs; [];
-  };
-
   home-manager = {
-    extraSpecialArgs = { inherit inputs; };
-    users = {
-      "artem" = import ./home.nix;
-    };
+  extraSpecialArgs = { inherit inputs; };
+  users = {
+    "artem" = import ./home.nix;
   };
+};
 
-  programs = {
-    dconf.enable = true;
-    hyprland = {
-      enable = true;
-      xwayland.enable = true;
-    };
-    virt-manager.enable = true;
-  };
-  virtualisation.libvirtd.enable = true;
-
-  # users.defaultUserShell = pkgs.zsh;
-  programs.zsh = {
-    enable = true;
-    ohMyZsh.enable = true;
-    ohMyZsh.theme = "agnoster";
-  };
-
-  xdg.portal = {
-    enable = true;
-    wlr.enable = true;
-  };
-
-  powerManagement.enable = true;
+  security.polkit.enable = true;
 
   system.stateVersion = "23.11";
 }

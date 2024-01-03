@@ -10,19 +10,16 @@
     unzip
     rar
     brightnessctl
-    usbutils
-    udiskie
-    udisks
-    xdg-user-dirs
+    micro
     
     # terminal
     kitty
     btop
     neofetch
+    bottom
     
     # wayland staff
     rofi
-    hyprpaper
     waybar
     grim
     slurp
@@ -39,10 +36,7 @@
     obsidian
     telegram-desktop
     ppsspp
-    nyxt
     viewnior
-    bottles
-    lutris
 
     # java
     jre8
