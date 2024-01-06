@@ -9,14 +9,14 @@
     zip
     unzip
     rar
+    gnutar
     brightnessctl
-    micro
     
     # terminal
     kitty
     btop
     neofetch
-    bottom
+    micro
     
     # wayland staff
     rofi
@@ -37,11 +37,9 @@
     telegram-desktop
     ppsspp
     viewnior
-
-    # java
-    jre8
-    jdk8
-    jdk8_headless
+    openscad
+    _2048-in-terminal
+    transmission
     
   ];
 
