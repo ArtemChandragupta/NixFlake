@@ -17,6 +17,10 @@
     btop
     neofetch
     micro
+    mpv
+    transmission-gtk
+    xplr
+    
     
     # wayland staff
     rofi
@@ -35,11 +39,8 @@
     inkscape
     obsidian
     telegram-desktop
-    ppsspp
     viewnior
     openscad
-    _2048-in-terminal
-    transmission
     
   ];
 

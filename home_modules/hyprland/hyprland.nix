@@ -112,8 +112,8 @@ windowrulev2 = nomaximizerequest, class:.*
 $mainMod = SUPER
 $altMod = ALT
 
-bind = $mainMod, Q, exec, kitty
-bind = $mainMod, C, killactive,
+bind = $mainMod, T, exec, kitty
+bind = $mainMod, Q, killactive,
 bind = $mainMod, L, exec, lf
 bind = $mainMod, M, exit,
 bind = $mainMod, F, fullscreen

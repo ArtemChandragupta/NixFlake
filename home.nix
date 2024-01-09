@@ -9,10 +9,6 @@
 
     file = {};
 
-    sessionVariables = {
-      EDITOR = "micro";
-    };
-
   };
 
   programs = { 
@@ -28,23 +24,8 @@
     ./home_modules/zathura/zathura.nix
     ./home_modules/dunst/dunst.nix
     ./home_modules/dconf/dconf.nix
+    ./home_modules/gtk/gtk.nix #qt also
   ];
-
-  gtk = {
-    enable = true;
-    theme = {
-      name = "Gruvbox-Dark-BL";
-      package = pkgs.gruvbox-gtk-theme;
-    };
-    iconTheme = {
-      name = "Mint-Y-Sand";
-      package = pkgs.cinnamon.mint-y-icons;
-    };
-    cursorTheme = {
-      name = "Bibata-Original-Classic";
-      package = pkgs.bibata-cursors;
-    };
-  };
 
   xdg.mimeApps.defaultApplications = {
     "application/pdf" = [ "zathura.desktop" ];

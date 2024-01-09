@@ -1,5 +1,8 @@
 { config, pkgs, ... }: {
   xdg.configFile."/home/artem/.config/kitty/kitty.conf".text = ''
+
+confirm_os_window_close 0
+
 # Based on https://github.com/morhetz/gruvbox by morhetz <morhetz@gmail.com>
 # Adapted to kitty by wdomitrz <witekdomitrz@gmail.com>
 

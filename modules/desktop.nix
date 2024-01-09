@@ -8,4 +8,6 @@ programs = {
   };
 };
 
+services.dbus.enable = true;
+
 }

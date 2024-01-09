@@ -18,10 +18,11 @@
       op = ''
       ''${{
           case $(${pkgs.file}/bin/file --mime-type "$f" -bL) in
-              text/*|application/json) $EDITOR "$f";;
+              text/*|application/json) micro "$f";;
+              video/*) mpv "$f";;
               application/pdf) ${pkgs.zathura}/bin/zathura "$f";;
               image/*) viewnior "$f";;
-              *) xdg-open "$f" ;;
+              *) xdg-open "$f";;
           esac
       }}'';
 
@@ -37,7 +38,7 @@
       ''${{
         printf "File Name: "
         read FILE
-        $EDITOR $FILE
+        micro $FILE
       }}
       '';
 
@@ -50,13 +51,15 @@
       }}
       '';
 
-      zip = ''
+      cip = ''
       ''${{
         printf "Archive Name with .zip:"
         read NAME
         zip $NAME $f
       }}
       '';
+
+      zip = ''%zip -r "$.zip" "$f"'';
 
       delete = ''
       ''${{
