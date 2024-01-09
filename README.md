@@ -4,16 +4,16 @@
 My modular flaked NixOS setup
  -----------------------------------
 
- ╭─ Distro  -> NixOS
- ├─ Editor  -> Micro
- ├─ Browser -> Firefox
- ├─ Shell   -> Bash
- ╰─ Resource Monitor -> Btop
-
- ╭─ Model   -> Lenovo Thinkbook 13s G3 ACN
- ├─ CPU     -> AMD Ryzen 5 5600U (12) @ 4.289GHz
- ╰─ Display -> 2560x1600@60hz
-
+ ╭─ Distro   -> NixOS
+ ├─ Editor   -> Micro
+ ├─ Browser  -> Firefox
+ ├─ Shell    -> Bash
+ ╰─ Monitor  -> Btop
+             
+ ╭─ Model    -> Lenovo Thinkbook 13s G3 ACN
+ ├─ CPU      -> AMD Ryzen 5 5600U (12) @ 4.289GHz
+ ╰─ Display  -> 2560x1600@60hz
+             
  ╭─ WM       -> Hyprland
  ├─ Bar      -> Waybar
  ├─ Terminal -> Kitty
