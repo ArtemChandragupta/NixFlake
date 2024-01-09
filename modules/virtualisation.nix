@@ -14,6 +14,7 @@ virtualisation = {
 environment.systemPackages = with pkgs; [
   distrobox
   ppsspp
+  bottles
 ];
 
 }
