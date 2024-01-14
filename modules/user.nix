@@ -1,5 +1,4 @@
-{ pkgs, config, ... }:
-{
+{ pkgs, config, lib, ... }:{
 
 users.users.artem = {
   isNormalUser = true;

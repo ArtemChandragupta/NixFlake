@@ -1,5 +1,4 @@
-{ pkgs, config, ... }:
-{
+{ pkgs, config, lib, ... }:{
 
 # zenpower module in ./kernel.nix also about it
 

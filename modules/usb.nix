@@ -1,5 +1,4 @@
-{ pkgs, config, ... }:
-{
+{ pkgs, config, lib, ... }:{
 
 services = { 
   gvfs.enable = true;

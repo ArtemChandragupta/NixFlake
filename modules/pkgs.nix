@@ -1,35 +1,35 @@
-{ pkgs, config, lib, ... }:
-{
+{ pkgs, config, lib, ... }:{
 
-  environment.systemPackages = with pkgs; [
+environment.systemPackages = with pkgs; [
     
-    # utils  
-    wget
-    git
-    zip
-    unzip
-    rar
-    gnutar
-    brightnessctl
+# utils  
+wget 
+git
+zip 
+unzip
+rar 
+#gnutar
+brightnessctl
     
     # terminal
     kitty
     btop
     neofetch
+    nitch
     micro
     mpv
     transmission-gtk
     xplr
     
     
-    # wayland staff
-    rofi
-    waybar
-    grim
-    slurp
-    wl-clipboard
-    imagemagick
-    swappy     
+# wayland staff
+rofi
+waybar
+grim
+slurp
+wl-clipboard
+imagemagick
+swappy     
 
     # apps
     firefox
@@ -41,14 +41,18 @@
     telegram-desktop
     viewnior
     openscad
-    
-  ];
 
-  fonts.packages = with pkgs; [
-    font-awesome
-    iosevka
-    material-design-icons
-    nerdfonts
-  ];
+#games
+ppsspp
+bottles
+    
+];
+
+fonts.packages = with pkgs; [
+  font-awesome
+  iosevka
+  material-design-icons
+  nerdfonts
+];
 
 }
