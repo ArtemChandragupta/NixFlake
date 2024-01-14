@@ -1,31 +1,29 @@
-{ config, pkgs, inputs, ... }:
-{
-  imports = [
-    ./hardware-configuration.nix
-    inputs.home-manager.nixosModules.default
-    ./modules/kernel.nix
-    ./modules/system.nix
-    ./modules/sound.nix
-    ./modules/locales.nix
-    ./modules/pkgs.nix
-    ./modules/usb.nix
-    ./modules/power.nix
-    ./modules/boot.nix # + autologin artem
-    ./modules/virtualisation.nix
-    ./modules/flatpak.nix
-    ./modules/xdg.nix
-    ./modules/desktop.nix
-    ./modules/networking.nix
-    ./modules/user.nix
-    ./modules/display_manager.nix
-  ];
+{ plgs, config, inputs, ... }:{
 
-  home-manager = {
-    extraSpecialArgs = { inherit inputs; };
-    users = {
-      "artem" = import ./home.nix;
-    };
+imports = [
+  ./hardware-configuration.nix
+  inputs.home-manager.nixosModules.default
+  ./modules/system.nix
+  ./modules/sound.nix
+  ./modules/locales.nix
+  ./modules/pkgs.nix
+  ./modules/usb.nix
+  ./modules/power.nix
+  ./modules/boot.nix # + kernel and autologin artem
+  ./modules/virtualisation.nix
+  ./modules/flatpak.nix # + xdg settings
+  ./modules/hyprland.nix # + display manager
+  ./modules/networking.nix
+  ./modules/user.nix
+];
+
+home-manager = {
+  extraSpecialArgs = { inherit inputs; };
+  users = {
+    "artem" = import ./home.nix;
   };
+};
 
-  system.stateVersion = "23.11";
+system.stateVersion = "23.11";
+
 }
