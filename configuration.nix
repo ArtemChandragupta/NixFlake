@@ -15,12 +15,13 @@ imports = [
   ./modules/hyprland.nix # + display manager
   ./modules/networking.nix
   ./modules/user.nix
+  ./environment/glossynix
 ];
 
 home-manager = {
   extraSpecialArgs = { inherit inputs; };
   users = {
-    "artem" = import ./home.nix;
+    "artem" = import ./home-modules/home.nix;
   };
 };
 
