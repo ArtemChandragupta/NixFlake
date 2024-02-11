@@ -1,4 +1,5 @@
 { pkgs, config, lib, ...}:{
+home-manager.users.artem = {
 
 programs.waybar = {
   enable = true;
@@ -27,8 +28,7 @@ programs.waybar = {
           @define-color alt_white #fbf1c7;
           
 
-        * {
-
+      * {
           border: none;
           font-family: JetBrainsMono Nerd Font, sans-serif;
           font-size: 14px;
@@ -59,14 +59,11 @@ programs.waybar = {
         #cpu,
         #memory,
         #temperature,
-        #custom-media,
         #custom-wmname,
         #clock,
-        #idle_inhibitor,
         #pulseaudio,
         #backlight,
         #battery,
-        #network,
         #tray {
           background-color: @background;
           padding: 0 10px;
@@ -77,10 +74,9 @@ programs.waybar = {
         }
 
         #workspaces button {
-          background-color: @alt_background;
           padding: 0 5px;
           min-width: 20px;
-          color: @foreground;
+          color: @blue;
         }
 
         #workspaces button:hover {
@@ -88,7 +84,7 @@ programs.waybar = {
         }
 
         #workspaces button.active {
-          color: @blue;
+          color: @foreground;
         }
 
         #workspaces button.urgent {
@@ -116,20 +112,9 @@ programs.waybar = {
           color: @background;
         }
 
-        #custom-media {
-          color: #c678dd;
-          padding: 0 10px;
-          color: @background;
-        }
-
         #clock {
           padding: 0 10px;
           color: @blue;
-        }
-
-        #idle_inhibitor {
-          padding: 0 10px;
-          color: @foreground;
         }
 
         #pulseaudio {
@@ -159,79 +144,50 @@ programs.waybar = {
         }
 
         @keyframes blink {
-            to {
-                background-color: @background;
-                color: @red;
-            }
+          to {
+            background-color: @background;
+            color: @red;
+          }
         }
 
         #battery.critical:not(.charging) {
-            padding: 0 10px;
-            background-color: @red;
-            color: @background;
-            animation-name: blink;
-            animation-duration: 0.5s;
-            animation-timing-function: linear;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-        }
-
-        #network {
-            padding: 0 10px;
-            color: @blue;
+          padding: 0 10px;
+          background-color: @red;
+          color: @background;
+          animation-name: blink;
+          animation-duration: 0.5s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
         }
 
         #custom-wmname {
-            color: @blue;
-            background-color: @background;
-            font-size: 25px;
-            margin: 2px;
-            padding: 1px 1px 1px 5px;
-        }
-
-        #network.disconnected {
-            padding: 0 10px;
-            color: @red;
+          color: @blue;
+          background-color: @background;
+          font-size: 25px;
+          margin: 2px;
+          padding: 1px 1px 1px 5px;
         }
     '';
+    
     settings = {
       mainBar = {
         margin = "0px 0px -2px 0px";
         layer = "top";
 
-        modules-left = ["hyprland/workspaces" "hyprland/window"];
-        modules-center = ["custom/wmname"];
-        modules-right = ["battery" "clock" "cpu" "temperature" "memory" "backlight" "pulseaudio" "network" "tray"];
+        modules-left   = ["custom/wmname" "tray" "hyprland/workspaces"];
+        modules-center = ["clock"];
+        modules-right  = ["battery" "cpu" "temperature" "memory" "backlight" "pulseaudio"];
 
       /* Modules configuration */
-      "hyprland/workspaces" = {
+        "hyprland/workspaces" = {
           active-only = "false";
           on-scroll-up = "hyprctl dispatch workspace e+1";
           on-scroll-down = "hyprctl dispatch workspace e-1";
           disable-scroll = "false";
           all-outputs = "true";
-          format = "{icon}";
+          format = "{name}";
           on-click = "activate";
-          format-icons = {
-              "1" = " ";
-              "2" = " ";
-              "3" = "";
-              "4" = " ";
-              "5" = " ";
-              "6" = " ";
-              "7" = " ";
-              "8" = " ";
-              "9" = " ";
-              "10" = "󰊴 ";
-            };
-          };
-
-        "idle_inhibitor" = {
-          format = "{icon}";
-          format-icons = {
-            activated = " ";
-            deactivated = " ";
-          };
         };
 
         "tray" = {
@@ -276,15 +232,6 @@ programs.waybar = {
           format-plugged = " ";
           format-icons = ["  " "  " "  " "  " "  "];
         };
-        
-        "network" = {
-          format-wifi = " {essid}";
-          format-ethernet = "{ifname}: {ipaddr}/{cidr}  ";
-          format-linked = "{ifname} (No IP)  ";
-          format-disconnected = "󰤮 Disconnected";
-          on-click = "wifi-menu";
-          tooltip-format = "{essid} {signalStrength}%";
-        };
 
         "pulseaudio" = {
           format = "{icon}{volume}% {format_source}";
@@ -315,5 +262,6 @@ programs.waybar = {
       };
     };
   };
-  
+
+};
 }
