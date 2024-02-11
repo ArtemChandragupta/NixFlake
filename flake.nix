@@ -9,6 +9,8 @@
       url = "github:hyprwm/hyprland-plugins";
       inputs.hyprland.follows = "hyprland";
     };
+
+    nix-colors.url = "github:misterio77/nix-colors";
     
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -23,7 +25,6 @@
       pkgs = nixpkgs.legacyPackages.${system};
     in
     {
-    
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
           specialArgs = {inherit inputs;};
           modules = [ 
