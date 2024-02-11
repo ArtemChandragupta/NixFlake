@@ -11,13 +11,20 @@ home = {
 programs.home-manager.enable = true;
 
 imports = [
+  inputs.nix-colors.homeManagerModules.default
+
   ./lf
   ./btop
   ./zathura
   ./dunst
   ./gtk_qt
   ./imv
+  ./kitty
+  ./hyprland
+  ./yazi
 ];
+
+colorScheme = inputs.nix-colors.colorSchemes.gruvbox-dark-medium;
 
 xdg.mimeApps.defaultApplications = {
   "application/pdf" = [ "zathura.desktop"  ];
