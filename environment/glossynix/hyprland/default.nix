@@ -3,18 +3,22 @@ home-manager.users.artem = {
 wayland.windowManager.hyprland = {
 settings  = {
 
-exec-once = "waypaper --restore";
+#exec-once = ["waypaper --restore"];
+exec-once = [ 
+"swww init" 
+"wallpaper" 
+];
 
 general = {
   gaps_in              = 5;
   gaps_out             = 10;
-  border_size          = 2;
+  border_size          = 1;
  "col.active_border"   = "rgb(504945)"; 
  "col.inactive_border" = "rgb(504945)";
 };
     
 decoration = {
-  rounding = 7;
+  rounding = 9;
     
   blur = {
     enabled  = true;
@@ -22,13 +26,10 @@ decoration = {
     passes   = 1;
     vibrancy = 0.1696;
   };
-        
-  active_opacity   = 1;
-  inactive_opacity = 1;
     
   drop_shadow = true;
   shadow_range        = 7;
-  shadow_render_power = 3;
+  shadow_render_power = 5;
  "col.shadow"         = "rgba(1a1a1aee)";
 };
     
