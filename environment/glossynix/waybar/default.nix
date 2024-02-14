@@ -122,12 +122,6 @@ programs.waybar = {
           border-radius: 0px 0px 0px 0px;
         }
 
-        #temperature.critical {
-          background-color: @red;
-          padding: 0 10px;
-          color: @background;
-        }
-
         #clock {
           padding: 0 10px;
           color: @magenta;
@@ -173,24 +167,6 @@ programs.waybar = {
           border: 2px solid @background;
         }
 
-        @keyframes blink {
-          to {
-            background-color: @background;
-            color: @red;
-          }
-        }
-
-        #battery.critical:not(.charging) {
-          padding: 0 10px;
-          background-color: @red;
-          color: @background;
-          animation-name: blink;
-          animation-duration: 0.5s;
-          animation-timing-function: linear;
-          animation-iteration-count: infinite;
-          animation-direction: alternate;
-        }
-
         #custom-wmname {
           color: @green;
           background-color: @background;
@@ -210,7 +186,6 @@ programs.waybar = {
         modules-center = ["clock"];
         modules-right  = ["battery" "cpu" "temperature" "memory" "backlight" "pulseaudio" ];
 
-      /* Modules configuration */
         "hyprland/workspaces" = {
           active-only = "false";
           on-scroll-up = "hyprctl dispatch workspace e+1";
@@ -286,7 +261,7 @@ programs.waybar = {
         "custom/wmname" = {
           format = " ";
           tooltip = "false";
-          on-click = "$HOME/.config/rofi/launchers/type-1/launcher.sh";
+          on-click = "wallpaper";
           on-click-right = "screenshot";
           on-click-middle = "wallpaper-switch";
         };
