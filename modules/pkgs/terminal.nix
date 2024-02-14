@@ -7,8 +7,6 @@ fastfetch
 nitch
 micro
 mpv
-neovim
-vim
 
 ];
 }
