@@ -13,7 +13,6 @@ services.dbus.enable = true;
 environment.systemPackages = with pkgs; [
   wofi
   swww
-  waypaper
   waybar
   grim
   slurp
