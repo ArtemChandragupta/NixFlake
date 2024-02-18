@@ -1,5 +1,4 @@
-{ pkgs, config, lib, ... }:{
-
+{
 programs.zathura = {
   enable = true;
   options = {
@@ -58,5 +57,4 @@ programs.zathura = {
           highlight-active-color = "#ebdbb2";
   };
 };
-
 }

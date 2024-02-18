@@ -1,8 +1,5 @@
 # vim:ft=conf
 
-# These examples require Nerd Fonts or a compatible font to be used.
-# See https://www.nerdfonts.com for more information.
-
 # default values from lf (with matching order)
 # ln      l       # LINK
 # or      l       # ORPHAN

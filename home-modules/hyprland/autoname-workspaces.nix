@@ -1,4 +1,4 @@
-{ pkgs, config, lib, ... }:{
+{
 home.file.".config/hyprland-autoname-workspaces/config.toml".text = ''
 
 version = "1.1.11"	

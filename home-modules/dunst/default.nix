@@ -1,4 +1,4 @@
-{ pkgs, config, lib, ... }:{
+{ pkgs, ... }:{
 
   services.dunst = {
     package = pkgs.dunst; 

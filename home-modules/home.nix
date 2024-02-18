@@ -1,4 +1,4 @@
-{ config, pkgs, inputs, ... }:{
+{ inputs, ... }:{
 
 home = {
   username = "artem";
@@ -22,6 +22,9 @@ imports = [
   ./kitty
   ./hyprland
   ./yazi
+  ./helix
+  ./wofi
+  
 ];
 
 colorScheme = inputs.nix-colors.colorSchemes.gruvbox-dark-medium;

@@ -1,4 +1,4 @@
-{ pkgs, config, lib, ... }:{
+{ pkgs, ... }:{
 
   xdg.configFile."lf/icons".source = ./icons;
 
@@ -8,9 +8,9 @@
 
     settings = {
       preview = true;
-      hidden = true;
+      hidden  = true;
       drawbox = true;
-      icons = true;
+      icons   = true;
     };
 
     commands = {
@@ -102,5 +102,4 @@
       set cleaner ${cleaner}/bin/clean.sh
     '';
   };
-
 }
