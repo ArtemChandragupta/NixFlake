@@ -1,4 +1,4 @@
-{ pkgs, config, lib, inputs, ... }:{
+{ pkgs, inputs, ... }:{
 
 programs = {
   hyprland = {
@@ -14,12 +14,13 @@ environment.systemPackages = with pkgs; [
   wofi
   swww
   waybar
+  #libsForQt5.sddm
   grim
   slurp
   wl-clipboard
   imagemagick
   swappy
   hyprland-autoname-workspaces
-];
+  ];
 
 }

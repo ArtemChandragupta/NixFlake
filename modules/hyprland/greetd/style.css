@@ -1,0 +1,12 @@
+window {
+  background-image: url("file:///etc/greetd/hello.jpg");
+  color: rgba(255, 255, 255, 1);
+  background-repeat: repeat;
+}
+
+box#body {
+   background-color: rgba(75, 75, 75, 0.7);
+   color: rgba(255, 255, 255, 1);
+   border-radius: 10px;
+   padding: 50px;
+}
