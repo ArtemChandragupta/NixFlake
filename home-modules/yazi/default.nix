@@ -1,5 +1,4 @@
-{ config, pkgs, ... }:{
-
+{
 programs.yazi = {
 enable = true;
 
@@ -20,7 +19,6 @@ settings = {
 
 imports = [
   ./opener.nix
-  ./binds.nix
 ];
 
 }

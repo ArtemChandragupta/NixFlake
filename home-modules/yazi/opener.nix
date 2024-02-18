@@ -4,7 +4,7 @@ programs.yazi.settings = {
   opener = {
     "text" = [
       {
-        exec  = "micro \"$@\"";
+        exec  = "hx \"$@\"";
         block = true;
       }
     ];
