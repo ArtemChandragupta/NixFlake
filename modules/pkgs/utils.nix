@@ -1,4 +1,4 @@
-{ pkgs, config, lib, ... }:
+{ pkgs, ... }:
 let 
   wallpaper = import ./wallpaper.nix { inherit pkgs; };
 in

@@ -1,4 +1,4 @@
-{ pkgs, config, lib, ... }:{
+{
 
 time.timeZone = "Europe/Moscow";
 i18n = {

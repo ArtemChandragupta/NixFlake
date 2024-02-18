@@ -1,4 +1,4 @@
-{ pkgs, config, lib, ... }:{
+{ pkgs, ... }:{
 environment.systemPackages = with pkgs; [
 
 firefox
@@ -11,6 +11,7 @@ transmission-gtk
 telegram-desktop
 imv
 openscad
+discord
 
 ];
 }

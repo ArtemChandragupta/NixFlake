@@ -1,4 +1,4 @@
-{ pkgs, config, lib, home-manager, ... }:{
+{ pkgs, home-manager, ... }:{
 
 programs = {
   dconf.enable = true;

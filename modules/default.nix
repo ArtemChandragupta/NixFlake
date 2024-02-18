@@ -1,9 +1,9 @@
-_:{
+{
 
 imports = [
   ./hyprland
   ./pkgs
-  ./hardware
+  ./host-specific/thinkbook13sg3acn
   ./system
 ];
 

@@ -1,4 +1,4 @@
-_:{
+{
 
 imports = [
   ./system.nix
@@ -6,7 +6,9 @@ imports = [
   ./boot.nix
   ./flatpak.nix
   ./locales.nix
-  ./virtualisation.nix	
+  ./virtualisation.nix
+  ./usb.nix
+  ./sound.nix
 ];
-	
+
 }
