@@ -61,7 +61,7 @@ programs.waybar = {
           padding: 0 10px;
           color: @yellow;
           margin: 5px 4px 6px 4px;
-          border: none;
+          border: 2px solid @blue;
           border-radius: 12px;
           background-clip: padding-box;
         }
@@ -70,6 +70,7 @@ programs.waybar = {
           background-color: @background;
           padding: 4px 4px;
           margin: 5px 4px 6px 4px;
+          border: 2px solid @yellow;
         }
 
         #workspaces button {
@@ -95,6 +96,7 @@ programs.waybar = {
         #cpu {
           padding: 0 10px;
           color: @cyan;
+          border: 2px solid @cyan;
           border-right: none;
           border-radius: 12px 0px 0px 12px;
           margin: 5px -2px 6px 4px;          
@@ -103,6 +105,7 @@ programs.waybar = {
         #memory {
           padding: 0 10px;
           color: @cyan;
+          border: 2px solid @cyan;
           border-left: none;
           border-radius: 0px 12px 12px 0px;
           margin: 5px 4px 6px -2px;
@@ -111,6 +114,7 @@ programs.waybar = {
         #temperature {
           padding: 0 10px;
           color: @cyan;
+          border: 2px solid @cyan;
           margin: 5px -2px 6px -2px;
           border-right: none;
           border-left: none;
@@ -120,11 +124,13 @@ programs.waybar = {
         #clock {
           padding: 0 10px;
           color: @magenta;
+          border: 2px solid @magenta;
         }
 
         #pulseaudio {
           padding: 0 10px;
           color: @yellow;
+          border: 2px solid @yellow;
           border-left: none;
           border-radius: 0px 12px 12px 0px;
           margin: 5px 10px 6px -2px;
@@ -133,6 +139,7 @@ programs.waybar = {
         #pulseaudio.muted {
           padding: 0 10px;
           color: @red;
+          border: 2px solid @yellow;
           border-left: none;
           border-radius: 0px 12px 12px 0px;
         }
@@ -140,6 +147,7 @@ programs.waybar = {
         #backlight {
           padding: 0 10px;
           color: @yellow;
+          border: 2px solid @yellow;
           border-right: none;
           border-radius: 12px 0px 0px 12px;
           margin: 5px -2px 6px 4px;
@@ -148,17 +156,20 @@ programs.waybar = {
         #battery {
           padding: 0 10px;
           color: @alt_green;
+          border: 2px solid @alt_green;
         }
 
         #battery.charging, #battery.plugged {
           padding: 0 10px;
           background-color: @alt_green;
           color: @background;
+          border: 2px solid @background;
         }
 
         #custom-wmname {
           color: @green;
           background-color: @background;
+          border: 2px solid @green;
           font-size: 23px;
           padding: 1px 1px 1px 5px;
           margin: 5px 4px 6px 10px;

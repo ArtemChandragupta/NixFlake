@@ -1,9 +1,8 @@
-{ pkgs, config, lib, inputs, ... }:{
+{
 home-manager.users.artem = {
 wayland.windowManager.hyprland = {
 settings  = {
 
-#exec-once = ["waypaper --restore"];
 exec-once = [ 
 "swww init" 
 "wallpaper" 
@@ -12,13 +11,13 @@ exec-once = [
 general = {
   gaps_in              = 5;
   gaps_out             = 10;
-  border_size          = 1;
+  border_size          = 0;
  "col.active_border"   = "rgb(504945)"; 
  "col.inactive_border" = "rgb(504945)";
 };
     
 decoration = {
-  rounding = 9;
+  rounding = 10;
     
   blur = {
     enabled  = true;
@@ -27,7 +26,7 @@ decoration = {
     vibrancy = 0.1696;
   };
     
-  drop_shadow = true;
+  drop_shadow = false;
   shadow_range        = 7;
   shadow_render_power = 5;
  "col.shadow"         = "rgba(1a1a1aee)";

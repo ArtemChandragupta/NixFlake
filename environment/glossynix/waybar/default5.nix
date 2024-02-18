@@ -5,26 +5,8 @@ programs.waybar = {
   style = '' 
 
             @define-color background rgba(40, 40, 40, 1);
-            @define-color foreground #ebdbb2;
-            @define-color alt_background #1d2021;
-  
             @define-color black #32344a;
-            @define-color red #cc241d;
-            @define-color green #98971a;
-            @define-color yellow #d79921;
-            @define-color blue #458588;
-            @define-color magenta #b16286;
-            @define-color cyan #689d6a;
-            @define-color white #ebdbb2;
-  
-            @define-color alt_black #414868;
-            @define-color alt_red #fb4934;
-            @define-color alt_green #b8bb26;
-            @define-color alt_blue #83a598;
-            @define-color alt_yellow #fabd2f;
-            @define-color alt_magenta #d3869b;
-            @define-color alt_cyan #8ec07c;
-            @define-color alt_white #fbf1c7;
+            @define-color white rgb(235, 219, 178);
             
       * {
           border: none;
@@ -33,8 +15,7 @@ programs.waybar = {
         }
 
         window#waybar {
-          color: @alt_green;
-          background-color: rgba(40, 40, 40, 0);
+          background-color: rgba(28, 28, 28, 0.4);
         }
 
         window#waybar.hidden {
@@ -57,9 +38,8 @@ programs.waybar = {
         #backlight,
         #battery,
         #tray {
-          background-color: @background;
           padding: 0 10px;
-          color: @yellow;
+          color: @white;
           margin: 5px 4px 6px 4px;
           border: none;
           border-radius: 12px;
@@ -67,14 +47,12 @@ programs.waybar = {
         }
 
         #workspaces {
-          background-color: @background;
           padding: 4px 4px;
           margin: 5px 4px 6px 4px;
         }
 
         #workspaces button {
           min-width: 20px;
-          color: @yellow;
           padding: 0 10px;
           margin: 0px 4px;
         }
@@ -84,17 +62,16 @@ programs.waybar = {
         }
 
         #workspaces button.active {
-          color: @background;
-          background-color: @yellow;         
+          color: @white;         
         }
 
         #workspaces button.urgent {
-          color: @red;
+          color: #cc241d;;
         }
 
         #cpu {
           padding: 0 10px;
-          color: @cyan;
+          color: @white;
           border-right: none;
           border-radius: 12px 0px 0px 12px;
           margin: 5px -2px 6px 4px;          
@@ -102,7 +79,6 @@ programs.waybar = {
 
         #memory {
           padding: 0 10px;
-          color: @cyan;
           border-left: none;
           border-radius: 0px 12px 12px 0px;
           margin: 5px 4px 6px -2px;
@@ -110,7 +86,6 @@ programs.waybar = {
 
         #temperature {
           padding: 0 10px;
-          color: @cyan;
           margin: 5px -2px 6px -2px;
           border-right: none;
           border-left: none;
@@ -119,12 +94,10 @@ programs.waybar = {
 
         #clock {
           padding: 0 10px;
-          color: @magenta;
         }
 
         #pulseaudio {
           padding: 0 10px;
-          color: @yellow;
           border-left: none;
           border-radius: 0px 12px 12px 0px;
           margin: 5px 10px 6px -2px;
@@ -132,14 +105,12 @@ programs.waybar = {
 
         #pulseaudio.muted {
           padding: 0 10px;
-          color: @red;
           border-left: none;
           border-radius: 0px 12px 12px 0px;
         }
 
         #backlight {
           padding: 0 10px;
-          color: @yellow;
           border-right: none;
           border-radius: 12px 0px 0px 12px;
           margin: 5px -2px 6px 4px;
@@ -147,18 +118,25 @@ programs.waybar = {
 
         #battery {
           padding: 0 10px;
-          color: @alt_green;
         }
 
         #battery.charging, #battery.plugged {
           padding: 0 10px;
-          background-color: @alt_green;
-          color: @background;
+        }
+
+        @keyframes blink {
+          to {
+            background-color: @background;
+          }
+        }
+
+        #battery.charging, #battery.plugged {
+          padding: 0 10px;
+          color: @background;          
         }
 
         #custom-wmname {
-          color: @green;
-          background-color: @background;
+          color: @white;
           font-size: 23px;
           padding: 1px 1px 1px 5px;
           margin: 5px 4px 6px 10px;
@@ -167,13 +145,14 @@ programs.waybar = {
     
     settings = {
       mainBar = {
-        margin = "0px 0px -10px 0px";
+        margin = "0px 0px 0px 0px";
         layer = "top";
 
         modules-left   = ["custom/wmname" "tray" "hyprland/workspaces"];
         modules-center = ["clock"];
         modules-right  = ["battery" "cpu" "temperature" "memory" "backlight" "pulseaudio" ];
 
+        /* Modules configuration */
         "hyprland/workspaces" = {
           active-only = "false";
           on-scroll-up = "hyprctl dispatch workspace e+1";
@@ -250,8 +229,6 @@ programs.waybar = {
           format = " ";
           tooltip = "false";
           on-click = "wallpaper";
-          on-click-right = "screenshot";
-          on-click-middle = "wallpaper-switch";
         };
       };
     };
