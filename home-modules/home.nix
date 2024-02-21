@@ -1,10 +1,10 @@
-{ inputs, ... }:{
+{ pkgs, inputs, ... }:{
 
 home = {
   username = "artem";
   homeDirectory = "/home/artem";
   stateVersion = "23.11";
-  packages = [];
+  packages = builtins.attrValues (import ./rofi/script.nix {inherit pkgs;});
   file = {};
 };
 
@@ -24,6 +24,7 @@ imports = [
   ./yazi
   ./helix
   ./wofi
+  ./rofi
   
 ];
 
