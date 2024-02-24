@@ -3,6 +3,7 @@ wayland.windowManager.hyprland.settings = {
 
   monitor = [
     "eDP-1,2560x1600,0x0,1" 
+    "HDMI-A-1,1920x1080,0x0,1"
   ];
 
   exec-once = [
@@ -62,7 +63,8 @@ wayland.windowManager.hyprland.settings = {
     allow_tearing = false;
   };
 
-  "device:epic-mouse-v1" = {
+  device = {
+    name = "epic-mouse-v1";
     sensitivity = -0.5;
   };
 

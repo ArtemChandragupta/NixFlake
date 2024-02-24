@@ -54,7 +54,12 @@ bind = [
   "$altMod SHIFT, down, resizeactive, 0 20"
   "$mainMod, mouse_down, workspace, e+1"
   "$mainMod, mouse_up,   workspace, e-1"
-  
+
+  "$mainmod SHIFT, L, movewindow, mon:HDMI-A-1"
+  "$mainmod SHIFT, K, focusmonitor, HDMI-A-1"
+  "$mainmod SHIFT, J, focusmonitor, mon:HDMI-A-1"
+  "$mainmod SHIFT, B,movecurrentworkspacetomonitor, HDMI-A-1"
+    
   ", XF86MonBrightnessUp,   exec, brightnessctl set +5%"
   ", XF86MonBrightnessDown, exec, brightnessctl set 5%-"
   ", XF86AudioRaiseVolume,  exec, wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%+"
