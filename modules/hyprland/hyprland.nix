@@ -11,10 +11,8 @@ programs = {
 services.dbus.enable = true;
 
 environment.systemPackages = with pkgs; [
-  wofi
   swww
   waybar
-  #libsForQt5.sddm
   grim
   slurp
   wl-clipboard

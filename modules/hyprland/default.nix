@@ -1,10 +1,9 @@
 {
 
 imports = [
-  ./tuigreet.nix
+  #./tuigreet.nix
   ./hyprland.nix
-  # ./sddm1
-  # ./greetd
+  ./sddmApple
 ];
 
 }
