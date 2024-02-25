@@ -3,7 +3,6 @@ wayland.windowManager.hyprland.settings = {
 
   monitor = [
     "eDP-1,2560x1600,0x0,1" 
-    "HDMI-A-1,1920x1080,0x1600,1"
   ];
 
   exec-once = [

@@ -18,9 +18,6 @@ bind = [
   "$mainMod, J, togglesplit,"
   ", XF86Calculator, exec, gnome-calculator"
 
-  "$mainMod SHIFT, W, exec, pkill waybar"
-  "$mainMod, W, exec, waybar"
-
   "$mainMod, left, movefocus, l"
   "$mainMod, right, movefocus, r"
   "$mainMod, up, movefocus, u"
@@ -55,10 +52,8 @@ bind = [
   "$mainMod, mouse_down, workspace, e+1"
   "$mainMod, mouse_up,   workspace, e-1"
 
-  "$mainmod SHIFT, L, movewindow, mon:HDMI-A-1"
-  "$mainmod SHIFT, K, focusmonitor, HDMI-A-1"
-  "$mainmod SHIFT, J, focusmonitor, mon:HDMI-A-1"
-  "$mainmod SHIFT, B,movecurrentworkspacetomonitor, HDMI-A-1"
+  "$mainMod SHIFT, up,   movecurrentworkspacetomonitor, HDMI-A-1"
+  "$mainMod SHIFT, down, movecurrentworkspacetomonitor, eDP-1"
     
   ", XF86MonBrightnessUp,   exec, brightnessctl set +5%"
   ", XF86MonBrightnessDown, exec, brightnessctl set 5%-"
