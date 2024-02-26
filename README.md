@@ -8,6 +8,8 @@ In _home-modules_ there are home-manager configs that all environments are using
 
 In _environment_ folder there is a place to store all environment specific things - Hyprland and terminal decorations, waybar design.
 
+I use SDDM for login, but i am not happy with it.It is beautyful, but quiet unstable and uses a lot of CPU power for nothing, creating terrible fan noise on startup. For avoiding this I also have tuigreeter.
+
 [My custom SDDM theme](https://github.com/ArtemChandragupta/SDDM-hello)
 
 ```red
