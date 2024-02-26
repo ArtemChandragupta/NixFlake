@@ -1,6 +1,6 @@
 # NixFlake
 
-This is my NixOS configuration. It have ability to swith environments, now there are two of them. - beautiful Glossynix and minimal Plainix.
+This is my NixOS configuration. It have ability to swith environments, now there are two of them - beautiful Glossynix and minimal Plainix.
 
 In _module_ directory there are common NixOS modules and host-specific things like amd kernel modules.
 
