@@ -18,6 +18,9 @@ bind = [
   "$mainMod, J, togglesplit,"
   ", XF86Calculator, exec, gnome-calculator"
 
+  "$mainMod SHIFT, W, exec, pkill waybar"
+  "$mainMod, W, exec, waybar"
+
   "$mainMod, left, movefocus, l"
   "$mainMod, right, movefocus, r"
   "$mainMod, up, movefocus, u"
