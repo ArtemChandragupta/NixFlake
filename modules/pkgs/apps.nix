@@ -9,9 +9,11 @@ inkscape
 obsidian
 transmission-gtk
 telegram-desktop
-imv
 openscad
 discord
+libreoffice-qt
+gnome.dconf-editor
+mcomix
 
 ];
 }
