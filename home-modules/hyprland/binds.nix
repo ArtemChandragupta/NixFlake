@@ -16,6 +16,7 @@ bind = [
   "$mainMod, G, exec, wofi --show drun"
   "$mainMod, P, pseudo," 
   "$mainMod, J, togglesplit,"
+  "$mainMod, H, exec, cliphist list | wofi --show dmenu | cliphist decode | wl-copy"
   ", XF86Calculator, exec, gnome-calculator"
 
   "$mainMod SHIFT, W, exec, pkill waybar"
