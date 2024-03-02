@@ -1,8 +1,4 @@
-{ pkgs, ... }:
-let 
-  wallpaper = import ./wallpaper.nix { inherit pkgs; };
-in
-{
+{ pkgs, ... }:{
 environment.systemPackages = with pkgs; [
 
 wget 
@@ -11,7 +7,9 @@ zip
 rar 
 gnutar
 brightnessctl
-wallpaper
+libsForQt5.kdeconnect-kde
+gruvbox-gtk-theme
 
 ];
+programs.kdeconnect.enable = true;
 }
