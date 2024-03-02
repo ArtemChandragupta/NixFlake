@@ -5,6 +5,7 @@ imports = [
   ./waybar
   ./kitty
   ./starship
+  ./wallpapers
 ];
 
 }
