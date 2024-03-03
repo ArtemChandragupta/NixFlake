@@ -1,21 +1,32 @@
-{ inputs, ... }:{
+{ username, inputs, ... }:{
 
 imports = [
   inputs.home-manager.nixosModules.default
   ./modules
   ./environment/glossynix
+  #../../etc/nixos/hardware-configuration.nix--impure
 ];
 
-users.users.artem = {
+documentation.nixos.enable = false;
+programs.kdeconnect.enable = true; 
+
+users.users.${username} = {
   isNormalUser = true;
-  description = "artem";
-  extraGroups = [ "networkmanager" "wheel" "audio" "video" "input" "libvirtd" "docker" ];
+  extraGroups = [ 
+    "networkmanager" 
+    "wheel" 
+    "audio" 
+    "video" 
+    "input" 
+    "libvirtd" 
+    "docker" 
+  ];
 };
 
 home-manager = {
-  extraSpecialArgs = { inherit inputs; };
+  extraSpecialArgs = { inherit inputs username; };
   users = {
-    "artem" = import ./home-modules/home.nix;
+    "${username}" = import ./home-modules/home.nix;
   };
 };
 

@@ -1,37 +1,40 @@
 {
   description = "Nixos config flake";
+  
+  outputs = { self, nixpkgs, home-manager, ... }@inputs:
+    let
+      username = "artem";
+      system = "x86_64-linux";
+      pkgs = import nixpkgs  { 
+        inherit system;
+        config = { 
+          allowUnfree = true;
+          permittedInsecurePackages = [
+            "electron-25.9.0"
+            "freeimage-unstable-2021-11-01"
+          ];
+        };
+      };
+    in
+    {
+      nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
+        inherit system;
+        specialArgs = {inherit inputs username;};
+        modules = [ ./configuration.nix inputs.home-manager.nixosModules.default ];
+      };
+    };
 
-  inputs = {
+    inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
     hyprland.url = "github:hyprwm/Hyprland";
-    hyprland-plugins = {
-      url = "github:hyprwm/hyprland-plugins";
-      inputs.hyprland.follows = "hyprland";
-    };
-
-    nix-colors.url = "github:misterio77/nix-colors";
     
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    ags.url = "github:Aylur/ags";
+
   };
-
-  outputs = { self, nixpkgs, ... }@inputs:
-    let
-      system = "x86_64-linux";
-      pkgs = nixpkgs.legacyPackages.${system};
-    in
-    {
-      nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-          specialArgs = {inherit inputs;};
-          modules = [ 
-            ./configuration.nix
-            inputs.home-manager.nixosModules.default
-          ];
-        };
-
-    };
 }
