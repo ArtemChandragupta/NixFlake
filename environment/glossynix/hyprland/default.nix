@@ -1,5 +1,5 @@
-{
-home-manager.users.artem = {
+{ username, ... }:{
+home-manager.users.${username} = {
 wayland.windowManager.hyprland = {
 settings  = {
 
