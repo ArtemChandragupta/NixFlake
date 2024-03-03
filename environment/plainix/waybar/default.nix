@@ -1,5 +1,5 @@
-{ pkgs, config, lib, ...}:{
-home-manager.users.artem = {
+{ username, ...}:{
+home-manager.users.${username} = {
 
 programs.waybar = {
   enable = true;
@@ -106,12 +106,6 @@ programs.waybar = {
           color: @cyan;
         }
 
-        #temperature.critical {
-          background-color: @red;
-          padding: 0 10px;
-          color: @background;
-        }
-
         #clock {
           padding: 0 10px;
           color: @blue;
@@ -143,24 +137,6 @@ programs.waybar = {
           color: @background;
         }
 
-        @keyframes blink {
-          to {
-            background-color: @background;
-            color: @red;
-          }
-        }
-
-        #battery.critical:not(.charging) {
-          padding: 0 10px;
-          background-color: @red;
-          color: @background;
-          animation-name: blink;
-          animation-duration: 0.5s;
-          animation-timing-function: linear;
-          animation-iteration-count: infinite;
-          animation-direction: alternate;
-        }
-
         #custom-wmname {
           color: @blue;
           background-color: @background;
@@ -179,7 +155,6 @@ programs.waybar = {
         modules-center = ["clock"];
         modules-right  = ["battery" "cpu" "temperature" "memory" "backlight" "pulseaudio"];
 
-      /* Modules configuration */
         "hyprland/workspaces" = {
           active-only = "false";
           on-scroll-up = "hyprctl dispatch workspace e+1";

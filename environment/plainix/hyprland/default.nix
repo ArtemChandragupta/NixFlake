@@ -1,5 +1,5 @@
-{ pkgs, config, lib, inputs, ... }:{
-home-manager.users.artem = {
+{ username, ... }:{
+home-manager.users.${username} = {
 wayland.windowManager.hyprland = {
 settings    = {
 
