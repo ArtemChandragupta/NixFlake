@@ -9,6 +9,7 @@ imports = [
   ./virtualisation.nix
   ./usb.nix
   ./sound.nix
+  ./bash.nix
 ];
 
 }
