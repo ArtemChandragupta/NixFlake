@@ -1,6 +1,8 @@
 {
-xdg.configFile."/home/artem/.config/imv/imv.conf".text = ''
-[options]
-background = #282828
-'';
+programs = {
+  imv = {
+    enable = true;
+    settings.options.background = "282828";
+  };
+};
 }
