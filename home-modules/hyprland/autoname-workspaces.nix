@@ -1,61 +1,44 @@
 {
 home.file.".config/hyprland-autoname-workspaces/config.toml".text = ''
+version = "1.1.13"
 
-version = "1.1.11"	
+[format]
+dedup = true
+dedup_inactive_fullscreen = false
+delim = " "
+client = "{icon}{delim}"
+client_active = "{icon}"
+workspace = "{id}:{delim}{clients}"
+workspace_empty = "{id}:delim}{clients}"
+client_dup = "{icon}{counter_sup}{delim}"
+client_dup_fullscreen = "[{icon}]{delim}{icon}{counter_unfocused_sup}"
+client_fullscreen = "[{icon}]{delim}"
 
-          [class]
-          "Minecraft.*" = "󰍳 "         
-          "libreoffice*" = "󰈙 "
-          DEFAULT = " "
-          Wofi = " "
-          obsidian = " "
-          discord = "󰙯 "
-          firefox = " "
-          kitty = " "
-          mpv = " "
-          vimiv = " "
-          virt-manager = " "
-          xdg-desktop-portal-gtk = "󱈄"
-          ".*transmission.*" = ""
-          
-          [class_active]
+[class]
+DEFAULT = ""
+"(?i)firefox" = " "
+"(?i)kitty" = ""
+discord = ""
+"(?i)waydroid.*" = "droid"
+obsidian = ""
+"qalculate-gtk" = ""
+libreoffice-calc = ""
+libreoffice-impress = ""
+libreoffice-startcenter = ""
+libreoffice-writer = ""
+mpv = ""
+nm-connection-editor = ""
+org-telegram-desktop = ""
+remote-viewer = ""
+swappy = ""
+telegramdesktop = ""
+".*transmission.*" = ""
+udiskie = ""
+virt-manager = ""
+nemo = ""
 
-          [initial_class]
-          
-          [initial_class_active]
+[exclude]
+"" = "^$"
 
-          [workspaces_name]
-
-          [title_in_class]
-
-          [title_in_class_active]
-
-          [title_in_initial_class]
-
-          [title_in_initial_class_active]
-
-          [initial_title_in_class]
-
-          [initial_title_in_class_active]
-
-          [initial_title_in_initial_class]
-
-          [initial_title_in_initial_class_active]
-
-          [exclude]
-          "" = "^$"
-
-          [format]
-          dedup = true
-          dedup_inactive_fullscreen = false
-          delim = " "
-          workspace = "{id}:{delim}{clients}"
-          workspace_empty = "{id}"
-          client = "{icon}"
-          client_fullscreen = "[{icon}]"
-          client_active = "{icon}"
-          client_dup = "{icon}{counter_sup}"
-          client_dup_active = "*{icon}*{delim}{icon}{counter_unfocused_sup}"
-          client_dup_fullscreen = "[{icon}]{delim}{icon}{counter_unfocused_sup}"
 '';
 }
