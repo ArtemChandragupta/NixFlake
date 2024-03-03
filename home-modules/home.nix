@@ -1,17 +1,19 @@
-{ pkgs, inputs, ... }:{
+{ pkgs, username, ... }:{
 
 home = {
-  username = "artem";
-  homeDirectory = "/home/artem";
+  inherit username;
+  homeDirectory = "/home/${username}";  
   stateVersion = "23.11";
   packages = builtins.attrValues (import ./rofi/script.nix {inherit pkgs;});
-  file = {};
+  sessionVariables = {
+    BROWSER  = "firefox";
+    TERMINAL = "kitty";
+  };
 };
 
 programs.home-manager.enable = true;
 
 imports = [
-  inputs.nix-colors.homeManagerModules.default
 
   ./lf
   ./btop
@@ -28,8 +30,6 @@ imports = [
   
 ];
 
-colorScheme = inputs.nix-colors.colorSchemes.gruvbox-dark-medium;
-
 xdg.mimeApps.defaultApplications = {
   "application/pdf" = [ "zathura.desktop"  ];
   "image/*"         = [ "viewnior.desktop" ];
@@ -37,5 +37,5 @@ xdg.mimeApps.defaultApplications = {
   "video/jpg"       = [ "mpv.desktop"      ];
   "video/*"         = [ "mpv.desktop"      ];
 };
-      
+
 }

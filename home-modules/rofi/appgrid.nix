@@ -1,12 +1,12 @@
-{
+{ username, ... }:{
 
-  xdg.configFile."/home/artem/.config/rofi/launchers/type-1/launcher.sh" = {
+  xdg.configFile."/home/${username}/.config/rofi/launchers/type-1/launcher.sh" = {
     executable = true;
     text = ''
     #!/usr/bin/env bash
 #
 
-    dir="$HOME/.config/rofi/launchers/type-1"
+    dir="/home/${username}/.config/rofi/launchers/type-1"
     theme='style-1'
 
     rofi \
@@ -15,7 +15,7 @@
     '';
   };
 
-xdg.configFile."/home/artem/.config/rofi/launchers/type-1/shared/colors.rasi".text = '' 
+xdg.configFile."/home/${username}/.config/rofi/launchers/type-1/shared/colors.rasi".text = '' 
 * {
     background:     #282828FF;
     background-alt: #353535FF;
@@ -26,13 +26,13 @@ xdg.configFile."/home/artem/.config/rofi/launchers/type-1/shared/colors.rasi".te
 }
 '';
 
-xdg.configFile."/home/artem/.config/rofi/launchers/type-1/shared/fonts.rasi".text = ''
+xdg.configFile."/home/${username}/.config/rofi/launchers/type-1/shared/fonts.rasi".text = ''
 * {
     font: "JetBrains Mono Nerd Font 10";
 }
 '';
 
-xdg.configFile."/home/artem/.config/rofi/launchers/type-1/style-1.rasi".text = ''
+xdg.configFile."/home/${username}/.config/rofi/launchers/type-1/style-1.rasi".text = ''
 
 /*****----- Configuration -----*****/
 configuration {
