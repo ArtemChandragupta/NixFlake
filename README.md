@@ -25,10 +25,10 @@ I use SDDM for login, but i am not happy with it. It is beautyful, but quite uns
              
  ╭─ WM       -> Hyprland
  ├─ Bar      -> Waybar
- ├─ DM       -> SDDM with
+ ├─ DM       -> SDDM & tuigreetd
  ├─ Terminal -> Kitty
  ├─ Theme    -> Gruvbox
- ├─ FM       -> Yazi, LF & Nemo
+ ├─ FM       -> Yazi & Nemo
  ├─ Notes    -> Obsidian
  ├─ VM       -> VMM Windows 11
  ╰─ Games    -> Flatpak, Portproton in Distrobox, Itch.io & ppsspp
