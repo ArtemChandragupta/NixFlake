@@ -14,6 +14,9 @@ discord
 libreoffice-qt
 gnome.dconf-editor
 mcomix
+hydrus
+veusz
+github-desktop
 
 ];
 }

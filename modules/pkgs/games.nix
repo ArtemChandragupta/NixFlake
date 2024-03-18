@@ -2,22 +2,25 @@
 environment.systemPackages = with pkgs; [
 
 ppsspp
-bottles
 moonlight-qt
 remmina
 lutris
 dosbox-x
+amdgpu_top
 
 ];
 
-programs.gamemode = {
-  enable = true;
-  settings = {
-    custom = {
-      start = "${pkgs.libnotify}/bin/notify-send 'GameMode started'";
-      end = "${pkgs.libnotify}/bin/notify-send 'GameMode ended'";
+programs = {
+  gamemode = {
+    enable = true;
+    settings = {
+      custom = {
+        start = "${pkgs.libnotify}/bin/notify-send 'GameMode started'";
+        end = "${pkgs.libnotify}/bin/notify-send 'GameMode ended'";
+      };
     };
   };
+  steam.enable = true;
 };
 
 }
