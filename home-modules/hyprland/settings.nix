@@ -2,16 +2,18 @@
 wayland.windowManager.hyprland.settings = {
 
   monitor = [
-    "eDP-1,2560x1600,0x0,1" 
+    "eDP-1,1920x1200,0x0,1" 
   ];
 
   exec-once = [
     "dunst"
     "waybar"
     "kitty"
+    "hypridle"
     "hyprland-autoname-workspaces"
     "blueman-applet"
     "nm-applet"
+    "wl-paste --watch cliphist store"
   ];
 
   env = [

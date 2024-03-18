@@ -14,7 +14,8 @@ bind = [
   "$mainMod, R, exec, rofi-menu"
   "$mainMod, V, togglefloating,"
   "$mainMod, G, exec, wofi --show drun"
-  "$mainMod, P, pseudo," 
+  "$mainMod, P, pseudo,"
+  "$mainMod, L, exec, hyprlock"
   "$mainMod, J, togglesplit,"
   "$mainMod, H, exec, cliphist list | wofi --show dmenu | cliphist decode | wl-copy"
   ", XF86Calculator, exec, gnome-calculator"
@@ -22,6 +23,9 @@ bind = [
   "$mainMod SHIFT, W, exec, pkill waybar"
   "$mainMod, W, exec, waybar"
 
+  "$mainMod SHIFT, A, exec, pkill ags"
+  "$mainMod, A, exec, ags"
+  
   "$mainMod, left, movefocus, l"
   "$mainMod, right, movefocus, r"
   "$mainMod, up, movefocus, u"
