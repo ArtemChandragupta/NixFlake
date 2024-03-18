@@ -6,7 +6,7 @@
     #!/usr/bin/env bash
 #
 
-    dir="/home/${username}/.config/rofi/launchers/type-1"
+    dir="$HOME/.config/rofi/launchers/type-1"
     theme='style-1'
 
     rofi \
@@ -63,7 +63,7 @@ window {
     border:                      0px solid;
     border-radius:               0px;
     border-color:                @selected;
-    background-color:            black / 50%;
+    background-color:            black / 80%;
     cursor:                      "default";
 }
 
@@ -89,7 +89,7 @@ inputbar {
     border:                      0px solid;
     border-radius:               10px;
     border-color:                @selected;
-    background-color:            white / 5%;
+    background-color:            white / 16%;
     text-color:                  @foreground;
     children:                    [ "prompt", "entry" ];
 }
@@ -164,7 +164,7 @@ element normal.normal {
     text-color:                  @foreground;
 }
 element selected.normal {
-    background-color:            white / 5%;
+    background-color:            white / 16%;
     text-color:                  @foreground;
 }
 element-icon {
