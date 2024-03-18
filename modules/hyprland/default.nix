@@ -1,9 +1,9 @@
 {
 
 imports = [
-  #./tuigreet.nix
+  ./tuigreet.nix
   ./hyprland.nix
-  ./sddmApple
+  #./sddmApple
 ];
 
 }

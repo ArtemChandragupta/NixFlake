@@ -19,6 +19,9 @@ environment.systemPackages = with pkgs; [
   imagemagick
   swappy
   hyprland-autoname-workspaces
+  hyprpicker
+  cliphist
+  hypridle
   ];
 
 }
