@@ -8,7 +8,6 @@ imports = [
 ];
 
 documentation.nixos.enable = false;
-programs.kdeconnect.enable = true; 
 
 users.users.${username} = {
   isNormalUser = true;
