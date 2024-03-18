@@ -14,8 +14,6 @@ home = {
 programs.home-manager.enable = true;
 
 imports = [
-
-  ./lf
   ./btop
   ./zathura
   ./dunst
@@ -27,7 +25,7 @@ imports = [
   ./helix
   ./wofi
   ./rofi
-  
+  ./ags
 ];
 
 xdg.mimeApps.defaultApplications = {
