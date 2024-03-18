@@ -4,31 +4,31 @@ programs.yazi.settings = {
   opener = {
     "text" = [
       {
-        exec  = "hx \"$@\"";
+        run  = "hx \"$@\"";
         block = true;
       }
     ];
     "video" = [
       {
-        exec  = "mpv \"$@\"";
+        run  = "mpv \"$@\"";
         block = true;
       }
     ];
     "image" = [
       {
-        exec  = "imv \"$@\"";
+        run  = "imv \"$@\"";
         block = true;
       }
     ];
     "pdf" = [
       {
-        exec  = "${pkgs.zathura}/bin/zathura \"$@\"";
+        run  = "${pkgs.zathura}/bin/zathura \"$@\"";
         block = true;
       }
     ];
     "unarchive" = [
       {
-        exec = ''${pkgs.unar}/bin/unar "$@"'';
+        run = ''${pkgs.unar}/bin/unar "$@"'';
         desc = "unarchive";
       }
     ];

@@ -19,6 +19,7 @@ settings = {
 
 imports = [
   ./opener.nix
+  ./theme.nix
 ];
 
 }
