@@ -1,13 +1,11 @@
 { pkgs, ... }:{
 environment.systemPackages = with pkgs; [
-
-ppsspp
-moonlight-qt
-remmina
-lutris
-dosbox-x
-amdgpu_top
-
+  ppsspp
+  moonlight-qt
+  remmina
+  lutris
+  dosbox-x
+  amdgpu_top
 ];
 
 programs = {

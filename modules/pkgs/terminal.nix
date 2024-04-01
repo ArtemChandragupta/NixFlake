@@ -1,12 +1,10 @@
 { pkgs, ... }:{
 environment.systemPackages = with pkgs; [
-
-kitty
-btop
-fastfetch
-nitch
-micro
-mpv
-
+  kitty
+  btop
+  fastfetch
+  nitch
+  micro
+  mpv
 ];
 }
