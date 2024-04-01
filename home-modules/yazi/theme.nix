@@ -4,7 +4,7 @@
     manager = {
       cwd = { fg = "#b8bb26"; };
 
-      hovered         = { fg = "#282828"; bg = "#458588"; };
+      hovered         = { fg = "#282828"; bg = "#665c54"; };
       preview_hovered = { underline = true; };
 
       find_keyword  = { fg = "#b8bb26"; italic = true; };
@@ -95,7 +95,20 @@
 
         { name = "*"; fg = "#a89984"; }
         { name = "*/"; fg = "#458588"; }
-        { name = "default.nix"; fg = "#cc241d";}
+      ];
+    };
+
+    icon = {
+      prepend_rules = [
+        { name = "default.nix"; fg = "#d65d0e"; text = ""; }
+        { name = "hyprland/"; text = ""; }
+        { name = "Downloads/"; text = ""; }
+        { name = "Games/"; text = "󰊖"; }
+        { name = "PortProton/"; text = ""; }
+        { name = "media/"; text = ""; }
+        { name = "starship/"; text = ""; }
+        { name = "Documents/"; text = "󱔗"; }
+        { name = "studytrash/"; text = "󰗚"; }
       ];
     };
   };
