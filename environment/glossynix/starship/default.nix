@@ -1,4 +1,7 @@
-{
+{ pkgs, ... }:{
+environment.systemPackages = [
+  pkgs.starship
+];
 programs.starship.enable = true;
 programs.starship.settings = {
   
@@ -39,18 +42,19 @@ programs.starship.settings = {
   };
   
   directory = {
-    style             = "fg:color_fg0 bg:color_green";
+    style             = "fg:#282828 bg:color_green";
     format            = "[ $path ]($style)";
     truncation_length = 3;
     truncation_symbol = "…/";
   };
   
   directory.substitutions = {
-    "Documents" = "󰈙 ";
-    "Downloads" = " ";
-    "Music"     = "󰝚 ";
-    "Pictures"  = " ";
-    "Developer" = "󰲋 ";
+    "Documents"  = "󱔗 ";
+    "Downloads"  = " ";
+    "media"      = " ";
+    "hyprland"   = " ";
+    "Games"      = "󰊖 ";
+    "PortProton" = " ";
   };
   
   git_branch = {
