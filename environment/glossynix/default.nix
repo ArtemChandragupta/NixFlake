@@ -3,8 +3,8 @@
 imports = [
   ./hyprland
   ./waybar
-  ./kitty
-  ./starship
+  ./kitty.nix
+  ./starship.nix
   ./wallpapers
 ];
 
