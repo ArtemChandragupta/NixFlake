@@ -4,7 +4,7 @@
     manager = {
       cwd = { fg = "#b8bb26"; };
 
-      hovered         = { fg = "#282828"; bg = "#665c54"; };
+      hovered         = { bg = "#3c3836"; };
       preview_hovered = { underline = true; };
 
       find_keyword  = { fg = "#b8bb26"; italic = true; };
