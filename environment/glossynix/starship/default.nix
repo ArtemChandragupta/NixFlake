@@ -5,7 +5,7 @@ environment.systemPackages = [
 programs.starship.enable = true;
 programs.starship.settings = {
   
-  format = "[](color_blue)\$os\$username\[](bg:color_green fg:color_blue)\$directory\[](fg:color_green bg:color_aqua)\$git_branch\$git_status\[](fg:color_aqua bg:color_blue)\$c\$rust\$golang\$nodejs\$php\$java\$kotlin\$haskell\$python\[](fg:color_blue bg:color_bg3)\$docker_context\[](fg:color_bg3 bg:color_bg1)\$time\[ ](fg:color_bg1)\$line_break$character ";
+  format = "[](color_blue)\$os\$username\[](bg:#83a598 fg:color_blue)\$directory\[](fg:#83a598 bg:color_blue)\$git_branch\$git_status\[](fg:color_blue bg:color_bg3)\$c\$rust\$golang\$nodejs\$php\$java\$kotlin\$haskell\$python\[](fg:color_bg3 bg:color_bg1)\$time\[](fg:color_bg1)\$line_break$character ";
   
   palette = "gruvbox_dark";
   
@@ -24,7 +24,7 @@ programs.starship.settings = {
   
   os = {
     disabled = false;
-    style    = "bg:color_blue fg:color_fg0";
+    style    = "bg:color_blue fg:#282828";
   };
   
   os.symbols = {
@@ -36,13 +36,13 @@ programs.starship.settings = {
   
   username = {
     show_always = true;
-    style_user  = "bg:color_blue fg:color_fg0";
+    style_user  = "bg:color_blue fg:#282828";
     style_root  = "bg:color_blue fg:color_fg0";
     format      = "[ $user ]($style)";
   };
   
   directory = {
-    style             = "fg:#282828 bg:color_green";
+    style             = "fg:#282828 bg:#83a598";
     format            = "[ $path ]($style)";
     truncation_length = 3;
     truncation_symbol = "…/";
@@ -59,13 +59,13 @@ programs.starship.settings = {
   
   git_branch = {
     symbol = "";
-    style  = "bg:color_aqua";
-    format = "[[ $symbol $branch ](fg:color_fg0 bg:color_aqua)]($style)";
+    style  = "bg:color_blue";
+    format = "[[ $symbol $branch ](fg:color_fg0 bg:color_blue)]($style)";
   };
   
   git_status = {
-    style  = "bg:color_aqua";
-    format = "[[($all_status$ahead_behind )](fg:color_fg0 bg:color_aqua)]($style)";
+    style  = "bg:color_blue";
+    format = "[[($all_status$ahead_behind )](fg:color_fg0 bg:color_blue)]($style)";
   };
   
   time = {
@@ -88,6 +88,29 @@ programs.starship.settings = {
     vimcmd_replace_symbol     = "[](bold fg:color_purple)";
     vimcmd_visual_symbol      = "[](bold fg:color_yellow)";
   };
-};
 
+  nodejs = {
+    symbol = " ";
+    style = "bg:color_bg3";
+    format = ''[[ $symbol( $version) ](fg:color_fg0 bg:color_bg3)]($style)'';
+  };
+
+  java = {
+    symbol = " ";
+    style = "bg:color_bg3";
+    format = ''[[ $symbol( $version) ](fg:color_fg0 bg:color_bg3)]($style)'';
+  };
+  
+  kotlin = {
+    symbol = "";
+    style = "bg:color_bg3";
+    format = ''[[ $symbol( $version) ](fg:color_fg0 bg:color_bg3)]($style)'';
+  };
+  
+  haskell = {
+    symbol = "";
+    style = "bg:color_bg3";
+    format = ''[[ $symbol( $version) ](fg:color_fg0 bg:color_bg3)]($style)'';
+  };
+};
 }
