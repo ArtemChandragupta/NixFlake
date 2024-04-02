@@ -1,10 +1,10 @@
 {  
   programs.yazi.theme = {
-
+  
     manager = {
       cwd = { fg = "#b8bb26"; };
 
-      hovered         = { bg = "#3c3836"; };
+      hovered         = { bg = "#3c3836"; fg = "#ebdbb2"; };
       preview_hovered = { underline = true; };
 
       find_keyword  = { fg = "#b8bb26"; italic = true; };
@@ -78,38 +78,5 @@
       footer  = { fg = "#3c3836"; bg = "#a89984"; };
     };
 
-    filetype = {
-      rules = [
-        { mime = "image/*"; fg = "#83a598"; }
-
-        { mime = "video/*"; fg = "#b8bb26"; }
-        { mime = "audio/*"; fg = "#b8bb26"; }
-
-        { mime = "application/zip";             fg = "#d65d0e"; }
-        { mime = "application/gzip";            fg = "#d65d0e"; }
-        { mime = "application/x-tar";           fg = "#d65d0e"; }
-        { mime = "application/x-bzip";          fg = "#d65d0e"; }
-        { mime = "application/x-bzip2";         fg = "#d65d0e"; }
-        { mime = "application/x-7z-compressed"; fg = "#d65d0e"; }
-        { mime = "application/x-rar";           fg = "#d65d0e"; }
-
-        { name = "*"; fg = "#a89984"; }
-        { name = "*/"; fg = "#458588"; }
-      ];
-    };
-
-    icon = {
-      prepend_rules = [
-        { name = "default.nix"; fg = "#d65d0e"; text = ""; }
-        { name = "hyprland/"; text = ""; }
-        { name = "Downloads/"; text = ""; }
-        { name = "Games/"; text = "󰊖"; }
-        { name = "PortProton/"; text = ""; }
-        { name = "media/"; text = ""; }
-        { name = "starship/"; text = ""; }
-        { name = "Documents/"; text = "󱔗"; }
-        { name = "studytrash/"; text = "󰗚"; }
-      ];
-    };
   };
 }

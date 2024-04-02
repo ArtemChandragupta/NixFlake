@@ -14,16 +14,17 @@ home = {
 programs.home-manager.enable = true;
 
 imports = [
-  ./btop
-  ./zathura
-  ./dunst
-  ./gtk_qt
-  ./imv
-  ./kitty
+  ./btop.nix
+  ./zathura.nix
+  ./dunst.nix
+  ./gtk+qt.nix
+  ./imv.nix
+  ./kitty.nix
+  ./helix.nix
+  ./wofi.nix
+
   ./hyprland
   ./yazi
-  ./helix
-  ./wofi
   ./rofi
   ./ags
 ];
