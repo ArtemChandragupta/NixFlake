@@ -10,10 +10,6 @@ gtk = {
     name = "Mint-Y-Sand";
     package = pkgs.cinnamon.mint-y-icons;
   };
-  cursorTheme = {
-    name = "Bibata-Original-Classic";
-    package = pkgs.bibata-cursors;
-  };
 };
 
 qt = {
