@@ -5,14 +5,14 @@
 
     extraPackages = with pkgs; with nodePackages; [
       marksman
-      nil nixpkgs-fmt
+      nil nixfmt-rfc-style
       bash-language-server
     ];
 
     languages.language = [
       {
         name = "nix";
-        formatter.command = "nixpkgs-fmt";
+        formatter.command = "nixfmt-rfc-style";
       }
       {
         name = "javascript";
