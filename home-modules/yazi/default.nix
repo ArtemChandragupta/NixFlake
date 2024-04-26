@@ -1,6 +1,6 @@
 {
 programs.yazi = {
-enable = true;
+  enable = true;
 
   settings = {
     manager = {

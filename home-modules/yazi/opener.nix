@@ -4,25 +4,25 @@ programs.yazi.settings = {
   opener = {
     "text" = [
       {
-        run  = "hx \"$@\"";
+        run  = "neovide --no-fork \"$@\"";
         block = true;
       }
     ];
     "video" = [
       {
-        run  = "mpv \"$@\"";
+        run  = "totem \"$@\"";
         block = true;
       }
     ];
     "image" = [
       {
-        run  = "imv \"$@\"";
+        run  = "loupe \"$@\"";
         block = true;
       }
     ];
     "pdf" = [
       {
-        run  = "${pkgs.zathura}/bin/zathura \"$@\"";
+        run  = "evince \"$@\"";
         block = true;
       }
     ];
