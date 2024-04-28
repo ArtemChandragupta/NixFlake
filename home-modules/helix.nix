@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-{
+{ pkgs, ... }:{
   programs.helix = {
     enable = true;
 
@@ -21,9 +20,7 @@
     ];
 
     settings = {
-      
-
-      theme = "base16_transparent";
+      theme = "gruvbox";
 
       editor = {
         line-number = "relative";
@@ -52,7 +49,7 @@
         whitespace.render.tab = "all";
         indent-guides = {
           render = true;
-          character = "┊";
+          character = "┆";
         };
       };
     };

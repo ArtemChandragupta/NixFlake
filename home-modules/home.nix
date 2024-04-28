@@ -9,12 +9,6 @@ home = {
     BROWSER  = "firefox";
     TERMINAL = "kitty";
   };
-  pointerCursor = {
-    gtk.enable = true;
-    package = pkgs.bibata-cursors;
-    name = "Bibata-Original-Classic";
-    size = 24;
-  };
 };
 
 programs.home-manager.enable = true;
@@ -23,24 +17,25 @@ imports = [
   ./btop.nix
   ./zathura.nix
   ./dunst.nix
-  ./gtk+qt.nix
-  ./imv.nix
+  ./gtk+qt+cursor.nix
   ./kitty.nix
   ./helix.nix
   ./wofi.nix
+  ./git.nix
 
   ./hyprland
   ./yazi
   ./rofi
   ./ags
+  ./nixvim
 ];
 
 xdg.mimeApps.defaultApplications = {
-  "application/pdf" = [ "zathura.desktop"  ];
-  "image/*"         = [ "viewnior.desktop" ];
-  "video/png"       = [ "mpv.desktop"      ];
-  "video/jpg"       = [ "mpv.desktop"      ];
-  "video/*"         = [ "mpv.desktop"      ];
+  "application/pdf" = [ "org.gnome.Evince.desktop" ];
+  "image/*"         = [ "org.gnome.Loupe.desktop"   ];
+  "video/png"       = [ "totem.desktop"   ];
+  "video/jpg"       = [ "totem.desktop"   ];
+  "video/*"         = [ "totem.desktop"   ];
 };
 
 }
