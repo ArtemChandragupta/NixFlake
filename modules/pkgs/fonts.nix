@@ -4,5 +4,6 @@ fonts.packages = with pkgs; [
   iosevka
   material-design-icons
   nerdfonts
+  victor-mono
 ];
 }

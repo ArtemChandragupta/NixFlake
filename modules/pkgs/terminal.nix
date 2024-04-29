@@ -4,7 +4,6 @@ environment.systemPackages = with pkgs; [
   btop
   fastfetch
   nitch
-  micro
   mpv
 ];
 }

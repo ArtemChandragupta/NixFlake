@@ -7,5 +7,9 @@ environment.systemPackages = with pkgs; [
   gnutar
   brightnessctl
   gruvbox-gtk-theme
+  exiftool
+  gh
+  go-toml
+  gopsuinfo
 ];
 }

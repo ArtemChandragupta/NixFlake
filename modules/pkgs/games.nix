@@ -6,6 +6,7 @@ environment.systemPackages = with pkgs; [
   lutris
   dosbox-x
   amdgpu_top
+  xboxdrv
 ];
 
 programs = {
