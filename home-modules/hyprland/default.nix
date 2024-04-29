@@ -5,6 +5,9 @@ imports = [
   ./rules.nix
   ./settings.nix
   ./autoname-workspaces.nix
+  ./multimonitor.nix
+  ./hyprlock
+  ./hypridle
 ];
 
 wayland.windowManager.hyprland = {

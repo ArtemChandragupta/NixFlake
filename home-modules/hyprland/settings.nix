@@ -13,6 +13,7 @@ wayland.windowManager.hyprland.settings = {
     "hyprland-autoname-workspaces"
     "blueman-applet"
     "nm-applet"
+    "telegram-desktop -startintray"
     "wl-paste --watch cliphist store"
   ];
 
@@ -55,7 +56,7 @@ wayland.windowManager.hyprland.settings = {
     layers_hog_keyboard_focus = true;
     animate_manual_resizes    = true;
     enable_swallow            = true;
-    swallow_regex             = "^(kitty)$";    
+    swallow_regex             = "^([Kk]itty)$";
   };
 
   general = {
