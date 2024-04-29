@@ -1,9 +1,6 @@
 { pkgs, username, ... }:{
 
-programs = {
-  dconf.enable = true;
-  virt-manager.enable = true;
-};
+programs.virt-manager.enable = true;
 
 virtualisation = {
   libvirtd = { 
@@ -19,7 +16,6 @@ virtualisation = {
 };
 
 environment.systemPackages = with pkgs; [
-
   distrobox
 
   virt-viewer
@@ -28,20 +24,18 @@ environment.systemPackages = with pkgs; [
   spice-protocol
   win-virtio
   win-spice
-  
-  gnome.adwaita-icon-theme
-
 ];
 
 services.spice-vdagentd.enable = true;
 
-home-manager.users.${username} = {
-    dconf.settings = {
-      "org/virt-manager/virt-manager/connections" = {
-        autoconnect = [ "qemu:///system" ];
-        uris = [ "qemu:///system" ];
-      };
+home-manager.users.${username}.dconf = {
+  settings = {
+    "org/virt-manager/virt-manager/connections" = {
+      autoconnect = [ "qemu:///system" ];
+      uris = [ "qemu:///system" ];
     };
-  };
+    "org/gnome/desktop/interface".color-scheme = "prefer-dark";
+  };  
+};
 
 }

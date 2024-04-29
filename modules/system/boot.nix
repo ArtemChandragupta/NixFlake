@@ -12,10 +12,11 @@ boot = {
     "quiet"
     "udev.log_level=0" 
   ];
-  #plymouth = { 
-  #  enable = true;
- #   theme = "bgrt";
-#  };
+
+  plymouth = {
+    enable = true;
+    theme = "bgrt";
+  };
 
   initrd.verbose = false;
   consoleLogLevel = 0;

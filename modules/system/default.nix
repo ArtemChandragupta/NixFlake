@@ -1,5 +1,4 @@
 {
-
 imports = [
   ./system.nix
   ./networking.nix
@@ -11,5 +10,4 @@ imports = [
   ./sound.nix
   ./bash.nix
 ];
-
 }

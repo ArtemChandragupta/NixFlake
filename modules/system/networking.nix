@@ -14,14 +14,22 @@ networking = {
   };
 };
 
-environment.systemPackages = [
-  pkgs.networkmanagerapplet
-  pkgs.tor
+environment.systemPackages = with pkgs; [
+  networkmanagerapplet
+  tor
+  inetutils
+
+  haguichi
+  logmein-hamachi
 ];
 
-services.tor.enable = true;
-  
-hardware.bluetooth.enable = true;
-services.blueman.enable = true;
+programs.haguichi.enable = true;
 
+services = {
+  tor.enable = true;
+  blueman.enable = true;
+  logmein-hamachi.enable = true;
+};
+
+hardware.bluetooth.enable = true;
 }
