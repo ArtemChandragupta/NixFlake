@@ -4,7 +4,8 @@ programs.yazi.settings = {
   opener = {
     "text" = [
       {
-        run  = "neovide --no-fork \"$@\"";
+        #run  = "neovide --no-fork \"$@\"";
+        run = "hx \"$@\"";
         block = true;
       }
     ];
