@@ -14,7 +14,7 @@ I use SDDM for login, but i am not happy with it. It is beautyful, but quite uns
 
 ```red
  ╭─ Distro   -> NixOS
- ├─ Editor   -> Helix & Micro
+ ├─ Editor   -> Nvim & Helix
  ├─ Browser  -> Firefox
  ├─ Shell    -> Bash
  ╰─ Monitor  -> Btop
@@ -23,9 +23,9 @@ I use SDDM for login, but i am not happy with it. It is beautyful, but quite uns
  ├─ CPU      -> AMD Ryzen 5 5600U (12) @ 4.289GHz
  ╰─ Display  -> 2560x1600@60hz
              
- ╭─ WM       -> Hyprland
+ ╭─ WM       -> Hyprland & Gnome (for apps which don't work in Hyprland)
  ├─ Bar      -> Waybar
- ├─ DM       -> SDDM & tuigreetd
+ ├─ DM       -> GDM, SDDM & tuigreetd
  ├─ Terminal -> Kitty
  ├─ Theme    -> Gruvbox
  ├─ FM       -> Yazi & Nemo
