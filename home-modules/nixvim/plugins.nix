@@ -3,14 +3,13 @@ programs.nixvim.plugins = {
 
   lualine = {
     enable = true;
-    theme = "bubbles_theme";
     sectionSeparators = {
       left  = "";
       right = "";
     };
     componentSeparators = {
-      left = "";
-      right = "";
+      #left = "";
+      #right = "";
     };
     sections = {
       lualine_a = [
@@ -24,7 +23,8 @@ programs.nixvim.plugins = {
       lualine_z = [
         {
           separator.right = "";
-          extraConfig.padding.left =2;
+          extraConfig.padding.left = 2;
+          extraConfig.padding.right = 2;
         }
       ];
     };
