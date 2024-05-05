@@ -22,7 +22,6 @@ environment.systemPackages = with pkgs; [
   swappy
   hyprland-autoname-workspaces
   hyprpicker
-  hypridle
 ];
 
 }
