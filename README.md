@@ -33,7 +33,7 @@ I use SDDM for login, but i am not happy with it. It is beautyful, but quite uns
  ├─ VM       -> VMM Windows 11
  ╰─ Games    -> Flatpak, Portproton in Distrobox, Itch.io & ppsspp
 ```
-
+![swappy-20240505_202429](https://github.com/ArtemChandragupta/NixFlake/assets/90765302/483cfcca-f5f5-43e2-98c5-0bd0a0151b14)
 ![alt text](https://sun9-17.userapi.com/impg/f78NExd-dneTaZZHwH5seDTPxZnaQK5BstjToA/G3hbBpASdcg.jpg?size=1280x800&quality=95&sign=4c6c46e14933883332bb11a8fce08e3d&type=album)
 ![alt text](https://sun9-7.userapi.com/impg/ZMKjguvlVge2eRwFz8mCIBxiXZN-73YilTC6ZA/w0HhsSV1daU.jpg?size=1280x960&quality=95&sign=2bbbbdc8d50fd1176d508f8ca61d75df&type=album)
 ![alt text](https://sun9-38.userapi.com/impg/gNzJ9fVsxoJj7S864ywfkxhdTpfZonexn6I7AA/8UE_0ENxrT4.jpg?size=1280x800&quality=95&sign=56c08005c92aa197d2cf056485e7cb02&type=album)
