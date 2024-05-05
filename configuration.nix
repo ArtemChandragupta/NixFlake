@@ -4,7 +4,6 @@ imports = [
   inputs.home-manager.nixosModules.default
   ./modules
   ./environment/glossynix
-  #../../etc/nixos/hardware-configuration.nix--impure
 ];
 
 documentation.nixos.enable = false;
@@ -12,13 +11,13 @@ documentation.nixos.enable = false;
 users.users.${username} = {
   isNormalUser = true;
   extraGroups = [ 
-    "networkmanager" 
-    "wheel" 
-    "audio" 
-    "video" 
-    "input" 
-    "libvirtd" 
-    "docker" 
+    "networkmanager"
+    "wheel"
+    "audio"
+    "video"
+    "input"
+    "libvirtd"
+    "docker"
   ];
 };
 
@@ -27,6 +26,11 @@ home-manager = {
   users = {
     "${username}" = import ./home-modules/home.nix;
   };
+};
+
+environment.variables = {
+  TERM = "kitty";
+  TERMINAL = "kitty";
 };
 
 system.stateVersion = "23.11";
