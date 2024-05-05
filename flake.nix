@@ -9,10 +9,7 @@
         inherit system;
         config = { 
           allowUnfree = true;
-          permittedInsecurePackages = [
-            "electron-25.9.0"
-            "freeimage-unstable-2021-11-01"
-          ];
+          permittedInsecurePackages = [];
         };
       };
     in
@@ -23,13 +20,18 @@
         modules = [ ./configuration.nix inputs.home-manager.nixosModules.default ];
       };
     };
-
-    inputs = {
+    
+  inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
     hyprland.url = "github:hyprwm/Hyprland";
     hyprlock.url = "github:hyprwm/hyprlock";
     hypridle.url = "github:hyprwm/hypridle";
+
+    nixvim = {
+      url = "github:nix-community/nixvim";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -37,6 +39,6 @@
     };
 
     ags.url = "github:Aylur/ags";
-
+    yazi.url = "github:sxyazi/yazi";
   };
 }
