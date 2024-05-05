@@ -1,15 +1,11 @@
-{ inputs, ... }:{
-
-  imports = [
-    inputs.hypridle.homeManagerModules.default
-  ];
-
-  services.hypridle = {
-    enable = true;
+{
+services.hypridle = {
+  enable = true;
+  settings = {
     lockCmd = "pidof hyprlock || hyprlock";
     beforeSleepCmd = "loginctl lock-session";
     afterSleepCmd = "hyprctl dispatch dpms on";
-      
+    
     listeners = [
       {
         timeout = 300;
@@ -28,4 +24,5 @@
       }
     ];
   };
+};
 }
