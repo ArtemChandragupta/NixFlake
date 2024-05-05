@@ -1,5 +1,4 @@
 { pkgs, ... }:{
-
 boot = { 
   loader = {
     timeout = 0;
@@ -21,9 +20,4 @@ boot = {
   initrd.verbose = false;
   consoleLogLevel = 0;
 };
-
-services = {
-  getty.autologinUser = "artem";
-};
-
 }
