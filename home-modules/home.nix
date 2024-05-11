@@ -16,7 +16,7 @@ programs.home-manager.enable = true;
 imports = [
   ./btop.nix
   ./zathura.nix
-  ./dunst.nix
+  ./mako.nix
   ./gtk+qt+cursor.nix
   ./kitty.nix
   ./helix.nix
