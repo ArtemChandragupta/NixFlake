@@ -7,6 +7,7 @@ environment.systemPackages = with pkgs; [
   dosbox-x
   amdgpu_top
   xboxdrv
+  bottles
 ];
 
 programs = {
