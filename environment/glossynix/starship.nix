@@ -49,12 +49,12 @@ programs.starship.settings = {
   };
   
   directory.substitutions = {
-    "Documents"  = "󱔗 ";
-    "Downloads"  = " ";
-    "media"      = " ";
-    "hyprland"   = " ";
-    "Games"      = "󰊖 ";
-    "PortProton" = " ";
+    "Documents"  = "󱔗";
+    "Downloads"  = "";
+    "media"      = "";
+    "hyprland"   = "";
+    "Games"      = "󰊖";
+    "PortProton" = "";
   };
   
   git_branch = {
