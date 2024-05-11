@@ -25,7 +25,6 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
     hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
-    hyprlock.url = "github:hyprwm/hyprlock";
 
     nixvim = {
       url = "github:nix-community/nixvim";
