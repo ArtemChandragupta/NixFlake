@@ -4,20 +4,14 @@
   outputs = { self, nixpkgs, home-manager, ... }@inputs:
     let
       username = "artem";
-      system = "x86_64-linux";
-      pkgs = import nixpkgs  { 
-        inherit system;
-        config = { 
-          allowUnfree = true;
-          permittedInsecurePackages = [];
-        };
-      };
     in
     {
-      nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-        inherit system;
-        specialArgs = {inherit inputs username;};
-        modules = [ ./configuration.nix inputs.home-manager.nixosModules.default ];
+      nixosConfigurations = { 
+        nixos = nixpkgs.lib.nixosSystem {
+          system = "x86_64-linux";
+          specialArgs = {inherit inputs username;};
+          modules = [ ./configuration.nix inputs.home-manager.nixosModules.default ];
+        };
       };
     };
     
