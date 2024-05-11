@@ -2,25 +2,25 @@
 services.hypridle = {
   enable = true;
   settings = {
-    lockCmd = "pidof hyprlock || hyprlock";
-    beforeSleepCmd = "loginctl lock-session";
-    afterSleepCmd = "hyprctl dispatch dpms on";
+    general = {
+      lock_cmd = "pidof hyprlock || hyprlock";
+      before_sleep_cmd = "loginctl lock-session";
+      after_sleep_cmd = "hyprctl dispatch dpms on";
+    };
     
-    listeners = [
+    listener = [
       {
         timeout = 300;
-        onTimeout = "brightnessctl -s set 10";
-        onResume = "brightnessctl -r";
+        on-timeout = "brightnessctl -s set 10";
+        on-resume = "brightnessctl -r";
       }
-
       {
         timeout = 600;
-        onTimeout = "loginctl lock-session";
+        on-timeout = "loginctl lock-session";
       }
-
       {
         timeout = 1800;
-        onTimeout = "systemctl suspend";
+        on-timeout = "systemctl suspend";
       }
     ];
   };
