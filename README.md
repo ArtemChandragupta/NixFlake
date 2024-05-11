@@ -33,8 +33,9 @@ I use SDDM for login, but i am not happy with it. It is beautyful, but quite uns
  ├─ VM       -> VMM Windows 11
  ╰─ Games    -> Flatpak, Portproton in Distrobox, Itch.io & ppsspp
 ```
-![swappy-20240505_202429](https://github.com/ArtemChandragupta/NixFlake/assets/90765302/483cfcca-f5f5-43e2-98c5-0bd0a0151b14)
+![swappy-20240511_160900](https://github.com/ArtemChandragupta/NixFlake/assets/90765302/88d7ef15-ccf0-49e4-9357-984f44cc6981)
 ![swappy-20240511_133049](https://github.com/ArtemChandragupta/NixFlake/assets/90765302/3c5bdbcd-bac0-4db4-8694-5d66db853cef)
+![swappy-20240511_145920](https://github.com/ArtemChandragupta/NixFlake/assets/90765302/5e25a95f-8e6b-40f9-b6dd-32ee922c6d5f)
 ![swappy-20240511_132246](https://github.com/ArtemChandragupta/NixFlake/assets/90765302/eaa407a6-02d0-4a19-baf5-dc7b7fdd7cba)
 ![PXL_20240511_101840103](https://github.com/ArtemChandragupta/NixFlake/assets/90765302/7737a22a-57b8-494c-96b3-170cb6d4aa7e)
 ![alt text](https://sun9-46.userapi.com/impg/PCdH3ZdddrYeLf3H0-V8mqJ_cMXkz5ly0Ipm7g/dtN5zOIKOfY.jpg?size=1280x960&quality=95&sign=2efe73594c2d741a687c994d091f2a70&type=album)
