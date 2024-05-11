@@ -6,22 +6,21 @@ wayland.windowManager.hyprland.settings = {
   ];
 
   exec-once = [
-    "dunst"
+    "mako"
     "waybar"
     "kitty"
-    "hypridle"
-    "hyprland-autoname-workspaces"
     "blueman-applet"
+    "udiskie &"
     "nm-applet"
     "telegram-desktop -startintray"
     "wl-paste --watch cliphist store"
   ];
 
   env = [
-  	"XCURSOR_SIZE,24"
-  	"XDG_CURRENT_DESKTOP, Hyprland"
-  	"XDG_SESSION_TYPE, wayland"
-  	"XDG_SESSION_DESKTOP, Hyprland"
+    "XCURSOR_SIZE,24"
+    "XDG_CURRENT_DESKTOP, Hyprland"
+    "XDG_SESSION_TYPE, wayland"
+    "XDG_SESSION_DESKTOP, Hyprland"
   ];
 
   input = {

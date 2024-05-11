@@ -8,6 +8,7 @@ wayland.windowManager.hyprland.settings = {
     "float,class:(Yad_v13_0)"
     "float,class:(transmission-gtk)"
     "float,class:(.blueman-manager-wrapped)"
+    "float,class:(blueberry.py)"
   ];
 
 };
