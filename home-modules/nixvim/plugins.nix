@@ -8,23 +8,24 @@ programs.nixvim.plugins = {
       right = "";
     };
     componentSeparators = {
-      #left = "";
-      #right = "";
+      left  = "";
+      right = "";
     };
     sections = {
       lualine_a = [
         {
-          separator.left = "";
+          separator.left  = "";
           separator.right = "";
-          extraConfig.padding.right = 2;
-          extraConfig.padding.left = 2;
+          padding.right = 2;
+          padding.left  = 2;
         }
       ];
       lualine_z = [
         {
           separator.right = "";
-          extraConfig.padding.left = 2;
-          extraConfig.padding.right = 2;
+          separator.left  = "";
+          padding.left = 2;
+          padding.right = 2;
         }
       ];
     };
