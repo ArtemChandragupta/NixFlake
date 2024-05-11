@@ -1,27 +1,19 @@
-{ inputs, ... }:{
-
-  imports = [
-    inputs.hyprlock.homeManagerModules.default
-  ];
-  
-  programs.hyprlock = {
-    enable = true;
-    
-    backgrounds = [
+{
+programs.hyprlock = {
+  enable = true;
+  settings = {
+    background = [
       {
         monitor = "";
         path = "/home/artem/nix/home-modules/hyprland/hyprlock/blue.png";
       }
     ];
 
-    input-fields = [
+    input-field = [
       {
-        monitor = "eDP-1";
+        monitor = "";
 
-        size = {
-          width = 300;
-          height = 50;
-        };
+        size = "300, 50";
 
         outline_thickness = 0;
         inner_color = "rgb(458588)";
@@ -33,28 +25,23 @@
         dots_spacing = 0.3;
         dots_center = true;
 
-        position = {
-          x = 0;
-          y = -440;
-        };
+        position = "0, -440";
       }
     ];
 
-    labels = [
+    label = [
       {
         monitor = "";
         text = "$TIME";
         font_size = 50;
         color = "rgb(83a598)";
 
-        position = {
-          x = 0;
-          y = 440;
-        };
+        position = "0, 440";
 
         valign = "center";
         halign = "center";
       }
     ];
   };
+};
 }
