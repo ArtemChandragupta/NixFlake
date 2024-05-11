@@ -1,11 +1,28 @@
 { pkgs, ... }:{
-  services.xserver.desktopManager.gnome.enable = true;
+  services = {
+    xserver.desktopManager.gnome.enable = true;
+    gnome.rygel.enable = false;
+  };
   environment = {
     gnome.excludePackages = (with pkgs; [
       gnome-tour
+      gnome-connections
+      gnome-text-editor
+      gnome-console
+      gnome-keysign
+      yelp
     ]) ++ (with pkgs.gnome; [
       gnome-music
       gnome-terminal
+      gnome-contacts
+      gnome-logs
+      gnome-maps
+      gnome-characters
+      gnome-font-viewer
+      gnome-color-manager
+      gnome-calendar
+      simple-scan
+      seahorse
       epiphany
       geary
       nautilus
@@ -23,6 +40,5 @@
 
   programs.dconf = {
     enable = true;
-    #settings."org/gnome/desktop/interface".color-scheme = "prefer-dark";
   };
 }

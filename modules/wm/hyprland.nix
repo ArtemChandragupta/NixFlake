@@ -16,12 +16,15 @@ environment.systemPackages = with pkgs; [
   grim
   slurp
   wl-clipboard
+  wf-recorder
   cliphist
   imagemagick
   cachix
   swappy
-  hyprland-autoname-workspaces
+  #hyprland-autoname-workspaces
   hyprpicker
+  hypridle
+  mako
 ];
 
 }
