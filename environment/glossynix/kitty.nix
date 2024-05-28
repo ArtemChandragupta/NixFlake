@@ -1,9 +1,7 @@
-{ username, ... }:{
-home-manager.users.${username} = {
-
-programs.kitty.settings = {
-  background_opacity = "0.9";
-};
-
-};  
+{ var, ... }:{
+  home-manager.users.${var.username} = {
+    programs.kitty.settings = {
+      background_opacity = "0.9";
+    };
+  };
 }
