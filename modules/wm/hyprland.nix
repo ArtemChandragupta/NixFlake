@@ -21,10 +21,7 @@ environment.systemPackages = with pkgs; [
   imagemagick
   cachix
   swappy
-  #hyprland-autoname-workspaces
   hyprpicker
-  hypridle
-  mako
 ];
 
 }
