@@ -3,14 +3,21 @@
   
   outputs = { self, nixpkgs, home-manager, ... }@inputs:
     let
-      username = "artem";
+      var = {
+        username    = "artem";
+        machine     = "ThinkBook13s";
+        environment = "glossynix";
+      };
     in
     {
       nixosConfigurations = { 
         nixos = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
-          specialArgs = {inherit inputs username;};
-          modules = [ ./configuration.nix inputs.home-manager.nixosModules.default ];
+          specialArgs = {inherit inputs var;};
+          modules = [ 
+            ./configuration.nix 
+            inputs.home-manager.nixosModules.default
+          ];
         };
       };
     };

@@ -1,38 +1,38 @@
-{ username, inputs, ... }:{
-
-imports = [
-  inputs.home-manager.nixosModules.default
-  ./modules
-  ./environment/glossynix
-];
-
-documentation.nixos.enable = false;
-
-users.users.${username} = {
-  isNormalUser = true;
-  extraGroups = [ 
-    "networkmanager"
-    "wheel"
-    "audio"
-    "video"
-    "input"
-    "libvirtd"
-    "docker"
+{ var, inputs, ... }:{
+  imports = [
+    inputs.home-manager.nixosModules.default
+    
+    ./modules
+    ./environment/glossynix
   ];
-};
 
-home-manager = {
-  extraSpecialArgs = { inherit inputs username; };
-  users = {
-    "${username}" = import ./home-modules/home.nix;
+  documentation.nixos.enable = false;
+
+  users.users.${var.username} = {
+    isNormalUser = true;
+    extraGroups = [ 
+      "networkmanager"
+      "wheel"
+      "audio"
+      "video"
+      "input"
+      "libvirtd"
+      "docker"
+    ];
   };
-};
 
-environment.variables = {
-  TERM = "kitty";
-  TERMINAL = "kitty";
-};
+  home-manager = {
+    extraSpecialArgs = { inherit inputs var; };
+    users = {
+      "${var.username}" = import ./home-modules/home.nix;
+    };
+  };
 
-system.stateVersion = "23.11";
+  environment.variables = {
+    TERM = "kitty";
+    TERMINAL = "kitty";
+  };
+
+  system.stateVersion = "23.11";
 
 }
