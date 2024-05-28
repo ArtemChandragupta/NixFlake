@@ -1,5 +1,5 @@
-{ username, ... }:{
-home-manager.users.${username} = {
+{ var, ... }:{
+home-manager.users.${var.username} = {
 programs.waybar = {
   enable = true;
   style = '' 
@@ -171,12 +171,15 @@ settings = {
         window-rewrite = {
           "class<firefox>" = "󰈹";
           "class<kitty>" = "";
+          "title<.*Yazi.*>" = "󰇥";
           "class<discord>" = "";
           "class<obsidian>" = "";
-          "class<qalculate-gtk>" = "";
-          "class<org.telgram.desktop>" = "";
+          "class<org.gnome.Calculator>" = "";
+          "class<org.telegram.desktop>" = "";
           "class<transmission.gtk>" = "";
           "class<nemo>" = "";
+          "class<com.usebottles.bottles>" = "󰡔󱌐";
+          "class<localsend_app>" = "󱗿";
         };
         on-click = "activate";
       };
