@@ -13,7 +13,7 @@ This is my NixOS configuration. It uses Hyprland and has an ability to swith env
              
  ╭─ Model    -> Lenovo Thinkbook 13s G3 ACN
  ├─ CPU      -> AMD Ryzen 5 5600U (12) @ 4.289GHz
- ╰─ Display  -> 2560x1600@60hz
+ ╰─ Display  -> 1920x1200@60hz
              
  ╭─ WM       -> Hyprland & Gnome (for apps which don't work in Hyprland)
  ├─ Bar      -> Waybar
