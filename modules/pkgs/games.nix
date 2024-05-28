@@ -3,11 +3,11 @@ environment.systemPackages = with pkgs; [
   ppsspp
   moonlight-qt
   remmina
-  lutris
   dosbox-x
   amdgpu_top
   xboxdrv
   bottles
+  prismlauncher
 ];
 
 programs = {

@@ -1,7 +1,7 @@
 { pkgs, ... }:{
 environment.systemPackages = with pkgs; [
   kitty
-  btop
+  alacritty
   fastfetch
   nitch
   mpv
