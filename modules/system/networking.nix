@@ -5,7 +5,7 @@ networking = {
   networkmanager.enable = true;
   firewall = {
     enable = true;
-    allowedTCPPorts = [ 80 443 53317 ]; # 53317 is for LocalSend
+    allowedTCPPorts = [ 80 443 53317 ]; #53317 for localsend
     allowedUDPPortRanges = [
       { from = 4000; to = 4007; }
       { from = 53315; to = 53318; }
@@ -18,12 +18,15 @@ environment.systemPackages = with pkgs; [
   networkmanagerapplet
   tor
   inetutils
+  blueberry
 
   haguichi
   logmein-hamachi
 ];
 
-programs.haguichi.enable = true;
+programs = {
+  haguichi.enable = true;
+};
 
 services = {
   tor.enable = true;

@@ -1,4 +1,4 @@
-{
+{ var, ... }:{
 
 nix = {
   settings = { 
@@ -7,6 +7,9 @@ nix = {
 
     substituters = ["https://hyprland.cachix.org"]; #hyprland cache
     trusted-public-keys = ["hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="];
+
+    extra-substituters = [ "https://yazi.cachix.org" ]; #Yazi cache
+    extra-trusted-public-keys = [ "yazi.cachix.org-1:Dcdz63NZKfvUCbDGngQDAZq6kOroIrFoyO064uvLh8k=" ];
   };
   gc = {
     automatic = true;
@@ -17,7 +20,7 @@ nix = {
 
 programs.nh = {
   enable = true;
-  flake = "/home/artem/nix";
+  flake = "/home/${var.username}/nix";
 };
 
 nixpkgs = {
@@ -26,5 +29,13 @@ nixpkgs = {
     allowUnfree = true;
   };
 };
+
+hardware.opengl = {
+  enable = true;
+  driSupport = true;
+  driSupport32Bit = true;
+};
+
+services.xserver.videoDrivers = ["amdgpu"];
 
 }

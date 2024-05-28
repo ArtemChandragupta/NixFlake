@@ -1,4 +1,4 @@
-{ pkgs, username, ... }:{
+{ pkgs, var, ... }:{
 
 programs.virt-manager.enable = true;
 
@@ -12,7 +12,6 @@ virtualisation = {
   };
   docker.enable = true;
   spiceUSBRedirection.enable = true;
-  waydroid.enable = true;
 };
 
 environment.systemPackages = with pkgs; [
@@ -28,7 +27,7 @@ environment.systemPackages = with pkgs; [
 
 services.spice-vdagentd.enable = true;
 
-home-manager.users.${username}.dconf = {
+home-manager.users.${var.username}.dconf = {
   settings = {
     "org/virt-manager/virt-manager/connections" = {
       autoconnect = [ "qemu:///system" ];
