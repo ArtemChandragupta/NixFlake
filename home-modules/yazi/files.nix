@@ -21,8 +21,8 @@ programs.yazi.theme = {
 
   icon = {
     prepend_rules = [
-      { name = "*/default.nix"; fg = "#d65d0e"; text = ""; }
-      { name = "*/hyprland/"; text = ""; }
+      { name = "default.nix"; fg = "#d65d0e"; text = ""; }
+      { name = "hyprland/"; text = ""; }
       { name = "*/Downloads/"; text = ""; }
       { name = "*/Games/"; text = "󰊖"; }
       { name = "*/PortProton/"; text = "󰝨"; }
@@ -51,7 +51,7 @@ programs.yazi.theme = {
       { name = "*/nixvim/"; text = ""; }
       { name = "*/rofi/"; text = "󱗼"; }
       { name = "*/appgrid.nix"; text = "󱗼";    fg = "#7ebae4"; }
-      { name = "*/dunst.nix"; text = "󰵅";      fg = "#7ebae4"; }
+      { name = "*/mako.nix"; text = "󰵅";      fg = "#7ebae4"; }
       { name = "*/imv.nix"; text = "󰥷";        fg = "#7ebae4"; }
       { name = "*/plugins.nix"; text = "";    fg = "#7ebae4"; }
       { name = "*/wofi.nix"; text = "";       fg = "#7ebae4"; }

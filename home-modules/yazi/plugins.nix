@@ -1,6 +1,6 @@
-{ username, ... }:{
-
-  xdg.configFile."/home/${username}/.config/yazi/init.lua" = {
+{
+home.file = {
+  ".config/yazi/init.lua" = {
     text = ''
       require("starship"):setup()
 
@@ -47,7 +47,7 @@
     '';
   };
 
-  xdg.configFile."/home/${username}/.config/yazi/plugins/smart-enter.yazi/init.lua" = {
+  ".config/yazi/plugins/smart-enter.yazi/init.lua" = {
     text = ''
       return {
       	entry = function()
@@ -58,7 +58,7 @@
     '';
   };
 
-  xdg.configFile."/home/${username}/.config/yazi/plugins/starship.yazi/init.lua" = {
+  ".config/yazi/plugins/starship.yazi/init.lua" = {
     text = ''
       local save = ya.sync(function(st, cwd, output)
         if cx.active.current.cwd == Url(cwd) then
@@ -89,5 +89,6 @@
       }
     '';
   };
-  
+
+};
 }
