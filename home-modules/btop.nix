@@ -1,8 +1,6 @@
 {
 programs.btop = {
   enable = true;
-  settings = {
-    color_theme = "gruvbox_dark_v2";
-  };
+  settings.color_theme = "gruvbox_dark_v2";
 };
 }

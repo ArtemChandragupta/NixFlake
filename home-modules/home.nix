@@ -1,10 +1,9 @@
-{ pkgs, username, ... }:{
+{ var, ... }:{
 
 home = {
-  inherit username;
-  homeDirectory = "/home/${username}";  
+  username = var.username;
+  homeDirectory = "/home/${var.username}";  
   stateVersion = "23.11";
-  packages = builtins.attrValues (import ./rofi/script.nix {inherit pkgs;});
   sessionVariables = {
     BROWSER  = "firefox";
     TERMINAL = "kitty";
@@ -16,7 +15,6 @@ programs.home-manager.enable = true;
 imports = [
   ./btop.nix
   ./zathura.nix
-  ./mako.nix
   ./gtk+qt+cursor.nix
   ./kitty.nix
   ./helix.nix
@@ -28,6 +26,7 @@ imports = [
   ./rofi
   ./ags
   ./nixvim
+  ./swaync
 ];
 
 xdg.mimeApps.defaultApplications = {
