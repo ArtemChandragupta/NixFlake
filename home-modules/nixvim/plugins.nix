@@ -41,6 +41,11 @@ programs.nixvim.plugins = {
 
   lint.enable = true;
 
+  alpha = {
+    enable = true;
+    theme = "dashboard";
+  };
+
   treesitter = {
     enable = true;
     indent = true;
