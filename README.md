@@ -1,16 +1,8 @@
 # NixFlake
 
-This is my NixOS configuration. It has an ability to swith environments, now there are two of them - beautiful Glossynix and minimal Plainix.
+This is my NixOS configuration. It uses Hyprland and has an ability to swith environments, now there are two of them - beautiful Glossynix and minimal Plainix.
 
-In _module_ directory there are common NixOS modules and host-specific things like amd kernel modules.
-
-In _home-modules_ there are home-manager configs that all environments are using, like Hyprland bindings and editor configs. 
-
-In _environment_ folder there is a place to store all environment specific things - Hyprland and terminal decorations, waybar design. In the future I would rewrite this using mkOption or something, I have not figured it out yet.
-
-I use SDDM for login, but i am not happy with it. It is beautyful, but quite unstable and uses a lot of CPU power for nothing, creating terrible fan noise on startup. For avoiding this I also have tuigreeter.
-
-[My custom SDDM theme](https://github.com/ArtemChandragupta/SDDM-hello)
+## Features
 
 ```red
  ╭─ Distro   -> NixOS
@@ -25,7 +17,8 @@ I use SDDM for login, but i am not happy with it. It is beautyful, but quite uns
              
  ╭─ WM       -> Hyprland & Gnome (for apps which don't work in Hyprland)
  ├─ Bar      -> Waybar
- ├─ DM       -> GDM, SDDM & tuigreetd
+ ├─ DM       -> GDM
+ ├─ Notify   -> SwayNC
  ├─ Terminal -> Kitty
  ├─ Theme    -> Gruvbox
  ├─ FM       -> Yazi & Nemo
@@ -33,6 +26,17 @@ I use SDDM for login, but i am not happy with it. It is beautyful, but quite uns
  ├─ VM       -> VMM Windows 11
  ╰─ Games    -> Flatpak, Portproton in Distrobox, Itch.io & ppsspp
 ```
+
+## Structure
+
+In _module_ directory there are common NixOS modules and host-specific things like amd kernel modules.
+
+In _home-modules_ there are home-manager configs that all environments are using, like Hyprland bindings and editor configs. 
+
+In _environment_ folder there is a place to store all environment specific things - Hyprland and terminal decorations, waybar design. In the future I would rewrite this using mkOption or something, I have not figured it out yet.
+
+## Screenshots
+
 ![swappy-20240511_160900](https://github.com/ArtemChandragupta/NixFlake/assets/90765302/88d7ef15-ccf0-49e4-9357-984f44cc6981)
 ![swappy-20240511_133049](https://github.com/ArtemChandragupta/NixFlake/assets/90765302/3c5bdbcd-bac0-4db4-8694-5d66db853cef)
 ![swappy-20240511_145920](https://github.com/ArtemChandragupta/NixFlake/assets/90765302/5e25a95f-8e6b-40f9-b6dd-32ee922c6d5f)
