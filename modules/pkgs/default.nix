@@ -1,4 +1,5 @@
 {
+
 imports = [
   ./apps.nix
   ./terminal.nix
@@ -6,4 +7,5 @@ imports = [
   ./fonts.nix
   ./utils.nix
 ];
+
 }

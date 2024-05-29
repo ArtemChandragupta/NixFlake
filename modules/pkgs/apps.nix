@@ -1,4 +1,5 @@
 { pkgs, ... }:{
+
 environment.systemPackages = with pkgs; [
   firefox
   cinnamon.nemo
@@ -13,6 +14,7 @@ environment.systemPackages = with pkgs; [
   veusz
   localsend
   neovide
-  nyxt
+  gnome.gnome-tweaks 
 ];
+
 }

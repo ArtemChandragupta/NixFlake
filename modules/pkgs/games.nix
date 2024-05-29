@@ -1,4 +1,5 @@
 { pkgs, ... }:{
+
 environment.systemPackages = with pkgs; [
   ppsspp
   moonlight-qt
@@ -13,11 +14,9 @@ environment.systemPackages = with pkgs; [
 programs = {
   gamemode = {
     enable = true;
-    settings = {
-      custom = {
-        start = "${pkgs.libnotify}/bin/notify-send 'GameMode started'";
-        end = "${pkgs.libnotify}/bin/notify-send 'GameMode ended'";
-      };
+    settings.custom = {
+      start = "${pkgs.libnotify}/bin/notify-send 'GameMode started'";
+      end = "${pkgs.libnotify}/bin/notify-send 'GameMode ended'";
     };
   };
   steam.enable = true;

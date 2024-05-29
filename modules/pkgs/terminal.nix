@@ -1,4 +1,5 @@
 { pkgs, ... }:{
+
 environment.systemPackages = with pkgs; [
   kitty
   alacritty
@@ -6,4 +7,5 @@ environment.systemPackages = with pkgs; [
   nitch
   mpv
 ];
+
 }

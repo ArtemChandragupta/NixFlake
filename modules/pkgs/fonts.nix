@@ -1,4 +1,5 @@
 { pkgs, ... }:{
+
 fonts.packages = with pkgs; [
   font-awesome
   iosevka
@@ -6,4 +7,5 @@ fonts.packages = with pkgs; [
   nerdfonts
   victor-mono
 ];
+
 }
