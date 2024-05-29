@@ -17,13 +17,9 @@ i18n = {
   };
 };
 
-services = { 
-  xserver = {
-    xkb = {
-    layout = "us,ru";
-    variant = "";
-    };
-  };
+services.xserver.xkb = {
+  layout = "us,ru";
+  variant = "";
 };
 
 }

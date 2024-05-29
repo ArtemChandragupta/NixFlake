@@ -23,11 +23,9 @@ programs.nh = {
   flake = "/home/${var.username}/nix";
 };
 
-nixpkgs = {
-  config = {
-    permittedInsecurePackages = [];
-    allowUnfree = true;
-  };
+nixpkgs.config = {
+  permittedInsecurePackages = [];
+  allowUnfree = true;
 };
 
 hardware.opengl = {

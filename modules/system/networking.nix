@@ -24,10 +24,7 @@ environment.systemPackages = with pkgs; [
   logmein-hamachi
 ];
 
-programs = {
-  haguichi.enable = true;
-};
-
+programs.haguichi.enable = true;
 services = {
   tor.enable = true;
   blueman.enable = true;
@@ -35,4 +32,5 @@ services = {
 };
 
 hardware.bluetooth.enable = true;
+
 }
