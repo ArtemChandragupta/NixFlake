@@ -1,4 +1,5 @@
 {
+
 wayland.windowManager.hyprland.settings = {
 
   monitor = [
@@ -69,4 +70,5 @@ wayland.windowManager.hyprland.settings = {
   };
 
 };
+
 }

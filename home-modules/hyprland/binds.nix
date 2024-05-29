@@ -1,4 +1,5 @@
 {
+
 wayland.windowManager.hyprland.settings = {
 
 "$mainMod" = "SUPER";
@@ -85,4 +86,5 @@ bindm = [
 ];
 
 };
+
 }
