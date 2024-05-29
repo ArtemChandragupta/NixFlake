@@ -1,4 +1,5 @@
 {
+
 programs.kitty = {
   enable = true;
   settings = {
@@ -60,4 +61,5 @@ programs.kitty = {
   	
   };
 };
+
 }

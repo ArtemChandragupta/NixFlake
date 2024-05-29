@@ -1,17 +1,5 @@
 { var, ... }:{
 
-home = {
-  username = var.username;
-  homeDirectory = "/home/${var.username}";  
-  stateVersion = "23.11";
-  sessionVariables = {
-    BROWSER  = "firefox";
-    TERMINAL = "kitty";
-  };
-};
-
-programs.home-manager.enable = true;
-
 imports = [
   ./btop.nix
   ./zathura.nix
@@ -29,12 +17,37 @@ imports = [
   ./swaync
 ];
 
-xdg.mimeApps.defaultApplications = {
-  "application/pdf" = [ "org.gnome.Evince.desktop" ];
-  "image/*"         = [ "org.gnome.Loupe.desktop"   ];
-  "video/png"       = [ "totem.desktop"   ];
-  "video/jpg"       = [ "totem.desktop"   ];
-  "video/*"         = [ "totem.desktop"   ];
+programs.home-manager.enable = true;
+
+home = {
+  username = var.username;
+  homeDirectory = "/home/${var.username}";  
+  stateVersion = "23.11";
+  sessionVariables = {
+    BROWSER  = "firefox";
+    TERMINAL = "kitty";
+  };
+};
+
+xdg = {
+  enable = true;
+  mime.enable = true;
+  mimeApps = {
+    enable = true;
+    
+    associations.added = {
+      "application/pdf" = [ "org.gnome.Evince.desktop" ];
+      "image/*"         = [ "org.gnome.Loupe.desktop"  ];
+      "video/*"         = [ "totem.desktop"            ];
+    };
+    
+    defaultApplications = {
+      "application/pdf" = [ "org.gnome.Evince.desktop" ];
+      "image/*"         = [ "org.gnome.Loupe.desktop"  ];
+      "video/*"         = [ "totem.desktop"            ];
+    };
+    
+  };
 };
 
 }

@@ -1,4 +1,5 @@
 {
+
 programs.wofi = {
   enable = true;
   settings = {
@@ -10,4 +11,5 @@ programs.wofi = {
     height = 470;
   };
 };
+
 }
