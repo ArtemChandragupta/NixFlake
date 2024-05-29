@@ -1,4 +1,5 @@
 {
+
 programs.nixvim.plugins = {
 
   lualine = {
@@ -66,4 +67,5 @@ programs.nixvim.plugins = {
   };
 
 };
+
 }

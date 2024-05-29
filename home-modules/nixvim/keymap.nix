@@ -1,4 +1,5 @@
 {
+
 programs.nixvim = {
   globals = {
     mapleader = " ";
@@ -22,4 +23,5 @@ programs.nixvim = {
     }
   ];
 };
+
 }
