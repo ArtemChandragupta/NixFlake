@@ -1,8 +1,0 @@
-_:{
-
-imports = [
-  ./hyprland
-  ./waybar
-];
-
-}
