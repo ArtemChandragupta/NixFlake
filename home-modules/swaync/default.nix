@@ -1,9 +1,12 @@
 { pkgs, ... }:{
-  home.packages = with pkgs; [
-    swaynotificationcenter
-  ];
-  imports = [
-    ./config.nix
-    ./style.nix
-  ];
+
+imports = [
+  ./config.nix
+  ./style.nix
+];
+
+home.packages = with pkgs; [
+  swaynotificationcenter
+];
+
 }
