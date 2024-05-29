@@ -1,4 +1,5 @@
 {
+
 services.hypridle = {
   enable = true;
   settings = {
@@ -24,5 +25,7 @@ services.hypridle = {
       }
     ];
   };
+  
 };
+
 }
