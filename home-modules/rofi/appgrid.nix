@@ -1,5 +1,7 @@
 {
+
 home.file = {
+
   ".config/rofi/launchers/type-1/launcher.sh" = {
     executable = true;
     text = ''
@@ -195,5 +197,7 @@ home.file = {
       highlight:                   none;
     }
   '';
-  };
+
+};
+
 }
