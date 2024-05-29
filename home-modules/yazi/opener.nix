@@ -1,36 +1,37 @@
 { pkgs, ... }:{
+
 programs.yazi.settings = {
 
   opener = {
     "text" = [
       {
-        #run  = "neovide \"$@\"";
-        run = "hx \"$@\"";
-        block = true;
+      #run  = "neovide \"$@\"";
+      run = "hx \"$@\"";
+      block = true;
       }
     ];
     "video" = [
       {
-        run  = "totem \"$@\"";
-        block = true;
+      run  = "totem \"$@\"";
+      block = true;
       }
     ];
     "image" = [
       {
-        run  = "loupe \"$@\"";
-        block = true;
+      run  = "loupe \"$@\"";
+      block = true;
       }
     ];
     "pdf" = [
       {
-        run  = "evince \"$@\"";
-        block = true;
+      run  = "evince \"$@\"";
+      block = true;
       }
     ];
     "unarchive" = [
       {
-        run = ''${pkgs.unar}/bin/unar "$@"'';
-        desc = "unarchive";
+      run = ''${pkgs.unar}/bin/unar "$@"'';
+      desc = "unarchive";
       }
     ];
   };
