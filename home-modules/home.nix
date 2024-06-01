@@ -8,8 +8,10 @@ imports = [
   ./helix.nix
   ./wofi.nix
   ./git.nix
+  ./wallpaper-script.nix
 
   ./hyprland
+  ./waybar
   ./yazi
   ./rofi
   ./ags
