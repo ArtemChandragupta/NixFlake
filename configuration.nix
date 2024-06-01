@@ -4,7 +4,6 @@ imports = [
   inputs.home-manager.nixosModules.default
     
   ./modules
-  ./environment/glossynix
 ];
 
 users.users.${var.username} = {

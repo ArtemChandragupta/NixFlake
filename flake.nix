@@ -4,10 +4,9 @@ description = "Central flake";
 outputs = { self, nixpkgs, home-manager, ... }@inputs:
 let
   var = {
-    username    = "artem";
-    machine     = "ThinkBook13s";
-    environment = "glossynix";
-    new_machine = false;
+    username = "artem";
+    machine  = "ThinkBook13s";
+    glossy   = true;
   };
 in
 {
