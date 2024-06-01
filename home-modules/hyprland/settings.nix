@@ -1,4 +1,4 @@
-{
+{ var, ...}:{
 
 wayland.windowManager.hyprland.settings = {
 
@@ -15,7 +15,11 @@ wayland.windowManager.hyprland.settings = {
     "nm-applet"
     "telegram-desktop -startintray"
     "wl-paste --watch cliphist store"
-  ];
+  ] ++ (
+  if var.glossy == true
+    then [ "swww init" "wallpaper" ]
+    else []
+  );
 
   env = [
     "XCURSOR_SIZE,24"
@@ -51,6 +55,11 @@ wayland.windowManager.hyprland.settings = {
 
   misc = {
     force_default_wallpaper   = 0;
+    
+    background_color = if var.glossy == true 
+    then "rgb(000000)" 
+    else "rgb(d5c4a1)";
+    
     disable_hyprland_logo     = true;
     disable_splash_rendering  = true;
     layers_hog_keyboard_focus = true;
@@ -59,9 +68,45 @@ wayland.windowManager.hyprland.settings = {
     swallow_regex             = "^(Alacritty|kitty)$";
   };
 
-  general = {
-    layout        = "dwindle";
-    allow_tearing = false;
+  general = if var.glossy == true 
+  then {
+    gaps_in     = 5;
+    gaps_out    = 10;
+    border_size = 0;
+  } else {
+    gaps_in     = 0;
+    gaps_out    = 1;
+    border_size = 1;
+    "col.active_border"   = "rgb(d5c4a1)";
+    "col.inactive_border" = "rgb(d5c4a1)";
+  };
+
+  decoration = if var.glossy == true 
+  then {
+    rounding = 10;
+    blur = {
+      enabled = true;
+      size = 3;
+      passes = 1;
+      vibrancy = 0.1696;
+    };
+    drop_shadow = false;
+  } else {
+    rounding = 0;
+    blur.enabled = false;
+    drop_shadow = false;
+  };
+
+  animations = {
+    enabled   = true;
+    bezier    = "myBezier, 0.05, 0.9, 0.1, 1.00";
+    animation = [
+      "windows, 1, 7, default, slide"
+      "windowsOut, 1, 7, default, slide"
+      "border, 1, 10, default"
+      "borderangle, 1, 8, default"
+      "fade, 1, 7, default"
+    ];
   };
 
   device = {
