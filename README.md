@@ -1,6 +1,6 @@
 # NixFlake
 
-This is my NixOS configuration. It uses Hyprland and has an ability to swith environments, now there are two of them - beautiful Glossynix and minimal Plainix.
+This is my NixOS configuration. It uses Hyprland and has an ability to switch environments, now there are two of them - beautiful Glossynix and minimal Plainix.
 
 ## Features
 
@@ -32,8 +32,6 @@ This is my NixOS configuration. It uses Hyprland and has an ability to swith env
 In _module_ directory there are common NixOS modules and host-specific things like amd kernel modules.
 
 In _home-modules_ there are home-manager configs that all environments are using, like Hyprland bindings and editor configs. 
-
-In _environment_ folder there is a place to store all environment specific things - Hyprland and terminal decorations, waybar design. In the future I would rewrite this using mkOption or something, I have not figured it out yet.
 
 ## Screenshots
 
