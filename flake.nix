@@ -16,6 +16,7 @@ in
     modules = [ 
       ./configuration.nix 
       inputs.home-manager.nixosModules.default
+      inputs.stylix.nixosModules.stylix
     ];
   };
 };
@@ -37,6 +38,7 @@ inputs = {
 
   ags.url = "github:Aylur/ags";
   yazi.url = "github:sxyazi/yazi";
+  stylix.url = "github:danth/stylix";
 };
 
 }
