@@ -1,14 +1,14 @@
 { var, ... }:{
 
 imports = [
-  ./btop.nix
-  ./zathura.nix
-  ./gtk+qt+cursor.nix
+  ./stylix.nix
+  ./icons.nix
   ./kitty.nix
   ./helix.nix
   ./wofi.nix
   ./git.nix
-  ./wallpaper-script.nix
+  ./btop.nix
+  ./zathura.nix
 
   ./hyprland
   ./waybar

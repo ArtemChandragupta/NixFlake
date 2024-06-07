@@ -6,6 +6,8 @@ programs.kitty = {
   	confirm_os_window_close = 0;
   	window_padding_width = 5;
 
+    font_size = 11;
+
     background_opacity = if var.glossy == true then "0.9" else "1";
   	
   	cursor                =  "#928374";
