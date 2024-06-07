@@ -2,6 +2,8 @@
 
 This is my NixOS configuration. It uses Hyprland and has an ability to switch environments, now there are two of them - beautiful Glossynix and minimal Plainix.
 
+I love gruvbox colorscheme, but don't use default gruvbox-gtk-theme pkg for this - it has some bugs. Instead I utilize stylix for creating my own gtk theme from base16Scheme - result looks the same, but error logs and bugs are gone.
+
 ## Features
 
 ```red
