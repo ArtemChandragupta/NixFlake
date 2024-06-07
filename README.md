@@ -2,7 +2,9 @@
 
 This is my NixOS configuration. It uses Hyprland and has an ability to switch environments, now there are two of them - beautiful Glossynix and minimal Plainix.
 
-I love gruvbox colorscheme, but don't use default gruvbox-gtk-theme pkg for this - it has some bugs. Instead I utilize stylix for creating my own gtk theme from base16Scheme - result looks the same, but error logs and bugs are gone.
+I love gruvbox colorscheme, but don't use default gruvbox-gtk-theme pkg for this - it has some bugs. Instead I utilize [stylix](https://github.com/danth/stylix) for creating my own gtk theme from base16Scheme - result looks the same, but error logs and bugs are gone. All other stylix options besides of mandatory ones are disabled.
+
+Also I have a "control center" in flake.nix - var arg, wich contains username, hostname for host-specific things such as amd kernel moddules and environment type selector - now it is boolean because I have two of them.
 
 ## Features
 
