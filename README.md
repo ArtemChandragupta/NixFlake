@@ -17,7 +17,7 @@ I love gruvbox colorscheme, but don't use default gruvbox-gtk-theme pkg for this
  ├─ CPU      -> AMD Ryzen 5 5600U (12) @ 4.289GHz
  ╰─ Display  -> 1920x1200@60hz
              
- ╭─ WM       -> Hyprland & Gnome (for apps which don't work in Hyprland)
+ ╭─ WM       -> Hyprland & Gnome
  ├─ Bar      -> Waybar
  ├─ DM       -> GDM
  ├─ Notify   -> SwayNC
@@ -26,7 +26,7 @@ I love gruvbox colorscheme, but don't use default gruvbox-gtk-theme pkg for this
  ├─ FM       -> Yazi & Nemo
  ├─ Notes    -> Obsidian
  ├─ VM       -> VMM Windows 11
- ╰─ Games    -> Flatpak, Portproton in Distrobox, Itch.io & ppsspp
+ ╰─ Games    -> Flatpak, Portproton, Bottles & PPSSPP
 ```
 
 ## Structure
