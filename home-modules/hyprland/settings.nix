@@ -65,7 +65,7 @@ wayland.windowManager.hyprland.settings = {
     layers_hog_keyboard_focus = true;
     animate_manual_resizes    = true;
     enable_swallow            = true;
-    swallow_regex             = "^(Alacritty|kitty)$";
+    swallow_regex             = "^(kitty)$";
   };
 
   general = if var.glossy == true 

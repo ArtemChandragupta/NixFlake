@@ -5,6 +5,7 @@ imports = [
   ./rules.nix
   ./settings.nix
   ./multimonitor.nix
+  ./wallpaper-script.nix
 
   ./hyprlock
   ./hypridle
