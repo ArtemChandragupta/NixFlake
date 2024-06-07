@@ -3,18 +3,24 @@
 environment.systemPackages = with pkgs; [
   firefox
   cinnamon.nemo
-  drawio
-  inkscape
   obsidian
   transmission-gtk
-  telegram-desktop
-  openscad
-  discord
-  libreoffice-qt
-  veusz
-  localsend
   neovide
-  gnome.gnome-tweaks 
+  gnome.gnome-tweaks
+
+  telegram-desktop
+  discord
+  localsend
+
+  libreoffice-qt
+  onlyoffice-bin
+  zathura
+
+  openscad
+  inkscape
+  drawio
+  veusz
+  qalculate-gtk
 ];
 
 }
