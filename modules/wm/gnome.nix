@@ -1,7 +1,15 @@
 { pkgs, ... }:{
 
 services = {
-  xserver.desktopManager.gnome.enable = true;
+  xserver = {
+    enable = true;
+    excludePackages = [ pkgs.xterm ];
+    displayManager.gdm = {
+      enable  = true;
+      wayland = true;
+    };
+    desktopManager.gnome.enable = true;
+  };
   gnome.rygel.enable = false;
 };
 
