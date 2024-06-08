@@ -1,15 +1,14 @@
 { pkgs, inputs, ... }:{
 
 imports = [
+  ./files.nix
   ./opener.nix
   ./theme.nix
-  ./plugins.nix
-  ./files.nix
 ];
 
 programs.yazi = {
   enable = true;
-  package = inputs.yazi.packages.${pkgs.system}.default;
+  #package = inputs.yazi.packages.${pkgs.system}.default;
 
   settings.manager = {
     layout = [ 1 4 3 ];
@@ -21,6 +20,12 @@ programs.yazi = {
     show_hidden = false;
     show_symlink = true;
   };
+
+  plugins = {
+    "smart-enter.yazi" = ./lua/smart-enter;
+    "starship.yazi" = ./lua/starship;
+  };
+  initLua = ./lua/init.lua;  
 
   keymap.manager.prepend_keymap = [
     {
