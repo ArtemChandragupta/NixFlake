@@ -1,22 +1,21 @@
 { var, ... }:{
 
 imports = [
-  ./stylix.nix
-  ./icons.nix
-  ./kitty.nix
-  ./helix.nix
-  ./wofi.nix
-  ./git.nix
-  ./btop.nix
-  ./zathura.nix
-
+  ./ags
   ./hyprland
+  ./nixvim
+  ./rofi
+  ./swaync
   ./waybar
   ./yazi
-  ./rofi
-  ./ags
-  ./nixvim
-  ./swaync
+
+  ./btop.nix
+  ./git.nix
+  ./helix.nix
+  ./kitty.nix
+  ./stylix.nix
+  ./wofi.nix
+  ./zathura.nix
 ];
 
 programs.home-manager.enable = true;
