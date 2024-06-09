@@ -1,0 +1,112 @@
+* {
+  border: none;
+  font-family: JetBrainsMono Nerd Font, sans-serif;
+  font-size: 14px;
+}
+
+window#waybar {
+  background-color: #282828;
+  border-radius: 0px;
+  border: 2px solid rgb(213, 196, 161);
+  color: #b8bb26;
+  opacity: 1;
+  transition-property: background-color;
+  transition-duration: .5s;
+  margin-bottom: 0px;
+}
+
+window#hyprland-window {
+  background: #282828;
+}
+
+#workspaces,
+#mode,
+#window,
+#cpu,
+#memory,
+#temperature,
+#custom-wmname,
+#clock,
+#pulseaudio,
+#backlight,
+#battery,
+#tray {
+  background: #282828;
+  padding: 0 10px;
+  margin: 5px 2px 5px 2px;
+  border: 0px solid rgb(0, 0, 0);
+  border-radius: 0px;
+  background-clip: padding-box;
+}
+
+#workspaces button {
+  padding: 0 5px;
+  min-width: 20px;
+  color: #458588;
+}
+
+#workspaces button:hover {
+   background-color: rgba(31, 31, 45, 0.5)
+}
+
+#workspaces button.active {
+   color: #ebdbb2;
+}
+
+#workspaces button.urgent {
+   color: #cc241d;
+}
+
+#cpu {
+  padding: 0 10px;
+  color: #689d6a;
+}
+
+#memory {
+  padding: 0 10px;
+  color: #689d6a;
+}
+
+#temperature {
+  padding: 0 10px;
+  color: #689d6a;
+}
+
+#clock {
+  padding: 0 10px;
+  color: #458588;
+}
+
+#pulseaudio {
+  padding: 0 10px;
+  color: #d79921;
+}
+
+#pulseaudio.muted {
+  padding: 0 10px;
+  color: #cc241d;
+}
+
+#backlight {
+  padding: 0 10px;
+  color: #d79921;
+}
+
+#battery {
+  padding: 0 10px;
+  color: #b8bb26;
+}
+
+#battery.charging, #battery.plugged {
+  padding: 0 10px;
+  background-color: #b8bb26;
+  color: #282828;
+}
+
+#custom-wmname {
+  color: #458588;
+  background-color: #282828;
+  font-size: 25px;
+  margin: 2px;
+  padding: 1px 1px 1px 5px;
+}
