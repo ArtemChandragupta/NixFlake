@@ -24,7 +24,11 @@ in
 inputs = {
   nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
-  hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
+  hyprland = {
+    type = "git";
+    url = "https://github.com/hyprwm/Hyprland";
+    submodules = true;
+  };
 
   nixvim = {
     url = "github:nix-community/nixvim";
@@ -36,8 +40,12 @@ inputs = {
     inputs.nixpkgs.follows = "nixpkgs";
   };
 
+  anyrun = {
+    url = "github:anyrun-org/anyrun";
+    inputs.nixpkgs.follows = "nixpkgs";
+  };
+
   ags.url = "github:Aylur/ags";
-  yazi.url = "github:sxyazi/yazi";
   stylix.url = "github:danth/stylix";
 };
 
