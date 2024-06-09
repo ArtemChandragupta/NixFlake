@@ -1,0 +1,19 @@
+* {
+  font-family: monospace;
+}
+
+.control-center {
+  background-color: #282828;
+  opacity: 1;
+}
+
+.notification {
+  border: none;
+  margin: 7px 0px;
+  box-shadow: none;
+  padding: 0;
+}
+
+.control-center-list-placeholder {
+  color: #83a599;
+}
