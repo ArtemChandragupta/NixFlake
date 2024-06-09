@@ -1,14 +1,13 @@
-{ pkgs, inputs, ... }:{
+{
 
 imports = [
-  ./files.nix
+  ./icons.nix
   ./opener.nix
   ./theme.nix
 ];
 
 programs.yazi = {
   enable = true;
-  #package = inputs.yazi.packages.${pkgs.system}.default;
 
   settings.manager = {
     layout = [ 1 4 3 ];
