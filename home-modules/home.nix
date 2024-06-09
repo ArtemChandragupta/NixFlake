@@ -2,6 +2,7 @@
 
 imports = [
   ./ags
+  ./anyrun
   ./hyprland
   ./nixvim
   ./rofi
