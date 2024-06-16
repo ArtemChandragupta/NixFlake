@@ -39,6 +39,7 @@ In _home-modules_ there are home-manager configs that all environments are using
 
 ## Screenshots
 
+![image](https://github.com/ArtemChandragupta/NixFlake/assets/90765302/94a1c211-8182-4176-93f9-a05ba61d67ff)
 ![swappy-20240511_160900](https://github.com/ArtemChandragupta/NixFlake/assets/90765302/88d7ef15-ccf0-49e4-9357-984f44cc6981)
 ![swappy-20240511_133049](https://github.com/ArtemChandragupta/NixFlake/assets/90765302/3c5bdbcd-bac0-4db4-8694-5d66db853cef)
 ![swappy-20240511_145920](https://github.com/ArtemChandragupta/NixFlake/assets/90765302/5e25a95f-8e6b-40f9-b6dd-32ee922c6d5f)
