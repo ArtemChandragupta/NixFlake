@@ -53,6 +53,7 @@ modules-right  = ["battery" "cpu" "temperature" "memory" "backlight" "pulseaudio
       today  = "<span color='#cc241d'><b>{}</b></span>";
     };
   };
+  on-click = "swaync-client -t -sw";
 };
 
 "cpu" = {
@@ -110,8 +111,6 @@ modules-right  = ["battery" "cpu" "temperature" "memory" "backlight" "pulseaudio
   format = " ";
   tooltip = "false";
   on-click = "wallpaper";
-  on-click-right = "screenshot";
-  on-click-middle = "wallpaper-switch";
 };
 
   };

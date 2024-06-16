@@ -12,10 +12,6 @@ tooltip {
   background: #282828;
 }
 
-window#hyprland-window {
-  border: 2px solid #d79921;
-}
-
 #workspaces,
 #mode,
 #window,
