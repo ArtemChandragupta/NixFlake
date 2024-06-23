@@ -1,12 +1,12 @@
 { pkgs, ... }:{
 
 programs.yazi.settings = {
-
   opener = {
     "text" = [
       {
       #run  = "neovide \"$@\"";
       run = "hx \"$@\"";
+      #run = "nvim \"$@\"";
       block = true;
       }
     ];

@@ -37,28 +37,42 @@ programs.yazi.theme = {
       { name = "*ags/";          text = ""; }
       { name = "*anyrun/";       text = "󰘵"; }
       { name = "*hyprland/";     text = ""; }
+        { name = "*binds.nix";     text = "󰌌"; fg = "#7ebae4"; }
+        { name = "*monitors.nix";  text = "󰍺"; fg = "#7ebae4"; }
+        { name = "*rules.nix";     text = ""; fg = "#7ebae4"; }
+        { name = "*settings.nix";  text = ""; fg = "#7ebae4"; }
+        { name = "*wallpaper-script.nix"; text = "󰸉"; fg = "#7ebae4"; }
+        
       { name = "*nixvim/";       text = ""; }
+        { name = "*keymap.nix";    text = "󰌌"; fg = "#7ebae4"; }
+        { name = "*neovide.nix";   text = ""; fg = "#7ebae4"; }
         { name = "*plugins.nix";   text = ""; fg = "#7ebae4"; }
+        
       { name = "*rofi/";         text = "󱗼"; }
         { name = "*appgrid.nix";   text = "󱗼"; fg = "#7ebae4"; }
+        { name = "*script.nix";    text = "󱜧"; fg = "#7ebae4"; }
+        
       { name = "*swaync/";       text = ""; }
       { name = "*waybar/";       text = "󱓺"; }
+      { name = "*wofi/";         text = ""; }
       { name = "*yazi/";         text = "󰇥"; }
         { name = "*lua/";          text = ""; }
         { name = "*icons.nix";     text = ""; fg = "#7ebae4"; }
         { name = "*opener.nix";    text = ""; fg = "#7ebae4"; }
         { name = "*theme.nix";     text = "󱌝"; fg = "#7ebae4"; }
+        
       { name = "*btop.nix";      text = "󱔓"; fg = "#7ebae4"; }
       { name = "*git.nix";       text = "󰊢"; fg = "#7ebae4"; }
       { name = "*helix.nix";     text = "󰚄"; fg = "#7ebae4"; }
       { name = "*kitty.nix";     text = "󰄛"; fg = "#7ebae4"; }
       { name = "*stylix.nix";    text = "󰃣"; fg = "#7ebae4"; }
-      { name = "*wofi.nix";      text = ""; fg = "#7ebae4"; }
       { name = "*zathura.nix";   text = ""; fg = "#7ebae4"; }
-    
+
     { name = "*modules/";      text = "󱁿"; }
       { name = "*host-specific/";text = "󰛧"; }
         { name = "*ThinkBook13s/"; text = ""; }
+          { name = "*power.nix";     text = "󰓅"; fg = "#7ebae4"; }
+          
       { name = "*system/";       text = ""; }
         { name = "*bash.nix";      text = ""; fg = "#7ebae4"; }
         { name = "*boot.nix";      text = "󰅕"; fg = "#7ebae4"; }
@@ -69,12 +83,14 @@ programs.yazi.theme = {
         { name = "*system.nix";    text = "󰘳"; fg = "#7ebae4"; }
         { name = "*usb.nix";       text = "󰕓"; fg = "#7ebae4"; }
         { name = "*virtual.nix";   text = ""; fg = "#7ebae4"; }
+        
       { name = "*pkgs/";         text = ""; }
         { name = "*apps.nix";      text = ""; fg = "#7ebae4"; }
         { name = "*fonts.nix";     text = "󰛖"; fg = "#7ebae4"; }
         { name = "*games.nix";     text = "󰊖"; fg = "#7ebae4"; }
         { name = "*terminal.nix";  text = ""; fg = "#7ebae4"; }
         { name = "*utils.nix";     text = "󱌢"; fg = "#7ebae4"; }
+        
       { name = "*wm/";           text = ""; }
         { name = "*gnome.nix";     text = ""; fg = "#7ebae4"; }
         { name = "*hyprland.nix";  text = ""; fg = "#7ebae4"; }
