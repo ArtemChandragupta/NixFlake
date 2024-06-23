@@ -21,8 +21,8 @@ programs.yazi = {
   };
 
   plugins = {
-    "smart-enter.yazi" = ./lua/smart-enter;
-    "starship.yazi" = ./lua/starship;
+    "smart-enter" = ./lua/smart-enter;
+    "starship" = ./lua/starship;
   };
   initLua = ./lua/init.lua;  
 
