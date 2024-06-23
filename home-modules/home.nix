@@ -8,6 +8,7 @@ imports = [
   ./rofi
   ./swaync
   ./waybar
+  ./wofi
   ./yazi
 
   ./btop.nix
@@ -15,7 +16,6 @@ imports = [
   ./helix.nix
   ./kitty.nix
   ./stylix.nix
-  ./wofi.nix
   ./zathura.nix
 ];
 
