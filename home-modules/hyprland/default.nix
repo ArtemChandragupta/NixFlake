@@ -4,7 +4,7 @@ imports = [
   ./binds.nix
   ./rules.nix
   ./settings.nix
-  ./multimonitor.nix
+  ./monitors.nix
   ./wallpaper-script.nix
 
   ./hyprlock
