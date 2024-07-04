@@ -40,19 +40,14 @@ tooltip {
 }
 
 
-#workspaces {
-  margin: 5px 4px 6px 4px;
-}
 #workspaces button {
-  min-width: 20px;
+  min-width: 0px;
   color: #83a598;
-  margin: 0px 4px;
 }
 #workspaces button:hover {
   background: rgba(31, 31, 45, 0.5)
 }
 #workspaces button.active {
-  color: rgba(40, 40, 40, 1);
   color: #d79921;
 }
 #workspaces button.urgent {
