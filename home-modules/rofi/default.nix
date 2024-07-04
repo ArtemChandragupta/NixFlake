@@ -2,6 +2,7 @@
 
 imports = [
   ./appgrid
+  ./cliphist
   ./cliphist-img
 ];
 
