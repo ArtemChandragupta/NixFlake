@@ -3,33 +3,32 @@
 let
 swayncConfig = {
   "$schema" = "${pkgs.swaynotificationcenter}/etc/xdg/swaync/configSchema.json";
-  positionX = "true";
+  positionX = "center";
   positionY = "top";
-  control-center-margin-top = 10;
+  control-center-margin-top    = 10;
   control-center-margin-bottom = 10;
-  control-center-margin-right = 10;
-  control-center-margin-left = 10;
+  control-center-margin-right  = 10;
+  control-center-margin-left   = 10;
   widgets = [
-    "dnd"
-    "mpris"
     "buttons-grid"
+    "dnd"
     "title"
     "notifications"
   ];
   widget-config = {
-    title = {
-      text = "Notifications";
-      clear-all-buttin = true;
-      button-text = "clear";
-    };
+    buttons-grid.actions = [
+      { label = "󰐥"; command = "systemctl poweroff"; }
+      { label = "󰑐"; command = "systemctl reboot";   }
+      { label = "󰌿"; command = "hyprlock";           }
+    ];
     dnd = {
       text = "Do not disturb";
     };
-    buttons-grid.actions = [
-      { label = "󰐥"; command = "systemctl poweroff"; }
-      { label = "󰜉"; command = "systemctl reboot";   }
-      { label = "󰶐"; command = "hyprlock";           }
-    ];
+    title = {
+      text = "Notifications";
+      clear-all-button = true;
+      button-text = "󰆴";
+    };    
   };
 }; 
 in {
@@ -38,7 +37,7 @@ home = {
   packages = with pkgs; [ swaynotificationcenter ];
   file = {
     ".config/swaync/config.json".text = builtins.toJSON swayncConfig;
-    ".config/swaync/style.css".text = builtins.readFile ./style.css;
+    ".config/swaync/style.css".text   = builtins.readFile ./style.css;
   };
 };
 

@@ -2,18 +2,92 @@
   font-family: monospace;
 }
 
+
 .control-center {
-  background-color: #282828;
-  opacity: 1;
+  background: alpha(#282828, 1.9);
+  border-radius: 16px;
 }
+
+
+.widget-buttons-grid {
+  font-size: 36px;
+  background: transparent;
+}
+.widget-buttons-grid>flowbox>flowboxchild>button {
+  padding: 6px 62px;
+  background: transparent;
+  border-radius: 8px;
+}
+.widget-buttons-grid>flowbox>flowboxchild>button:hover {
+  color: #282828;
+  background: #b8bb26;
+}
+.widget-buttons-grid>flowbox>flowboxchild:last-child {
+  border-left: 2px solid #989899;
+}
+.widget-buttons-grid>flowbox>flowboxchild:first-child {
+  border-right: 2px solid #989899;
+}
+
+
+.widget-dnd {
+  color: #989899;
+  background: transparent;
+  font-size: 24px;
+}
+.widget-dnd>switch {
+  background: #98971a;
+  border-radius: 16px;
+}
+.widget-dnd > switch:hover {
+  background: #b8bb26;
+}
+.widget-dnd>switch:checked {
+  background: #cc241d;
+}
+.widget-dnd > switch:checked:hover {
+  background: #fb4934;
+}
+
+
+.widget-title {
+  color: #989899;
+  font-size: 24px;
+  border-top: 2px solid #989899;
+  padding: 16px 0;
+}
+.widget-title button {
+  border-radius: 16px;
+  color: #383838;
+  background: #d79921;
+  padding: 0 16px;
+  font-size: 24px
+}
+.widget-title button:hover {
+  background: #fabd2f;
+}
+.widget-title button:active {
+  background: #cc241d;
+}
+
 
 .notification {
   border: none;
-  margin: 7px 0px;
   box-shadow: none;
-  padding: 0;
+  color: #989899;
+  opacity: 1;
 }
 
+
+.close-button {
+  border: none;
+  margin: 4px;
+  background: #9d0006;
+  color: #9d0006;
+}
+
+
 .control-center-list-placeholder {
-  color: #83a599;
+  color: #989899;
+  opacity: 1;
 }
