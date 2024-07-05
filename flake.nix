@@ -46,6 +46,7 @@ inputs = {
   };
 
   ags.url = "github:Aylur/ags";
+  apple-fonts.url = "github:Lyndeno/apple-fonts.nix";
   stylix.url = "github:danth/stylix";
 };
 
