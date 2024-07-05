@@ -10,7 +10,7 @@ Also I have a "control center" in flake.nix - var arg, wich contains username, h
 
 ```red
  ╭─ Distro   -> NixOS
- ├─ Editor   -> Nvim & Helix
+ ├─ Editor   -> Helix
  ├─ Browser  -> Firefox
  ├─ Shell    -> Bash
  ╰─ Monitor  -> Btop
@@ -24,8 +24,8 @@ Also I have a "control center" in flake.nix - var arg, wich contains username, h
  ├─ DM       -> GDM
  ├─ Notify   -> SwayNC
  ├─ Terminal -> Kitty
- ├─ Theme    -> Gruvbox
- ├─ FM       -> Yazi & Nemo
+ ├─ Theme    -> modified Gruvbox
+ ├─ FM       -> Yazi & Nautilus
  ├─ Notes    -> Obsidian
  ├─ VM       -> VMM Windows 11
  ╰─ Games    -> Flatpak, Portproton, Bottles & PPSSPP
