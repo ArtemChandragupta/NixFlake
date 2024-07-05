@@ -7,32 +7,30 @@ wayland.windowManager.hyprland.settings = {
 
 bind = [
 
-  "$mainMod, T, exec, kitty"
   "$mainMod, Q, killactive,"
-  "$mainMod, L, exec, lf"
   "$mainMod, Delete, exit,"
   "$mainMod, F, fullscreen"
   "$mainMod, V, togglefloating,"
-  "$mainMod, C, exec, hyprpicker -a"
-  "$mainMod, P, pseudo,"
-  "$mainMod, L, exec, hyprlock"
   "$mainMod, J, togglesplit,"
+  "$mainMod, P, pseudo,"
+
+  "$mainMod, T, exec, kitty"
+  "$mainMod, C, exec, hyprpicker -a"
+  "$mainMod, L, exec, hyprlock"
   "$mainMod, N, exec, swaync-client -t -sw"
-  
+  ", XF86Calculator, exec, gnome-calculator"
+
   "$mainMod, R, exec, rofi-appgrid"
   "$mainMod, S, exec, anyrun"
-  "CTRL, G, exec, cliphist list | wofi --show dmenu | cliphist decode | wl-copy"
   "CTRL, X, exec, rofi-cliphist"
   "CTRL SHIFT, X, exec, rofi-cliphist-img"
   "CTRL, G, exec, cliphist list | rofi -dmenu | cliphist decode | wl-copy"
-  ", XF86Calculator, exec, gnome-calculator"
 
-  "$mainMod SHIFT, W, exec, pkill waybar"
   "$mainMod, W, exec, waybar"
-
-  "$mainMod SHIFT, A, exec, pkill ags"
+  "$mainMod SHIFT, W, exec, pkill waybar"
   "$mainMod, A, exec, ags"
-  
+  "$mainMod SHIFT, A, exec, pkill ags"
+
   "$mainMod, left, movefocus, l"
   "$mainMod, right, movefocus, r"
   "$mainMod, up, movefocus, u"
