@@ -15,10 +15,10 @@ boot = {
 
   plymouth = {
     enable = true;
-    theme = "bgrt";
+    theme  = "bgrt";
   };
 
-  initrd.verbose = false;
+  initrd.verbose  = false;
   consoleLogLevel = 0;
 };
 

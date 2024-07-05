@@ -11,6 +11,7 @@ nix = {
     trusted-public-keys = [
       "hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="
     ];
+    
     extra-substituters = [
       "https://yazi.cachix.org"
       "https://anyrun.cachix.org"
@@ -22,14 +23,14 @@ nix = {
   };
   gc = {
     automatic = true;
-    dates = "weekly";
-    options = "--delete-older-than 7d";
+    dates     = "weekly";
+    options   = "--delete-older-than 7d";
   };
 };
 
 programs.nh = {
   enable = true;
-  flake = "/home/${var.username}/nix";
+  flake  = "/home/${var.username}/nix";
 };
 
 nixpkgs.config = {

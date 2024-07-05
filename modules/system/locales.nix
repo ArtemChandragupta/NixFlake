@@ -18,7 +18,7 @@ i18n = {
 };
 
 services.xserver.xkb = {
-  layout = "us,ru";
+  layout  = "us,ru";
   variant = "";
 };
 
