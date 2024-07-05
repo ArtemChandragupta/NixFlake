@@ -25,7 +25,7 @@ programs.nixvim.plugins = {
         {
           separator.right = "";
           separator.left  = "";
-          padding.left = 2;
+          padding.left  = 2;
           padding.right = 2;
         }
       ];
@@ -33,13 +33,9 @@ programs.nixvim.plugins = {
   };
 
   nvim-colorizer.enable = true;
-
   nvim-autopairs.enable = true;
-
   indent-blankline.enable = true;
-
   nix.enable = true;
-
   lint.enable = true;
 
   alpha = {
