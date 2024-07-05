@@ -2,7 +2,7 @@
 
 This is my NixOS configuration. It uses Hyprland and has an ability to switch environments, now there are two of them - beautiful Glossynix and minimal Plainix.
 
-I love gruvbox colorscheme, but don't use default gruvbox-gtk-theme pkg for this - it has some bugs. Instead I utilize [stylix](https://github.com/danth/stylix) for creating my own gtk theme from base16Scheme - result looks the same, but error logs and bugs are gone. All other stylix options besides of mandatory ones are disabled.
+I love gruvbox colorscheme, but don't use default gruvbox-gtk-theme pkg for this - it has some bugs. Instead I utilize [stylix](https://github.com/danth/stylix) for creating my own gtk theme from base16Scheme - result looks like gruvbox, but creamy brown text removed for better looking in gui grey. Also but error logs and bugs are gone. All other stylix options besides of mandatory ones are disabled.
 
 Also I have a "control center" in flake.nix - var arg, wich contains username, hostname for host-specific things such as amd kernel moddules and environment type selector - now it is boolean because I have two of them.
 
@@ -38,7 +38,18 @@ In _module_ directory there are common NixOS modules and host-specific things li
 In _home-modules_ there are home-manager configs that all environments are using, like Hyprland bindings and editor configs. 
 
 ## Screenshots
+![swappy-20240706_005234](https://github.com/ArtemChandragupta/NixFlake/assets/90765302/39b7fd1f-f5a3-4e16-80bf-928d231a2322)
+![swappy-20240706_010250](https://github.com/ArtemChandragupta/NixFlake/assets/90765302/8cf631f1-ff62-451a-bdea-3ba2d9543335)
+![swappy-20240706_010302](https://github.com/ArtemChandragupta/NixFlake/assets/90765302/e5dd16cb-0e71-45d3-8beb-002eef3a31b4)
+![swappy-20240706_010335](https://github.com/ArtemChandragupta/NixFlake/assets/90765302/c1736a67-eae7-41ba-9658-7df8ab1c166f)
+![swappy-20240706_010352](https://github.com/ArtemChandragupta/NixFlake/assets/90765302/ff73f55d-f7ee-4e55-9580-f80d1d79a2ed)
+![swappy-20240706_010937](https://github.com/ArtemChandragupta/NixFlake/assets/90765302/fb98c687-3549-4e0d-965f-8977c1cfa75c)
 
+
+
+<details>
+  <summary>Old</summary>
+ 
 ![image](https://github.com/ArtemChandragupta/NixFlake/assets/90765302/94a1c211-8182-4176-93f9-a05ba61d67ff)
 ![swappy-20240511_160900](https://github.com/ArtemChandragupta/NixFlake/assets/90765302/88d7ef15-ccf0-49e4-9357-984f44cc6981)
 ![swappy-20240511_133049](https://github.com/ArtemChandragupta/NixFlake/assets/90765302/3c5bdbcd-bac0-4db4-8694-5d66db853cef)
@@ -48,3 +59,5 @@ In _home-modules_ there are home-manager configs that all environments are using
 ![alt text](https://sun9-46.userapi.com/impg/PCdH3ZdddrYeLf3H0-V8mqJ_cMXkz5ly0Ipm7g/dtN5zOIKOfY.jpg?size=1280x960&quality=95&sign=2efe73594c2d741a687c994d091f2a70&type=album)
 ![alt text](https://sun9-65.userapi.com/impg/0JDpFKlnfjZTciV85Z-E2EeVf5vmaVXEbh-JIg/z5rWIj8QuE4.jpg?size=1920x1200&quality=96&sign=18b3fb56d9d8b0a4cfb14a2ce13d33e7&type=album)
 ![alt text](https://sun9-60.userapi.com/impg/dFGYrXkvoOKx9h2C_LT-1hFMhB5esJVS3cDcTQ/3N9evbdVPj8.jpg?size=1920x1200&quality=95&sign=449151dcaec1df9e16460e74f14ab644&type=album)
+
+</details>
