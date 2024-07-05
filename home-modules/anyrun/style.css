@@ -3,15 +3,50 @@
   font-size: 1.3rem;
 }
 
+
 #window,
 #match,
 #entry,
 #plugin,
 #main {
   background: transparent;
-  color: #ebdbb2;
+  color: #989899;
 }
 
+
+#entry {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  margin: 0.5rem;
+  padding: 0.3rem 1rem;
+}
+
+
+box#main {
+  background: #242424;
+  border-radius: 24px;
+  padding: 0.3rem;
+}
+
+
+#plugin:hover #match.activatable {
+  border-radius: 16px;
+}
+list > #plugin {
+  border-radius: 16px;
+  margin: 0 0.3rem;
+}
+list > #plugin:first-child {
+  margin-top: 0rem;
+}
+list > #plugin:last-child {
+  margin-bottom: 0.3rem;
+}
+
+
+#match {
+  margin-right: 0.5rem;
+}
 #match.activatable {
   border-radius: 16px;
   padding: 0.3rem 0.9rem;
@@ -23,37 +58,8 @@
 #match.activatable:last-child {
   margin-bottom: 0.6rem;
 }
-
-#plugin:hover #match.activatable {
-  border-radius: 16px;
-}
-
 #match:selected,
-#match:hover,
-#plugin:hover {
-  background: rgba(255, 255, 255, 0.1);
-}
-
-#entry {
+#match:hover{
   background: rgba(255, 255, 255, 0.05);
-  border-radius: 16px;
-  margin: 0.5rem;
-  padding: 0.3rem 1rem;
-}
-
-list > #plugin {
-  border-radius: 16px;
-  margin: 0 0.3rem;
-}
-list > #plugin:first-child {
-  margin-top: 0.3rem;
-}
-list > #plugin:last-child {
-  margin-bottom: 0.3rem;
-}
-
-box#main {
-  background: #1D2021;
-  border-radius: 24px;
-  padding: 0.3rem;
+  color: #ebdbb2;
 }
