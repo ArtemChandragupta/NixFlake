@@ -1,37 +1,32 @@
 * {
-  background:     #282828FF;
-  background-alt: #353535FF;
-  foreground:     #EBDBB2FF;
-  selected:       #83A598FF;
-  active:         #B8BB26FF;
-  urgent:         #FB4934FF;
-  font: "JetBrains Mono Nerd Font 10";
+  font:  "sf-pro-nerd 15";
+  text-color:  #989899FF;
 }
+
 
 configuration {
   modi:                 "drun";
   show-icons:           true;
-  display-drun:         " ";
+  display-drun:         "󰘳 ";
   drun-display-format:  "{name}";
 }
 
 
 window {
-  transparency:      "real";
-  location:          center;
-  anchor:            center;
-  fullscreen:        true;
-  width:             1366px;
-  height:            768px;
-  x-offset:          0px;
-  y-offset:          0px;
+  transparency:  "real";
+  location:      center;
+  anchor:        center;
+  fullscreen:    true;
+  width:         1366px;
+  height:        768px;
+  x-offset:      0px;
+  y-offset:      0px;
 
   enabled:           true;
   margin:            0px;
   padding:           0px;
   border:            0px solid;
   border-radius:     0px;
-  border-color:      @selected;
   background-color:  black / 80%;
   cursor:            "default";
 }
@@ -43,41 +38,35 @@ mainbox {
   margin:            0px;
   padding:           100px 225px;
   border:            0px solid;
-  border-radius:     0px 0px 0px 0px;
-  border-color:      @selected;
+  border-radius:     0px;
   background-color:  transparent;
   children:          [ "inputbar", "listview" ];
 }
 
 
 inputbar {
-  enabled:            true;
-  spacing:            10px;
-  margin:             0% 25%;
-  padding:            18px;
-  border:             0px solid;
-  border-radius:      10px;
-  border-color:       @selected;
-  background-color:   white / 16%;
-  text-color:         @foreground;
-  children:           [ "prompt", "entry" ];
+  enabled:           true;
+  spacing:           10px;
+  margin:            0% 25%;
+  padding:           18px;
+  border:            0px solid;
+  border-radius:     10px;
+  background-color:  white / 16%;
+  children:          [ "prompt", "entry" ];
 }
 prompt {
-  enabled:            true;
-  background-color:   transparent;
-  text-color:         inherit;
+  enabled:           true;
+  background-color:  transparent;
 }
 textbox-prompt-colon {
-  enabled:            true;
-  expand:             false;
-  str:                "::";
-  background-color:   transparent;
-  text-color:         inherit;
+  enabled:           true;
+  expand:            false;
+  str:               "::";
+  background-color:  transparent;
 }
 entry {
   enabled:            true;
   background-color:   transparent;
-  text-color:         inherit;
   cursor:             text;
   placeholder:        "Search";
   placeholder-color:  inherit;
@@ -101,16 +90,8 @@ listview {
   padding:           0px;
   border:            0px solid;
   border-radius:     0px;
-  border-color:      @selected;
   background-color:  transparent;
-  text-color:        @foreground;
   cursor:            "default";
-}
-scrollbar {
-  handle-width:      5px;
-  handle-color:      @selected;
-  border-radius:     0px;
-  background-color:  @background-alt;
 }
 
 
@@ -121,29 +102,23 @@ element {
   padding:           35px 10px;
   border:            0px solid;
   border-radius:     15px;
-  border-color:      @selected;
   background-color:  transparent;
-  text-color:        @foreground;
   orientation:       vertical;
   cursor:            pointer;
 }
 element normal.normal {
   background-color:  transparent;
-  text-color:        @foreground;
 }
 element selected.normal {
   background-color:  white / 16%;
-  text-color:        @foreground;
 }
 element-icon {
   background-color:  transparent;
-  text-color:        inherit;
   size:              72px;
   cursor:            inherit;
 }
 element-text {
   background-color:  transparent;
-  text-color:        inherit;
   highlight:         inherit;
   cursor:            inherit;
   vertical-align:    0.5;
