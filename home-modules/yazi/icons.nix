@@ -49,12 +49,14 @@ programs.yazi.theme = {
         { name = "*plugins.nix";   text = ""; fg = "#7ebae4"; }
         
       { name = "*rofi/";         text = "󱗼"; }
-        { name = "*appgrid.nix";   text = "󱗼"; fg = "#7ebae4"; }
-        { name = "*script.nix";    text = "󱜧"; fg = "#7ebae4"; }
+        { name = "*appgrid/";   text = "󱗼"; }
+          { name = "*script.nix";    text = "󱜧"; fg = "#7ebae4"; }
+          { name = "*pkg.nix";    text = ""; }
+        { name = "*cliphist/";   text = "󱓥"; }
+        { name = "*cliphist-img/";text = "󱉥"; }
         
       { name = "*swaync/";       text = ""; }
       { name = "*waybar/";       text = "󱓺"; }
-      { name = "*wofi/";         text = ""; }
       { name = "*yazi/";         text = "󰇥"; }
         { name = "*lua/";          text = ""; }
         { name = "*icons.nix";     text = ""; fg = "#7ebae4"; }
@@ -72,6 +74,8 @@ programs.yazi.theme = {
       { name = "*host-specific/";text = "󰛧"; }
         { name = "*ThinkBook13s/"; text = ""; }
           { name = "*power.nix";     text = "󰓅"; fg = "#7ebae4"; }
+        { name = "*homePC/";       text = "󰪫"; }
+          { name = "*nvidia.nix";    text = "󰖂"; fg = "#7ebae4"; }
           
       { name = "*system/";       text = ""; }
         { name = "*bash.nix";      text = ""; fg = "#7ebae4"; }

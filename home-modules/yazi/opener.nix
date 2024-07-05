@@ -4,58 +4,56 @@ programs.yazi.settings = {
   opener = {
     "text" = [
       {
-      #run  = "neovide \"$@\"";
-      run = "hx \"$@\"";
-      #run = "nvim \"$@\"";
-      block = true;
+        run = "hx \"$@\"";
+        block = true;
       }
     ];
     "video" = [
       {
-      run  = "totem \"$@\"";
-      block = true;
+        run  = "totem \"$@\"";
+        block = true;
       }
     ];
     "image" = [
       {
-      run  = "loupe \"$@\"";
-      block = true;
+        run  = "loupe \"$@\"";
+        block = true;
       }
     ];
     "pdf" = [
       {
-      run  = "evince \"$@\"";
-      block = true;
+        run  = "evince \"$@\"";
+        block = true;
       }
     ];
     "unarchive" = [
       {
-      run = ''${pkgs.unar}/bin/unar "$@"'';
-      desc = "unarchive";
+        run = ''${pkgs.unar}/bin/unar "$@"'';
+        desc = "unarchive";
       }
     ];
   };
 
   open.rules = [
     {
-    mime = "text/*";
-    use  = "text";
+      mime = "text/*";
+      use  = "text";
     }
     {
-    mime = "image/*";
-    use  = "image";
+      mime = "image/*";
+      use  = "image";
     }
     {
-    mime = "video/*";
-    use  = "video";
+      mime = "video/*";
+      use  = "video";
     }
     {
-    mime = "application/pdf";
-    use  = "pdf";
+      mime = "application/pdf";
+      use  = "pdf";
     }
     {
-    mime = "*";
-    use  = ["text""unarchive"];
+      mime = "*";
+      use  = ["text""unarchive"];
     }
   ];
 
