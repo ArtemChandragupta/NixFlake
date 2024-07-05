@@ -8,14 +8,17 @@ services = {
   auto-cpufreq = { 
     enable = true;
     settings = {
+    
       battery =  { 
         governor = "powersave";
-        turbo = "never";
+        turbo    = "never";
       };
+      
       charger = {
         governor = "powersave";
-        turbo = "auto";
+        turbo    = "auto";
       };
+      
     };
   };
   power-profiles-daemon.enable = false;
