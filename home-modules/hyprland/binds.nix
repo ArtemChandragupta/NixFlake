@@ -21,7 +21,8 @@ bind = [
   
   "$mainMod, R, exec, rofi-appgrid"
   "$mainMod, S, exec, anyrun"
-  "CTRL, X, exec, cliphist list | wofi --show dmenu | cliphist decode | wl-copy"
+  "CTRL, G, exec, cliphist list | wofi --show dmenu | cliphist decode | wl-copy"
+  "CTRL, X, exec, rofi-cliphist"
   "CTRL SHIFT, X, exec, rofi-cliphist-img"
   "CTRL, G, exec, cliphist list | rofi -dmenu | cliphist decode | wl-copy"
   ", XF86Calculator, exec, gnome-calculator"
