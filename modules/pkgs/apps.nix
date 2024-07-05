@@ -2,9 +2,8 @@
 
 environment.systemPackages = with pkgs; [
   firefox
-  cinnamon.nemo
   obsidian
-  transmission-gtk
+  transmission_4-gtk
   neovide
   gnome.gnome-tweaks
 

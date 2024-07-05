@@ -1,11 +1,12 @@
-{ pkgs, ... }:{
+{ pkgs, inputs, ... }:{
 
 fonts.packages = with pkgs; [
   font-awesome
   iosevka
   material-design-icons
   nerdfonts
-  victor-mono
+  open-sans
+  inputs.apple-fonts.packages.${pkg.system}.sf-pro-nerd
 ];
 
 }

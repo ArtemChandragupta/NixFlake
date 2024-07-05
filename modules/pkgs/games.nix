@@ -16,7 +16,7 @@ programs = {
     enable = true;
     settings.custom = {
       start = "${pkgs.libnotify}/bin/notify-send 'GameMode started'";
-      end = "${pkgs.libnotify}/bin/notify-send 'GameMode ended'";
+      end   = "${pkgs.libnotify}/bin/notify-send 'GameMode ended'";
     };
   };
   steam.enable = true;
