@@ -28,27 +28,23 @@ environment = {
     gnome-logs
     gnome-maps
     gnome-characters
-    gnome-font-viewer
+    #gnome-font-viewer
     gnome-color-manager
     gnome-calendar
     simple-scan
     seahorse
     epiphany
     geary
-    nautilus
 
     tali
     iagno
     hitori
     atomix
   ]);
-  systemPackages = with pkgs; [
-    gnome.adwaita-icon-theme
-  ];
+  systemPackages = with pkgs; [ gnome.adwaita-icon-theme ];
 };
 
-programs.dconf = {
-  enable = true;
-};
+programs.dconf.enable = true;
+
 
 }
