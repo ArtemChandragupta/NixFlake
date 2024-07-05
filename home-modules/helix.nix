@@ -6,7 +6,6 @@ programs.helix = {
   extraPackages = with pkgs; with nodePackages; [
     marksman
     nil nixfmt-rfc-style
-    bash-language-server
   ];
 
   languages.language = [
@@ -18,8 +17,13 @@ programs.helix = {
       name = "javascript";
       auto-format = true;
     }
+    {
+      name = "css";
+      file-types = [ "css" "rasi" ];
+      auto-format = true;
+    }
   ];
-
+  
   settings = {
     theme = "gruvbox";
     

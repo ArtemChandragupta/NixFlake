@@ -8,7 +8,6 @@ imports = [
   ./rofi
   ./swaync
   ./waybar
-  ./wofi
   ./yazi
 
   ./btop.nix
@@ -16,7 +15,6 @@ imports = [
   ./helix.nix
   ./kitty.nix
   ./stylix.nix
-  ./zathura.nix
 ];
 
 programs.home-manager.enable = true;
@@ -24,7 +22,7 @@ programs.home-manager.enable = true;
 home = {
   username = var.username;
   homeDirectory = "/home/${var.username}";  
-  stateVersion = "23.11";
+  stateVersion  = "23.11";
   sessionVariables = {
     BROWSER  = "firefox";
     TERMINAL = "kitty";
