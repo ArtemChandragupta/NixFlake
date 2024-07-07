@@ -1,40 +1,41 @@
-window.bar {
-    background-color: @theme_bg_color;
+window .bar {
+    background: transparent;
     color: @theme_fg_color;
+    font-size: 10px;
 }
 
-button {
-    min-width: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-    background-color: transparent;
+.tray {
+    background: #282828;
+    padding: 0 10px;
+    border-radius: 12px;
+    margin: 0;
+}
+.workspaces {
+    background: #282828;
+    padding: 0 10px;
+    border-radius: 12px;
+    margin: 0;
 }
 
-button:active {
-    background-color: @theme_selected_bg_color;
+
+.clock {
+    background: #282828;
+    color: #b16286;
+    padding: 0 10px;
+    border-radius: 12px;
+    margin: 0;
 }
 
-button:hover {
-    border-bottom: 3px solid @theme_fg_color;
-}
 
-label {
-    font-weight: bold;
+.battery {
+    background: #282828;
+    padding: 0 10px;
+    border-radius: 12px;
+    margin: 0px;
 }
-
-.workspaces button.focused {
-    border-bottom: 3px solid @theme_selected_bg_color;
-}
-
-.client-title {
-    color: @theme_selected_bg_color;
-}
-
-.notification {
-    color: yellow;
-}
-
-progress,
-highlight {
-    min-height: 8px;
+.volume {
+    background: #282828;
+    padding: 0 10px;
+    border-radius: 12px;
+    margin: 0px;
 }
