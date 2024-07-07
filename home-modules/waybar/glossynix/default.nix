@@ -4,7 +4,7 @@ programs.waybar = {
   style = builtins.readFile (./style.css);
   settings.mainBar = {
 
-margin = "0px 0px -10px 0px";
+margin = "5px 10px -4px 10px";
 layer  = "top";
 
 modules-left   = [ "custom/flake" "tray" "hyprland/workspaces" ];
@@ -14,7 +14,6 @@ modules-right  = [ "battery" "cpu" "temperature" "memory" "backlight" "pulseaudi
 
 "custom/flake" = {
   format   = " ";
-  tooltip  = "false";
   on-click = "wallpaper";
 };
 "tray" = {
@@ -74,10 +73,6 @@ modules-right  = [ "battery" "cpu" "temperature" "memory" "backlight" "pulseaudi
 
 
 "battery" = {
-  states = {
-    warning  = "30";
-    critical = "15";
-  };
   format = "{icon} {capacity}% {time}";
   format-time     = "{H}:{m}";
   tooltip-format  = "{timeTo} {capacity}%";
@@ -89,7 +84,6 @@ modules-right  = [ "battery" "cpu" "temperature" "memory" "backlight" "pulseaudi
 
 "cpu" = {
   format  = " {usage}%";
-  tooltip = "false";
 };
 "temperature" = {
   format = "󰔐 {temperatureC}°C";
@@ -103,8 +97,6 @@ modules-right  = [ "battery" "cpu" "temperature" "memory" "backlight" "pulseaudi
 "backlight" = {
   format = "{icon}{percent}%";
   format-icons   = ["󰃞 " "󰃟 " "󰃠 "];
-  on-scroll-up   = "light -A 1";
-  on-scroll-down = "light -U 1";
 };
 "pulseaudio" = {
   format = "{icon}{volume}% {format_source}";

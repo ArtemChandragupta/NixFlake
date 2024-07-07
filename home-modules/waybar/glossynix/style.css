@@ -1,5 +1,4 @@
 * {
-  border: none;
   font-family: "JetBrainsMono Nerd Font, sans-serif";
   font-size: 14px;
 }
@@ -7,9 +6,6 @@
 
 window#waybar {
   background: rgba(40, 40, 40, 0);
-}
-tooltip {
-  background: #282828;
 }
 
 
@@ -26,7 +22,7 @@ tooltip {
 #pulseaudio {
   background: #282828;
   padding: 0 10px;
-  margin: 5px 4px 6px 4px;
+  margin: 0px 4px;
   border-radius: 12px;
   background-clip: padding-box;
 }
@@ -36,7 +32,7 @@ tooltip {
   color: #98971a;
   font-size: 23px;
   padding: 1px 1px 1px 5px;
-  margin: 5px 4px 6px 10px;
+  margin: 0px 4px 0px 0px;
 }
 
 
@@ -71,46 +67,34 @@ tooltip {
 
 #cpu {
   color: #83a589;
-  border-right: none;
   border-radius: 12px 0px 0px 12px;
-  margin: 5px -2px 6px 4px;          
+  margin: 0px -2px 0px 4px;          
 }
 #temperature {
   color: #83a589;
-  margin: 5px -2px 6px -2px;
-  border-right: none;
-  border-left: none;
-  border-radius: 0px 0px 0px 0px;
+  margin: 0px -2px;
+  border-radius: 0px;
 }
 #temperature.critical {
   color: #cc241d;
-  margin: 5px -2px 6px -2px;
-  border-right: none;
-  border-left: none;
-  border-radius: 0px 0px 0px 0px;
 }
 #memory {
   color: #83a589;
-  border-left: none;
   border-radius: 0px 12px 12px 0px;
-  margin: 5px 4px 6px -2px;
+  margin: 0px 4px 0px -2px;
 }
 
 
 #backlight {
   color: #d79921;
-  border-right: none;
   border-radius: 12px 0px 0px 12px;
-  margin: 5px -2px 6px 4px;
+  margin: 0px -2px 0px 4px;
 }
 #pulseaudio {
   color: #d79921;
-  border-left: none;
   border-radius: 0px 12px 12px 0px;
-  margin: 5px 10px 6px -2px;
+  margin: 0px 0px 0px -2px;
 }
 #pulseaudio.muted {
   color: #cc241d;
-  border-left: none;
-  border-radius: 0px 12px 12px 0px;
 }
