@@ -1,0 +1,110 @@
+* {
+    font-family: "JetBrainsMono Nerd Font, sans-serif";
+    font-size: 14px;
+}
+
+window .bar {
+    background: transparent;
+    color: @theme_fg_color;
+}
+
+
+.FlakeModule {
+    background: #282828;
+    color: #98971a;
+    font-size: 23px;
+    padding: 1px 1px 1px 5px;
+    margin: 0px;
+    border-radius: 12px;
+}
+.TrayModule {
+    background: #282828;
+    padding: 0 10px;
+    border-radius: 12px;
+    margin: 0;
+}
+.WorkspacesModule {
+    background: #282828;
+    padding: 0 10px;
+    border-radius: 12px;
+    margin: 0;
+}
+
+
+.ClockModule {
+    background: #282828;
+    color: #b16286;
+    padding: 0 10px;
+    border-radius: 12px;
+    margin: 0;
+}
+
+
+.BatteryModule_normal {
+    background: #282828;
+    color: #b8bb26;
+    padding: 0 10px;
+    border-radius: 12px;
+    margin: 0px;
+}
+.BatteryModule_charging {
+    background: #b8bb26;
+    color: #282828;
+    padding: 0 10px;
+    border-radius: 12px;
+    margin: 0px;
+}
+
+
+.CpuModule {
+    background: #282828;
+    color: #83a589;
+    border-radius: 12px 0px 0px 12px;
+    margin: 0px -4px 0px 0px;
+    padding: 0 10px;
+}
+.TemperatureModule_normal {
+    background: #282828;
+    color: #83a589;
+    border-radius: 0px 0px;
+    margin: 0px -8px;
+    padding: 0 10px;
+}
+.TemperatureModule_critical {
+    background: #282828;
+    color: #cc241d;
+    border-radius: 0px 0px;
+    margin: 0px -8px;
+    padding: 0 10px;
+}
+.MemoryModule {
+    background: #282828;
+    color: #83a589;
+    border-radius: 0px 12px 12px 0px;
+    margin: 0px 0px 0px -4px;
+    padding: 0 10px;
+}
+
+
+
+.BacklightModule {
+    background: #282828;
+    color: #d79921;
+    border-radius: 12px 0px 0px 12px;
+    margin: 0px -4px 0px 0px;
+    padding: 0 10px;
+}
+.VolumeModule_muted {
+    background: #282828;
+    color: #cc241d;
+    padding: 0 10px;
+    border-radius: 0 12px 12px 0;
+    margin: 0px 0px 0px -4px;
+}
+.VolumeModule_active {
+    background: #282828;
+    color: #d79921;
+    padding: 0 10px;
+    border-radius: 0 12px 12px 0;
+    margin: 0px 0px 0px -4px;
+}
