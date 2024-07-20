@@ -3,7 +3,6 @@
 imports = [
   ./appgrid
   ./cliphist
-  ./cliphist-img
 ];
 
 programs.rofi = {
