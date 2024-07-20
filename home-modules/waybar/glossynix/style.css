@@ -5,11 +5,10 @@
 
 
 window#waybar {
-  background: rgba(40, 40, 40, 0);
+  background: transparent;
 }
 
 
-#window,
 #custom-flake,
 #tray,
 #workspaces,
@@ -22,9 +21,8 @@ window#waybar {
 #pulseaudio {
   background: #282828;
   padding: 0 10px;
-  margin: 0px 4px;
+  margin:  0 4px;
   border-radius: 12px;
-  background-clip: padding-box;
 }
 
 
@@ -32,7 +30,7 @@ window#waybar {
   color: #98971a;
   font-size: 23px;
   padding: 1px 1px 1px 5px;
-  margin: 0px 4px 0px 0px;
+  margin: 0 4px 0 0;
 }
 
 
@@ -41,7 +39,7 @@ window#waybar {
   color: #83a598;
 }
 #workspaces button:hover {
-  background: rgba(31, 31, 45, 0.5)
+  background: #23232A;
 }
 #workspaces button.active {
   color: #d79921;
@@ -67,33 +65,33 @@ window#waybar {
 
 #cpu {
   color: #83a589;
-  border-radius: 12px 0px 0px 12px;
-  margin: 0px -2px 0px 4px;          
+  border-radius: 12px 0 0 12px;
+  margin: 0 -2px 0 4px;
 }
 #temperature {
   color: #83a589;
-  margin: 0px -2px;
-  border-radius: 0px;
+  margin: 0 -2px;
+  border-radius: 0;
 }
 #temperature.critical {
   color: #cc241d;
 }
 #memory {
   color: #83a589;
-  border-radius: 0px 12px 12px 0px;
-  margin: 0px 4px 0px -2px;
+  border-radius: 0 12px 12px 0;
+  margin: 0 4px 0 -2px;
 }
 
 
 #backlight {
   color: #d79921;
-  border-radius: 12px 0px 0px 12px;
-  margin: 0px -2px 0px 4px;
+  border-radius: 12px 0 0 12px;
+  margin: 0 -2px 0 4px;
 }
 #pulseaudio {
   color: #d79921;
-  border-radius: 0px 12px 12px 0px;
-  margin: 0px 0px 0px -2px;
+  border-radius: 0 12px 12px 0;
+  margin: 0 0 0 -2px;
 }
 #pulseaudio.muted {
   color: #cc241d;

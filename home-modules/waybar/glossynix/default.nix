@@ -16,9 +16,11 @@ modules-right  = [ "battery" "cpu" "temperature" "memory" "backlight" "pulseaudi
   format   = " ";
   on-click = "wallpaper";
 };
+
 "tray" = {
   spacing = 8;
 };
+
 "hyprland/workspaces" = {
   active-only    = "false";
   on-scroll-up   = "hyprctl dispatch workspace e+1";
@@ -40,14 +42,15 @@ modules-right  = [ "battery" "cpu" "temperature" "memory" "backlight" "pulseaudi
     "class<evince>"   = "󰈦";
     "class<haguichi>" = "";
 
-    "class<org.gnome.Software>"    = "󱗼";
-    "class<org.gnome.Loupe>"       = "";
-    "class<org.gnome.Nautilus>"    = "󰪶";
-    "class<org.gnome.Calculator>"  = "";
+    "class<org.gnome.Software>"   = "󱗼";
+    "class<org.gnome.Loupe>"      = "";
+    "class<org.gnome.Nautilus>"   = "󰪶";
+    "class<org.gnome.Calculator>" = "";
 
     "class<org.telegram.desktop>"   = "";
     "class<transmission.gtk>"       = "";
     "class<com.usebottles.bottles>" = "󰡔󱌐";
+    "class<com.saivert.pwvucontrol>"= "";
     "class<localsend_app>"          = "󱗿";
     "class<DesktopEditors>"         = "";
    };
@@ -56,9 +59,9 @@ modules-right  = [ "battery" "cpu" "temperature" "memory" "backlight" "pulseaudi
 
 "clock" = {
   tooltip-format = "<tt><small>{calendar}</small></tt>";
-  format         = "{:%H:%M}";
+  format = "{:%H:%M}";
   calendar = {
-    mode         = "year";
+    mode = "year";
     mode-mon-col = 3;
     on-scroll    = 1;
     format = {
@@ -76,11 +79,10 @@ modules-right  = [ "battery" "cpu" "temperature" "memory" "backlight" "pulseaudi
   format = "{icon} {capacity}% {time}";
   format-time     = "{H}:{m}";
   tooltip-format  = "{timeTo} {capacity}%";
-  format-charging = "󱐋{capacity}%";
+  format-charging = "󱐋 {capacity}% {time}";
   format-plugged  = " ";
   format-icons    = ["󰂎" "󰁻" "󰁾" "󰂀" "󰁹"];
 };
-
 
 "cpu" = {
   format  = " {usage}%";
@@ -93,7 +95,6 @@ modules-right  = [ "battery" "cpu" "temperature" "memory" "backlight" "pulseaudi
   format = " {}%";
 };
 
-
 "backlight" = {
   format = "{icon}{percent}%";
   format-icons   = ["󰃞 " "󰃟 " "󰃠 "];
@@ -102,17 +103,15 @@ modules-right  = [ "battery" "cpu" "temperature" "memory" "backlight" "pulseaudi
   format = "{icon}{volume}% {format_source}";
   format-bluetooth       = "{icon} {volume}%";
   format-bluetooth-muted = "   {volume}%";
-  format-source       = "";
-  format-source-muted = "";
-  format-muted        = " {volume}% {format_source}";
+  format-source       = "󰍰";
+  format-source-muted = "󰍱";
+  format-muted = " {volume}% {format_source}";
   format-icons = {
     headphone = " ";
     default   = [" " " " " "];
   };
   tooltip-format  = "{desc} {volume}%";
-  on-click        = "pactl set-sink-mute @DEFAULT_SINK@ toggle";
-  on-click-right  = "pactl set-source-mute @DEFAULT_SOURCE@ toggle";
-  on-click-middle = "pavucontrol";
+  on-click = "pwvucontrol";
 };
 
   };
