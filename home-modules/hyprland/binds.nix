@@ -6,7 +6,6 @@ wayland.windowManager.hyprland.settings = {
 "$altMod" = "ALT";
 
 bind = [
-
   "$mainMod, Q, killactive,"
   "$mainMod, Delete, exit,"
   "$mainMod, F, fullscreen"
@@ -23,11 +22,11 @@ bind = [
   "$mainMod, R, exec, rofi-appgrid"
   "$mainMod, S, exec, anyrun"
   "CTRL, X, exec, rofi-cliphist"
-  "CTRL SHIFT, X, exec, rofi-cliphist-img"
   "CTRL, G, exec, cliphist list | rofi -dmenu | cliphist decode | wl-copy"
 
   "$mainMod, W, exec, waybar"
   "$mainMod SHIFT, W, exec, pkill waybar"
+  
   "$mainMod, A, exec, ags"
   "$mainMod SHIFT, A, exec, pkill ags"
 
@@ -74,12 +73,11 @@ bind = [
   "$altMod, XF86MonBrightnessDown, exec, brightnessctl --device='platform::kbd_backlight' set 1-"
   ", XF86AudioRaiseVolume,  exec, wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%+"
   ", XF86AudioLowerVolume,  exec, wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%-"
-  ", XF86AudioMute,         exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
-  
-  # You need to create ~/Screenshots
+  ", XF86AudioMute,    exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+  ", XF86AudioMicMute, exec, amixer set Capture toggle"
+
  ''$mainMod, Y, exec, grim -g "$(slurp)" - | convert - -shave 1x1 PNG:- | swappy -f -''
   "$mainMod SHIFT, Y, exec, grim -| swappy -f -"
-
 ];
 
 bindm = [

@@ -9,6 +9,7 @@ wayland.windowManager.hyprland.settings = {
     "float,class:(localsend_app)"
     "float,class:(Yad)"
     "float,class:(transmission-gtk)"
+    "float,class:(com.saivert.pwvucontrol)"
     "float,class:(.blueman-manager-wrapped)"
     "float,class:(blueberry.py)"
   ];
