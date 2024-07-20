@@ -5,9 +5,9 @@ home = {
   file = {
     ".config/rofi/launchers/rofi-cliphist/rofi-cliphist.sh" = {
       executable = true;
-      text = builtins.readFile ( ./script.sh );
+      source = ./script.sh;
     };
-    ".config/rofi/launchers/rofi-cliphist/style.rasi".text = builtins.readFile ( ./style.rasi );
+    ".config/rofi/launchers/rofi-cliphist/style.rasi".source = ./style.rasi;
   };
 };
 
