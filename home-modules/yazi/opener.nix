@@ -56,6 +56,6 @@ programs.yazi.settings = {
       use  = ["text""unarchive"];
     }
   ];
-
 };
+
 }
