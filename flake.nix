@@ -1,18 +1,24 @@
 {
 description = "Central flake";
 
-outputs = { self, nixpkgs, home-manager, ... }@inputs:
+outputs = { self, nixpkgs, nixpkgs-stable, home-manager, ... }@inputs:
 let
   var = {
     username = "artem";
     machine  = "ThinkBook13s";
     glossy   = true;
   };
+  system = "x86_64-linux";
+  pkgs-s = nixpkgs-stable.legacyPackages.${system};
 in
 {
   nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-    system = "x86_64-linux";
-    specialArgs = {inherit inputs var;};
+    inherit system;
+    specialArgs = {
+      inherit inputs; 
+      inherit pkgs-s;
+      inherit var;
+    };
     modules = [ 
       ./configuration.nix 
       inputs.home-manager.nixosModules.default
@@ -22,7 +28,8 @@ in
 };
     
 inputs = {
-  nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+  nixpkgs.url = "nixpkgs/nixos-unstable";
+  nixpkgs-stable.url = "nixpkgs/nixos-24.05";
 
   hyprland = {
     type = "git";

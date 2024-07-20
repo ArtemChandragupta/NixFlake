@@ -6,23 +6,9 @@ imports = [
   ./modules
 ];
 
-users.users.${var.username} = {
-  isNormalUser = true;
-  extraGroups = [ 
-    "networkmanager"
-    "wheel"
-    "audio"
-    "video"
-    "input"
-    "libvirtd"
-    "docker"
-  ];
-};
-
 home-manager = {
   extraSpecialArgs = { inherit inputs var; };
-  backupFileExtension = "hm-backup";
-  users."${var.username}" = import ./home-modules/home.nix;
+  backupFileExtension = "hm-backuping";
 };
 
 environment.variables = {
