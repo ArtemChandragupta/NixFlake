@@ -37,7 +37,7 @@ home = {
   packages = with pkgs; [ swaynotificationcenter ];
   file = {
     ".config/swaync/config.json".text = builtins.toJSON swayncConfig;
-    ".config/swaync/style.css".text   = builtins.readFile ./style.css;
+    ".config/swaync/style.css".source = ./style.css;
   };
 };
 
