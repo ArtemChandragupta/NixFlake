@@ -1,8 +1,8 @@
 {
 
 imports = [
+  ./AMD.nix
   ./power.nix
-  ./boot.nix
   ./hardware-configuration.nix
 ];
 
