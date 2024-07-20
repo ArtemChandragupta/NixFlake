@@ -1,20 +1,25 @@
 { pkgs, ... }:{
 
 environment.systemPackages = with pkgs; [
-  wget
   zip
   rar
   gnutar
+  
   brightnessctl
-  gruvbox-gtk-theme
+  lm_sensors
+
+  fastfetch
+  nitch
+  
   exiftool
   go-toml
   gopsuinfo
+  
+  wget
+  cachix
 
   git
   gh
-  gitkraken
-  github-desktop
   gitui
 ];
 

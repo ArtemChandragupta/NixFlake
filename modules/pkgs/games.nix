@@ -2,12 +2,14 @@
 
 environment.systemPackages = with pkgs; [
   ppsspp
+  bottles
+  cartridges
+  
   moonlight-qt
   remmina
-  dosbox-x
-  amdgpu_top
+  
   xboxdrv
-  bottles
+  
   prismlauncher
 ];
 

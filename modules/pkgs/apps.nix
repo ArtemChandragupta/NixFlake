@@ -1,11 +1,13 @@
 { pkgs, ... }:{
 
 environment.systemPackages = with pkgs; [
+  kitty
+
   firefox
   obsidian
   transmission_4-gtk
-  neovide
   gnome.gnome-tweaks
+  mpv
 
   telegram-desktop
   discord
@@ -13,13 +15,13 @@ environment.systemPackages = with pkgs; [
 
   libreoffice-qt
   onlyoffice-bin
-  zathura
 
   openscad
   inkscape
   drawio
-  veusz
+  #veusz
   qalculate-gtk
+  dosbox-x
 ];
 
 }
