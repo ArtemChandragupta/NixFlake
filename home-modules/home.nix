@@ -10,10 +10,12 @@ imports = [
   ./waybar
   ./yazi
 
+  ./bash.nix
   ./btop.nix
   ./git.nix
   ./helix.nix
   ./kitty.nix
+  ./starship.nix
   ./stylix.nix
 ];
 

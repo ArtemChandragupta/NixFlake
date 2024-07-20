@@ -6,6 +6,7 @@ programs.helix = {
   extraPackages = with pkgs; with nodePackages; [
     marksman
     nil nixfmt-rfc-style
+    typescript-language-server
   ];
 
   languages.language = [

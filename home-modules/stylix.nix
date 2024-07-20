@@ -17,7 +17,7 @@ stylix = {
     base0A = "#458588";#blue
     base0B = "#b8bb26";#green
     base0C = "#8ec07c";#aqua
-    base0D = "#b8bb26";#accent yellow
+    base0D = "#b8bb26";#accent green
     base0E = "#d3869b";#pink
     base0F = "#d65d0e";#brown
   }; 
