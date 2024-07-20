@@ -20,17 +20,17 @@ environment = {
     gnome-text-editor
     gnome-console
     gnome-keysign
+    
     yelp
   ]) ++ (with pkgs.gnome; [
-    gnome-music
     gnome-terminal
     gnome-contacts
     gnome-logs
     gnome-maps
     gnome-characters
-    #gnome-font-viewer
     gnome-color-manager
     gnome-calendar
+    
     simple-scan
     seahorse
     epiphany
@@ -39,7 +39,7 @@ environment = {
     tali
     iagno
     hitori
-    atomix
+    #atomix
   ]);
   systemPackages = with pkgs; [ gnome.adwaita-icon-theme ];
 };

@@ -8,11 +8,17 @@ programs = {
   };
 };
 
+nix.settings = {
+  substituters = [ "https://hyprland.cachix.org" ];
+  trusted-public-keys = [
+    "hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="
+  ];
+};
+
 services.dbus.enable = true;
 
 environment.systemPackages = with pkgs; [
   swww
-  waybar
   
   grim
   slurp
@@ -22,8 +28,6 @@ environment.systemPackages = with pkgs; [
   
   wl-clipboard
   cliphist
-  
-  cachix
   
   hyprpicker
 ];
