@@ -1,7 +1,7 @@
 { pkgs, ... }:{
 
 networking = {
-  hostName = "nixos";
+  hostName = "Nixbook";
   networkmanager.enable = true;
   firewall = {
     enable = true;
@@ -16,7 +16,6 @@ networking = {
 
 environment.systemPackages = with pkgs; [
   networkmanagerapplet
-  tor
   inetutils
   blueberry
 
@@ -26,7 +25,6 @@ environment.systemPackages = with pkgs; [
 
 programs.haguichi.enable = true;
 services = {
-  tor.enable = true;
   blueman.enable = true;
   logmein-hamachi.enable = true;
 };

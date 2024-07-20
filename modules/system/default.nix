@@ -1,15 +1,16 @@
 {
 
 imports = [
-  ./system.nix
-  ./networking.nix
+  #./bash.nix
   ./boot.nix
   ./flatpak.nix
   ./locales.nix
-  ./virtual.nix
-  ./usb.nix
+  ./networking.nix
   ./sound.nix
-  ./bash.nix
+  ./system.nix
+  ./usb.nix
+  ./users.nix
+  ./virtual.nix
 ];
 
 }
