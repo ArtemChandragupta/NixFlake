@@ -7,6 +7,7 @@ programs.helix = {
     marksman
     nil nixfmt-rfc-style
     typescript-language-server
+    nufmt
   ];
 
   languages.language = [
@@ -23,11 +24,15 @@ programs.helix = {
       file-types = [ "css" "rasi" ];
       auto-format = true;
     }
+    {
+      name = "nu";
+      formatter.command = "nufmt";
+    }
   ];
   
   settings = {
     theme = "gruvbox";
-    
+
     editor = {
       line-number = "relative";
       completion-trigger-len = 1;
