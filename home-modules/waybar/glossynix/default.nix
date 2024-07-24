@@ -14,7 +14,7 @@ modules-right  = [ "battery" "cpu" "temperature" "memory" "backlight" "pulseaudi
 
 "custom/flake" = {
   format   = " ";
-  on-click = "wallpaper";
+  on-click = "wallpaperScript";
 };
 
 "tray" = {
