@@ -2,6 +2,7 @@
 
 environment.systemPackages = with pkgs; [
   kitty
+  zellij
 
   firefox
   obsidian
@@ -19,8 +20,6 @@ environment.systemPackages = with pkgs; [
   openscad
   inkscape
   drawio
-  #veusz
-  qalculate-gtk
   dosbox-x
 ];
 
