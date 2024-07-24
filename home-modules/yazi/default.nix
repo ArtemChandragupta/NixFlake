@@ -24,7 +24,6 @@ programs.yazi = {
     sort_sensitive = false;
     sort_reverse   = false;
     sort_dir_first = true;
-    linemode = "mtime";
     show_hidden  = false;
     show_symlink = true;
   };

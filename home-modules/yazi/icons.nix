@@ -30,16 +30,18 @@ programs.yazi.theme.icon.prepend_rules = [
       { name = "*workspace/";    text = ""; }
     { name = "*anyrun/";       text = "󰘵"; }
     { name = "*hyprland/";     text = ""; }
+      { name = "*wallpaper/";    text = "󰸉"; }
       { name = "*binds.nix";     text = "󰌌"; fg = "#7ebae4"; }
       { name = "*monitors.nix";  text = "󰍺"; fg = "#7ebae4"; }
       { name = "*rules.nix";     text = ""; fg = "#7ebae4"; }
       { name = "*settings.nix";  text = ""; fg = "#7ebae4"; }
-      { name = "*wallpaper-script.nix"; text = "󰸉"; fg = "#7ebae4"; }
 
     { name = "*nixvim/";       text = ""; }
       { name = "*keymap.nix";    text = "󰌌"; fg = "#7ebae4"; }
       { name = "*neovide.nix";   text = ""; fg = "#7ebae4"; }
       { name = "*plugins.nix";   text = ""; fg = "#7ebae4"; }
+
+    { name = "*nushell/";      text = ""; }
 
     { name = "*rofi/";         text = "󱗼"; }
       { name = "*appgrid/";   text = "󱗼"; }
@@ -58,6 +60,7 @@ programs.yazi.theme.icon.prepend_rules = [
 
     { name = "*bash.nix";      text = ""; fg = "#7ebae4"; }
     { name = "*btop.nix";      text = "󱔓"; fg = "#7ebae4"; }
+    { name = "*clipse.nix";    text = "󱓥"; fg = "#7ebae4"; }
     { name = "*git.nix";       text = "󰊢"; fg = "#7ebae4"; }
     { name = "*helix.nix";     text = "󰚄"; fg = "#7ebae4"; }
     { name = "*kitty.nix";     text = "󰄛"; fg = "#7ebae4"; }
@@ -77,6 +80,7 @@ programs.yazi.theme.icon.prepend_rules = [
       { name = "*flatpak.nix";   text = ""; fg = "#7ebae4"; }
       { name = "*locales.nix";   text = ""; fg = "#7ebae4"; }
       { name = "*networking.nix";text = ""; fg = "#7ebae4"; }
+      { name = "*shell.nix";     text = ""; fg = "#7ebae4"; }
       { name = "*sound.nix";     text = ""; fg = "#7ebae4"; }
       { name = "*system.nix";    text = "󰘳"; fg = "#7ebae4"; }
       { name = "*usb.nix";       text = ""; fg = "#7ebae4"; }
