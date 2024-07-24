@@ -11,7 +11,7 @@ Also I have a "control center" in flake.nix - var arg, wich contains username, h
 ```red
  ╭─ Distro   -> NixOS
  ├─ Editor   -> helix
- ├─ Browser  -> Firefox
+ ├─ Browser  -> Firefox WTFarc
  ├─ Shell    -> nushell & bash
  ╰─ Monitor  -> btop
              
@@ -21,6 +21,7 @@ Also I have a "control center" in flake.nix - var arg, wich contains username, h
              
  ╭─ WM       -> Hyprland & Gnome
  ├─ Bar      -> waybar
+ ├─ Clip     -> clipse
  ├─ DM       -> GDM
  ├─ Notify   -> SwayNC
  ├─ Terminal -> Kitty
