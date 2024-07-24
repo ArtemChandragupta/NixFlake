@@ -18,7 +18,7 @@ nix.settings = {
 services.dbus.enable = true;
 
 environment.systemPackages = with pkgs; [
-  swww
+  #swww
   
   grim
   slurp

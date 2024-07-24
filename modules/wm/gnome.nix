@@ -39,7 +39,6 @@ environment = {
     tali
     iagno
     hitori
-    #atomix
   ]);
   systemPackages = with pkgs; [ gnome.adwaita-icon-theme ];
 };
