@@ -1,4 +1,4 @@
-{ var, ... }:{
+{ var, pkgs, ... }:{
 
 nix.settings.trusted-users = [
   "root"
@@ -7,8 +7,10 @@ nix.settings.trusted-users = [
 
 users.users.${var.username} = {
   isNormalUser = true;
+  shell = pkgs.nushell;
   extraGroups = [ 
     "networkmanager"
+    "media"
     "wheel"
     "audio"
     "video"
