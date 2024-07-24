@@ -18,8 +18,6 @@ nix.settings = {
 services.dbus.enable = true;
 
 environment.systemPackages = with pkgs; [
-  #swww
-  
   grim
   slurp
   imagemagick
