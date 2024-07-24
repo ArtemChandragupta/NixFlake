@@ -8,12 +8,7 @@ imports = [
 
 home-manager = {
   extraSpecialArgs = { inherit inputs var; };
-  backupFileExtension = "hm-backuping";
-};
-
-environment.variables = {
-  TERM = "kitty";
-  TERMINAL = "kitty";
+  backupFileExtension = "hm-backup";
 };
 
 documentation.nixos.enable = false;
