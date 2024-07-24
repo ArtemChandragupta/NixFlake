@@ -10,17 +10,17 @@ Also I have a "control center" in flake.nix - var arg, wich contains username, h
 
 ```red
  ╭─ Distro   -> NixOS
- ├─ Editor   -> Helix
+ ├─ Editor   -> helix
  ├─ Browser  -> Firefox
- ├─ Shell    -> Bash
- ╰─ Monitor  -> Btop
+ ├─ Shell    -> nushell & bash
+ ╰─ Monitor  -> btop
              
  ╭─ Model    -> Lenovo Thinkbook 13s G3 ACN
  ├─ CPU      -> AMD Ryzen 5 5600U (12) @ 4.289GHz
  ╰─ Display  -> 1920x1200@60hz
              
  ╭─ WM       -> Hyprland & Gnome
- ├─ Bar      -> Waybar
+ ├─ Bar      -> waybar
  ├─ DM       -> GDM
  ├─ Notify   -> SwayNC
  ├─ Terminal -> Kitty
