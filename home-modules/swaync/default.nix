@@ -34,11 +34,16 @@ swayncConfig = {
 in {
 
 home = {
-  packages = with pkgs; [ swaynotificationcenter ];
+  packages = [ pkgs.swaynotificationcenter ];
   file = {
     ".config/swaync/config.json".text = builtins.toJSON swayncConfig;
     ".config/swaync/style.css".source = ./style.css;
   };
 };
+
+wayland.windowManager.hyprland.settings.layerrule = [
+  "animation slide top, swaync-control-center"
+  "animation slide top, swaync-notification-window"
+];
 
 }
