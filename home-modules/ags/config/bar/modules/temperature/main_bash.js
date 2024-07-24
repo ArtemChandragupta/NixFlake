@@ -1,7 +1,8 @@
 const getTemperature = Variable("", {
 	poll: [
 		10000,
-		`nu -c "sys temp | where unit ends-with Tctl | get temp.0 | math round"`,
+		`bash -c "sensors 2>/dev/null | grep 'Tctl' | awk '{print $2}'"`,
+		(out) => parseFloat(out).toFixed(0),
 	],
 });
 

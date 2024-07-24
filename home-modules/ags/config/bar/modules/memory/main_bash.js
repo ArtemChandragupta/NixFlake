@@ -1,13 +1,13 @@
 const getUsage = Variable("", {
 	poll: [
 		10000,
-		`nu -c "sys mem | get used total | $in.0 / $in.1 * 100 | math round"`,
+		`bash -c "free -m | awk '/^Mem:/ {print $3/$2*100}'"`,
 	],
 });
 
 export function MemoryModule() {
 	return Widget.Label({
 		className: "MemoryModule",
-		label: getUsage.bind().as(v => ` ${v}%`)
+		label: getUsage.bind().as(v => ` ${Math.floor(v)}%`)
 	})
 }

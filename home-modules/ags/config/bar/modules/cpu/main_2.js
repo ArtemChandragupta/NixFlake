@@ -1,7 +1,8 @@
 const getUsage = Variable("", {
 	poll: [
-		10000,
-		`nu -c "sys cpu | get cpu_usage | math avg | math round"`
+		5000,
+		`bash -c "top -b -n 1 | grep 'Cpu(s)' | awk '{print $2}'"`,
+		(out) => parseFloat(out).toFixed(0),
 	],
 });
 
