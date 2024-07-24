@@ -1,14 +1,14 @@
 { pkgs, inputs, ... }:{
 
 imports = [
+  ./hypridle
+  ./hyprlock
+  ./wallpaper
+
   ./binds.nix
+  ./monitors.nix
   ./rules.nix
   ./settings.nix
-  ./monitors.nix
-  ./wallpaper-script.nix
-
-  ./hyprlock
-  ./hypridle
 ];
 
 wayland.windowManager.hyprland = {

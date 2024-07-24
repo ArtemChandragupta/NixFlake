@@ -21,14 +21,17 @@ bind = [
 
   "$mainMod, R, exec, rofi-appgrid"
   "$mainMod, S, exec, anyrun"
-  "CTRL, X, exec, rofi-cliphist"
+  "CTRL, B, exec, rofi-cliphist"
   "CTRL, G, exec, cliphist list | rofi -dmenu | cliphist decode | wl-copy"
+  "CTRL, X, exec, kitty --class clipse -e 'clipse'"
 
   "$mainMod, W, exec, waybar"
   "$mainMod SHIFT, W, exec, pkill waybar"
   
   "$mainMod, A, exec, ags"
-  "$mainMod SHIFT, A, exec, pkill ags"
+  "$mainMod SHIFT, A, exec, ags -q"
+  "$mainMod, I, exec, ags -t icon-browser"
+  "$mainMod SHIFT, I, exec, ags -t applauncher"
 
   "$mainMod, left, movefocus, l"
   "$mainMod, right, movefocus, r"

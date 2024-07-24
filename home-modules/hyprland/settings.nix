@@ -14,7 +14,8 @@ wayland.windowManager.hyprland.settings = {
     "udiskie &"
     "nm-applet"
     "telegram-desktop -startintray"
-    "wl-paste --watch cliphist store"
+    "clipse -listen"
+    #"wl-paste --watch cliphist store"
   ] ++ (
   if var.glossy == true
     then [ "swww init" "wallpaper" ]
