@@ -30,6 +30,8 @@ programs.yazi.theme.icon.prepend_rules = [
       { name = "*workspace/";    text = ""; }
     { name = "*anyrun/";       text = "󰘵"; }
     { name = "*hyprland/";     text = ""; }
+      { name = "*hypridle/";     text = "󰡮"; }
+      { name = "*hyprlock/";     text = "󰌿"; }
       { name = "*wallpaper/";    text = "󰸉"; }
       { name = "*binds.nix";     text = "󰌌"; fg = "#7ebae4"; }
       { name = "*monitors.nix";  text = "󰍺"; fg = "#7ebae4"; }
@@ -41,7 +43,9 @@ programs.yazi.theme.icon.prepend_rules = [
       { name = "*neovide.nix";   text = ""; fg = "#7ebae4"; }
       { name = "*plugins.nix";   text = ""; fg = "#7ebae4"; }
 
-    { name = "*nushell/";      text = ""; }
+    { name = "*nushell/";      text = ">"; }
+      { name = "*dev/";          text = ""; }
+      { name = "*nushell/";      text = ""; }
 
     { name = "*rofi/";         text = "󱗼"; }
       { name = "*appgrid/";   text = "󱗼"; }
