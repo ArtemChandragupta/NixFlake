@@ -1,17 +1,22 @@
-def setWallpaper [] {
 const wallpaperDir = ".wallpapers"
 
 let screenList = wlr-randr
-  | split row -r '\n'
-  | where {|it| str starts-with ' ' | $in == false}
-  | split column -r ' '
-  | get column1
+| split row -r '\n'
+| where { |it| str starts-with ' ' | $in == false }
+| split column -r ' '
+| get column1
 
-let randomWallpaper = ls $wallpaperDir 
+for $screen in $screenList {
+  let currentWallpaper = open $'.cache/swww/($screen)' 
+  | split row '/' 
+  | last 1 
+  | get 0
+  | $wallpaperDir + '/' + $in
+
+  let randomWallpaper = ls $wallpaperDir
   | get name
+  | where { |it| $it != $currentWallpaper }
   | get (random int ..($in | length | $in - 1))
 
-  for $it in $screenList { swww img -o $it $randomWallpaper }  
+  swww img -o $screen $randomWallpaper
 }
-
-setWallpaper
