@@ -1,5 +1,4 @@
 {
-description = "Central flake";
 
 outputs = { self, nixpkgs, nixpkgs-stable, home-manager, ... }@inputs:
 let
