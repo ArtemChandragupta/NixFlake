@@ -7,7 +7,6 @@ programs.helix = {
     marksman
     nil nixfmt-rfc-style
     typescript-language-server
-    nufmt
   ];
 
   languages.language = [
@@ -24,14 +23,20 @@ programs.helix = {
       file-types = [ "css" "rasi" ];
       auto-format = true;
     }
-    {
-      name = "nu";
-      formatter.command = "nufmt";
-    }
   ];
   
   settings = {
     theme = "gruvbox";
+
+    keys = {
+      normal = {
+        "y" = "yank_main_selection_to_clipboard";
+        "Y" = ":sh zellij run -fc -- yazi";
+      };
+      select = {
+        "y" = "yank_main_selection_to_clipboard";
+      };
+    };
 
     editor = {
       line-number = "relative";

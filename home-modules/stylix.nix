@@ -8,7 +8,7 @@ stylix = {
     base01 = "#373737";#Lighter Background (Used for status bars, line number)
     base02 = "#504945";#Selection Background
     base03 = "#665c54";#Comments, Invisibles, Line Highlighting
-    base04 = "#5A5A5E";#Dark Foreground (Used for status bars)
+    base04 = "#5a5a5e";#Dark Foreground (Used for status bars)
     base05 = "#989899";#Default Foreground, Caret, Delimiters, Operators
     base06 = "#ebdbb2";#Light Foreground (Not often used)
     base07 = "#fbf1c7";#Light Background (Not often used)
@@ -43,7 +43,7 @@ gtk = {
   enable = true;
   iconTheme = {
     name = "Mint-Y-Sand";
-    package = pkgs.cinnamon.mint-y-icons;
+    package = pkgs.mint-y-icons;
   };
 };
 

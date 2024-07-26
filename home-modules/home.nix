@@ -1,13 +1,27 @@
 { var, ... }:{
 
-imports = [
+imports = if var.machine == "ThinkBook13s" then [
   ./ags
   ./anyrun
   ./hyprland
-  ./nixvim
+  #./nixvim
+  ./nushell
   ./rofi
   ./swaync
   ./waybar
+  ./yazi
+
+  ./bash.nix
+  ./btop.nix
+  ./clipse.nix
+  ./git.nix
+  ./helix.nix
+  ./kitty.nix
+  ./starship.nix
+  ./stylix.nix
+  ./xdg.nix
+  ./zellij.nix
+] else if var.machine == "desktop" then [
   ./yazi
 
   ./bash.nix
@@ -17,7 +31,8 @@ imports = [
   ./kitty.nix
   ./starship.nix
   ./stylix.nix
-];
+  ./xdg.nix
+] else [ ];
 
 programs.home-manager.enable = true;
 
@@ -28,27 +43,6 @@ home = {
   sessionVariables = {
     BROWSER  = "firefox";
     TERMINAL = "kitty";
-  };
-};
-
-xdg = {
-  enable = true;
-  mime.enable = true;
-  mimeApps = {
-    enable = true;
-    
-    associations.added = {
-      "application/pdf" = [ "org.gnome.Evince.desktop" ];
-      "image/*"         = [ "org.gnome.Loupe.desktop"  ];
-      "video/*"         = [ "totem.desktop"            ];
-    };
-    
-    defaultApplications = {
-      "application/pdf" = [ "org.gnome.Evince.desktop" ];
-      "image/*"         = [ "org.gnome.Loupe.desktop"  ];
-      "video/*"         = [ "totem.desktop"            ];
-    };
-    
   };
 };
 
