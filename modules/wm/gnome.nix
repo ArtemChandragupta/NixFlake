@@ -15,32 +15,31 @@ services = {
 
 environment = {
   gnome.excludePackages = (with pkgs; [
-    gnome-tour
     gnome-connections
     gnome-text-editor
+    gnome-terminal
+    gnome-calendar
     gnome-console
     gnome-keysign
+    gnome-tour
     
+    simple-scan
+    epiphany
+    seahorse
+    geary
     yelp
   ]) ++ (with pkgs.gnome; [
-    gnome-terminal
-    gnome-contacts
-    gnome-logs
     gnome-maps
     gnome-characters
     gnome-color-manager
-    gnome-calendar
-    
-    simple-scan
-    seahorse
-    epiphany
-    geary
+    gnome-contacts
+    gnome-logs
 
-    tali
     iagno
     hitori
+    iagno
   ]);
-  systemPackages = with pkgs; [ gnome.adwaita-icon-theme ];
+  systemPackages = with pkgs; [ adwaita-icon-theme ];
 };
 
 programs.dconf.enable = true;
