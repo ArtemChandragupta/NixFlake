@@ -44,8 +44,8 @@ programs.yazi.theme.icon.prepend_rules = [
       { name = "*plugins.nix";   text = ""; fg = "#7ebae4"; }
 
     { name = "*nushell/";      text = ">"; }
-      { name = "*dev/";          text = ""; }
-      { name = "*nushell/";      text = ""; }
+      { name = "*dev/";          text = "󱚊"; }
+      { name = "*examples/";     text = "󱛉"; }
 
     { name = "*rofi/";         text = "󱗼"; }
       { name = "*appgrid/";   text = "󱗼"; }
@@ -70,6 +70,8 @@ programs.yazi.theme.icon.prepend_rules = [
     { name = "*kitty.nix";     text = "󰄛"; fg = "#7ebae4"; }
     { name = "*starship.nix";  text = ""; fg = "#7ebae4"; }
     { name = "*stylix.nix";    text = "󰃣"; fg = "#7ebae4"; }
+    { name = "*xdg.nix";       text = "󰬟"; fg = "#7ebae4"; }
+    { name = "*zellij.nix";    text = ""; fg = "#7ebae4"; }
 
   { name = "*modules/";      text = "󱁿"; }
     { name = "*host-specific/";text = "󰛧"; }
