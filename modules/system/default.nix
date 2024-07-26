@@ -1,7 +1,6 @@
 {
 
 imports = [
-  #./bash.nix
   ./boot.nix
   ./flatpak.nix
   ./locales.nix
