@@ -27,7 +27,6 @@ programs.hyprlock = {
         fail_color  = "rgb(cc241d)";
         fade_on_empty = false;
         placeholder_text = ''Password:'';
-        fail_text = ''Oh no...'';
         dots_spacing = 0.3;
         dots_center = true;
         position = "0, -440";
