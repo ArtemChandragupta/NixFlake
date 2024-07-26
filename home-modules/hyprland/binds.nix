@@ -23,7 +23,7 @@ bind = [
   "$mainMod, S, exec, anyrun"
   "CTRL, B, exec, rofi-cliphist"
   "CTRL, G, exec, cliphist list | rofi -dmenu | cliphist decode | wl-copy"
-  "CTRL, X, exec, kitty --class clipse -e 'clipse'"
+  "CTRL, X, exec, kitty -o font_size=15 -o background_opacity=0.95 --class clipse -e 'clipse'"
 
   "$mainMod, W, exec, waybar"
   "$mainMod SHIFT, W, exec, pkill waybar"

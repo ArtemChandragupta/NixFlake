@@ -2,10 +2,6 @@
 
 wayland.windowManager.hyprland.settings = {
 
-  monitor = [
-    "eDP-1,1920x1200,0x0,1" 
-  ];
-
   exec-once = [
     "swaync"
     "waybar"
@@ -15,12 +11,7 @@ wayland.windowManager.hyprland.settings = {
     "nm-applet"
     "telegram-desktop -startintray"
     "clipse -listen"
-    #"wl-paste --watch cliphist store"
-  ] ++ (
-  if var.glossy == true
-    then [ "swww init" "wallpaper" ]
-    else []
-  );
+  ];
 
   env = [
     "XCURSOR_SIZE,24"

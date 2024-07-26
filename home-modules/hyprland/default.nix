@@ -1,15 +1,18 @@
-{ pkgs, inputs, ... }:{
+{ pkgs, inputs, var, ... }:{
 
 imports = [
   ./hypridle
   ./hyprlock
-  ./wallpaper
 
   ./binds.nix
   ./monitors.nix
   ./rules.nix
   ./settings.nix
-];
+] ++ (
+  if var.glossy == true
+    then [./wallpaper]
+    else [] 
+);
 
 wayland.windowManager.hyprland = {
   enable  = true;
