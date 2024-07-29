@@ -29,7 +29,7 @@ programs.starship = {
         "media"      = "";
         "hyprland"   = "";
         "Games"      = "󰊖";
-        "PortProton" = "";
+        "PortProton" = "󰹻";
       };
     };
 

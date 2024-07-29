@@ -4,7 +4,6 @@ imports = if var.machine == "ThinkBook13s" then [
   ./ags
   ./anyrun
   ./hyprland
-  #./nixvim
   ./nushell
   ./rofi
   ./swaync
@@ -14,13 +13,13 @@ imports = if var.machine == "ThinkBook13s" then [
   ./bash.nix
   ./btop.nix
   ./clipse.nix
+  ./fastfetch.nix
   ./git.nix
   ./helix.nix
   ./kitty.nix
   ./starship.nix
   ./stylix.nix
   ./xdg.nix
-  ./zellij.nix
 ] else if var.machine == "desktop" then [
   ./yazi
 

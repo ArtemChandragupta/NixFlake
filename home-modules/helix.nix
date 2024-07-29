@@ -36,6 +36,9 @@ programs.helix = {
       select = {
         "y" = "yank_main_selection_to_clipboard";
       };
+      insert = {
+        "C-v" = "paste_clipboard_before";
+      };
     };
 
     editor = {
@@ -63,7 +66,11 @@ programs.helix = {
         ];
       };
       
-      cursor-shape.insert = "bar";
+      cursor-shape = {
+        normal = "block";
+        select = "block";
+        insert = "bar";
+      };
       whitespace.render.tab = "all";
       indent-guides = {
         render = true;
