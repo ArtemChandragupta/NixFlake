@@ -1,4 +1,4 @@
-{ pkgs, ... }:{
+{
 
 programs.yazi.settings = {
   opener = {
@@ -28,7 +28,7 @@ programs.yazi.settings = {
     ];
     "unarchive" = [
       {
-        run = ''${pkgs.unar}/bin/unar "$@"'';
+        run = ''unar "$@"'';
         desc = "unarchive";
       }
     ];
