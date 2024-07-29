@@ -7,7 +7,6 @@ environment.systemPackages = with pkgs; [
   obsidian
   transmission_4-gtk
   gnome-tweaks
-  mpv
 
   telegram-desktop
   discord
