@@ -8,6 +8,10 @@ window#waybar {
   background: transparent;
 }
 
+tooltip {
+  background: #282828;
+}
+
 
 #custom-flake,
 #tray,
