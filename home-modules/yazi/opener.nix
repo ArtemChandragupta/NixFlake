@@ -4,7 +4,7 @@ programs.yazi.settings = {
   opener = {
     "text" = [
       {
-        run = "hx \"$@\"";
+        run = ''hx "$@"'';
         block = true;
       }
     ];

@@ -17,6 +17,7 @@ nix.settings = {
 
 programs.yazi = {
   enable = true;
+  enableNushellIntegration = true;
 
   settings.manager = {
     layout = [ 1 4 3 ];
@@ -26,6 +27,7 @@ programs.yazi = {
     sort_dir_first = true;
     show_hidden  = false;
     show_symlink = true;
+    linemode = "mtime";
   };
 
   plugins = {
