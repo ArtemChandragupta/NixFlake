@@ -4,7 +4,7 @@ outputs = { self, nixpkgs, nixpkgs-stable, home-manager, ... }@inputs:
 let
   var = {
     username = "artem";
-    machine  = "ThinkBook13s";
+    host  = "homePC";
     glossy   = true;
   };
   system = "x86_64-linux";
