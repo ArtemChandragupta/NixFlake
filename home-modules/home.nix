@@ -1,6 +1,6 @@
 { var, ... }:{
 
-imports = if var.machine == "ThinkBook13s" then [
+imports = if var.host == "ThinkBook13s" then [
   ./ags
   ./anyrun
   ./hyprland
@@ -20,11 +20,13 @@ imports = if var.machine == "ThinkBook13s" then [
   ./starship.nix
   ./stylix.nix
   ./xdg.nix
-] else if var.machine == "desktop" then [
+] else if var.host == "homePC" then [
+  ./nushell
   ./yazi
 
   ./bash.nix
   ./btop.nix
+  ./fastfetch.nix
   ./git.nix
   ./helix.nix
   ./kitty.nix
