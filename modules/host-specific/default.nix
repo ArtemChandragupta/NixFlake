@@ -1,7 +1,7 @@
 { var, ... }:{
 
 imports = [
-  ./${var.machine}
+  ./${var.host}
 ];
 
 }
