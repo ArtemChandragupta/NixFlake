@@ -32,7 +32,6 @@ programs.yazi.theme.icon.globs = [
       { name = "*tray/";         text = ""; }
       { name = "*volume/";       text = "󱄠"; }
       { name = "*workspace/";    text = ""; }
-    { name = "*anyrun/";       text = "󰘵"; }
     { name = "*hyprland/";     text = ""; }
       { name = "*autoname/";     text = "󰎏"; }
       { name = "*hypridle/";     text = "󰡮"; }

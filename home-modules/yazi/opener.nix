@@ -10,19 +10,19 @@ programs.yazi.settings = {
     ];
     "video" = [
       {
-        run  = "totem \"$@\"";
+        run  = ''"totem "$@"'';
         block = true;
       }
     ];
     "image" = [
       {
-        run  = "loupe \"$@\"";
+        run  = ''loupe "$@"'';
         block = true;
       }
     ];
     "pdf" = [
       {
-        run  = "evince \"$@\"";
+        run  = ''evince "$@"'';
         block = true;
       }
     ];
