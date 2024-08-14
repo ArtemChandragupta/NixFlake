@@ -23,6 +23,10 @@ window .bar {
     border-radius: 12px;
     margin: 0;
 }
+.TrayIcon {
+    background: #282828;
+    padding: 0;
+}
 .WorkspacesModule {
     background: #282828;
     padding: 0 10px;
