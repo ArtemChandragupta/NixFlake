@@ -1,11 +1,11 @@
-{ pkgs, inputs, ... }:{
+{ pkgs, var, inputs, ... }:{
 
-programs = {
-  hyprland = {
-    enable  = true;
-    package = inputs.hyprland.packages.${pkgs.system}.hyprland;
-    xwayland.enable = true;
-  };
+programs.hyprland = {
+  enable  = true;
+  package = if var.init 
+    then pkgs.hyprland
+    else inputs.hyprland.packages.${pkgs.system}.hyprland;
+  xwayland.enable = true;
 };
 
 nix.settings = {
@@ -28,6 +28,9 @@ environment.systemPackages = with pkgs; [
   cliphist
   
   hyprpicker
+
+  pwvucontrol
+  alsa-utils
 ];
 
 }
