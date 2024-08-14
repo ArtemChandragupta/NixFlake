@@ -1,15 +1,22 @@
-{
+{ lib, ... }:{
 
 programs.starship = {
   enable = true;
   settings = {
-    format = "[](#458588)\$os\$username\[](bg:#83a598 fg:#458588)\$directory\[](fg:#83a598 bg:#458588)\$git_branch\$git_status\[](fg:#458588 bg:#665c54)\$c\$rust\$golang\$nodejs\$php\$java\$kotlin\$haskell\$python\[](fg:#665c54 bg:#3c3836)\$time\[](fg:#3c3836)\$line_break$character ";
-
-    os = {
-      disabled = false;
-      style    = "bg:#458588 fg:#282828";
-      symbols.NixOS = "󰘳";
-    };
+    format = lib.concatStrings [
+      "[](#458588)" "[󰘳](bg:#458588 fg:#282828)"
+      "$username"
+      "[](bg:#83a598 fg:#458588)"
+      "$directory"
+      "[](fg:#83a598 bg:#458588)"
+      "$git_branch" "$git_status"
+      "[](fg:#458588 bg:#665c54)"
+      "$nodejs" "$java" "$kotlin" "$haskell" "$python"
+      "[](fg:#665c54 bg:#3c3836)"
+      "$time"
+      "[](fg:#3c3836)"
+      "$line_break$character "
+    ];
 
     username = {
       show_always = true;
@@ -24,12 +31,12 @@ programs.starship = {
       truncation_length = 3;
       truncation_symbol = "…/";
       substitutions = {
-        "Documents"  = "󱔗";
-        "Downloads"  = "";
-        "media"      = "";
-        "hyprland"   = "";
-        "Games"      = "󰊖";
-        "PortProton" = "󰹻";
+        "Documents"  = "󱔗 ";
+        "Downloads"  = " ";
+        "media"      = " ";
+        "hyprland"   = " ";
+        "Games"      = "󰊖 ";
+        "PortProton" = "󰹻 ";
       };
     };
 

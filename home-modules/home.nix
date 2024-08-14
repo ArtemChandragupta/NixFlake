@@ -2,7 +2,6 @@
 
 imports = if var.host == "ThinkBook13s" then [
   ./ags
-  ./anyrun
   ./hyprland
   ./nushell
   ./rofi

@@ -8,8 +8,10 @@ programs.kitty = {
 
     font_size = 12;
 
-    background_opacity = if var.glossy == true then "0.9" else "1";
-  	
+    background_opacity = if var.glossy 
+      then "0.9" 
+      else "1";
+
   	cursor                = "#928374";
   	cursor_text_color     = "background";
   	
