@@ -1,11 +1,11 @@
-{ inputs, pkgs, ... }:{
+{ inputs, var, pkgs, ... }:{
 
 imports = [ 
   inputs.ags.homeManagerModules.default
 ];
 
 programs.ags = {
-  enable = true;
+  enable = !var.init;
   configDir = ./config;
   extraPackages = with pkgs; [
     gtksourceview
