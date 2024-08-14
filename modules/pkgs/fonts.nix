@@ -1,4 +1,4 @@
-{ pkgs, inputs, ... }:{
+{ pkgs, ... }:{
 
 fonts.packages = with pkgs; [
   font-awesome
@@ -6,7 +6,6 @@ fonts.packages = with pkgs; [
   material-design-icons
   nerdfonts
   open-sans
-  inputs.apple-fonts.packages.${pkg.system}.sf-pro-nerd
 ];
 
 }
