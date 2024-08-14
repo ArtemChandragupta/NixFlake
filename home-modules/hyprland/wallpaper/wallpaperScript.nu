@@ -6,7 +6,7 @@ let screenList = wlr-randr
 
 for $screen in $screenList {
     swww img -o $screen (
-        ls -f .wallpapers
+        ls -f .wallpaper
         | get name
         | where { |it| $it != (open $'.cache/swww/($screen)') }
         | get (random int ..($in | length | $in - 1))
