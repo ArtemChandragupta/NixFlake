@@ -1,4 +1,4 @@
-{
+{ var, ... }:{
 
 imports = [
   ./boot.nix
@@ -9,7 +9,9 @@ imports = [
   ./system.nix
   ./usb.nix
   ./users.nix
-  ./virtual.nix
-];
+] ++ ( if var.init 
+  then [ ]
+  else [ ./virtual.nix ]
+);
 
 }

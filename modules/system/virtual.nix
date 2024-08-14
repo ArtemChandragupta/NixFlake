@@ -27,13 +27,10 @@ environment.systemPackages = with pkgs; [
 
 services.spice-vdagentd.enable = true;
 
-home-manager.users.${var.username}.dconf = {
-  settings = {
-    "org/virt-manager/virt-manager/connections" = {
-      autoconnect = [ "qemu:///system" ];
-      uris = [ "qemu:///system" ];
-    };
-    "org/gnome/desktop/interface".color-scheme = "prefer-dark";
+home-manager.users.${var.username}.dconf.settings = {
+  "org/virt-manager/virt-manager/connections" = {
+    autoconnect = [ "qemu:///system" ];
+    uris = [ "qemu:///system" ];
   };  
 };
 
