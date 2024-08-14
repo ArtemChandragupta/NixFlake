@@ -46,9 +46,9 @@ wayland.windowManager.hyprland.settings = {
   };
 
   misc = {
-    force_default_wallpaper   = 0;
+    force_default_wallpaper = 0;
     
-    background_color = if var.glossy == true 
+    background_color = if var.glossy 
     then "rgb(000000)" 
     else "rgb(d5c4a1)";
     
@@ -60,7 +60,7 @@ wayland.windowManager.hyprland.settings = {
     swallow_regex             = "^(kitty)$";
   };
 
-  general = if var.glossy == true 
+  general = if var.glossy
   then {
     gaps_in     = 5;
     gaps_out    = 10;
@@ -73,20 +73,20 @@ wayland.windowManager.hyprland.settings = {
     "col.inactive_border" = "rgb(d5c4a1)";
   };
 
-  decoration = if var.glossy == true 
+  decoration = if var.glossy
   then {
     rounding = 10;
     blur = {
-      enabled = true;
-      size = 3;
-      passes = 1;
+      enabled  = true;
+      size     = 3;
+      passes   = 1;
       vibrancy = 0.1696;
     };
     drop_shadow = false;
   } else {
-    rounding = 0;
+    rounding     = 0;
     blur.enabled = false;
-    drop_shadow = false;
+    drop_shadow  = false;
   };
 
   animations = {
