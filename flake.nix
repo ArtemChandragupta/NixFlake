@@ -4,8 +4,9 @@ outputs = { self, nixpkgs, nixpkgs-stable, home-manager, ... }@inputs:
 let
   var = {
     username = "artem";
-    host  = "homePC";
+    host     = "ThinkBook13s";
     glossy   = true;
+    init     = false;
   };
   system = "x86_64-linux";
   pkgs-s = nixpkgs-stable.legacyPackages.${system};
@@ -40,19 +41,13 @@ inputs = {
     url = "github:nix-community/nixvim";
     inputs.nixpkgs.follows = "nixpkgs";
   };
-    
+  
   home-manager = {
     url = "github:nix-community/home-manager";
     inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  anyrun = {
-    url = "github:anyrun-org/anyrun";
-    inputs.nixpkgs.follows = "nixpkgs";
-  };
-
   ags.url = "github:Aylur/ags";
-  apple-fonts.url = "github:Lyndeno/apple-fonts.nix";
   stylix.url = "github:danth/stylix";
 };
 
