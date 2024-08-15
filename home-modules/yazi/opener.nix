@@ -26,7 +26,7 @@ programs.yazi.settings = {
         block = true;
       }
     ];
-    "unarchive" = [
+    "archive" = [
       {
         run = ''unar "$@"'';
         desc = "unarchive";
@@ -34,7 +34,7 @@ programs.yazi.settings = {
     ];
   };
 
-  open.rules = [
+  open.prepend_rules = [
     {
       mime = "text/*";
       use  = "text";
@@ -50,10 +50,6 @@ programs.yazi.settings = {
     {
       mime = "application/pdf";
       use  = "pdf";
-    }
-    {
-      mime = "*";
-      use  = ["text""unarchive"];
     }
   ];
 };
