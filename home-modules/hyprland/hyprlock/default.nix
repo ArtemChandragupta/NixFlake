@@ -13,7 +13,7 @@ programs.hyprlock = {
       {
         monitor = "";
         color = "rgb(282828)";
-        path = "/home/${var.username}/nix/home-modules/hyprland/hyprlock/blue.png";
+        path = "/home/${var.user}/nix/home-modules/hyprland/hyprlock/blue.png";
       }
     ];
 
