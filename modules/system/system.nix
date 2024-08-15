@@ -14,7 +14,7 @@ nix = {
 
 programs.nh = {
   enable = true;
-  flake  = "/home/${var.username}/nix";
+  flake  = "/home/${var.user}/nix";
 };
 
 nixpkgs.config = {

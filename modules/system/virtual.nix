@@ -27,7 +27,7 @@ environment.systemPackages = with pkgs; [
 
 services.spice-vdagentd.enable = true;
 
-home-manager.users.${var.username}.dconf.settings = {
+home-manager.users.${var.user}.dconf.settings = {
   "org/virt-manager/virt-manager/connections" = {
     autoconnect = [ "qemu:///system" ];
     uris = [ "qemu:///system" ];

@@ -5,7 +5,7 @@ nix.settings.trusted-users = [
   "@wheel"
 ];
 
-users.users.${var.username} = {
+users.users.${var.user} = {
   isNormalUser = true;
   shell = pkgs.nushell;
   extraGroups = [ 
@@ -20,6 +20,6 @@ users.users.${var.username} = {
   ];
 };
 
-home-manager.users."${var.username}" = import ../../home-modules/home.nix;
+home-manager.users."${var.user}" = import ../../home-modules/home.nix;
 
 }
