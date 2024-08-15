@@ -3,22 +3,20 @@
 imports = [
   ./hypridle
   ./hyprlock
+  ./wallpaper
 
   ./binds.nix
   ./monitors.nix
   ./rules.nix
   ./settings.nix
-] ++ ( if var.glossy
-  then [./wallpaper]
-  else [] 
-);
+];
 
 wayland.windowManager.hyprland = {
   enable  = true;
   package = if var.init 
     then pkgs.hyprland
     else inputs.hyprland.packages.${pkgs.system}.hyprland;
-  systemd.variables = ["--all"];
+  systemd.variables = [ "--all" ];
 };
 
 dconf.settings."org/gnome/desktop/wm/preferences/button-layout".appmenu = "";
