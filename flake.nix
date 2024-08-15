@@ -3,17 +3,15 @@
 outputs = { self, nixpkgs, nixpkgs-stable, home-manager, ... }@inputs:
 let
   var = {
-    username = "artem";
-    host     = "ThinkBook13s";
-    glossy   = true;
-    init     = false;
+    user = "artem";
+    host = "ThinkBook13s";
+    init = false;
   };
-  system = "x86_64-linux";
-  pkgs-s = nixpkgs-stable.legacyPackages.${system};
+  pkgs-s = nixpkgs-stable.legacyPackages."x86_64-linux";
 in
 {
   nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-    inherit system;
+    system = "x86_64-linux";
     specialArgs = {
       inherit inputs; 
       inherit pkgs-s;

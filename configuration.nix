@@ -7,7 +7,10 @@ imports = [
 ];
 
 home-manager = {
-  extraSpecialArgs = { inherit inputs var; };
+  extraSpecialArgs = {
+    inherit inputs; 
+    inherit var;
+  };
   backupFileExtension = "hm-backup";
 };
 
