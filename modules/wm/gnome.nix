@@ -2,8 +2,6 @@
 
 services = {
   xserver = {
-    enable = true;
-    excludePackages = [ pkgs.xterm ];
     displayManager.gdm = {
       enable  = true;
       wayland = true;
@@ -41,8 +39,5 @@ environment = {
   ]);
   systemPackages = with pkgs; [ adwaita-icon-theme ];
 };
-
-programs.dconf.enable = true;
-
 
 }

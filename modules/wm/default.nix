@@ -1,11 +1,17 @@
-{ var, ... }:{
+{ var, pkgs, ... }:{
 
 imports = [
-  ./gnome.nix
   ./stylix.nix
 ] ++ ( if var.host == "ThinkBook13s" 
   then [ ./hyprland.nix ] 
-  else [ ]
+  else [ ./gnome.nix    ]
 );
+
+programs.dconf.enable = true;
+
+services.xserver = {
+  enable = true;
+  excludePackages = [ pkgs.xterm ];
+};
 
 }
