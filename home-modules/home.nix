@@ -1,7 +1,6 @@
 { var, ... }:{
 
 imports = if var.host == "ThinkBook13s" then [
-  ./ags
   ./hyprland
   ./nushell
   ./rofi
@@ -37,8 +36,8 @@ imports = if var.host == "ThinkBook13s" then [
 programs.home-manager.enable = true;
 
 home = {
-  username = var.username;
-  homeDirectory = "/home/${var.username}";  
+  username = var.user;
+  homeDirectory = "/home/${var.user}";  
   stateVersion  = "24.05";
   sessionVariables = {
     BROWSER  = "firefox";
