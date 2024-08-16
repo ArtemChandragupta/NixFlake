@@ -22,6 +22,7 @@ tooltip {
 #temperature,
 #memory,
 #backlight,
+#wireplumber,
 #pulseaudio {
   background: #282828;
   padding: 0 10px;
@@ -92,11 +93,18 @@ tooltip {
   border-radius: 12px 0 0 12px;
   margin: 0 -2px 0 4px;
 }
+#wireplumber {
+  color: #d79921;
+  border-radius: 0;
+  margin: 0 -2px;
+  padding: 0 5px 0 10px;
+}
+#wireplumber.muted {
+  color: #cc241d;
+}
 #pulseaudio {
   color: #d79921;
   border-radius: 0 12px 12px 0;
   margin: 0 0 0 -2px;
-}
-#pulseaudio.muted {
-  color: #cc241d;
+  padding: 0 10px 0 5px;
 }

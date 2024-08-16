@@ -10,7 +10,7 @@ layer  = "top";
 
 modules-left   = [ "custom/flake" "tray" "hyprland/workspaces" ];
 modules-center = [ "clock" ];
-modules-right  = [ "battery" "cpu" "temperature" "memory" "backlight" "pulseaudio" ];
+modules-right  = [ "battery" "cpu" "temperature" "memory" "backlight" "wireplumber" "pulseaudio" ];
 
 
 "custom/flake" = {
@@ -100,19 +100,16 @@ modules-right  = [ "battery" "cpu" "temperature" "memory" "backlight" "pulseaudi
   format = "{icon}{percent}%";
   format-icons   = ["󰃞 " "󰃟 " "󰃠 "];
 };
-"pulseaudio" = {
-  format = "{icon}{volume}% {format_source}";
-  format-bluetooth       = "{icon} {volume}%";
-  format-bluetooth-muted = "   {volume}%";
-  format-source       = "󰍰";
-  format-source-muted = "󰍱";
-  format-muted = " {volume}% {format_source}";
-  format-icons = {
-    headphone = " ";
-    default   = [" " " " " "];
-  };
-  tooltip-format  = "{desc} {volume}%";
+"wireplumber" = {
+  format = "{icon}{volume}%";
+  format-icons = [" " " " " "];
+  format-muted = " {volume}%";
   on-click = "pwvucontrol";
+};
+"pulseaudio" = {
+  format = "{format_source}";
+  format-source       = "󰍰";
+  format-source-muted = "<span color='#cc241d'>󰍰</span>";
 };
 
   };
