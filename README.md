@@ -4,7 +4,7 @@ This is my NixOS configuration. I use it for both my desktop and laptop.
 
 I love gruvbox colorscheme, but don't use default gruvbox-gtk-theme pkg for this - it has some bugs. Instead I utilize [stylix](https://github.com/danth/stylix) for creating my own gtk theme from base16Scheme - result looks like gruvbox, but creamy brown text removed for better looking in gui grey. Also error logs and bugs are gone. All other stylix options besides of mandatory ones are disabled.
 
-Also I have a "control center" in flake.nix - var arg, wich contains username, hostname for host-specific things such as amd kernel modules and environment type selector - now it is boolean because I have two of them.
+Also I have a "control center" in flake.nix - var arg, wich contains username, hostname for host-specific things such as amd kernel modules and init variable, used to skip unnecessary and havy things on first rebuild for improved reproducebility.
 
 ## Features
 
