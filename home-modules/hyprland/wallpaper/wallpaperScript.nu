@@ -13,10 +13,11 @@ for $screen in $screenList {
             ls -f .wallpaper
             | get name
             | get (random int ..($in | length | $in - 1))
-        } else { # If yes, set wlppr different from current
+        } else { # If yes, set wlppr different from current based on symlink
             ls -f .wallpaper
-            | where name != (open $'.cache/swww/($screen)')
             | get name
+            | path expand
+            | where {|link| $link != (open $'.cache/swww/($screen)')}
             | get (random int ..($in | length | $in - 1))
         }
     )
