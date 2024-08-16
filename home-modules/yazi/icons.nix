@@ -41,6 +41,7 @@ programs.yazi.theme.icon.globs = [
       { name = "*monitors.nix";  text = "󰍺"; fg_dark = "#7ebae4"; }
       { name = "*rules.nix";     text = ""; fg_dark = "#7ebae4"; }
       { name = "*settings.nix";  text = ""; fg_dark = "#7ebae4"; }
+      { name = "*waycorner.nix"; text = ""; fg_dark = "#7ebae4"; }
 
     { name = "*nixvim/";       text = ""; }
       { name = "*keymap.nix";    text = "󰌌"; fg_dark = "#7ebae4"; }

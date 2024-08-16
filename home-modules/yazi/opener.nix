@@ -10,7 +10,7 @@ programs.yazi.settings = {
     ];
     "video" = [
       {
-        run  = ''"totem "$@"'';
+        run  = ''totem "$@"'';
         block = true;
       }
     ];
@@ -24,12 +24,6 @@ programs.yazi.settings = {
       {
         run  = ''evince "$@"'';
         block = true;
-      }
-    ];
-    "archive" = [
-      {
-        run = ''unar "$@"'';
-        desc = "unarchive";
       }
     ];
   };
