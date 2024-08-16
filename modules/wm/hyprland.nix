@@ -15,12 +15,15 @@ nix.settings = {
   ];
 };
 
+environment.variables.EDITOR = "hx";
+
 environment.systemPackages = with pkgs; [
   grim
   slurp
   imagemagick
   swappy
-  wl-screenrec
+  #wl-screenrec
+  wf-recorder
   
   wl-clipboard
   cliphist
