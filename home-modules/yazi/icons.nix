@@ -37,6 +37,7 @@ programs.yazi.theme.icon.globs = [
       { name = "*hypridle/";     text = "󰡮"; }
       { name = "*hyprlock/";     text = ""; }
       { name = "*wallpaper/";    text = "󰸉"; }
+        { name = "*fetchWlppr.nix";text = "󰭽"; fg_dark = "#7ebae4"; }
       { name = "*binds.nix";     text = "󰌌"; fg_dark = "#7ebae4"; }
       { name = "*monitors.nix";  text = "󰍺"; fg_dark = "#7ebae4"; }
       { name = "*rules.nix";     text = ""; fg_dark = "#7ebae4"; }
