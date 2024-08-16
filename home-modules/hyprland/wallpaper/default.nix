@@ -6,7 +6,6 @@ in{
 
 home.packages = [
   pkgs.swww
-  pkgs.wlr-randr
   
   wallpaperScript
 ];
