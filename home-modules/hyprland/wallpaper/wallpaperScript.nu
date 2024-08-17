@@ -13,7 +13,7 @@ for $screen in $screenList {
             ls -f .wallpaper
             | get name
             | get (random int ..($in | length | $in - 1))
-        } else { # If yes, set wlppr different from current based on symlink
+        } else { # If yes, set wlppr different from current based on full path
             ls -f .wallpaper
             | get name
             | path expand
