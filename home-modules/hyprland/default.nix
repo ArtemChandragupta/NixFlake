@@ -4,10 +4,9 @@ imports = [
   ./wallpaper
 
   ./binds.nix
-  ./hypridle.nix
-  ./hyprlock.nix
   ./monitors.nix
   ./rules.nix
+  ./screenlock.nix
   ./settings.nix
   ./waycorner.nix
 ];
