@@ -34,13 +34,12 @@ programs.yazi.theme.icon.globs = [
       { name = "*workspace/";    text = ""; }
     { name = "*hyprland/";     text = ""; }
       { name = "*autoname/";     text = "󰎏"; }
-      { name = "*hypridle/";     text = "󰡮"; }
-      { name = "*hyprlock/";     text = ""; }
       { name = "*wallpaper/";    text = "󰸉"; }
         { name = "*fetchWlppr.nix";text = "󰭽"; fg_dark = "#7ebae4"; }
       { name = "*binds.nix";     text = "󰌌"; fg_dark = "#7ebae4"; }
       { name = "*monitors.nix";  text = "󰍺"; fg_dark = "#7ebae4"; }
-      { name = "*rules.nix";     text = ""; fg_dark = "#7ebae4"; }
+      { name = "*rules.nix";     text = ""; fg_dark = "#7ebae4"; }
+      { name = "*screenlock.nix";text = "󰷛"; fg_dark = "#7ebae4"; }
       { name = "*settings.nix";  text = ""; fg_dark = "#7ebae4"; }
       { name = "*waycorner.nix"; text = ""; fg_dark = "#7ebae4"; }
 
@@ -78,7 +77,6 @@ programs.yazi.theme.icon.globs = [
     { name = "*starship.nix";  text = "󱓞"; fg_dark = "#7ebae4"; }
     { name = "*stylix.nix";    text = "󰃣"; fg_dark = "#7ebae4"; }
     { name = "*xdg.nix";       text = "󰈜"; fg_dark = "#7ebae4"; }
-    { name = "*zellij.nix";    text = ""; fg_dark = "#7ebae4"; }
 
   { name = "*modules/";      text = "󱁿"; }
     { name = "*host-specific/";text = "󰛧"; }
