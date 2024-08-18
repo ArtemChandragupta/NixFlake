@@ -1,6 +1,6 @@
 {
 
-outputs = { self, nixpkgs, nixpkgs-stable, home-manager, ... }@inputs:
+outputs = { self, nixpkgs, nixpkgs-stable, home-manager, firefox-addons, ... }@inputs:
 let
   var = {
     user = "artem";
@@ -42,6 +42,11 @@ inputs = {
   
   home-manager = {
     url = "github:nix-community/home-manager";
+    inputs.nixpkgs.follows = "nixpkgs";
+  };
+
+  firefox-addons = {
+    url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
     inputs.nixpkgs.follows = "nixpkgs";
   };
 
