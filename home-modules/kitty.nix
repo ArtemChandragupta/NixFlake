@@ -1,4 +1,4 @@
-{ var, ... }:{
+{
 
 programs.kitty = {
   enable = true;
