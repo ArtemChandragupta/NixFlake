@@ -10,32 +10,39 @@ programs.fastfetch = {
     modules = [
       {
         type = "custom";
+        format = "  {#blue}┌╮╷╷╶╮╭{#0}╭─╮╭─╮";
+      }
+      {
+        type = "custom";
+        format = "  {#blue}│╰┤│╭┼╯{#0}│ │╰─╮";
+      }
+      {
+        type = "custom";
+        format = "  {#blue}╵ ╵╵╯╰╴{#0}╰─╯╰─╯";
+      }
+      {
+        type = "custom";
         format = "  ╭───────────╮";
       }
       {
-        type = "os";
-        key = "  {#0}│ {#blue}  {#0}distro │";
+        type = "kernel";
+        key = "  {#0}│ {#blue}󰌽  {#0}kernel │";
         outputColor = "blue";
       }
       {
-        type = "kernel";
-        key = "  {#0}│ {#white}󰌽  {#0}kernel │";
-        outputColor = "white";
-      }
-      {
         type = "packages";
-        key = "  {#0}│ {#yellow}󰏖  {#0}pkgs   │";
-        outputColor = "yellow";
+        key = "  {#0}│ {#blue}󰏖  {#0}pkgs   │";
+        outputColor = "blue";
       }
       {
         type = "shell";
-        key = "  {#0}│ {#green}  {#0}shell  │";
-        outputColor = "green";
+        key = "  {#0}│ {#blue}  {#0}shell  │";
+        outputColor = "blue";
       }
       {
         type = "terminal";
-        key = "  {#0}│ {#magenta}  {#0}term   │";
-        outputColor = "magenta";
+        key = "  {#0}│ {#blue}  {#0}term   │";
+        outputColor = "blue";
       }
       {
         type = "custom";
@@ -43,18 +50,18 @@ programs.fastfetch = {
       }
       {
         type = "wm";
-        key = "  {#0}│ {#blue}󰨇  {#0}wm     │";
-        outputColor = "blue";
+        key = "  {#0}│ {#green}󰨇  {#0}wm     │";
+        outputColor = "green";
       }
       {
         type = "lm";
-        key = "  {#0}│ {#yellow}  {#0}dm     │";
-        outputColor = "yellow";
+        key = "  {#0}│ {#green}  {#0}dm     │";
+        outputColor = "green";
       }
       {
         type = "terminalfont";
-        key = "  {#0}│ {#magenta}  {#0}font   │";
-        outputColor = "magenta";
+        key = "  {#0}│ {#green}  {#0}font   │";
+        outputColor = "green";
       }
       {
         type = "theme";
@@ -63,13 +70,13 @@ programs.fastfetch = {
       }
       {
         type = "icons";
-        key = "  {#0}│ {#cyan}󰀻  {#0}icons  │";
-        outputColor = "cyan";
+        key = "  {#0}│ {#green}󰀻  {#0}icons  │";
+        outputColor = "green";
       }
       {
         type = "cursor";
-        key = "  {#0}│ {#blue}󰇀  {#0}cursor │";
-        outputColor = "blue";
+        key = "  {#0}│ {#green}󰇀  {#0}cursor │";
+        outputColor = "green";
       }
       {
         type = "custom";
@@ -77,23 +84,23 @@ programs.fastfetch = {
       }
       {
         type = "host";
-        key = "  {#0}│ {#bright_blue}󰌢  {#0}host   │";
-        outputColor = "bright_blue";
+        key = "  {#0}│ {#white}󰌢  {#0}host   │";
+        outputColor = "white";
       }
       {
         type = "cpu";
-        key = "  {#0}│ {#bright_green}  {#0}cpu    │";
-        outputColor = "bright_green";
+        key = "  {#0}│ {#white}  {#0}cpu    │";
+        outputColor = "white";
       }
       {
         type = "gpu";
-        key = "  {#0}│ {#red}󰖂  {#0}gpu    │";
-        outputColor = "red";
+        key = "  {#0}│ {#white}󰖂  {#0}gpu    │";
+        outputColor = "white";
       }
       {
         type = "disk";
-        key = "  {#0}│ {#bright_cyan}  {#0}disk   │";
-        outputColor = "bright_cyan";
+        key = "  {#0}│ {#white}  {#0}disk   │";
+        outputColor = "white";
       }
       {
         type = "custom";
@@ -107,8 +114,8 @@ programs.fastfetch = {
       }
       {
         type = "uptime";
-        key = "  {#0}│ {#green}󰅐  {#0}uptime │";
-        outputColor = "green";
+        key = "  {#0}│ {#magenta}󰅐  {#0}uptime │";
+        outputColor = "magenta";
       }
       {
         type = "custom";
