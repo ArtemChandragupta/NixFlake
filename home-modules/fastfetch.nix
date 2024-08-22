@@ -10,15 +10,15 @@ programs.fastfetch = {
     modules = [
       {
         type = "custom";
-        format = "  {#blue}┌╮╷╷╶╮╭{#0}╭─╮╭─╮";
+        format = "  {#blue}╓╮╷┎╮╓╴ {#0}╭─╮╭─╮";
       }
       {
         type = "custom";
-        format = "  {#blue}│╰┤│╭┼╯{#0}│ │╰─╮";
+        format = "  {#blue}║╰┤╓╰╫╮ {#0}│ │╰─╮";
       }
       {
         type = "custom";
-        format = "  {#blue}╵ ╵╵╯╰╴{#0}╰─╯╰─╯";
+        format = "  {#blue}╜ └╜╶╜╰ {#0}╰─╯╰─╯";
       }
       {
         type = "custom";
