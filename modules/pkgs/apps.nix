@@ -3,7 +3,7 @@
 environment.systemPackages = with pkgs; [
   kitty
   
-  firefox
+  #firefox
   dconf-editor
 ] ++ ( if var.init
   then [ ]
