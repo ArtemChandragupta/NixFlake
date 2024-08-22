@@ -1,6 +1,7 @@
 { var, ... }:{
 
 imports = if var.host == "ThinkBook13s" then [
+  ./firefox
   ./hyprland
   ./nushell
   ./rofi
@@ -19,6 +20,7 @@ imports = if var.host == "ThinkBook13s" then [
   ./stylix.nix
   ./xdg.nix
 ] else if var.host == "homePC" then [
+  ./firefox
   ./nushell
   ./yazi
 
