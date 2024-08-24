@@ -1,0 +1,48 @@
+/*padding and round page corners*/
+#browser, 
+.browserContainer {
+  background: var(--lwt-accent-color) !important;
+}
+#browser > #appcontent {
+  margin: 10px;
+  browser {
+    border-radius: 10px !important;
+  }  
+}
+
+/*Hide upper tabs*/
+#TabsToolbar { display: none !important; }
+
+/*sidebery*/
+#sidebar-box {
+  background: var(--lwt-accent-color) !important;
+  width: 200px !important;
+}
+#sidebar-header {
+  visibility: collapse; /*No "Tabs" header*/
+}
+#sidebar-splitter {
+  display: none; /*No movable splitline*/
+}
+
+/*Hide icons on adress bar*/
+#tracking-protection-icon-box,
+#identity-box {
+  display: none !important;
+}
+
+/*url bar*/
+#navigator-toolbox { 
+  margin-top: -41px !important; /*hide navbar*/
+}
+#urlbar-background,#urlbar {
+  border-radius: 10px !important;
+}
+/*Popup search */
+#urlbar:is([breakout][breakout-extend], [breakout][usertyping][focused]) {
+  position: fixed !important;
+  top:   20vh !important;
+  left:  18vw !important;
+  right: 18vw !important;
+  width: 64vw !important;
+}
