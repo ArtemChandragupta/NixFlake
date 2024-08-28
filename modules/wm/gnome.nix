@@ -12,31 +12,29 @@ services = {
 };
 
 environment = {
-  gnome.excludePackages = (with pkgs; [
+  gnome.excludePackages = with pkgs; [
+    gnome-color-manager
     gnome-connections
     gnome-text-editor
+    gnome-characters
     gnome-terminal
     gnome-calendar
+    gnome-contacts
     gnome-console
     gnome-keysign
     gnome-tour
+    gnome-maps
+    gnome-logs
     
     simple-scan
     epiphany
     seahorse
     geary
     yelp
-  ]) ++ (with pkgs.gnome; [
-    gnome-maps
-    gnome-characters
-    gnome-color-manager
-    gnome-contacts
-    gnome-logs
 
     iagno
     hitori
-    iagno
-  ]);
+  ];
   systemPackages = with pkgs; [ adwaita-icon-theme ];
 };
 
