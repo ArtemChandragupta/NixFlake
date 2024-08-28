@@ -39,7 +39,7 @@ In _module_ directory there are common NixOS modules and host-specific things li
 In _home-modules_ there are home-manager configs, like Hyprland bindings and editor configs. 
 
 ## Screenshots
-
+![image](https://github.com/user-attachments/assets/0eb0770e-82fd-4f1d-9460-626446d6fac4)
 ![swappy-20240706_010250](https://github.com/ArtemChandragupta/NixFlake/assets/90765302/8cf631f1-ff62-451a-bdea-3ba2d9543335)
 ![swappy-20240727_172327](https://github.com/user-attachments/assets/79eb1af3-cecc-4304-bf7e-d3e703073a91)
 ![swappy-20240706_010335](https://github.com/ArtemChandragupta/NixFlake/assets/90765302/c1736a67-eae7-41ba-9658-7df8ab1c166f)
