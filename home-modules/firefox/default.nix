@@ -1,8 +1,8 @@
-{
+{ var, ... }:{
 
-imports = [
-  ./NixFox
-];
+imports = if var.init 
+  then [ ]
+  else [ ./NixFox ];
 
 programs.firefox = {
   enable = true;
