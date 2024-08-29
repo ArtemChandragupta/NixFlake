@@ -1,14 +1,15 @@
 /*Main window*/
-#browser, .browserContainer {
-  background: var(--lwt-accent-color) !important;
-}
-#browser > #appcontent {
-  margin: 10px;
-  browser {
-    border-radius: 10px !important;
+:has(#sidebar-box:not([hidden])) { /*enable padding with sidebar*/
+  #browser, .browserContainer {
+    background: var(--lwt-accent-color) !important;
+  }
+  #browser > #appcontent {
+    margin: 10px;
+    browser {
+      border-radius: 10px !important;
+    }
   }
 }
-
 #navigator-toolbox {
   margin-top: -40px !important; /*Hide navbar*/
   border: none !important; /*No line under alt navbar*/
