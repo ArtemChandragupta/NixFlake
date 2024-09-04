@@ -11,7 +11,7 @@
   }
 }
 #navigator-toolbox {
-  margin-top: -40px !important; /*Hide navbar*/
+  margin-top: -41px !important; /*Hide navbar*/
   border: none !important; /*No line under alt navbar*/
 }
 #TabsToolbar { 
@@ -122,11 +122,11 @@
       margin-left: calc(var(--urlbar-scheme-size) * -0.75) !important;
     }
     #identity-box {
-      background: #606161;
-      color: #606161;
+      background: #414141;
+      color: #414141;
       z-index: 6 !important;
-      margin: -50px;
-      width: 49px;
+      margin: -80px;
+      width: 79px;
     }
   }
 }
