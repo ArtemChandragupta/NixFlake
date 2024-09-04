@@ -41,6 +41,10 @@ programs.firefox = {
         title = "Nix search";
         url   = "https://search.nixos.org/";
       }
+      {
+        title = "mynixos";
+        url   = "https://mynixos.com/";
+      }
     ];
   };
 };
