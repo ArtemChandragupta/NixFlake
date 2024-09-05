@@ -2,11 +2,18 @@
 
 programs.kitty = {
   enable = true;
+  font = {
+    #name = "DejaVu Sans Mono";
+    #name = "NotoMono Nerd Font";
+    #name = "JetBrainsMono Nerd Font";
+    #name = "FiraCode Nerd Font";
+    #name = "Hasklug Nerd Font"; # Source Code Pro with ligatures
+    name = "Liga SFMono Nerd Font";
+    size = 12;
+  };
   settings = {
   	confirm_os_window_close = 0;
   	window_padding_width = 5;
-
-    font_size = 12;
 
     background_opacity = "0.9";
 

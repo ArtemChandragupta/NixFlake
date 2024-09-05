@@ -1,8 +1,10 @@
 { var, ... }:{
 
 imports = if var.host == "ThinkBook13s" then [
+  ./ags
   ./firefox
   ./hyprland
+  # ./nixvim
   ./nushell
   ./rofi
   ./swaync
