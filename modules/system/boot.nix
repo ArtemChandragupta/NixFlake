@@ -9,17 +9,17 @@ boot = {
 
   kernelPackages = pkgs.linuxPackages_latest;
   kernelParams = [
-#    "quiet"
-#    "udev.log_level=0" 
+    "quiet"
+    "udev.log_level=0" 
   ];
 
   plymouth = {
-    #enable = true;
+    enable = true;
     theme  = "bgrt";
   };
 
-  #initrd.verbose  = false;
-  #consoleLogLevel = 0;
+  initrd.verbose  = false;
+  consoleLogLevel = 0;
 };
 
 }

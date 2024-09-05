@@ -5,6 +5,7 @@ imports = [
   ./flatpak.nix
   ./locales.nix
   ./networking.nix
+  ./overlays.nix
   ./sound.nix
   ./system.nix
   ./usb.nix
