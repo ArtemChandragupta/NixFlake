@@ -1,21 +1,22 @@
 {
 
-outputs = { self, nixpkgs, nixpkgs-stable, home-manager, firefox-addons, ... }@inputs:
+outputs = inputs:
 let
+  system = "x86_64-linux";
   var = {
     user = "artem";
     host = "ThinkBook13s";
     init = false;
   };
-  pkgs-s = nixpkgs-stable.legacyPackages."x86_64-linux";
+  pkgs-u-small = import inputs.nixos-u-small {inherit system;};
 in
 {
-  nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-    system = "x86_64-linux";
+  nixosConfigurations.nixos = inputs.nixpkgs.lib.nixosSystem {
+    inherit system;
     specialArgs = {
-      inherit inputs; 
-      inherit pkgs-s;
+      inherit inputs;
       inherit var;
+      inherit pkgs-u-small;
     };
     modules = [ 
       ./configuration.nix 
@@ -27,7 +28,7 @@ in
     
 inputs = {
   nixpkgs.url = "nixpkgs/nixos-unstable";
-  nixpkgs-stable.url = "nixpkgs/nixos-24.05";
+  nixos-u-small.url = "nixpkgs/nixos-unstable-small";
 
   hyprland = {
     type = "git";
@@ -48,6 +49,11 @@ inputs = {
   firefox-addons = {
     url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
     inputs.nixpkgs.follows = "nixpkgs";
+  };
+
+  sf-mono-liga-src = {
+    url = "github:shaunsingh/SFMono-Nerd-Font-Ligaturized";
+    flake = false;
   };
 
   ags.url = "github:Aylur/ags";
