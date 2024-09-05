@@ -1,4 +1,4 @@
-{ inputs, var, pkgs, ... }:{
+{ inputs, var, ... }:{
 
 imports = [ 
   inputs.ags.homeManagerModules.default
@@ -7,11 +7,6 @@ imports = [
 programs.ags = {
   enable = !var.init;
   configDir = ./config;
-  extraPackages = with pkgs; [
-    gtksourceview
-    webkitgtk
-    accountsservice
-  ];
 };
 
 }
