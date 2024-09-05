@@ -1,7 +1,7 @@
 let screenList = hyprctl monitors #Get list  of active screens
 | find Monitor
-| split column ' '
-| get column2
+| parse '{device} {name} {id}'
+| get name
 
 for $screen in $screenList {
     swww img -o $screen (
