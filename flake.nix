@@ -18,14 +18,14 @@ in
       inherit var;
       inherit pkgs-u-small;
     };
-    modules = [ 
-      ./configuration.nix 
+    modules = [
+      ./configuration.nix
       inputs.home-manager.nixosModules.default
       inputs.stylix.nixosModules.stylix
     ];
   };
 };
-    
+
 inputs = {
   nixpkgs.url = "nixpkgs/nixos-unstable";
   nixos-u-small.url = "nixpkgs/nixos-unstable-small";
@@ -40,7 +40,7 @@ inputs = {
     url = "github:nix-community/nixvim";
     inputs.nixpkgs.follows = "nixpkgs";
   };
-  
+
   home-manager = {
     url = "github:nix-community/home-manager";
     inputs.nixpkgs.follows = "nixpkgs";
