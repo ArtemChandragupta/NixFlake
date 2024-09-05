@@ -10,7 +10,7 @@ layer  = "top";
 
 modules-left   = [ "custom/flake" "tray" "hyprland/workspaces" ];
 modules-center = [ "clock" ];
-modules-right  = [ "battery" "cpu" "temperature" "memory" "backlight" "wireplumber" "pulseaudio" ];
+modules-right  = [ "battery" "cpu" "temperature" "memory" "backlight" "pulseaudio" ];
 
 
 "custom/flake" = {
@@ -23,38 +23,37 @@ modules-right  = [ "battery" "cpu" "temperature" "memory" "backlight" "wireplumb
 };
 
 "hyprland/workspaces" = {
-  active-only    = "false";
   on-scroll-up   = "hyprctl dispatch workspace e+1";
   on-scroll-down = "hyprctl dispatch workspace e-1";
-  disable-scroll = "false";
+  disable-scroll = "true";
   all-outputs = "true";
-  format   = "{id}:{windows}";
+  format   = "{id}: {windows}";
   on-click = "activate";
   
   window-rewrite-default = "";
   window-rewrite = {
-    "class<firefox>"  = "󰈹";
-    "class<kitty>"    = "";
     "title<.*Yazi.*>" = "󰇥";
-    "class<discord>"  = "";
     "class<obsidian>" = "";
-    "class<nemo>"     = "";
-    "class<totem>"    = "󱉺";
-    "class<evince>"   = "󰈦";
     "class<haguichi>" = "";
+    "class<firefox>"  = "󰈹";
+    "class<discord>"  = "";
+    "class<evince>"   = "";
+    "class<totem>"    = "󱉺";
+    "class<kitty>"    = "";
+    "class<nemo>"     = "";
 
-    "class<org.gnome.Software>"   = "󱗼";
-    "class<org.gnome.Loupe>"      = "";
-    "class<org.gnome.Nautilus>"   = "󰪶";
     "class<org.gnome.Calculator>" = "";
+    "class<org.gnome.Software>"   = "󱗼";
+    "class<org.gnome.Nautilus>"   = "󰪶";
+    "class<org.gnome.Loupe>"      = "";
 
+    "class<ONLYOFFICE Desktop Editors>"= "";
+    "class<com.saivert.pwvucontrol>"= "";
+    "class<com.usebottles.bottles>" = "󰡔󱌐";
     "class<org.telegram.desktop>"   = "";
     "class<transmission.gtk>"       = "";
-    "class<com.usebottles.bottles>" = "󰡔󱌐";
-    "class<com.saivert.pwvucontrol>"= "";
     "class<localsend_app>"          = "󱗿";
-    "class<DesktopEditors>"         = "";
-   };
+  };
 };
 
 
@@ -82,11 +81,12 @@ modules-right  = [ "battery" "cpu" "temperature" "memory" "backlight" "wireplumb
   tooltip-format  = "{timeTo} {capacity}%";
   format-charging = "󱐋 {capacity}% {time}";
   format-plugged  = " ";
-  format-icons    = ["󰂎" "󰁻" "󰁾" "󰂀" "󰁹"];
+  # format-icons    = ["󰂎" "󰁻" "󰁾" "󰂀" "󰁹"];
+  format-icons    = [" " " " " " " " " "];
 };
 
 "cpu" = {
-  format  = " {usage}%";
+  format = " {usage}%";
 };
 "temperature" = {
   format = "󰔐 {temperatureC}°C";
@@ -100,16 +100,13 @@ modules-right  = [ "battery" "cpu" "temperature" "memory" "backlight" "wireplumb
   format = "{icon}{percent}%";
   format-icons   = ["󰃞 " "󰃟 " "󰃠 "];
 };
-"wireplumber" = {
-  format = "{icon}{volume}%";
-  format-icons = [" " " " " "];
-  format-muted = " {volume}%";
-  on-click = "pwvucontrol";
-};
 "pulseaudio" = {
-  format = "{format_source}";
-  format-source       = "󰍰";
-  format-source-muted = "<span color='#cc241d'>󰍰</span>";
+  format-icons = [" " " " " " ];
+  format = "{icon}{volume}% {format_source}";
+  format-muted = "<span color='#6D5930'> {volume}%</span> {format_source}";
+  format-source = "";
+  format-source-muted = "<span color='#6D5930'></span>";
+  on-click = "pwvucontrol";
 };
 
   };
