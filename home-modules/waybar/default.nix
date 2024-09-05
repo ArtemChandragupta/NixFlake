@@ -103,9 +103,9 @@ modules-right  = [ "battery" "cpu" "temperature" "memory" "backlight" "pulseaudi
 "pulseaudio" = {
   format-icons = [" " " " " " ];
   format = "{icon}{volume}% {format_source}";
-  format-muted = "<span color='#cc241d'> {volume}%</span> {format_source}";
+  format-muted = "<span color='#6D5930'> {volume}%</span> {format_source}";
   format-source = "";
-  format-source-muted = "<span color='#cc241d'></span>";
+  format-source-muted = "<span color='#6D5930'></span>";
   on-click = "pwvucontrol";
 };
 
