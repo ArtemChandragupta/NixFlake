@@ -16,7 +16,8 @@ programs.yazi.theme.icon.globs = [
   { name = "*nix/";          text = ""; }
   { name = "*PortProton/";   text = "󰹻"; }
   { name = "*Screenshots/";  text = ""; }
-  { name = "*studytrash/";   text = "󰗚"; }
+  { name = "*Studythings/";  text = "󰗚"; }
+  { name = "*Sync/";         text = ""; }
   { name = "*Vaults/";       text = "󰘳"; }
   { name = "*virtual/";      text = ""; }
 
@@ -32,6 +33,7 @@ programs.yazi.theme.icon.globs = [
       { name = "*tray/";         text = ""; }
       { name = "*volume/";       text = "󱄠"; }
       { name = "*workspace/";    text = ""; }
+    { name = "*firefox/";     text = "󰈹"; }
     { name = "*hyprland/";     text = ""; }
       { name = "*autoname/";     text = "󰎏"; }
       { name = "*wallpaper/";    text = "󰸉"; }
@@ -46,7 +48,7 @@ programs.yazi.theme.icon.globs = [
     { name = "*nixvim/";       text = ""; }
       { name = "*keymap.nix";    text = "󰌌"; fg_dark = "#7ebae4"; }
       { name = "*neovide.nix";   text = ""; fg_dark = "#7ebae4"; }
-      { name = "*plugins.nix";   text = ""; fg_dark = "#7ebae4"; }
+      { name = "*plugins.nix";   text = "󰐱"; fg_dark = "#7ebae4"; }
 
     { name = "*nushell/";      text = ""; }
       { name = "*dev/";          text = "󱚊"; }
@@ -76,7 +78,7 @@ programs.yazi.theme.icon.globs = [
     { name = "*kitty.nix";     text = "󰄛"; fg_dark = "#7ebae4"; }
     { name = "*starship.nix";  text = "󱓞"; fg_dark = "#7ebae4"; }
     { name = "*stylix.nix";    text = "󰃣"; fg_dark = "#7ebae4"; }
-    { name = "*xdg.nix";       text = "󰈜"; fg_dark = "#7ebae4"; }
+    { name = "*xdg.nix";       text = "󱅷"; fg_dark = "#7ebae4"; }
 
   { name = "*modules/";      text = "󱁿"; }
     { name = "*host-specific/";text = "󰛧"; }
@@ -87,10 +89,11 @@ programs.yazi.theme.icon.globs = [
         { name = "*nvidia.nix";    text = "󰖂"; fg_dark = "#7ebae4"; }
 
     { name = "*system/";       text = ""; }
-      { name = "*boot.nix";      text = "⏻"; fg_dark = "#7ebae4"; }
+      { name = "*boot.nix";      text = ""; fg_dark = "#7ebae4"; }
       { name = "*flatpak.nix";   text = "󰏖"; fg_dark = "#7ebae4"; }
       { name = "*locales.nix";   text = "󱀍"; fg_dark = "#7ebae4"; }
       { name = "*networking.nix";text = "󰀂"; fg_dark = "#7ebae4"; }
+      { name = "*overlays.nix";  text = "󰆷"; fg_dark = "#7ebae4"; }
       { name = "*sound.nix";     text = "󰕾"; fg_dark = "#7ebae4"; }
       { name = "*system.nix";    text = "󰘳"; fg_dark = "#7ebae4"; }
       { name = "*usb.nix";       text = "󱊞"; fg_dark = "#7ebae4"; }
