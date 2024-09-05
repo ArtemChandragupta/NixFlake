@@ -22,7 +22,6 @@ environment.systemPackages = with pkgs; [
   slurp
   imagemagick
   swappy
-  #wl-screenrec
   wf-recorder
   
   wl-clipboard
