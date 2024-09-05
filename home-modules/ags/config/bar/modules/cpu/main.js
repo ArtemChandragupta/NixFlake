@@ -8,6 +8,6 @@ const getUsage = Variable("", {
 export function CpuModule() {
 	return Widget.Label({
 		className: "CpuModule",
-		label: getUsage.bind().as(v => ` ${v}%`),
+		label: getUsage.bind().as(v => `  ${v}%`),
 	})
 }

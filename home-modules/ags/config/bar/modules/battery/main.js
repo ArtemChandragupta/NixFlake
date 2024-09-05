@@ -14,7 +14,9 @@ function capacity(v) {
 
 export function BatteryModule() {
 
-  const icon = battery.bind("percent").as(p => `battery-level-${Math.floor(p / 10) * 10}-symbolic`)
+  const icon = battery.bind("percent").as(
+    p => `battery-level-${Math.floor(p / 10) * 10}-symbolic`
+  )
 
   return Widget.Box({
     class_name: battery.bind('charging').transform(p => {

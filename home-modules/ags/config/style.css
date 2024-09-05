@@ -1,114 +1,101 @@
 * {
-    font-family: "JetBrainsMono Nerd Font, sans-serif";
+    font-family: "Noto Sans";
     font-size: 14px;
+    font-weight: 600;
 }
 
 window .bar {
     background: transparent;
-    color: @theme_fg_color;
+}
+
+.FlakeModule,
+.TrayModule,
+.WorkspacesModule,
+.ClockModule,
+.BatteryModule_normal,
+.BatteryModule_charging,
+.CpuModule,
+.TemperatureModule_normal,
+.TemperatureModule_critical,
+.MemoryModule,
+.BacklightModule,
+.VolumeModule {
+    background: rgba(40, 40, 40, 0.9);
+    padding: 0 10px;
+    border-radius: 10px;
+    margin: 0px;
+    min-height: 30px;
 }
 
 
 .FlakeModule {
-    background: #282828;
     color: #98971a;
     font-size: 23px;
-    padding: 1px 1px 1px 5px;
-    margin: 0px;
-    border-radius: 12px;
+    padding: 1px 1px 1px 4px;
 }
 .TrayModule {
-    background: #282828;
-    padding: 0 10px;
-    border-radius: 12px;
-    margin: 0;
+    padding: 0 4px;
 }
 .TrayIcon {
-    background: #282828;
-    padding: 0;
+    padding: 0 4px;
+    background: transparent;
 }
 .WorkspacesModule {
-    background: #282828;
-    padding: 0 10px;
-    border-radius: 12px;
-    margin: 0;
+    padding: 0;
+}
+.workspaceItem {
+    padding: 0;
+    color: #D79921;
 }
 
-
 .ClockModule {
-    background: #282828;
     color: #b16286;
-    padding: 0 10px;
-    border-radius: 12px;
-    margin: 0;
 }
 
 
 .BatteryModule_normal {
-    background: #282828;
     color: #b8bb26;
-    padding: 0 10px;
-    border-radius: 12px;
-    margin: 0px;
 }
 .BatteryModule_charging {
-    background: #b8bb26;
+    background: #b6bb26;
     color: #282828;
-    padding: 0 10px;
-    border-radius: 12px;
-    margin: 0px;
 }
 
 
 .CpuModule {
-    background: #282828;
     color: #83a589;
-    border-radius: 12px 0px 0px 12px;
-    margin: 0px -4px 0px 0px;
-    padding: 0 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-right: -8px;
 }
 .TemperatureModule_normal {
-    background: #282828;
     color: #83a589;
-    border-radius: 0px 0px;
-    margin: 0px -8px;
-    padding: 0 10px;
+    border-radius: 0;
+    padding: 0;
 }
 .TemperatureModule_critical {
-    background: #282828;
     color: #cc241d;
-    border-radius: 0px 0px;
-    margin: 0px -8px;
-    padding: 0 10px;
+    border-radius: 0;
+    padding: 0;
 }
 .MemoryModule {
-    background: #282828;
     color: #83a589;
-    border-radius: 0px 12px 12px 0px;
-    margin: 0px 0px 0px -4px;
-    padding: 0 10px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: -8px;
 }
 
 
 
 .BacklightModule {
-    background: #282828;
     color: #d79921;
-    border-radius: 12px 0px 0px 12px;
-    margin: 0px -4px 0px 0px;
-    padding: 0 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-right: -8px;
 }
-.VolumeModule_muted {
-    background: #282828;
-    color: #cc241d;
-    padding: 0 10px;
-    border-radius: 0 12px 12px 0;
-    margin: 0px 0px 0px -4px;
-}
-.VolumeModule_active {
-    background: #282828;
+.VolumeModule {
     color: #d79921;
-    padding: 0 10px;
-    border-radius: 0 12px 12px 0;
-    margin: 0px 0px 0px -4px;
+    padding-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }

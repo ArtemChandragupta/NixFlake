@@ -8,6 +8,6 @@ const getUsage = Variable("", {
 export function MemoryModule() {
 	return Widget.Label({
 		className: "MemoryModule",
-		label: getUsage.bind().as(v => ` ${v}%`)
+		label: getUsage.bind().as(v => `  ${v}%`)
 	})
 }
