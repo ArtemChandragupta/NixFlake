@@ -1,24 +1,20 @@
-{
+{ pkgs, var, ... }:
+let
+  wallpaperScript = pkgs.writers.writeNuBin "wallpaperScript"
+    (builtins.readFile ./wallpaperScript.nu);
+in{
 
-imports = [
-  ./script.nix
+imports = if !var.init 
+  then [ ./fetchWlppr.nix ]
+  else [ ];
+
+home.packages = [
+  pkgs.swww  
+  wallpaperScript
 ];
 
-programs = {
-  nushell = {
-    enable = true;
-    configFile.source = ./config.nu;
-    shellAliases = {
-      rebuild = "sudo nixos-rebuild switch --flake ~/nix";
-      update  = "nix flake update ~/nix and sudo nixos-rebuild switch --flake ~/nix";
-      nixU = "nh os switch ~/nix --update";
-      nixR = "nh os switch ~/nix";
-    };
-  };
-  carapace = {
-    enable = true;
-    enableNushellIntegration = true;
-  };
-};
+wayland.windowManager.hyprland.settings.exec-once = [
+  "swww init"
+];
 
 }
