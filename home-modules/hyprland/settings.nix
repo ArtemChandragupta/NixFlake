@@ -11,6 +11,7 @@ exec-once = [
   "nm-applet"
   "telegram-desktop -startintray"
   "clipse -listen"
+  # "hyprland-autoname-workspaces"
 ];
 
 env = [

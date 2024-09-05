@@ -1,0 +1,53 @@
+version = "1.1.15"
+
+[format]
+dedup = true
+dedup_inactive_fullscreen = false
+delim = ""
+client_active = "{icon} "
+client = "{icon} "
+workspace = "{id}:{clients}" # invisible unicode char after spaces to keep them from being trimmed
+workspace_empty = "{id}­"
+client_dup = "{icon}{counter_sup}{delim}"
+client_dup_fullscreen = "[{icon}]{delim}{icon}{counter_unfocused_sup}"
+client_fullscreen = "[{icon} ]{delim}"
+
+[class_active]
+DEFAULT=""
+
+[title_in_class."(firefox|librewolf|chrom.*)"]
+"(?i)youtube" = "󰗃"
+
+[title_in_class."(?i)kitty"]
+Yazi = "󰇥"
+
+[class]
+DEFAULT = ""
+
+"(?i)firefox" = "󰈹"
+"(?i)kitty" = ""
+
+nm-connection-editor = ""
+pavucontrol = ""
+swappy   = ""
+obsidian = ""
+discord  = ""
+nemo     = ""
+totem    = "󱉺"
+evince   = "󰈦"
+haguichi = ""
+
+"org.gnome.Software"   = "󱗼"
+"org.gnome.Loupe"      = ""
+"org.gnome.Nautilus"   = "󰪶"
+"org.gnome.Calculator" = ""
+
+"org.telegram.desktop"   = ""
+"transmission.gtk"       = ""
+"com.usebottles.bottles" = "󰡔󱌐"
+"com.saivert.pwvucontrol"= ""
+localsend_app            = "󱗿"
+DesktopEditors           = ""
+
+[exclude]
+"" = "^$"

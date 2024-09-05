@@ -1,6 +1,7 @@
 { pkgs, inputs, var, ... }:{
 
 imports = [
+  # ./autoname
   ./wallpaper
 
   ./binds.nix
