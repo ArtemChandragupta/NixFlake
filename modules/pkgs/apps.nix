@@ -2,9 +2,6 @@
 
 environment.systemPackages = with pkgs; [
   kitty
-  
-  #firefox
-  dconf-editor
 ] ++ ( if var.init
   then [ ]
   else [
@@ -16,7 +13,10 @@ environment.systemPackages = with pkgs; [
     localsend
 
     onlyoffice-bin
+    zed-editor
 
+    dconf-editor
+ 
     openscad
     inkscape
     drawio
