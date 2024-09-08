@@ -2,8 +2,7 @@
 
 fonts.packages = with pkgs; [
   nerdfonts        # For icons!
-  font-awesome     # Only for clock on nix output manager
-  iosevka
+  iosevka          # Only for clock on nix output manager
   sf-mono-liga-bin # Stolen from Apple
 
   open-sans           # For office
