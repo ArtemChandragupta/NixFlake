@@ -1,0 +1,132 @@
+/*Main window*/
+:has(#sidebar-box:not([hidden])) { /*enable padding with sidebar*/
+  #browser, .browserContainer {
+    background: var(--lwt-accent-color) !important;
+  }
+  #browser > #appcontent {
+    margin: 10px;
+    browser {
+      border-radius: 10px !important;
+    }
+  }
+}
+#navigator-toolbox {
+  margin-top: -41px !important; /*Hide navbar*/
+  border: none !important; /*No line under alt navbar*/
+}
+#TabsToolbar { 
+  display: none !important; /*Hide upper tabs*/
+}
+
+
+/*Sidebery*/
+#sidebar-box {
+  background: var(--lwt-accent-color) !important;
+  width: 193px !important;
+  margin-top:  80px !important;
+  margin-left: 7px !important;
+}
+#sidebar-header {
+  visibility: collapse; /*No "Tabs" header*/
+}
+#sidebar-splitter {
+  display: none; /*No movable splitline*/
+}
+
+
+/*Remove useless things*/
+#statuspanel, /*hide status on left down angle*/
+#tracking-protection-icon-box { /*No shield icon*/
+  display: none !important;
+}
+
+/*Move buttons to their new home then sidebar is on*/
+:has(#sidebar-box:not([hidden])) {
+  #nav-bar{ overflow: visible !important; } /*make possible to move them*/
+  #back-button, #forward-button, #stop-reload-button{ 
+    transform: translate(120px, 40px) 
+  }
+
+  #PanelUI-button { /*settings button*/
+    position: fixed !important;
+    top:   5px !important;
+    left:  5px !important;
+    right: auto;
+  }
+  #unified-extensions-button { /*extension button*/
+    list-style-image: url("chrome://global/skin/icons/chevron.svg") !important;
+    position: fixed !important;
+    top:   5px  !important;
+    left:  35px !important;
+    right: auto;
+  }
+  #downloads-button { /*download button*/
+    position: fixed !important;
+    top:   5px  !important;
+    left:  65px !important;
+    right: auto;
+  }
+}
+
+
+/*Urlbar*/
+#urlbar-background,#urlbar {
+  border-radius: 10px !important; /*Urlbar corner radius*/
+}
+#urlbar-background {
+  border:  none !important;
+  outline: none !important;
+}
+
+/*Three states of urlbar*/
+
+/*1 - No sidebar*/
+#urlbar:is([breakout][breakout-extend], [breakout][usertyping][focused]) {
+  position: fixed !important;
+  top:   20vh !important;
+  left:  18% !important;
+  right: 18% !important;
+  width: 64% !important;
+}
+
+/*2 - Sidebar on, focused on search*/
+:has(#sidebar-box:not([hidden])) {
+  :has(#urlbar:is([breakout][breakout-extend], [breakout][usertyping][focused])) {
+    #urlbar {
+      position: fixed !important;
+      top:   20vh !important;
+      left:  calc(240px + 0.1 * (100% - 240px)) !important;
+      right: 10% !important;
+      width: calc(90% - 240px - 0.1 * (100% - 240px) ) !important;
+    }
+  }
+}
+
+/*3 -Sidebar on, focused on content*/
+:has(#sidebar-box:not([hidden])) {
+  :has(#urlbar:not([breakout][breakout-extend], [breakout][usertyping][focused])) {
+    #urlbar {
+      position: fixed !important;
+      top:   40px !important;
+      left:  8px !important;
+      right: auto;
+      width: 220px !important;
+    }
+    /*No bookmark star*/
+    #star-button-box { display: none; }
+    /*Hide https*/
+    #urlbar-background,#urlbar {
+      border-radius: 7px !important;
+    }
+    #urlbar-input {
+      margin-left: calc(var(--urlbar-scheme-size) * -0.75) !important;
+    }
+    #identity-box {
+      background: #414141;
+      color: #414141;
+      z-index: 6 !important;
+      margin: -80px;
+      width: 79px;
+    }
+  }
+}
