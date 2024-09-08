@@ -1,3 +1,6 @@
+![swappy-20240906_234615](https://github.com/user-attachments/assets/48a8977a-31af-4f49-b951-59ef0c316543)
+
+
 In sidebery settings set:
 1) Show new tab buttons -> off
 2) Appearance => Mouse:
