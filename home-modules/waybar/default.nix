@@ -47,12 +47,13 @@ modules-right  = [ "battery" "cpu" "temperature" "memory" "backlight" "pulseaudi
     "class<org.gnome.Nautilus>"   = "󰪶";
     "class<org.gnome.Loupe>"      = "";
 
+    "class<ONLYOFFICE Desktop Editors>"= "";
     "class<com.saivert.pwvucontrol>"= "";
-    "class<com.usebottles.bottles>" = "󰡔󱌐";
+    "class<com.usebottles.bottles>" = "";
     "class<org.telegram.desktop>"   = "";
     "class<transmission.gtk>"       = "";
-    "class<DesktopEditors>"         = "";
     "class<localsend_app>"          = "󱗿";
+    "class<virt-manager>"           = "";
   };
 };
 
