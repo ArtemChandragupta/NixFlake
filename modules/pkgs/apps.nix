@@ -13,7 +13,8 @@ environment.systemPackages = with pkgs; [
     localsend
 
     onlyoffice-bin
-    zed-editor
+    zola
+    mendeley
 
     dconf-editor
  
