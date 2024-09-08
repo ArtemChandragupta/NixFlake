@@ -2,9 +2,9 @@
 
 nixpkgs.overlays = [
   ( final: prev: {
-    xdg-desktop-portal-hyprland = pkgs-u-small.xdg-desktop-portal-hyprland;
+    #xdg-desktop-portal-hyprland = pkgs-u-small.xdg-desktop-portal-hyprland;
 
-    sf-mono-liga-bin = prev.stdenvNoCC.mkDerivation rec {
+    sf-mono-liga-bin = prev.stdenvNoCC.mkDerivation {
       pname = "sf-mono-liga-bin";
       version = "dev";
       src = inputs.sf-mono-liga-src;

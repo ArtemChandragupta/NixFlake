@@ -21,7 +21,6 @@ environment.systemPackages = with pkgs; [
   spice 
   spice-gtk
   spice-protocol
-  win-virtio
   win-spice
 ];
 
