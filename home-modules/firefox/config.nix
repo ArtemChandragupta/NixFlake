@@ -26,7 +26,7 @@ programs.firefox.profiles.default.settings = {
   "browser.startup.page" = 3; # Restore session
   "extensions.autoDisableScopes" = 0; # Auto-enable extesions
   "browser.tabs.loadBookmarksInTabs" = true;
-  "startup.homepage_welcome_url" = "about:newtab";
+  "startup.homepage_welcome_url" = "https://github.com/ArtemChandragupta/NixFlake/tree/main/home-modules/firefox";
   "apz.overscroll.enabled" = false; # Disable bouncy scrolling
 };
 
