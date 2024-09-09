@@ -83,9 +83,11 @@ programs.yazi.theme.icon.globs = [
   { name = "*modules/";      text = "󱁿"; }
     { name = "*host-specific/";text = "󰛧"; }
       { name = "*ThinkBook13s/"; text = "󰌢"; }
-        { name = "*power.nix";     text = "󰓅"; fg_dark = "#7ebae4"; }
         { name = "*AMD.nix";       text = "󰆦"; fg_dark = "#7ebae4"; }
+        { name = "*power.nix";     text = "󰓅"; fg_dark = "#7ebae4"; }
+        { name = "*remote-desktop.nix";text = "󰢹"; fg_dark = "#7ebae4"; }
       { name = "*homePC/";      text = "󰪫"; }
+        { name = "*autologin.nix"; text = "󰗽"; fg_dark = "#7ebae4"; }
         { name = "*nvidia.nix";    text = "󰖂"; fg_dark = "#7ebae4"; }
 
     { name = "*system/";       text = ""; }
