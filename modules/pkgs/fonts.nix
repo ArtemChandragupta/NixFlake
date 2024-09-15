@@ -8,6 +8,8 @@ fonts.packages = with pkgs; [
   open-sans           # For office
   noto-fonts          # Beautiful for all languages!
   noto-fonts-cjk-sans # And asian also
+
+  corefonts # Microsoft trash
 ];
 
 }
