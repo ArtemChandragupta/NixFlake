@@ -1,67 +1,42 @@
-{
+{ pkgs, ... }:{
+
+home.packages = [
+  pkgs.tree-sitter-grammars.tree-sitter-nu
+];
 
 programs.nixvim.plugins = {
-
-  lualine = {
-    enable = true;
-    sectionSeparators = {
-      left  = "";
-      right = "";
-    };
-    componentSeparators = {
-      left  = "";
-      right = "";
-    };
-    sections = {
-      lualine_a = [
-        {
-          separator.left  = "";
-          separator.right = "";
-          padding.right = 2;
-          padding.left  = 2;
-        }
-      ];
-      lualine_z = [
-        {
-          separator.right = "";
-          separator.left  = "";
-          padding.left  = 2;
-          padding.right = 2;
-        }
-      ];
-    };
-  };
-
-  nvim-colorizer.enable = true;
-  nvim-autopairs.enable = true;
-  indent-blankline.enable = true;
-  nix.enable = true;
-  lint.enable = true;
-
-  alpha = {
-    enable = true;
-    theme = "dashboard";
-  };
-
-  treesitter = {
-    enable = true;
-    indent = true;
-    nixGrammars = true;
-    nixvimInjections = true;
-  };
+  lualine.enable = true;          # Statusline
+  nvim-autopairs.enable = true;   # Automatic {}
+  indent-blankline.enable = true; # Vertical indent line
+  nvim-colorizer.enable = true;   # Colored color codes
 
   lsp = {
     enable = true;
     servers = {
-      nil_ls.enable = true;
+      # ltex.enable = true;
+      nil-ls.enable = true;
     };
   };
+  # lsp-lines.enable = true;
 
-  lsp-format = {
+  vimtex = {
     enable = true;
-    lspServersToEnable = "all";
+    settings.highlight = {
+      enable = true;
+    };
   };
-
+  
+  treesitter = {
+    enable = true;
+    folding = true;
+    nixvimInjections = true;
+    grammarPackages = [
+      pkgs.tree-sitter-grammars.tree-sitter-nu
+    ];
+    settings = {
+      highlight.enable = true;
+    };
+  };
 };
 
 }
