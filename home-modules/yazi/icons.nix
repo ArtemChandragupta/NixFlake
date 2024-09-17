@@ -49,6 +49,7 @@ programs.yazi.theme.icon.globs = [
       { name = "*keymap.nix";    text = "󰌌"; fg_dark = "#7ebae4"; }
       { name = "*neovide.nix";   text = ""; fg_dark = "#7ebae4"; }
       { name = "*plugins.nix";   text = "󰐱"; fg_dark = "#7ebae4"; }
+      { name = "*TeX.nix";       text = ""; fg_dark = "#7ebae4"; }
 
     { name = "*nushell/";      text = ""; }
       { name = "*dev/";          text = "󱚊"; }
@@ -76,6 +77,7 @@ programs.yazi.theme.icon.globs = [
     { name = "*git.nix";       text = "󰊢"; fg_dark = "#7ebae4"; }
     { name = "*helix.nix";     text = "󰚄"; fg_dark = "#7ebae4"; }
     { name = "*kitty.nix";     text = "󰄛"; fg_dark = "#7ebae4"; }
+    { name = "*python.nix";    text = "󰌠"; fg_dark = "#7ebae4"; }
     { name = "*starship.nix";  text = "󱓞"; fg_dark = "#7ebae4"; }
     { name = "*stylix.nix";    text = "󰃣"; fg_dark = "#7ebae4"; }
     { name = "*xdg.nix";       text = "󱅷"; fg_dark = "#7ebae4"; }
@@ -87,7 +89,6 @@ programs.yazi.theme.icon.globs = [
         { name = "*power.nix";     text = "󰓅"; fg_dark = "#7ebae4"; }
         { name = "*remote-desktop.nix";text = "󰢹"; fg_dark = "#7ebae4"; }
       { name = "*homePC/";      text = "󰪫"; }
-        { name = "*autologin.nix"; text = "󰗽"; fg_dark = "#7ebae4"; }
         { name = "*nvidia.nix";    text = "󰖂"; fg_dark = "#7ebae4"; }
 
     { name = "*system/";       text = ""; }

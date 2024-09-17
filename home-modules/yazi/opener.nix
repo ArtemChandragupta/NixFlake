@@ -20,6 +20,12 @@ programs.yazi.settings = {
         block = true;
       }
     ];
+    "Latex" = [
+      {
+        run = ''nvim "$@"'';
+        block = true;
+      }
+    ];
     "pdf" = [
       {
         run  = ''evince "$@"'';
@@ -29,6 +35,10 @@ programs.yazi.settings = {
   };
 
   open.prepend_rules = [
+    {
+      name = "*.tex";
+      use = "Latex";
+    }
     {
       mime = "text/*";
       use  = "text";
