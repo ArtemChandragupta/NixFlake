@@ -7,16 +7,17 @@ exec-once = [
   "waybar"
   "kitty"
   "blueman-applet"
-  "udiskie &"
+  "udiskie &" #USB automount
   "nm-applet"
   "telegram-desktop -startintray"
   "clipse -listen"
-  # "hyprland-autoname-workspaces"
 ];
 
 env = [
-  "XCURSOR_SIZE,24"
-  "XDG_CURRENT_DESKTOP, Hyprland"
+  "XCURSOR_SIZE,24" # unified cursor size
+  "QT_QPA_PLATFORMTHEME, gtk3" # for telegram file manager
+
+  "XDG_CURRENT_DESKTOP, Hyprland" # for display manager and other
   "XDG_SESSION_TYPE, wayland"
   "XDG_SESSION_DESKTOP, Hyprland"
 ];
@@ -55,8 +56,8 @@ misc = {
   layers_hog_keyboard_focus = true;
   animate_manual_resizes    = true;
 
-  enable_swallow            = true;
-  swallow_regex             = "^(kitty)$";
+  enable_swallow = true;
+  swallow_regex  = "^(kitty)$";
 };
 
 general = {
