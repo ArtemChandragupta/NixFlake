@@ -82,7 +82,6 @@ programs.starship = {
       style  = "bg:#665c54";
       format = ''[[ $symbol( $version) ](fg:#fbf1c7 bg:#665c54)]($style)'';
     };
-
   };
 };
 

@@ -4,7 +4,7 @@ imports = if var.host == "ThinkBook13s" then [
   ./ags
   ./firefox
   ./hyprland
-  # ./nixvim
+  ./nixvim
   ./nushell
   ./rofi
   ./swaync
@@ -18,6 +18,7 @@ imports = if var.host == "ThinkBook13s" then [
   ./git.nix
   ./helix.nix
   ./kitty.nix
+  ./python.nix
   ./starship.nix
   ./stylix.nix
   ./xdg.nix

@@ -5,10 +5,10 @@ programs.kitty = {
   font = {
     #name = "DejaVu Sans Mono";
     #name = "NotoMono Nerd Font";
-    #name = "JetBrainsMono Nerd Font";
+    name = "JetBrainsMono Nerd Font";
     #name = "FiraCode Nerd Font";
     #name = "Hasklug Nerd Font"; # Source Code Pro with ligatures
-    name = "Liga SFMono Nerd Font";
+    # name = "Liga SFMono Nerd Font";
     size = 12;
   };
   settings = {

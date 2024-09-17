@@ -8,6 +8,7 @@ programs.helix = {
     marksman
     nil nixfmt-rfc-style
     typescript-language-server
+    texlab ltex-ls
   ];
 
   languages.language = [
@@ -23,6 +24,11 @@ programs.helix = {
       name = "css";
       file-types = [ "css" "rasi" ];
       auto-format = true;
+    }
+    {
+      name = "latex";
+      file-types = [ "tex" ];
+      language-servers = [ "texlab" "ltex" ];
     }
   ];
   
@@ -75,7 +81,7 @@ programs.helix = {
       whitespace.render.tab = "all";
       indent-guides = {
         render = true;
-        character = "┆";
+        character = "│";
       };
     };
   };
