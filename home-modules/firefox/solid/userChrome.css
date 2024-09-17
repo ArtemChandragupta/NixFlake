@@ -15,6 +15,9 @@
 #browser { /*browser frame color*/
   background: var(--uc-frame-color) !important;
 }
+:root {
+  --tabpanel-background-color: var(--uc-frame-color) !important; /*for no-artifact corners*/
+}
 #navigator-toolbox {
   margin-top: -41px !important; /*hide navbar*/
   border: none !important; /*no line under alt navbar*/
