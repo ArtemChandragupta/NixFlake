@@ -15,13 +15,14 @@ environment.systemPackages = with pkgs; [
     onlyoffice-bin
     zola
     mendeley
+    zed-editor
 
     dconf-editor
  
     openscad
     inkscape
     drawio
-    dosbox-x
+    dosbox-staging
   ]
 );
 

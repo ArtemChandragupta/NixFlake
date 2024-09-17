@@ -13,7 +13,6 @@ environment.systemPackages = with pkgs; [
   go-toml
   gopsuinfo
   ffmpeg
-  eza
   xdragon
   
   wget
