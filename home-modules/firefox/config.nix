@@ -5,7 +5,6 @@ programs.firefox.profiles.default.settings = {
   "svg.context-properties.content.enabled" = true;
 
   "ui.key.menuAccessKeyFocuses" = false;           # Remove ALT menu
-  "browser.tabs.allow_transparent_browser" = true; # For transparent frame
   
   # Performance
   "gfx.webrender.all" = true;
