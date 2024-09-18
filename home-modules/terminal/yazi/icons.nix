@@ -43,8 +43,8 @@ programs.yazi.theme.icon.globs = [
       { name = "*solid/";        text = "󰌨"; }
       { name = "*transparent/";  text = "󰧾"; }
       { name = "*bookmarks.nix"; text = "󰸕"; fg_dark = "#7ebae4"; }
-      { name = "*config.nix";    text = ""; fg_dark = "#7ebae4"; }
-      { name = "*search.nix";    text = ""; fg_dark = "#7ebae4"; }
+      { name = "*config.nix";    text = ""; fg_dark = "#7ebae4"; }
+      { name = "*search.nix";    text = ""; fg_dark = "#7ebae4"; }
 
     { name = "*hyprland/";     text = ""; }
       { name = "*autoname/";     text = "󰎏"; }
@@ -54,7 +54,7 @@ programs.yazi.theme.icon.globs = [
       { name = "*swaync/";       text = "󱅫"; }
       { name = "*wallpaper/";    text = "󰸉"; }
         { name = "*fetchWlppr.nix";text = "󰭽"; fg_dark = "#7ebae4"; }
-      { name = "*waybar/";       text = "󰒐"; }
+      { name = "*waybar/";       text = "󱟛"; }
       { name = "*binds.nix";     text = "󰌌"; fg_dark = "#7ebae4"; }
       { name = "*monitors.nix";  text = "󰍺"; fg_dark = "#7ebae4"; }
       { name = "*rules.nix";     text = ""; fg_dark = "#7ebae4"; }
@@ -100,11 +100,11 @@ programs.yazi.theme.icon.globs = [
         { name = "*nvidia.nix";    text = "󰖂"; fg_dark = "#7ebae4"; }
 
     { name = "*system/";       text = ""; }
-      { name = "*boot.nix";      text = "󰤆"; fg_dark = "#7ebae4"; }
+      { name = "*boot.nix";      text = "󱫡"; fg_dark = "#7ebae4"; }
       { name = "*flatpak.nix";   text = "󰏖"; fg_dark = "#7ebae4"; }
       { name = "*locales.nix";   text = "󱀍"; fg_dark = "#7ebae4"; }
       { name = "*networking.nix";text = "󰀂"; fg_dark = "#7ebae4"; }
-      { name = "*sound.nix";     text = "󰕾"; fg_dark = "#7ebae4"; }
+      { name = "*sound.nix";     text = "󰜟"; fg_dark = "#7ebae4"; }
       { name = "*system.nix";    text = "󰘳"; fg_dark = "#7ebae4"; }
       { name = "*usb.nix";       text = "󱊞"; fg_dark = "#7ebae4"; }
       { name = "*users.nix";     text = ""; fg_dark = "#7ebae4"; }
