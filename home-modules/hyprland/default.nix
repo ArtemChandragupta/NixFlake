@@ -2,14 +2,16 @@
 
 imports = [
   # ./autoname
+  ./rofi-appgrid
+  ./swaync
   ./wallpaper
+  ./waybar
 
   ./binds.nix
   ./monitors.nix
   ./rules.nix
   ./screenlock.nix
   ./settings.nix
-  ./waycorner.nix
 ];
 
 wayland.windowManager.hyprland = {
