@@ -14,13 +14,11 @@ networking = {
   };
 };
 
-services = {
-  syncthing = {
-    enable = true;
-    user = "${var.user}";
-    dataDir = "/home/${var.user}/Sync";
-    configDir = "/home/${var.user}/Sync/.config";
-  };
+services.syncthing = {
+  enable = true;
+  user = "${var.user}";
+  dataDir = "/home/${var.user}/Sync";
+  configDir = "/home/${var.user}/Sync/.config";
 };
 
 environment.systemPackages = with pkgs; [
