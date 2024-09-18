@@ -40,7 +40,6 @@ modules-right  = [ "battery" "cpu" "temperature" "memory" "backlight" "pulseaudi
     "class<evince>"   = "";
     "class<totem>"    = "󱉺";
     "class<kitty>"    = "";
-    "class<nemo>"     = "";
 
     "class<org.gnome.Calculator>" = "";
     "class<org.gnome.Software>"   = "󱗼";
@@ -50,10 +49,12 @@ modules-right  = [ "battery" "cpu" "temperature" "memory" "backlight" "pulseaudi
     "class<com.moonlight_stream.Moonlight>"= "󰢹";
     "class<ONLYOFFICE Desktop Editors>"    = "";
     "class<Mendeley Reference Manager>"    = "";
-    "class<com.saivert.pwvucontrol>"= "";
+    "class<com.saivert.pwvucontrol>"= "󰴸";
     "class<com.usebottles.bottles>" = "";
     "class<org.telegram.desktop>"   = "";
+    "class<teams-for-linux>"  = "󰊻";
     "class<transmission.gtk>" = "";
+    "class<dosbox-staging>"   = "󰚴";
     "class<localsend_app>"    = "󱗿";
     "class<virt-manager>"     = "";
   };
