@@ -40,6 +40,8 @@ programs.yazi.theme.icon.globs = [
       { name = "*workspace/";    text = ""; }
 
     { name = "*firefox/";      text = "󰈹"; }
+      { name = "*solid/";        text = "󰌨"; }
+      { name = "*transparent/";  text = "󰧾"; }
       { name = "*bookmarks.nix"; text = "󰸕"; fg_dark = "#7ebae4"; }
       { name = "*config.nix";    text = ""; fg_dark = "#7ebae4"; }
       { name = "*search.nix";    text = ""; fg_dark = "#7ebae4"; }
@@ -52,7 +54,7 @@ programs.yazi.theme.icon.globs = [
       { name = "*swaync/";       text = "󱅫"; }
       { name = "*wallpaper/";    text = "󰸉"; }
         { name = "*fetchWlppr.nix";text = "󰭽"; fg_dark = "#7ebae4"; }
-      { name = "*waybar/";       text = "󱓺"; }
+      { name = "*waybar/";       text = "󰒐"; }
       { name = "*binds.nix";     text = "󰌌"; fg_dark = "#7ebae4"; }
       { name = "*monitors.nix";  text = "󰍺"; fg_dark = "#7ebae4"; }
       { name = "*rules.nix";     text = ""; fg_dark = "#7ebae4"; }
@@ -63,7 +65,7 @@ programs.yazi.theme.icon.globs = [
       { name = "*python.nix";    text = "󰌠"; fg_dark = "#7ebae4"; }
       { name = "*TeX.nix";       text = ""; fg_dark = "#7ebae4"; }
 
-    { name = "*terminal/";     text = ""; }
+    { name = "*terminal/";     text = ""; }
       { name = "*helix/";        text = "󰚄"; }
         { name = "*languages.nix"; text = ""; fg_dark = "#7ebae4"; }
       { name = "*nixvim/";       text = ""; }
