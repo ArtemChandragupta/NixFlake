@@ -1,0 +1,8 @@
+{
+
+imports = [
+  ./nushell
+  ./bash.nix
+];
+
+}
