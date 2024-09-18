@@ -17,11 +17,6 @@ programs.nh = {
   flake  = "/home/${var.user}/nix";
 };
 
-nixpkgs.config = {
-  permittedInsecurePackages = [];
-  allowUnfree = true;
-};
-
 hardware.graphics.enable = true;
 
 }
