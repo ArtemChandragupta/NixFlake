@@ -5,9 +5,9 @@ programs.virt-manager.enable = true;
 virtualisation = {
   libvirtd = { 
     enable = true;
-    qemu = {
-      ovmf.enable   = true;
-      ovmf.packages = [ pkgs.OVMFFull.fd ];
+    qemu.ovmf = {
+      enable   = true;
+      packages = [ pkgs.OVMFFull.fd ];
     };
   };
   docker.enable = true;
@@ -17,7 +17,6 @@ virtualisation = {
 environment.systemPackages = with pkgs; [
   distrobox
 
-  virt-viewer
   spice 
   spice-gtk
   spice-protocol
