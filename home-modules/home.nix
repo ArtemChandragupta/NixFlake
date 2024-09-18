@@ -4,36 +4,16 @@ imports = if var.host == "ThinkBook13s" then [
   ./ags
   ./firefox
   ./hyprland
-  ./nixvim
-  ./nushell
-  ./rofi
-  ./swaync
-  ./waybar
-  ./yazi
+  ./languages
+  ./terminal
 
-  ./bash.nix
-  ./btop.nix
-  ./clipse.nix
-  ./fastfetch.nix
-  ./git.nix
-  ./helix.nix
-  ./kitty.nix
-  ./python.nix
-  ./starship.nix
   ./stylix.nix
   ./xdg.nix
 ] else if var.host == "homePC" then [
   ./firefox
-  ./nushell
-  ./yazi
+  ./languages
+  ./terminal
 
-  ./bash.nix
-  ./btop.nix
-  ./fastfetch.nix
-  ./git.nix
-  ./helix.nix
-  ./kitty.nix
-  ./starship.nix
   ./stylix.nix
   ./xdg.nix
 ] else [ ];
