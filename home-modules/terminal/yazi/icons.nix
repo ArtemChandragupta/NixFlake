@@ -104,7 +104,7 @@ programs.yazi.theme.icon.globs = [
       { name = "*flatpak.nix";   text = "󰏖"; fg_dark = "#7ebae4"; }
       { name = "*locales.nix";   text = "󱀍"; fg_dark = "#7ebae4"; }
       { name = "*networking.nix";text = "󰀂"; fg_dark = "#7ebae4"; }
-      { name = "*sound.nix";     text = "󰜟"; fg_dark = "#7ebae4"; }
+      { name = "*sound.nix";     text = "󱀞"; fg_dark = "#7ebae4"; }
       { name = "*system.nix";    text = "󰘳"; fg_dark = "#7ebae4"; }
       { name = "*usb.nix";       text = "󱊞"; fg_dark = "#7ebae4"; }
       { name = "*users.nix";     text = ""; fg_dark = "#7ebae4"; }
