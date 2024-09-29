@@ -57,6 +57,7 @@ modules-right  = [ "battery" "cpu" "temperature" "memory" "backlight" "pulseaudi
     "class<dosbox-staging>"   = "󰚴";
     "class<localsend_app>"    = "󱗿";
     "class<virt-manager>"     = "";
+    "class<org.openscad.>"     = "";
   };
 };
 
