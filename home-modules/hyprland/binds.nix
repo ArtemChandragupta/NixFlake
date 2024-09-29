@@ -67,9 +67,6 @@ bind = [
   "$mainMod, mouse_down, workspace, e+1"
   "$mainMod, mouse_up,   workspace, e-1"
 
-  "$mainMod SHIFT, up,   movecurrentworkspacetomonitor, HDMI-A-1"
-  "$mainMod SHIFT, down, movecurrentworkspacetomonitor, eDP-1"
-    
   ", XF86MonBrightnessUp,   exec, brightnessctl set +5%"
   ", XF86MonBrightnessDown, exec, brightnessctl set 5%-"
   "$altMod, XF86MonBrightnessUp,   exec, brightnessctl --device='platform::kbd_backlight' set +1"
