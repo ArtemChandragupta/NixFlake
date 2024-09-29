@@ -4,7 +4,7 @@ programs.yazi.settings = {
   opener = {
     "text" = [
       {
-        run = ''hx "$@"'';
+        run = ''nvim "$@"'';
         block = true;
       }
     ];

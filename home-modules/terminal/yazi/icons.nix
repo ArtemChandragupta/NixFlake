@@ -48,6 +48,7 @@ programs.yazi.theme.icon.globs = [
 
     { name = "*hyprland/";     text = ""; }
       { name = "*autoname/";     text = "󰎏"; }
+      { name = "*monitors/";     text = "󰍺"; }
       { name = "*rofi-appgrid/"; text = "󱗼"; }
         { name = "*style.rasi";    text = "󱜧"; fg_dark = "#cc241d"; }
         { name = "*pkg.nix";       text = ""; fg_dark = "#7ebae4"; }
@@ -56,7 +57,6 @@ programs.yazi.theme.icon.globs = [
         { name = "*fetchWlppr.nix";text = "󰭽"; fg_dark = "#7ebae4"; }
       { name = "*waybar/";       text = "󱟛"; }
       { name = "*binds.nix";     text = "󰌌"; fg_dark = "#7ebae4"; }
-      { name = "*monitors.nix";  text = "󰍺"; fg_dark = "#7ebae4"; }
       { name = "*rules.nix";     text = ""; fg_dark = "#7ebae4"; }
       { name = "*screenlock.nix";text = "󰷛"; fg_dark = "#7ebae4"; }
       { name = "*settings.nix";  text = ""; fg_dark = "#7ebae4"; }
@@ -64,6 +64,7 @@ programs.yazi.theme.icon.globs = [
     { name = "*languages/";    text = ""; }
       { name = "*python.nix";    text = "󰌠"; fg_dark = "#7ebae4"; }
       { name = "*TeX.nix";       text = ""; fg_dark = "#7ebae4"; }
+      { name = "*nushell.nix";   text = ""; fg_dark = "#7ebae4"; }
 
     { name = "*terminal/";     text = ""; }
       { name = "*helix/";        text = "󰚄"; }
