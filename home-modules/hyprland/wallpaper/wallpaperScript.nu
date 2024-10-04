@@ -1,24 +1,25 @@
-let screenList = hyprctl monitors #Get list  of active screens
-| find Monitor
-| parse '{device} {name} {id}'
-| get name
+if ('.cache/swww' not-in (ls .cache | get name)) {mkdir .cache/swww} # Ensure dir exist
 
-for $screen in $screenList {
-    swww img -o $screen ( # For each screen
-        if ( # Is the wlppr initialized for each screen?
-            ls -s .cache/swww
-            | where name == $screen
-            | is-empty
-        ) { # If no, set random wlppr
-            ls -f .wallpaper
-            | get name
-            | get (random int ..($in | length | $in - 1))
-        } else { # If yes, set random wlppr different from current based on full path
-            ls -f .wallpaper
-            | get name
-            | path expand
-            | where {|link| $link != (open $'.cache/swww/($screen)')}
-            | get (random int ..($in | length | $in - 1))
-        }
-    )
+for $screen in (hyprctl -j monitors | from json | get name) { # For each active screen
+
+  match ($screen in (ls -s .cache/swww | get name)) { # Is screen wllppr already set?
+    true  => {newWlppr}
+    false => {initWlppr}
+  }
+
+  def newWlppr [] { # If yes, set random wlppr different from current based on full path
+    ls -f .wallpaper
+    | get name
+    | path expand
+    | where {|link| $link != (open $'.cache/swww/($screen)')}
+    | get (random int ..($in | length | $in - 1))
+    | swww img -o $screen $in
+  }
+
+  def initWlppr [] { # If no, set random wlppr
+    ls -f .wallpaper
+    | get name
+    | get (random int ..($in | length | $in - 1))
+    | swww img -o $screen $in
+  }
 }
