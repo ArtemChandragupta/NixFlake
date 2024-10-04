@@ -14,7 +14,7 @@ home.packages = [
 ];
 
 wayland.windowManager.hyprland.settings.exec-once = [
-  "swww-daemon"
+  "swww init"
 ];
 
 }
