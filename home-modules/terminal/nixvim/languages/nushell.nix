@@ -28,8 +28,8 @@ programs.nixvim = {
   '';
 
   extraFiles = {
-    "/queries/nu/highlights.scm" = builtins.readFile "${nu-grammar}/queries/nu/highlights.scm";
-    "/queries/nu/injections.scm" = builtins.readFile "${nu-grammar}/queries/nu/injections.scm";
+    "/queries/nu/highlights.scm".source = "${nu-grammar}/queries/nu/highlights.scm";
+    "/queries/nu/injections.scm".source = "${nu-grammar}/queries/nu/injections.scm";
   };
 };
 
