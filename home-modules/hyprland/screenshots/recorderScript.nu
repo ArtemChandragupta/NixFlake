@@ -1,11 +1,20 @@
-def main [] {
-  let process = ps | where name == wf-recorder # Get recorder process id
+let process = ps | where name == wf-recorder # Get recorder process id
 
-  if ($process | is-empty) { # If the record is inactive, notify and start it
-    notify-send --action="recrod start" .
-    | wf-recorder -f ~/Pictures/$"( date now | format date "%Y-%m-%d-%H%M%S")"-record.mp4
-  } else { # If the record is active, kill and notify
-    $process | get pid.0 | kill $in
-    | notify-send --action="recrod stop" .
-  }
+match ($process | is-empty) { # Is recorder inactive?
+  true  => {recordStart} # If yes, start recorder and notify
+  false => {recordStop}  # If no, stop recorder and notify
+}
+
+def recordStart [] {
+  let activeScreen = hyprctl -j monitors # Get active screen
+  | from json
+  | where focused == true
+  | get name.0
+
+  notify-send Record Start 
+  | wf-recorder -o $activeScreen -f ~/Pictures/$"( date now | format date "%Y-%m-%d-%H%M%S")"-record.mp4
+}
+
+def recordStop [] {
+  notify-send Record Stop | $process | get pid.0 | kill $in
 }
