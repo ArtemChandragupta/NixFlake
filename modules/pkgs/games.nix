@@ -1,7 +1,8 @@
 { pkgs, ... }:{
 
 environment.systemPackages = with pkgs; [
-  ppsspp
+  ppsspp-sdl-wayland
+  pcsx2
   cartridges
 
   xboxdrv
@@ -12,8 +13,8 @@ environment.systemPackages = with pkgs; [
 programs.gamemode = {
   enable = true;
   settings.custom = {
-    start = "${pkgs.libnotify}/bin/notify-send 'GameMode started'";
-    end   = "${pkgs.libnotify}/bin/notify-send 'GameMode ended'";
+    start = "notify-send 'GameMode started'";
+    end   = "notify-send 'GameMode ended'";
   };
 };
 

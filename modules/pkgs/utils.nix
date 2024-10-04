@@ -5,13 +5,13 @@ environment.systemPackages = with pkgs; [
   rar
   gnutar
   unar
-  
+
   brightnessctl
   lm_sensors
+  libnotify
   
   exiftool
-  go-toml
-  gopsuinfo
+  # gopsuinfo
   ffmpeg
   xdragon
   
