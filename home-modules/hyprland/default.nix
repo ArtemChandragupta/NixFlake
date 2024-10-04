@@ -3,13 +3,13 @@
 imports = [
   # ./autoname
   ./rofi-appgrid
+  ./screenshots
   ./monitors
   ./swaync
   ./wallpaper
   ./waybar
 
   ./binds.nix
-  # ./monitors.nix
   ./rules.nix
   ./screenlock.nix
   ./settings.nix
