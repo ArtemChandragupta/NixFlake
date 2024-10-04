@@ -18,15 +18,20 @@ nix.settings = {
 environment.variables.EDITOR = "hx";
 
 environment.systemPackages = with pkgs; [
-  grim
-  slurp
-  imagemagick
-  swappy
-  wf-recorder
-  
+  totem # gnome video
+  loupe # gnome photo
+  evince # gnome pdf
+  baobab # gnome disk analizer
+  nautilus # gnome file manager
+  snapshot # gnome camera
+  gnome-software
+  gnome-calculator
+  gnome-disk-utility
+  weather
+
   wl-clipboard
   cliphist
-  
+
   hyprpicker
 
   pwvucontrol
