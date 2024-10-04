@@ -16,9 +16,10 @@ programs.nixvim = {
   opts = {
     number = true;
     relativenumber = true;
-    # cursorline = true;
+    wrap = false; 
     shiftwidth = 2;
-    scrolloff  = 5;
+    sidescrolloff = 5;
+    scrolloff     = 5;
     whichwrap = "<,>,[,]";
     signcolumn = "no";
   };
