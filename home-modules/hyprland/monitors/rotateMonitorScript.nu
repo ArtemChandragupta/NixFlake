@@ -17,5 +17,5 @@ def main [ direction:int ] {
   if not (ps | where name == swww-daemon | is-empty) {
     swww kill # Kill swww - it will be broken after rotate
   }
-  swww-daemon # start swww
+  swww init # start swww
 }
