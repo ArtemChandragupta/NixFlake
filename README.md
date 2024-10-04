@@ -12,7 +12,7 @@ Also I have a "control center" in flake.nix - var arg, which contains username, 
  ╭─ Distro   -> NixOS
  ├─ Editor   -> helix
  ├─ Browser  -> Firefox with custom css
- ├─ Shell    -> nushell & bash
+ ├─ Shell    -> nushell
  ╰─ Monitor  -> btop
              
  ╭─ Model    -> Lenovo Thinkbook 13s G3 ACN
