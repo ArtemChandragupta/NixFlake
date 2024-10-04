@@ -1,5 +1,13 @@
 let nameBase = $'($env.Home)/Pictures/(date now | format date "%Y-%m-%d-%H%M%S")'
 
+def main [mode:string] {
+  match $mode {
+    'window' => {window}
+    'screen' => {screen}
+    'redact' => {redact}
+  }
+}
+
 def window [] { # Save and copy active window
   let name = $'($nameBase)-window.png'
   let activeWindow = hyprctl -j activewindow | from json
@@ -27,12 +35,4 @@ def redact [] { # Save or copy active screen redacted by satty
 
   grim -o $activeScreen - 
   | satty --filename - --output-filename $name --copy-command 'wl-copy' --early-exit
-}
-
-def main [mode:string] {
-  match $mode {
-    'window' => {window}
-    'screen' => {screen}
-    'redact' => {redact}
-  }
 }
