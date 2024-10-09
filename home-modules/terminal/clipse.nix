@@ -31,6 +31,11 @@ home = {
       themeFile = "gruvbox.json";
       tempDir   = "tmp_files";
       logFile   = "clipse.log";
+      # imageDisplay = {
+      #   type = "kitty";
+      #   scaleX = 18;
+      #   scaleY = 20;
+      # };
     };
   };
 };

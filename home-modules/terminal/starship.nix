@@ -11,7 +11,7 @@ programs.starship = {
       "[](fg:#83a598 bg:#458588)"
       "$git_branch" "$git_status"
       "[](fg:#458588 bg:#665c54)"
-      "$nodejs" "$java" "$kotlin" "$haskell" "$python"
+      "$nodejs" "$haskell" "$python"
       "[](fg:#665c54 bg:#3c3836)"
       "$time"
       "[](fg:#3c3836)"
@@ -66,19 +66,14 @@ programs.starship = {
       symbol = " ";
       style  = "bg:#665c54";
       format = ''[[ $symbol( $version) ](fg:#fbf1c7 bg:#665c54)]($style)'';
-    };
-    java = {
-      symbol = " ";
-      style  = "bg:#665c54";
-      format = ''[[ $symbol( $version) ](fg:#fbf1c7 bg:#665c54)]($style)'';
-    };
-    kotlin = {
-      symbol = "";
-      style  = "bg:#665c54";
-      format = ''[[ $symbol( $version) ](fg:#fbf1c7 bg:#665c54)]($style)'';
-    };
+    }; 
     haskell = {
       symbol = "";
+      style  = "bg:#665c54";
+      format = ''[[ $symbol( $version) ](fg:#fbf1c7 bg:#665c54)]($style)'';
+    };
+    python = {
+      symbol = "󰌠";
       style  = "bg:#665c54";
       format = ''[[ $symbol( $version) ](fg:#fbf1c7 bg:#665c54)]($style)'';
     };
