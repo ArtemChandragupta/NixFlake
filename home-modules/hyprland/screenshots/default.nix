@@ -7,7 +7,7 @@ let
 in{
 
 home.packages = with pkgs; [
-  hyprshot
+  grim
   satty
   wf-recorder
 
@@ -17,12 +17,15 @@ home.packages = with pkgs; [
 
 wayland.windowManager.hyprland.settings = {
   bind = [
-    ", PRINT, exec, screenshotScript window"
-    "CTRL, PRINT, exec, screenshotScript screen"
+    ", PRINT,         exec, screenshotScript window"
+    "$mainMod, PRINT, exec, screenshotScript screen"
+    "CTRL, PRINT,     exec, screenshotScript redact"
+
     "$mainMod, U, exec, recorderScript"
   ];
   windowrulev2 = [
     "fullscreen, class:(com.gabm.satty)"
+    "float, class:(com.gabm.satty)"
   ];
 };
 
