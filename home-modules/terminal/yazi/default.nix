@@ -15,6 +15,11 @@ nix.settings = {
   ];
 };
 
+programs.zoxide = {
+  enable = true;
+  enableNushellIntegration = true;
+};
+
 programs.yazi = {
   enable = true;
   enableNushellIntegration = true;

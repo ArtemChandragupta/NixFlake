@@ -26,6 +26,12 @@ programs.yazi.settings = {
         block = true;
       }
     ];
+    "Haskell" = [
+      {
+	run = ''hx "$@"'';
+	block = true;
+      }
+    ];
     "pdf" = [
       {
         run  = ''evince "$@"'';
@@ -36,9 +42,18 @@ programs.yazi.settings = {
 
   open.prepend_rules = [
     {
+      name = "*.djvu";
+      use = "pdf";
+    }
+    {
       name = "*.tex";
       use = "Latex";
     }
+    {
+      name = "*.hs";
+      use = "Haskell";
+    }
+
     {
       mime = "text/*";
       use  = "text";

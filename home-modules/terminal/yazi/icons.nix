@@ -10,6 +10,7 @@ programs.yazi.theme.icon.globs = [
 
   { name = "*Desktop/";      text = "󰧨"; }
   { name = "*Dev/";          text = "󱚊"; }
+    { name = "*haskell/";      text = "󰲒"; }
     { name = "*LaTeX/";        text = ""; }
     { name = "*letters/";      text = "󰾸"; }
     { name = "*myblog/";       text = "󰒪"; }
@@ -59,12 +60,13 @@ programs.yazi.theme.icon.globs = [
       { name = "*binds.nix";     text = "󰌌"; fg_dark = "#7ebae4"; }
       { name = "*rules.nix";     text = ""; fg_dark = "#7ebae4"; }
       { name = "*screenlock.nix";text = "󰷛"; fg_dark = "#7ebae4"; }
+      { name = "*screenshot.nix";text = ""; fg_dark = "#7ebae4"; }
       { name = "*settings.nix";  text = ""; fg_dark = "#7ebae4"; }
 
     { name = "*languages/";    text = ""; }
+      { name = "*haskell.nix";   text = "󰲒"; fg_dark = "#7ebae4"; }
       { name = "*python.nix";    text = "󰌠"; fg_dark = "#7ebae4"; }
       { name = "*TeX.nix";       text = ""; fg_dark = "#7ebae4"; }
-      { name = "*nushell.nix";   text = ""; fg_dark = "#7ebae4"; }
 
     { name = "*terminal/";     text = ""; }
       { name = "*helix/";        text = "󰚄"; }
