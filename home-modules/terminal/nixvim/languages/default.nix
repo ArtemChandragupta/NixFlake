@@ -9,7 +9,8 @@ programs.nixvim.plugins = {
   lsp = {
     enable = true;
     servers = {
-      nil-ls.enable = true;
+      nil_ls.enable = true;
+      hls.enable = true;
     };
   };
   treesitter = {
@@ -22,6 +23,7 @@ programs.nixvim.plugins = {
       css
       python
       javascript
+      haskell
     ];
     settings.highlight.enable = true;
   };
