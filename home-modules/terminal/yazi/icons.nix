@@ -72,7 +72,8 @@ programs.yazi.theme.icon.globs = [
       { name = "*helix/";        text = "󰚄"; }
         { name = "*languages.nix"; text = ""; fg_dark = "#7ebae4"; }
       { name = "*nixvim/";       text = ""; }
-        { name = "*keymap.nix";    text = "󰌌"; fg_dark = "#7ebae4"; }
+        { name = "*nushell.nix";   text = ""; fg_dark = "#7ebae4"; }
+	{ name = "*keymap.nix";    text = "󰌌"; fg_dark = "#7ebae4"; }
         { name = "*plugins.nix";   text = "󰐱"; fg_dark = "#7ebae4"; }
       { name = "*shell/";       text = ""; }
         { name = "*nushell/";      text = ""; }
@@ -120,6 +121,7 @@ programs.yazi.theme.icon.globs = [
       { name = "*utils.nix";     text = "󱌢"; fg_dark = "#7ebae4"; }
 
     { name = "*wm/";           text = ""; }
+      { name = "*gdm.nix";       text = "󰍂"; fg_dark = "#7ebae4"; }
       { name = "*gnome.nix";     text = ""; fg_dark = "#7ebae4"; }
       { name = "*hyprland.nix";  text = ""; fg_dark = "#7ebae4"; }
 ];
