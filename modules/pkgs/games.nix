@@ -14,7 +14,7 @@ programs.gamemode = {
   enable = true;
   settings.custom = {
     start = "notify-send 'GameMode started'";
-    end   = "notify-send 'GameMode ended'";
+    end   = "notify-send 'GameMode stopped'";
   };
 };
 

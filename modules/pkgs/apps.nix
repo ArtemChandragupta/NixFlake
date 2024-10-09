@@ -13,12 +13,13 @@ environment.systemPackages = with pkgs; [
     localsend
 
     onlyoffice-bin
+    libreoffice
     zola
     mendeley
     zed-editor
 
     dconf-editor
- 
+  
     openscad
     inkscape
     drawio

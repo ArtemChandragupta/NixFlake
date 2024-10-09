@@ -2,21 +2,20 @@
 
 environment.systemPackages = with pkgs; [
   zip
-  rar
-  gnutar
-  unar
+  # rar
+  # gnutar
+  # unar
 
   brightnessctl
   lm_sensors
-  libnotify
+  libnotify # Notification sender
   
-  exiftool
-  # gopsuinfo
+  # exiftool
   ffmpeg
-  xdragon
+  xdragon # Drag-and-drop
   
   wget
-  cachix
+  cachix # Nix cache
 
   git
   gh
