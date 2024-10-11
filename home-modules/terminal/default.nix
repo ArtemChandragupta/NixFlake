@@ -6,7 +6,7 @@ imports = [
   ./shell
   ./yazi
 
-  ./btop.nix
+  ./btm.nix
   ./clipse.nix
   ./fastfetch.nix
   ./git.nix
