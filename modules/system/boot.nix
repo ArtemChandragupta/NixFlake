@@ -1,4 +1,4 @@
-{ pkgs, ... }:{
+{ var, pkgs, ... }:{
 
 boot = { 
   loader = {
@@ -7,7 +7,9 @@ boot = {
     efi.canTouchEfiVariables = true;
   };
 
-  kernelPackages = pkgs.linuxPackages_latest;
+  kernelPackages = if var.host == "ThinkBook13s"
+    then pkgs.linuxPackages_latest
+    else pkgs.linuxPackages;
   kernelParams = [
     "quiet"
     "udev.log_level=0" 
