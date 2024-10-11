@@ -10,10 +10,10 @@ Also I have a "control center" in flake.nix - var arg, which contains username, 
 
 ```red
  ╭─ Distro   -> NixOS
- ├─ Editor   -> helix
+ ├─ Editor   -> nixvim & helix
  ├─ Browser  -> Firefox with custom css
  ├─ Shell    -> nushell
- ╰─ Monitor  -> btop
+ ╰─ Top      -> bottom
              
  ╭─ Model    -> Lenovo Thinkbook 13s G3 ACN
  ├─ CPU      -> AMD Ryzen 5 5600U (12) @ 4.289GHz
@@ -22,7 +22,7 @@ Also I have a "control center" in flake.nix - var arg, which contains username, 
  ╭─ WM       -> Hyprland & Gnome
  ├─ Bar      -> waybar
  ├─ Clip     -> clipse
- ├─ DM       -> GDM
+ ├─ DM       -> ly & GDM
  ├─ Notify   -> SwayNC
  ├─ Terminal -> Kitty
  ├─ Theme    -> modified Gruvbox
