@@ -6,9 +6,6 @@ programs.rofi = {
   extraConfig.terminal = "kitty";
 };
 
-home = {
-  packages = builtins.attrValues (import ./pkg.nix {inherit pkgs;});
-  file.".config/rofi/launchers/rofi-appgrid/style.rasi".source = ./style.rasi;
-};
+home.file.".config/rofi/launchers/rofi-appgrid/style.rasi".source = ./style.rasi;
 
 }
