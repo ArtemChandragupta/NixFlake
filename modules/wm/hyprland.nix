@@ -18,12 +18,12 @@ nix.settings = {
 environment.variables.EDITOR = "hx";
 
 environment.systemPackages = with pkgs; [
-  totem # gnome video
-  loupe # gnome photo
-  evince # gnome pdf
-  baobab # gnome disk analizer
-  nautilus # gnome file manager
-  snapshot # gnome camera
+  loupe # Gnome photo
+  evince # Gnome pdf
+  baobab # Gnome disk analizer
+  clapper # New gnome video
+  nautilus # Gnome file manager
+  snapshot # Gnome camera
   gnome-software
   gnome-calculator
   gnome-disk-utility
