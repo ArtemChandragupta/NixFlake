@@ -10,7 +10,7 @@ programs.yazi.settings = {
     ];
     "video" = [
       {
-        run  = ''totem "$@"'';
+        run  = ''clapper "$@"'';
         block = true;
       }
     ];
@@ -53,7 +53,10 @@ programs.yazi.settings = {
       name = "*.hs";
       use = "Haskell";
     }
-
+    {
+      name = "*.js";
+      use = "Latex";
+    }
     {
       mime = "text/*";
       use  = "text";
