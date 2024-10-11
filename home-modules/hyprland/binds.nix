@@ -19,10 +19,8 @@ bind = [
   "$mainMod, N, exec, swaync-client -t -sw"
   ", XF86Calculator, exec, gnome-calculator"
 
-  "$mainMod, R, exec, rofi-appgrid"
-  "$mainMod, S, exec, anyrun"
-  "CTRL, B, exec, rofi-cliphist"
-  "CTRL, G, exec, cliphist list | rofi -dmenu | cliphist decode | wl-copy"
+  # "$mainMod, R, exec, rofi-appgrid"
+  "$mainMod, R, exec, rofi -show drun -theme .config/rofi/launchers/rofi-appgrid/style.rasi"
   "CTRL, X, exec, kitty -o font_size=15 -o background_opacity=0.95 --class clipse -e 'clipse'"
 
   "$mainMod, W, exec, waybar"
