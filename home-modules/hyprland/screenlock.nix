@@ -1,7 +1,7 @@
-{ pkgs, ... }:{
+{ pkgs, var, ... }:{
 
+services.hypridle.enable = if var.host == "ThinkBook13s" then true else false;
 programs.hyprlock.enable = true;
-services.hypridle.enable = true;
 
 services.hypridle.settings = {
   general = {
