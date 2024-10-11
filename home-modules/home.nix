@@ -11,6 +11,7 @@ imports = if var.host == "ThinkBook13s" then [
   ./xdg.nix
 ] else if var.host == "homePC" then [
   ./firefox
+  ./hyprland
   ./languages
   ./terminal
 
