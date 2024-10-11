@@ -52,12 +52,13 @@ modules-right  = [ "battery" "cpu" "temperature" "memory" "backlight" "pulseaudi
     "class<com.saivert.pwvucontrol>"= "󰴸";
     "class<com.usebottles.bottles>" = "";
     "class<org.telegram.desktop>"   = "";
-    "class<teams-for-linux>"  = "󰊻";
+    "class<libreoffice-writer>"     = "";
     "class<transmission.gtk>" = "";
+    "class<teams-for-linux>"  = "󰊻";
     "class<dosbox-staging>"   = "󰚴";
     "class<localsend_app>"    = "󱗿";
     "class<virt-manager>"     = "";
-    "class<org.openscad.>"     = "";
+    "class<org.openscad.>"    = "";
   };
 };
 
@@ -92,6 +93,7 @@ modules-right  = [ "battery" "cpu" "temperature" "memory" "backlight" "pulseaudi
 
 "cpu" = {
   format = " {usage}%";
+  on-click = "kitty btm";
 };
 "temperature" = {
   format = "󰔐 {temperatureC}°C";
