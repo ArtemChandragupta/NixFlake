@@ -19,15 +19,12 @@ bind = [
   "$mainMod, N, exec, swaync-client -t -sw"
   ", XF86Calculator, exec, gnome-calculator"
 
-  # "$mainMod, R, exec, rofi-appgrid"
-  "$mainMod, R, exec, rofi -show drun -theme .config/rofi/launchers/rofi-appgrid/style.rasi"
+  "$mainMod, R, exec, rofi-appgrid"
   "CTRL, X, exec, kitty -o font_size=15 -o background_opacity=0.95 --class clipse -e 'clipse'"
+  "$mainMod SHIFT, W, exec, wallpaperScript"
 
-  "$mainMod, W, exec, waybar"
-  "$mainMod SHIFT, W, exec, pkill waybar"
-  
-  "$mainMod, A, exec, ags"
-  "$mainMod SHIFT, A, exec, ags -q"
+  "$mainMod, W, exec, nu -c 'try {pkill waybar} catch {waybar}'"
+  "$mainMod, A, exec, nu -c 'ags -q | ags'"
   "$mainMod, I, exec, ags -t icon-browser"
   "$mainMod SHIFT, I, exec, ags -t applauncher"
 
