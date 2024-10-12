@@ -122,10 +122,9 @@ programs.yazi.theme.icon.globs = [
       { name = "*utils.nix";     text = "󱌢"; fg_dark = "#7ebae4"; }
 
     { name = "*wm/";           text = ""; }
-      { name = "*gdm.nix";       text = "󰍂"; fg_dark = "#7ebae4"; }
+      { name = "*dm.nix";        text = "󰍂"; fg_dark = "#7ebae4"; }
       { name = "*gnome.nix";     text = ""; fg_dark = "#7ebae4"; }
       { name = "*hyprland.nix";  text = ""; fg_dark = "#7ebae4"; }
-      { name = "*ly.nix";        text = "󰍂"; fg_dark = "#7ebae4"; }
 ];
 
 }
