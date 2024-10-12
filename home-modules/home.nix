@@ -1,6 +1,6 @@
 { var, ... }:{
 
-imports = if var.host == "ThinkBook13s" then [
+imports = [
   ./ags
   ./firefox
   ./hyprland
@@ -9,15 +9,7 @@ imports = if var.host == "ThinkBook13s" then [
 
   ./stylix.nix
   ./xdg.nix
-] else if var.host == "homePC" then [
-  ./firefox
-  ./hyprland
-  ./languages
-  ./terminal
-
-  ./stylix.nix
-  ./xdg.nix
-] else [ ];
+];
 
 programs.home-manager.enable = true;
 
