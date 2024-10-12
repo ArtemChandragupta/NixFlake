@@ -34,7 +34,7 @@ programs.yazi.settings = {
     ];
     "pdf" = [
       {
-        run  = ''evince "$@"'';
+        run  = ''papers "$@"'';
         block = true;
       }
     ];
