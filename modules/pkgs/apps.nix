@@ -1,10 +1,9 @@
 { pkgs, var, ... }:{
 
-environment.systemPackages = with pkgs; [
-  kitty
-] ++ ( if var.init
-  then [ ]
-  else [
+environment.systemPackages = if var.init
+  then with pkgs; [kitty]
+  else with pkgs; [
+    kitty
     obsidian
     transmission_4-gtk
 
@@ -16,15 +15,13 @@ environment.systemPackages = with pkgs; [
     libreoffice
     zola
     mendeley
-    zed-editor
 
     dconf-editor
-  
+
     openscad
     inkscape
     drawio
     dosbox-staging
-  ]
-);
+  ];
 
 }
