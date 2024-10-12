@@ -6,7 +6,7 @@ def main [mode?:string] {
 }
 
 def backup [] {
-  let place = $'($env.Home)/.old-flakes'
+  let place = $'($env.Home)/nix/.old-flakes'
 
   mkdir $place # Ensure backup directory exist
   cp ~/nix/flake.lock $'($place)/(date now | format date '%Y-%m-%d-%H%M%S')-flake.lock'
