@@ -15,7 +15,7 @@ modules-right  = [ "battery" "cpu" "temperature" "memory" "backlight" "pulseaudi
 
 "custom/flake" = {
   format   = " ";
-  on-click = "wallpaperScript";
+  on-click = "rofi-appgrid";
 };
 
 "tray" = {
