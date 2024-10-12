@@ -19,7 +19,7 @@ environment.variables.EDITOR = "hx";
 
 environment.systemPackages = with pkgs; [
   loupe # Gnome photo
-  evince # Gnome pdf
+  papers # Gnome pdf
   baobab # Gnome disk analizer
   clapper # New gnome video
   nautilus # Gnome file manager
