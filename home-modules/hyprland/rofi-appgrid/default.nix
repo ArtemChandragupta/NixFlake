@@ -5,7 +5,7 @@ let
 in{
 
 home = {
-  packages = [rofi-appgrid];
+  packages = [ rofi-appgrid ];
   file.".config/rofi/launchers/rofi-appgrid/style.rasi".source = ./style.rasi;
 };
 

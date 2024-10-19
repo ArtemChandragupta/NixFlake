@@ -3,14 +3,11 @@
 wayland.windowManager.hyprland.settings = {
 
 exec-once = [
-  "swaync"
-  "waybar"
   "kitty"
   "blueman-applet"
   "udiskie &" #USB automount
   "nm-applet"
   "telegram-desktop -startintray"
-  "clipse -listen"
 ];
 
 env = [
@@ -58,6 +55,7 @@ misc = {
 
   enable_swallow = true;
   swallow_regex  = "^(kitty)$";
+  # swallow_exception_regex = "^(it.catboy.ripdrag)$"; # Broken
 };
 
 general = {

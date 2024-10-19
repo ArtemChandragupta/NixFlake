@@ -1,5 +1,7 @@
 {
 
+wayland.windowManager.hyprland.settings.exec-once = ["waybar"];
+
 programs.waybar = {
   enable = true;
   style = builtins.readFile (./style.css);
@@ -37,16 +39,16 @@ modules-right  = [ "battery" "cpu" "temperature" "memory" "backlight" "pulseaudi
     "class<haguichi>" = "";
     "class<firefox>"  = "󰈹";
     "class<discord>"  = "";
-    "class<evince>"   = "";
-    "class<totem>"    = "󱉺";
     "class<kitty>"    = "";
 
     "class<org.gnome.Calculator>" = "";
     "class<org.gnome.Software>"   = "󱗼";
     "class<org.gnome.Nautilus>"   = "󰪶";
+    "class<org.gnome.Papers>"     = "";
     "class<org.gnome.Loupe>"      = "";
 
     "class<com.moonlight_stream.Moonlight>"= "󰢹";
+    "class<com.github.rafostar.Clapper>"   = "󱉺";
     "class<ONLYOFFICE Desktop Editors>"    = "";
     "class<Mendeley Reference Manager>"    = "";
     "class<com.saivert.pwvucontrol>"= "󰴸";
@@ -93,7 +95,7 @@ modules-right  = [ "battery" "cpu" "temperature" "memory" "backlight" "pulseaudi
 
 "cpu" = {
   format = " {usage}%";
-  on-click = "kitty btm";
+  on-click = "open-resourceMonitor";
 };
 "temperature" = {
   format = "󰔐 {temperatureC}°C";

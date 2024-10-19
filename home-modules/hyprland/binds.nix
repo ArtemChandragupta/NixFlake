@@ -17,11 +17,13 @@ bind = [
   "$mainMod, C, exec, hyprpicker -a"
   "$mainMod, L, exec, hyprlock"
   "$mainMod, N, exec, swaync-client -t -sw"
-  ", XF86Calculator, exec, gnome-calculator"
 
   "$mainMod, R, exec, rofi-appgrid"
-  "CTRL, X, exec, kitty -o font_size=15 -o background_opacity=0.95 --class clipse -e 'clipse'"
+  "$mainMod, G, exec, open-translator"
+  "$mainMod, B, exec, open-resourceMonitor"
+  "CTRL,     X, exec, open-clip"
   "$mainMod SHIFT, W, exec, wallpaperScript"
+  " , XF86Calculator, exec, open-calculator"
 
   "$mainMod, W, exec, nu -c 'try {pkill waybar} catch {waybar}'"
   "$mainMod, A, exec, nu -c 'ags -q | ags'"

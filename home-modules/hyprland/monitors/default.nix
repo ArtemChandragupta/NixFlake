@@ -4,7 +4,7 @@ let
     (builtins.readFile ./rotateMonitorScript.nu);
 in{
 
-home.packages = [rotateMonitorScript];
+home.packages = [ rotateMonitorScript ];
 
 wayland.windowManager.hyprland.settings = {
 
