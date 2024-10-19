@@ -58,8 +58,8 @@ programs.starship = {
     };
 
     character = {
-      success_symbol = "[](bold fg:#98971a)";
-      error_symbol   = "[](bold fg:#cc241a)";
+      success_symbol = "[>>-](bold fg:#98971a)";
+      error_symbol   = "[-<<](bold fg:#cc241a)";
     };
 
     nodejs = {

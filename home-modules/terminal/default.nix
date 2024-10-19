@@ -1,13 +1,15 @@
 {
 
 imports = [
+  ./calculator
+  ./clipse
   ./helix
   ./nixvim
   ./shell
+  ./translate
   ./yazi
 
   ./btm.nix
-  ./clipse.nix
   ./fastfetch.nix
   ./git.nix
   ./kitty.nix

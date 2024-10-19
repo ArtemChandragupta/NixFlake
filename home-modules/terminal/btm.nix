@@ -1,22 +1,10 @@
-{
+{ pkgs, ... }:let
+  bottomScript = pkgs.writers.writeNuBin "open-resourceMonitor" 
+  "focusCursor center | kitty -o background_opacity=0.95 --class translator -e 'btm'";
+in{
 
 programs.bottom.enable = true;
 
-home.file.".config/bottom/bottom.toml".text = /*toml*/''
-[flags]
-tree = true
-default_widget_type = "proc"
-
-[[row]]
-  [[row.child]]
-  ratio=2
-  type="cpu"
-  [[row.child]]
-  type="network"
-[[row]]
-  ratio=2
-  [[row.child]]
-  type="proc"
-'';
+home.packages = [ bottomScript ];
 
 }
