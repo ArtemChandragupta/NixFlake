@@ -1,8 +1,8 @@
 { var, ... }:{
 
 imports = [
+  ./bluetooth.nix
   ./boot.nix
-  ./flatpak.nix
   ./locales.nix
   ./networking.nix
   ./nixpkgs.nix
