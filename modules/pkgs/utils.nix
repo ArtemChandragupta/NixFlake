@@ -1,25 +1,14 @@
 { pkgs, ... }:{
 
 environment.systemPackages = with pkgs; [
-  zip
-  # rar
-  # gnutar
-  # unar
+  brightnessctl # Brightness control
+  libnotify     # Notification sender
 
-  brightnessctl
-  lm_sensors
-  libnotify # Notification sender
-  
-  # exiftool
-  ffmpeg
-  xdragon # Drag-and-drop
-  
-  wget
-  cachix # Nix cache
+  ffmpeg  # Lib for media manipulations
+  ripdrag # Drag and drop from terminal
 
-  git
-  gh
-  gitui
+  wget   # Get things from internet
+  cachix # Nix cache for flakes
 ];
 
 }
