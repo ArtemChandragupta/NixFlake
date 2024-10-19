@@ -39,8 +39,7 @@ programs.yazi = {
     "smart-enter" = ./lua/smart-enter;
     "starship"    = ./lua/starship;
   };
-  initLua = ./lua/init.lua;  
-
+  initLua = ./lua/init.lua;
 };
 
 }

@@ -13,8 +13,8 @@ programs.yazi.keymap.manager.prepend_keymap = [
   }
   {
     on = "<C-n>";
-    run = /*sh*/''
-      shell 'dragon -x -i -T "$1"' --confirm
+    run = ''
+      shell 'ripdrag -x -n -i -s 360 "$1"' --confirm
     '';
   }
 ];

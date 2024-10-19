@@ -69,6 +69,8 @@ programs.yazi.theme.icon.globs = [
       { name = "*TeX.nix";       text = ""; fg_dark = "#7ebae4"; }
 
     { name = "*terminal/";     text = ""; }
+      { name = "*calculator/";   text = "󰪚"; }
+      { name = "*clipse/";       text = "󱓥"; }
       { name = "*helix/";        text = "󰚄"; }
         { name = "*languages.nix"; text = ""; fg_dark = "#7ebae4"; }
       { name = "*nixvim/";       text = ""; }
@@ -78,6 +80,7 @@ programs.yazi.theme.icon.globs = [
       { name = "*shell/";       text = ""; }
         { name = "*nushell/";      text = ""; }
         { name = "*bash.nix";      text = ""; fg_dark = "#7ebae4"; }
+      { name = "*translate/";    text = "󰗊"; }
       { name = "*yazi/";         text = "󰇥"; }
         { name = "*lua/";          text = ""; }
         { name = "*filetype.nix";  text = ""; fg_dark = "#7ebae4"; }
@@ -85,7 +88,6 @@ programs.yazi.theme.icon.globs = [
         { name = "*opener.nix";    text = ""; fg_dark = "#7ebae4"; }
         { name = "*theme.nix";     text = "󰣆"; fg_dark = "#7ebae4"; }
       { name = "*btm.nix";       text = "󱔓"; fg_dark = "#7ebae4"; }
-      { name = "*clipse.nix";    text = "󱓥"; fg_dark = "#7ebae4"; }
       { name = "*fastfetch.nix"; text = "󱡠"; fg_dark = "#7ebae4"; }
       { name = "*git.nix";       text = "󰊢"; fg_dark = "#7ebae4"; }
       { name = "*kitty.nix";     text = "󰄛"; fg_dark = "#7ebae4"; }
@@ -105,10 +107,11 @@ programs.yazi.theme.icon.globs = [
         { name = "*nvidia.nix";    text = "󰖂"; fg_dark = "#7ebae4"; }
 
     { name = "*system/";       text = ""; }
+      { name = "*bluetooth.nix"; text = "󰂰"; fg_dark = "#7ebae4"; }
       { name = "*boot.nix";      text = "󱫡"; fg_dark = "#7ebae4"; }
-      { name = "*flatpak.nix";   text = "󰏖"; fg_dark = "#7ebae4"; }
       { name = "*locales.nix";   text = "󱀍"; fg_dark = "#7ebae4"; }
       { name = "*networking.nix";text = "󰀂"; fg_dark = "#7ebae4"; }
+      { name = "*nixpkgs.nix";   text = "󰏖"; fg_dark = "#7ebae4"; }
       { name = "*sound.nix";     text = "󱀞"; fg_dark = "#7ebae4"; }
       { name = "*system.nix";    text = "󰘳"; fg_dark = "#7ebae4"; }
       { name = "*usb.nix";       text = "󱊞"; fg_dark = "#7ebae4"; }
