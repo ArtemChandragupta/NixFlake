@@ -10,7 +10,10 @@ programs.nixvim.plugins = {
     enable = true;
     servers = {
       nil_ls.enable = true;
-      hls.enable = true;
+      hls = {
+        enable = true;
+        installGhc = false; # To remove warning
+      };
     };
   };
   treesitter = {
