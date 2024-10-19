@@ -51,11 +51,6 @@ inputs = {
     inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  sf-mono-liga-src = {
-    url = "github:shaunsingh/SFMono-Nerd-Font-Ligaturized";
-    flake = false;
-  };
-
   ags.url = "github:Aylur/ags";
   stylix.url = "github:danth/stylix";
 };
