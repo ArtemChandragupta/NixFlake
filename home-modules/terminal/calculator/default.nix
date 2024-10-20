@@ -1,18 +1,19 @@
 { pkgs, ...}:let
-  numbatScript = pkgs.writers.writeNuBin "open-calculator"
-    (builtins.readFile ./numbatScript.nu);
+  open-calc = pkgs.writers.writeNuBin "open-calc"
+    (builtins.readFile ./open-numbat.nu);
 in{
 
 home.packages = [
   pkgs.numbat
-  numbatScript
+  pkgs.kalker
+  open-calc
 ];
 
 home.file.".config/numbat/config.toml".source = ./config.toml;
 
 wayland.windowManager.hyprland.settings.windowrulev2 = [
-  "float        , class:(calculator)"
-  "size 1200 900, class:(calculator)"
+  "float        , class:(calc)"
+  "size 1200 900, class:(calc)"
 ];
 
 }
