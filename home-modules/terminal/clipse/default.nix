@@ -1,12 +1,12 @@
 { pkgs, ...}:let
-  clipScript = pkgs.writers.writeNuBin "open-clip"
-    (builtins.readFile ./clipScript.nu);
+  open-clip = pkgs.writers.writeNuBin "open-clip"
+    (builtins.readFile ./open-clip.nu);
 in{
 
 home.packages = [
   pkgs.clipse
   pkgs.wl-clipboard
-  clipScript
+  open-clip
 ];
 
 home.file = {
