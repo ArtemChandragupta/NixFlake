@@ -23,7 +23,7 @@ bind = [
   "$mainMod, B, exec, open-resourceMonitor"
   "CTRL,     X, exec, open-clip"
   "$mainMod SHIFT, W, exec, wallpaperScript"
-  " , XF86Calculator, exec, open-calculator"
+  " , XF86Calculator, exec, open-calc"
 
   "$mainMod, W, exec, nu -c 'try {pkill waybar} catch {waybar}'"
   "$mainMod, A, exec, nu -c 'ags -q | ags'"
