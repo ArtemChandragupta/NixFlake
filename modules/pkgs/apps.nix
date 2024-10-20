@@ -6,7 +6,7 @@ environment.systemPackages = if var.init
     kitty
     obsidian
     fragments
-    kalker
+    icon-library
 
     telegram-desktop
     localsend
