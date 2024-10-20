@@ -6,7 +6,7 @@ imports = [
   ./helix
   ./nixvim
   ./shell
-  ./translate
+  ./translator
   ./yazi
 
   ./btm.nix

@@ -1,0 +1,24 @@
+# Exit program
+exit: C-l
+# Translate from source to destination window
+translate: C-Space
+# Swap language
+swap_language: C-s
+# Clear all text in source of translation window
+clear: C-q
+# Copy selected text
+copy_selected: C-y
+# Copy all text in source of translation window
+copy_source: C-f
+# Copy all text in destination of translation window
+copy_destination: C-c
+# Play text to speech on source of translation window
+tts_source: C-o
+# Play text to speech on destination of translation window
+tts_destination: C-p
+# Stop playing text to speech
+stop_tts: C-x
+# Toggle transparent
+toggle_transparent: C-t
+# Toggle Definition/Example & Part of speech
+toggle_below: C-\
