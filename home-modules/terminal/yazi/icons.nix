@@ -69,7 +69,7 @@ programs.yazi.theme.icon.globs = [
       { name = "*TeX.nix";       text = ""; fg_dark = "#7ebae4"; }
 
     { name = "*terminal/";     text = ""; }
-      { name = "*calculator/";   text = "󰪚"; }
+      { name = "*calculator/";   text = "󰃬"; }
       { name = "*clipse/";       text = "󱓥"; }
       { name = "*helix/";        text = "󰚄"; }
         { name = "*languages.nix"; text = ""; fg_dark = "#7ebae4"; }
@@ -80,7 +80,7 @@ programs.yazi.theme.icon.globs = [
       { name = "*shell/";       text = ""; }
         { name = "*nushell/";      text = ""; }
         { name = "*bash.nix";      text = ""; fg_dark = "#7ebae4"; }
-      { name = "*translate/";    text = "󰗊"; }
+      { name = "*translator/";   text = "󰗊"; }
       { name = "*yazi/";         text = "󰇥"; }
         { name = "*lua/";          text = ""; }
         { name = "*filetype.nix";  text = ""; fg_dark = "#7ebae4"; }
