@@ -1,4 +1,4 @@
-{ pkgs, inputs, var, ... }:{
+{
 
 imports = [
   # ./autoname
@@ -17,9 +17,6 @@ imports = [
 
 wayland.windowManager.hyprland = {
   enable  = true;
-  package = if var.init 
-    then pkgs.hyprland
-    else inputs.hyprland.packages.${pkgs.system}.hyprland;
   systemd.variables = [ "--all" ];
 };
 
