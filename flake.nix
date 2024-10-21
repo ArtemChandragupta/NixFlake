@@ -30,12 +30,6 @@ inputs = {
   nixpkgs.url = "nixpkgs/nixos-unstable";
   nixos-u-small.url = "nixpkgs/nixos-unstable-small";
 
-  hyprland = {
-    type = "git";
-    url = "https://github.com/hyprwm/Hyprland";
-    submodules = true;
-  };
-
   nixvim = {
     url = "github:nix-community/nixvim";
     inputs.nixpkgs.follows = "nixpkgs";
