@@ -7,7 +7,6 @@ environment.systemPackages = with pkgs; [
   ripdrag # Drag and drop from terminal
 
   wget   # Get things from internet
-  cachix # Nix cache for flakes
 
   grex # Generate regex from examples
   dust # Disc usage tui

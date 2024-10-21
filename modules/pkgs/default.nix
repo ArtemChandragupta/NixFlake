@@ -1,13 +1,11 @@
-{ pkgs, ... }:{
+{
 
 imports = [
   ./apps.nix
+  ./flatpak.nix
   ./fonts.nix
   ./games.nix
   ./utils.nix
 ];
-
-services.flatpak.enable = true;
-environment.systemPackages = [ pkgs.gnome-software ];
 
 }
