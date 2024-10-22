@@ -19,6 +19,8 @@ environment.systemPackages = with pkgs; [
   weather
   dconf-editor
 
+  soteria # Polkit agent
+
   hyprpicker
 ];
 
