@@ -5,8 +5,9 @@ wayland.windowManager.hyprland.settings = {
 exec-once = [
   "kitty"
   "blueman-applet"
-  "udiskie &" #USB automount
   "nm-applet"
+  "udiskie &" # USB automount
+  "soteria" # Polkit agent
   "telegram-desktop -startintray"
 ];
 
