@@ -19,10 +19,10 @@ Also I have a "control center" in flake.nix - var arg, which contains username, 
  ├─ CPU      -> AMD Ryzen 5 5600U (12) @ 4.289GHz
  ╰─ Display  -> 1920x1200@60hz
              
- ╭─ WM       -> Hyprland & Gnome
+ ╭─ WM       -> Hyprland
  ├─ Bar      -> waybar
  ├─ Clip     -> clipse
- ├─ DM       -> ly & GDM
+ ├─ DM       -> GDM
  ├─ Notify   -> SwayNC
  ├─ Terminal -> Kitty
  ├─ Theme    -> modified Gruvbox
