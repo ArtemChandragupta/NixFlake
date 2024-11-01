@@ -16,7 +16,8 @@ environment.systemPackages = if var.init
     zola
     mendeley
 
-    openscad
+    openscad-unstable
+    zed-editor
     inkscape
     drawio
     dosbox-staging
