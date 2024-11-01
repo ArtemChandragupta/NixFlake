@@ -46,6 +46,7 @@ programs.waybar.settings.mainBar = {
       "class<ONLYOFFICE Desktop Editors>"    = "";
       "class<Mendeley Reference Manager>" = "";
       "class<de.haeckerfelix.Fragments>"  = "";
+      "class<io.github.nokse22.Exhibit>"  = "󰐫";
       "class<com.saivert.pwvucontrol>"    = "󰴸";
       "class<com.usebottles.bottles>" = "";
       "class<page.kramo.Cartridges>"  = "";
@@ -57,7 +58,7 @@ programs.waybar.settings.mainBar = {
       "class<virt-manager>" = "";
       "class<calculator>"   = "󰇃";
       "class<translator>"   = "󱁥";
-      "class<org.openscad.>"    = "";
+      "class<openscad>"     = "";
     };
   };
 
