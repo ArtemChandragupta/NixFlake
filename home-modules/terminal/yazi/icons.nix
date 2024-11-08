@@ -14,7 +14,9 @@ programs.yazi.theme.icon.globs = [
     { name = "*LaTeX/";        text = ""; }
     { name = "*letters/";      text = "󰾸"; }
     { name = "*myblog/";       text = "󰒪"; }
+    { name = "*openscad/";     text = ""; }
     { name = "*python/";       text = "󰌠"; }
+    { name = "*waterfall*/";   text = "󱡉"; }
   { name = "*Documents/";    text = "󱔗"; }
   { name = "*Downloads/";    text = ""; }
   { name = "*Games/";        text = "󰊖"; }
