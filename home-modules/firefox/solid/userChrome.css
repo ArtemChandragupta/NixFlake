@@ -6,9 +6,9 @@
 }
 
 /* Main window */
-:has(#sidebar-box:not([hidden])) { /*enable padding with sidebar*/
-  #browser > #appcontent {
-    margin: 10px;
+:has(#sidebar-box:not([hidden])) { /*enable padding with sidebar is on*/
+  #browser > #tabbrowser-tabbox {
+    browser { margin: 10px; }
     browser { border-radius: 10px !important; }
   }
 }
