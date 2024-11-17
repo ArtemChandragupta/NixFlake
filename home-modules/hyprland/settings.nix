@@ -73,7 +73,7 @@ decoration = {
     passes   = 1;
     vibrancy = 0.1696;
   };
-  drop_shadow = false;
+  shadow.enabled = false;
 };
 
 animations = {
