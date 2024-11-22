@@ -1,7 +1,7 @@
 { pkgs, ... }:{
 
 programs.nixvim.plugins.treesitter.grammarPackages = [
-  pkgs.vimPlugins.nvim-treesitter.builtGrammars.nu
+  pkgs.vimPlugins.nvim-treesitter.builtGrammars.css
 ];
 
 }

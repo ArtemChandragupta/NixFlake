@@ -1,32 +1,26 @@
 { pkgs, ... }:{
 
 imports = [
+  ./css.nix
+  ./haskell.nix
+  ./js.nix
+  ./lua.nix
   ./nushell.nix
+  ./python.nix
   ./TeX.nix
+  ./toml.nix
 ];
 
 programs.nixvim.plugins = {
   lsp = {
     enable = true;
-    servers = {
-      nil_ls.enable = true;
-      hls = {
-        enable = true;
-        installGhc = false; # To remove warning
-      };
-    };
+    servers.nil_ls.enable = true;
   };
   treesitter = {
     enable = true;
     nixGrammars = true;
     grammarPackages = with pkgs.vimPlugins.nvim-treesitter.builtGrammars; [
-      toml
-      lua
       nix
-      css
-      python
-      javascript
-      haskell
     ];
     settings.highlight.enable = true;
   };
