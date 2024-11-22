@@ -2,8 +2,8 @@
 
 home.packages = with pkgs; [
   (python3.withPackages (ps: with ps; [
-    jupyterlab
-    matplotlib
+    jupyterlab # Notebooks
+    matplotlib # Mathematical plotting
 
     numpy # these two are
     scipy # probably redundant to pandas
