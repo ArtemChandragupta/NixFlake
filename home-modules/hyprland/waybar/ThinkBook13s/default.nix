@@ -50,6 +50,7 @@ programs.waybar.settings.mainBar = {
       "class<com.saivert.pwvucontrol>"    = "󰴸";
       "class<com.usebottles.bottles>" = "";
       "class<page.kramo.Cartridges>"  = "";
+      "class<org.cvfosammmm.Setzer>"  = "󱗆";
       "class<org.telegram.desktop>"   = "";
       "class<libreoffice-writer>"     = "";
       "class<teams-for-linux>"  = "󰊻";
@@ -58,7 +59,8 @@ programs.waybar.settings.mainBar = {
       "class<virt-manager>" = "";
       "class<calculator>"   = "󰇃";
       "class<translator>"   = "󱁥";
-      "class<openscad>"     = "";
+      "class<Texmaker>" = "";
+      "class<openscad>" = "";
     };
   };
 
