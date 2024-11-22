@@ -76,8 +76,12 @@ programs.yazi.theme.icon.globs = [
       { name = "*helix/";        text = "󰚄"; }
         { name = "*languages.nix"; text = ""; fg_dark = "#7ebae4"; }
       { name = "*nixvim/";       text = ""; }
+        { name = "*css.nix";       text = "󰌜"; fg_dark = "#7ebae4"; }
+	{ name = "*js.nix";        text = ""; fg_dark = "#7ebae4"; }
+	{ name = "*lua.nix";       text = "󰢱"; fg_dark = "#7ebae4"; }
         { name = "*nushell.nix";   text = ""; fg_dark = "#7ebae4"; }
-	{ name = "*keymap.nix";    text = "󰌌"; fg_dark = "#7ebae4"; }
+        { name = "*toml.nix";      text = ""; fg_dark = "#7ebae4"; }
+        { name = "*keymap.nix";    text = "󰌌"; fg_dark = "#7ebae4"; }
         { name = "*plugins.nix";   text = "󰐱"; fg_dark = "#7ebae4"; }
       { name = "*shell/";       text = ""; }
         { name = "*nushell/";      text = ""; }
