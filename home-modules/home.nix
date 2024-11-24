@@ -1,7 +1,7 @@
 { var, ... }:{
 
 imports = [
-  ./ags
+  # ./ags
   ./firefox
   ./hyprland
   ./languages
