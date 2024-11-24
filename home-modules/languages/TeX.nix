@@ -20,8 +20,8 @@ in {
 
 home.packages = with pkgs; [
   tex # Runtime
-  texmaker
   setzer
+  svg2tikz
   typst
 ];
 
