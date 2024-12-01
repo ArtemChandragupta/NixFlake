@@ -5,6 +5,7 @@ imports = [
 
   ./languages
   ./keymap.nix
+  ./neovide.nix
   ./plugins.nix
 ];
 
