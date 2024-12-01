@@ -4,9 +4,11 @@ let
     inherit (pkgs.texlive) scheme-medium
 
     biblatex-gost biblatex biber # for bibleography
+    eqexpl    # formula explanations
     csquotes  # quotes for references
     wrapfig   # smthng for images
     amsmath   # math
+    lipsum    # random text
     fancyhdr  # for footers
     multirow  # good tables
     titlesec  # for section titles
@@ -20,9 +22,7 @@ in {
 
 home.packages = with pkgs; [
   tex # Runtime
-  setzer
-  svg2tikz
-  typst
+  tectonic
 ];
 
 }
