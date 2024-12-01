@@ -4,8 +4,8 @@ programs.firefox.profiles.default.settings = {
   "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
   "svg.context-properties.content.enabled" = true;
 
-  "ui.key.menuAccessKeyFocuses" = false;           # Remove ALT menu
-  
+  "ui.key.menuAccessKeyFocuses" = false; # Remove ALT menu
+
   # Performance
   "gfx.webrender.all" = true;
   "media.ffmpeg.vaapi.enabled"  = true;
@@ -24,11 +24,11 @@ programs.firefox.profiles.default.settings = {
 
   # Enable cool bahavior
   "browser.urlbar.placeholderName" = "DuckDuckGo";
+  "browser.urlbar.trim" = true; # Trim https!
   "browser.startup.page" = 3; # Restore session
   "extensions.autoDisableScopes" = 0; # Auto-enable extesions
   "browser.tabs.loadBookmarksInTabs" = true; # Load bookmarks in newtabs
   "browser.search.openintab" = true; # Load search items in new tabs
-  "startup.homepage_welcome_url" = "https://github.com/ArtemChandragupta/NixFlake/tree/main/home-modules/firefox";
   "apz.overscroll.enabled" = false; # Disable bouncy scrolling
 };
 
