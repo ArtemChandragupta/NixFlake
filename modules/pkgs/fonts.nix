@@ -1,7 +1,9 @@
 { pkgs, ... }:{
 
 fonts.packages = with pkgs; [
-  nerdfonts        # For icons!
+  nerd-fonts.noto           # For UI
+  nerd-fonts.jetbrains-mono # Favourite monospace font
+
   iosevka          # Only for clock on nix output manager
 
   noto-fonts          # Beautiful for all languages!

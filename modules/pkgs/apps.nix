@@ -5,19 +5,19 @@ environment.systemPackages = if var.init
   else with pkgs; [
     kitty
     obsidian
+    apostrophe
     fragments
     icon-library
 
     telegram-desktop
     localsend
 
-    onlyoffice-bin
     libreoffice
     zola
     mendeley
 
     openscad-unstable
-    zed-editor
+    exhibit
     inkscape
     drawio
     dosbox-staging
