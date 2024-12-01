@@ -20,13 +20,19 @@ programs.yazi.settings = {
         block = true;
       }
     ];
-    "Latex" = [
+    "Nvim" = [
       {
         run = ''nvim "$@"'';
         block = true;
       }
     ];
-    "Haskell" = [
+    "Neovide" = [
+      {
+	run = ''neovide "$@"'';
+	block = true;
+      }
+    ];
+    "Hx" = [
       {
 	run = ''hx "$@"'';
 	block = true;
@@ -43,19 +49,23 @@ programs.yazi.settings = {
   open.prepend_rules = [
     {
       name = "*.djvu";
-      use = "pdf";
+      use  = "pdf";
     }
     {
       name = "*.tex";
-      use = "Latex";
+      use  = "Neovide";
     }
     {
       name = "*.hs";
-      use = "Haskell";
+      use  = "Hx";
     }
     {
       name = "*.js";
-      use = "Latex";
+      use  = "Nvim";
+    }
+    {
+      name = "*.tsx";
+      use  = "Nvim";
     }
     {
       mime = "text/*";

@@ -51,7 +51,7 @@ programs.yazi.theme.icon.globs = [
 
     { name = "*hyprland/";     text = ""; }
       { name = "*autoname/";     text = "󰎏"; }
-      { name = "*monitors/";     text = "󰍺"; }
+      { name = "*monitors/";     text = "󱡶"; }
       { name = "*rofi-appgrid/"; text = "󱗼"; }
         { name = "*style.rasi";    text = "󱜧"; fg_dark = "#cc241d"; }
         { name = "*pkg.nix";       text = ""; fg_dark = "#7ebae4"; }
@@ -77,11 +77,12 @@ programs.yazi.theme.icon.globs = [
         { name = "*languages.nix"; text = ""; fg_dark = "#7ebae4"; }
       { name = "*nixvim/";       text = ""; }
         { name = "*css.nix";       text = "󰌜"; fg_dark = "#7ebae4"; }
-	{ name = "*js.nix";        text = ""; fg_dark = "#7ebae4"; }
-	{ name = "*lua.nix";       text = "󰢱"; fg_dark = "#7ebae4"; }
+        { name = "*js.nix";        text = ""; fg_dark = "#7ebae4"; }
+        { name = "*lua.nix";       text = "󰢱"; fg_dark = "#7ebae4"; }
         { name = "*nushell.nix";   text = ""; fg_dark = "#7ebae4"; }
         { name = "*toml.nix";      text = ""; fg_dark = "#7ebae4"; }
         { name = "*keymap.nix";    text = "󰌌"; fg_dark = "#7ebae4"; }
+        { name = "*neovide.nix";   text = "󱘗"; fg_dark = "#7ebae4"; }
         { name = "*plugins.nix";   text = "󰐱"; fg_dark = "#7ebae4"; }
       { name = "*shell/";       text = ""; }
         { name = "*nushell/";      text = ""; }
@@ -109,7 +110,7 @@ programs.yazi.theme.icon.globs = [
         { name = "*power.nix";     text = "󰓅"; fg_dark = "#7ebae4"; }
         { name = "*remote-desktop.nix";text = "󰢹"; fg_dark = "#7ebae4"; }
       { name = "*homePC/";      text = "󰪫"; }
-	{ name = "*autologin.nix"; text = "󰗽"; fg_dark = "#7ebae4"; }
+        { name = "*autologin.nix"; text = "󰗽"; fg_dark = "#7ebae4"; }
         { name = "*nvidia.nix";    text = "󰖂"; fg_dark = "#7ebae4"; }
 
     { name = "*system/";       text = ""; }
