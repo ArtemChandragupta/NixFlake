@@ -2,6 +2,7 @@
 
 imports = [
   # ./autoname
+  ./distraction-free
   ./rofi-appgrid
   ./screenshots
   ./monitors
