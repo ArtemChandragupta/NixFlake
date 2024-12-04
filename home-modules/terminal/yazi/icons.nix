@@ -51,6 +51,7 @@ programs.yazi.theme.icon.globs = [
 
     { name = "*hyprland/";     text = ""; }
       { name = "*autoname/";     text = "󰎏"; }
+      { name ="*distraction-free/";text="󰚀"; }
       { name = "*monitors/";     text = "󱡶"; }
       { name = "*rofi-appgrid/"; text = "󱗼"; }
         { name = "*style.rasi";    text = "󱜧"; fg_dark = "#cc241d"; }
@@ -108,7 +109,7 @@ programs.yazi.theme.icon.globs = [
       { name = "*ThinkBook13s/"; text = "󰌢"; }
         { name = "*AMD.nix";       text = "󰆦"; fg_dark = "#7ebae4"; }
         { name = "*power.nix";     text = "󰓅"; fg_dark = "#7ebae4"; }
-        { name = "*remote-desktop.nix";text = "󰢹"; fg_dark = "#7ebae4"; }
+        { name ="*remote-desktop.nix";text="󰢹"; fg_dark ="#7ebae4"; }
       { name = "*homePC/";      text = "󰪫"; }
         { name = "*autologin.nix"; text = "󰗽"; fg_dark = "#7ebae4"; }
         { name = "*nvidia.nix";    text = "󰖂"; fg_dark = "#7ebae4"; }
