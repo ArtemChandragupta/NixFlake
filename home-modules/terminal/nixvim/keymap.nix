@@ -13,6 +13,8 @@ programs.nixvim = {
         end
       '';
     }
+    { mode = "n";     key = "<localleader>w"; action = "<cmd>ToggleWrapMode<CR>";}
+    { mode = "n";     key = "<localleader>v"; action = "<cmd>VimtexView<CR>";}
     { mode = "n";     key = "<C-c>";   action = "gcc"; options.remap = true; }
     { mode = "v";     key = "<C-c>";   action = "gc";  options.remap = true; }
   ];

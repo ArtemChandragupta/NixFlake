@@ -17,15 +17,28 @@ programs.nixvim = {
   opts = {
     number = true;
     relativenumber = true;
-    wrap = false; 
-    shiftwidth = 2;
+
+    ignorecase = true;
+    incsearch  = true;
+    hlsearch   = true;
+
+    conceallevel  = 2;    # For VimTeX - shorten formulas
+    concealcursor = "nc"; # For VimTeX - don't show full formula text in normal mode
+
+    wrap          = false;
+    breakindent   = true;
     sidescrolloff = 10;
     scrolloff     = 5;
-    whichwrap = "<,>,[,]";
+
+    shiftwidth = 2;
+    expandtab = true;
+    whichwrap = "<,>,[,]"; # To move cursor from end to new line
     signcolumn = "no";
   };
-  colorschemes.gruvbox.enable = true;
+  colorschemes.gruvbox.enable  = true;
   extraConfigVim = /*vimsc*/''
+    inoremap <expr> <Esc> col('.') == 1 ? "<Esc>" : "<Esc>l"
+
     hi! link StatusLine Normal
     hi! link StatusLineNC Normal
   '';
