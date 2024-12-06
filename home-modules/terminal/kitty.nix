@@ -12,8 +12,6 @@ programs.kitty = {
 
     background_opacity = "0.9";
 
-    # italic_font = "RobotoMono Nerd Font";
-
     cursor                = "#928374";
     cursor_text_color     = "background";
 
