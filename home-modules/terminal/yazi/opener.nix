@@ -38,7 +38,13 @@ programs.yazi.settings = {
 	block = true;
       }
     ];
-    "pdf" = [
+    "zathura" = [
+      {
+        run  = ''zathura "$@"'';
+        block = true;
+      }
+    ];
+    "papers" = [
       {
         run  = ''papers "$@"'';
         block = true;
@@ -49,7 +55,7 @@ programs.yazi.settings = {
   open.prepend_rules = [
     {
       name = "*.djvu";
-      use  = "pdf";
+      use  = "papers";
     }
     {
       name = "*.tex";
@@ -81,7 +87,7 @@ programs.yazi.settings = {
     }
     {
       mime = "application/pdf";
-      use  = "pdf";
+      use  = "zathura";
     }
   ];
 };

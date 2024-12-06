@@ -100,7 +100,8 @@ programs.yazi.theme.icon.globs = [
       { name = "*git.nix";       text = "󰊢"; fg_dark = "#7ebae4"; }
       { name = "*kitty.nix";     text = "󰄛"; fg_dark = "#7ebae4"; }
       { name = "*starship.nix";  text = "󱓞"; fg_dark = "#7ebae4"; }
-    
+      { name = "*zathura.nix";   text = ""; fg_dark = "#7ebae4"; }
+
     { name = "*stylix.nix";    text = "󰃣"; fg_dark = "#7ebae4"; }
     { name = "*xdg.nix";       text = "󱅷"; fg_dark = "#7ebae4"; }
 
