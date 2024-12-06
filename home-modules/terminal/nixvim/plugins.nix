@@ -1,4 +1,4 @@
-{
+{ pkgs, ... }:{
 
 programs.nixvim.plugins = {
   lualine = { # Statusline
@@ -6,7 +6,17 @@ programs.nixvim.plugins = {
     settings.options.icons_enabled = false;
   };
   nvim-autopairs.enable   = true; # Automatic {}
-  nvim-colorizer.enable   = true; # Colored color codes
+  nvim-colorizer = {
+    enable   = true; # Colored color codes
+    userDefaultOptions = {
+      RGB      = true;
+      RRGGBB   = true;
+      RRGGBBAA = true;
+      rgb_fn   = true;
+      css      = true;
+      names    = false;
+    };
+  };
   indent-blankline.enable = true; # Vertical indent line
   comment.enable  = true; # To comment line on shortcut
   wrapping.enable = true; # To wrap lines in LaTeX
@@ -19,6 +29,28 @@ programs.nixvim.plugins = {
     };
     fromLua = [{ paths = "~/nix/home-modules/terminal/nixvim/lua"; }];
   };
+
+  zen-mode = {
+    enable = true;
+    settings = {
+      window.options = {
+        signcolumn     = "no";
+        number         = false;
+        relativenumber = false;
+        cursorline     = false;
+        cursorcolumn   = false;
+        foldcolumn     = "0";
+        list           = false;
+      };
+    };
+  };
+};
+
+programs.nixvim = {
+  extraPlugins = with pkgs.vimPlugins; [
+  ];
+
+  extraConfigLua = '''';
 };
 
 programs.nixvim.extraConfigVim = ''

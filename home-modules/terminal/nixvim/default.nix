@@ -36,7 +36,7 @@ programs.nixvim = {
     signcolumn = "no";
   };
   colorschemes.gruvbox.enable  = true;
-  extraConfigVim = /*vimsc*/''
+  extraConfigVim = ''
     inoremap <expr> <Esc> col('.') == 1 ? "<Esc>" : "<Esc>l"
 
     hi! link StatusLine Normal
