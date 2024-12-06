@@ -32,6 +32,7 @@ programs.waybar.settings.mainBar = {
       "title<.*Yazi.*>" = "󰇥";
       "class<obsidian>" = "";
       "class<haguichi>" = "";
+      "class<draw.io>"  = "󰕣";
       "class<firefox>"  = "󰈹";
       "class<discord>"  = "";
       "class<kitty>"    = "";
@@ -53,6 +54,7 @@ programs.waybar.settings.mainBar = {
       "class<org.cvfosammmm.Setzer>"  = "󱗆";
       "class<org.telegram.desktop>"   = "";
       "class<libreoffice-writer>"     = "";
+      "class<org.pwmt.zathura>" = "";
       "class<teams-for-linux>"  = "󰊻";
       "class<dosbox-staging>"   = "󰚴";
       "class<localsend_app>"    = "󱗿";
@@ -89,8 +91,8 @@ programs.waybar.settings.mainBar = {
     tooltip-format  = "{timeTo} {capacity}%";
     format-charging = "󱐋 {capacity}% {time}";
     format-plugged  = " ";
-  # format-icons    = ["󰂎" "󰁻" "󰁾" "󰂀" "󰁹"];
-    format-icons    = [" " " " " " " " " "];
+    format-icons    = ["󰂎" "󰁻" "󰁾" "󰂀" "󰁹"];
+    # format-icons    = [" " " " " " " " " "];
   };
 
   "cpu" = {
