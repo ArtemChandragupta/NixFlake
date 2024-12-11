@@ -3,6 +3,7 @@
 imports = [
   # ./autoname
   ./distraction-free
+  ./icons
   ./rofi-appgrid
   ./screenshots
   ./monitors
