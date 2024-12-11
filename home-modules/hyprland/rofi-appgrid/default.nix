@@ -4,6 +4,10 @@ let
     (builtins.readFile ./rofi-appgrid.nu);
 in{
 
+imports = [
+  ./icons.nix
+];
+
 home = {
   packages = [ rofi-appgrid ];
   file.".config/rofi/launchers/rofi-appgrid/style.rasi".source = ./style.rasi;
