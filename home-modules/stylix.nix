@@ -39,12 +39,6 @@ stylix = {
   };
 };
 
-gtk = {
-  enable = true;
-  iconTheme = {
-    name = "Mint-Y-Sand";
-    package = pkgs.mint-y-icons;
-  };
-};
+gtk.enable = true;
 
 }
