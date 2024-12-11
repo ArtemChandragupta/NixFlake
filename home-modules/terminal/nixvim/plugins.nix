@@ -6,9 +6,9 @@ programs.nixvim.plugins = {
     settings.options.icons_enabled = false;
   };
   nvim-autopairs.enable   = true; # Automatic {}
-  nvim-colorizer = {
+  colorizer = {
     enable   = true; # Colored color codes
-    userDefaultOptions = {
+    settings.user_default_options = {
       RGB      = true;
       RRGGBB   = true;
       RRGGBBAA = true;
