@@ -5,9 +5,9 @@ environment.systemPackages = if var.init
   else with pkgs; [
     kitty
     obsidian
-    apostrophe
     fragments
     icon-library
+    pandoc
 
     telegram-desktop
     localsend
