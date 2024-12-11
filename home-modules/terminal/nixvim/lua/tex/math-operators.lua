@@ -35,6 +35,12 @@ ls.add_snippets("tex", {
     { t("\\cdot "),                           },
     { condition = tex.in_mathzone             }
   ),
+  -- cdot
+  s(
+    { trig = "**",  snippetType="autosnippet" },
+    { t("\\cdot "),                           },
+    { condition = tex.in_mathzone             }
+  ),
   -- . . .
   s(
     { trig = "...", snippetType="autosnippet" },

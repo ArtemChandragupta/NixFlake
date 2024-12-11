@@ -31,7 +31,7 @@ local line_begin = require("luasnip.extras.expand_conditions").line_begin
 ls.add_snippets("tex", {
   -- differential in integral
   s(
-    { trig = "df", snippetType="autosnippet" },
+    { trig = "dif", snippetType="autosnippet" },
     { t("\\diff ")                           },
     { condition = tex.in_mathzone            }
   ),
@@ -49,9 +49,32 @@ ls.add_snippets("tex", {
     { trig = ";i", snippetType="autosnippet" },
     { t("\\item "),                          }
   ),
+  -- ITEM RU
+  s(
+    { trig = ";ш", snippetType="autosnippet" },
+    { t("\\item "),                          }
+  ),
   -- TEXT
   s({
       trig = "([^%\\]);t",
+      wordTrig = false,
+      regTrig = true,
+      snippetType="autosnippet"
+    },
+    fmta(
+      "<>\\text{<>}",
+      {
+        f(function(_, snip)
+          return snip.captures[1]
+        end),
+        d(1, get_visual),
+      }
+    ),
+    { condition = tex.in_mathzone }
+  ),
+  -- TEXT RU
+  s({
+      trig = "([^%\\]);е",
       wordTrig = false,
       regTrig = true,
       snippetType="autosnippet"
@@ -146,13 +169,32 @@ ls.add_snippets("tex", {
   -- hat notation
   s(
     {
-      trig = "([^%a])hH",
+      trig = "([^%a])hat",
       wordTrig=false,
       regTrig = true,
       snippetType="autosnippet"
     },
     fmta(
       "<>\\hat{<>}",
+      {
+        f(function(_, snip)
+          return snip.captures[1]
+        end),
+        d(1, get_visual),
+      }
+    ),
+    {condition = tex.in_mathzone }
+  ),
+  -- hat notation
+  s(
+    {
+      trig = "([^%a])bar",
+      wordTrig=false,
+      regTrig = true,
+      snippetType="autosnippet"
+    },
+    fmta(
+      "<>\\bar{<>}",
       {
         f(function(_, snip)
           return snip.captures[1]
