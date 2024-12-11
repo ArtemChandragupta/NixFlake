@@ -1,8 +1,7 @@
 { pkgs, ... }:{
 
-home.packages = with pkgs; [
-  texliveFull
-  tectonic
+home.packages = [
+  pkgs.texliveFull
 ];
 
 }
