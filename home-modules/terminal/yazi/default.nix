@@ -30,6 +30,7 @@ programs.yazi = {
 
   plugins = {
     "smart-enter" = ./lua/smart-enter;
+    "full-border" = ./lua/full-border;
     "starship"    = ./lua/starship;
   };
   initLua = ./lua/init.lua;

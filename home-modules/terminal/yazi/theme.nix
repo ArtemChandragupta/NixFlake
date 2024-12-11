@@ -28,19 +28,24 @@ programs.yazi.theme = {
     separator_close = "";
     separator_style = { fg = "#3c3836"; bg = "#3c3836"; };
 
-    mode_normal = { fg = "#282828"; bg = "#458588"; bold = true; };
-    mode_select = { fg = "#282828"; bg = "#b8bb26"; bold = true; };
-    mode_unset  = { fg = "#282828"; bg = "#d3869b"; bold = true; };
-
     progress_label  = { fg = "#ebdbb2"; bold = true; };
     progress_normal = { fg = "#504945"; bg = "#3c3836"; };
     progress_error  = { fg = "#fb4934"; bg = "#3c3836"; };
 
-    permissions_t = { fg = "#504945"; };
-    permissions_r = { fg = "#b8bb26"; };
-    permissions_w = { fg = "#fb4934"; };
-    permissions_x = { fg = "#b8bb26"; };
-    permissions_s = { fg = "#665c54"; };
+    perm_type  = { fg = "#504945"; };
+    perm_read  = { fg = "#b8bb26"; };
+    perm_write = { fg = "#fb4934"; };
+    perm_exec  = { fg = "#b8bb26"; };
+    perm_sep   = { fg = "#665c54"; };
+  };
+
+  mode = {
+    normal_main = { fg = "#282828"; bg = "#458588"; bold = true; };
+    select_main = { fg = "#282828"; bg = "#b8bb26"; bold = true; };
+    unset_main  = { fg = "#282828"; bg = "#d3869b"; bold = true; };
+    normal_alt  = { bg = "#3C3836"; fg = "#458588"; bold = true; };
+    select_alt  = { bg = "#3C3836"; fg = "#b8bb26"; bold = true; };
+    unset_alt   = { bg = "#3C3836"; fg = "#d3869b"; bold = true; };
   };
 
   input = {

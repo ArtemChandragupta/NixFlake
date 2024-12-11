@@ -3,7 +3,7 @@
 programs.yazi.keymap.manager.prepend_keymap = [
   {
     on   = "<Enter>";
-    run  = "plugin --sync smart-enter";
+    run  = "plugin smart-enter";
     desc = "Enter directory or open file";
   }
   {

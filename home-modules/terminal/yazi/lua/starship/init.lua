@@ -47,17 +47,17 @@ return {
         end)
     end,
 
-    entry = function(_, args)
-        local command = Command("starship"):arg("prompt"):cwd(args[1]):env("STARSHIP_SHELL", "")
+    entry = function(_, job)
+        local command = Command("starship"):arg("prompt"):cwd(job.args[1]):env("STARSHIP_SHELL", "")
 
         -- Point to custom starship config
-        if args[2] ~= nil then
-            command = command:env("STARSHIP_CONFIG", args[2])
+        if job.args[2] ~= nil then
+            command = command:env("STARSHIP_CONFIG", job.args[2])
         end
 
         local output = command:output()
         if output then
-            save(args[1], output.stdout:gsub("^%s+", ""))
+            save(job.args[1], output.stdout:gsub("^%s+", ""))
         end
     end,
 }
