@@ -5,7 +5,7 @@ programs.hyprland = {
   xwayland.enable = true;
 };
 
-environment.variables.EDITOR = "hx";
+environment.variables.EDITOR = "nvim";
 
 environment.systemPackages = with pkgs; [
   loupe  # Gnome photo
@@ -14,10 +14,9 @@ environment.systemPackages = with pkgs; [
   clapper  # New gnome video
   nautilus # Gnome file manager
   snapshot # Gnome camera
-  gnome-calculator
   gnome-disk-utility
   weather
-  dconf-editor
+  dconf-editor # GTK settings - remove buttons
 
   soteria # Polkit agent
 
