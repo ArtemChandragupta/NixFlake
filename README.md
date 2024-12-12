@@ -42,7 +42,7 @@ In _home-modules_ there are home-manager configs, like Hyprland bindings and edi
 ![image](https://github.com/user-attachments/assets/4a620985-5189-4202-a418-470708ae77cc)
 ![image](https://github.com/user-attachments/assets/73d52c52-5d51-4f07-83ed-1ca845f7b350)
 ![image](https://github.com/user-attachments/assets/07379169-7b8e-46a9-936a-ec3f7ca7aa32)
-![swappy-20240706_010352](https://github.com/ArtemChandragupta/NixFlake/assets/90765302/ff73f55d-f7ee-4e55-9580-f80d1d79a2ed)
+![image](https://github.com/user-attachments/assets/86ec633c-d213-4b38-988c-f241ffe3a5c0)
 ![swappy-20240706_010937](https://github.com/ArtemChandragupta/NixFlake/assets/90765302/fb98c687-3549-4e0d-965f-8977c1cfa75c)
 
 
