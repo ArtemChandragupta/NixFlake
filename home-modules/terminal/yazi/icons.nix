@@ -1,7 +1,7 @@
 {
 
 programs.yazi.theme.icon.prepend_exts = [
-  { name = "nu";  text = ""; fg_dark = "#689D6A"; }
+  { name = "nu";  text = ""; fg = "#689D6A"; }
 ];
 
 programs.yazi.theme.icon.globs = [

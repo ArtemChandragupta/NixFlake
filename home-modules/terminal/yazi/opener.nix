@@ -28,14 +28,14 @@ programs.yazi.settings = {
     ];
     "Neovide" = [
       {
-	run = ''neovide "$@"'';
-	block = true;
+        run = ''neovide "$@"'';
+        block = true;
       }
     ];
     "Hx" = [
       {
-	run = ''hx "$@"'';
-	block = true;
+        run = ''hx "$@"'';
+        block = true;
       }
     ];
     "zathura" = [
@@ -63,7 +63,7 @@ programs.yazi.settings = {
     }
     {
       name = "*.hs";
-      use  = "Hx";
+      use  = "Nvim";
     }
     {
       name = "*.js";
