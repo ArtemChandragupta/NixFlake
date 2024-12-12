@@ -52,6 +52,8 @@ programs.yazi.theme.icon.globs = [
     { name = "*hyprland/";     text = ""; }
       { name = "*autoname/";     text = "󰎏"; }
       { name ="*distraction-free/";text="󰚀"; }
+      { name = "*icons/";        text = ""; }
+        { name = "*gruvbox-plus-dark.nix"; text = "󰚠"; fg = "#7ebae4"; }
       { name = "*monitors/";     text = "󱡶"; }
       { name = "*rofi-appgrid/"; text = "󱗼"; }
         { name = "*style.rasi";    text = "󱜧"; fg = "#cc241d"; }
