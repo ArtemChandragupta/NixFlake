@@ -6,7 +6,6 @@ exec-once = [
   "kitty"
   "blueman-applet"
   "nm-applet"
-  "udiskie &" # USB automount
   "soteria" # Polkit agent
   "telegram-desktop -startintray"
 ];
