@@ -17,6 +17,7 @@ programs.nh = {
   flake  = "/home/${var.user}/nix";
 };
 
+services.gvfs.enable     = true; # For trash folder and other
 hardware.graphics.enable = true;
 # security.polkit.enable   = true;
 
