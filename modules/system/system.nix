@@ -18,5 +18,6 @@ programs.nh = {
 };
 
 hardware.graphics.enable = true;
+# security.polkit.enable   = true;
 
 }

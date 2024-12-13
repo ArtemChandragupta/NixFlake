@@ -1,15 +1,16 @@
-{ pkgs, ... }:{
+{ pkgs, var, ... }:{
 
-services = { # Automount process should be startet using hyprland exec-once! 
-  gvfs.enable    = true;
-  udisks2.enable = true;
-  devmon.enable  = true;
+services = {
+  gvfs.enable    = true; # For trash folder and other
+  udisks2.enable = true; # For usb automount
 };
 
-environment.systemPackages = with pkgs; [
-  usbutils
-  udiskie
-  udisks
+environment.systemPackages = [
+  pkgs.udiskie # Automount process should be started using hyprland exec-once!
 ];
+
+home-manager.users.${var.user}.services.udiskie = {
+  enable = true;
+};
 
 }
