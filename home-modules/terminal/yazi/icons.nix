@@ -8,6 +8,7 @@ programs.yazi.theme.icon.globs = [
   { name = "*default.nix";   text = ""; fg = "#d65d0e"; }
   { name = "*home.nix";      text = ""; fg = "#d65d0e"; }
 
+  { name = "*Arduino/";      text = ""; }
   { name = "*Desktop/";      text = "󰧨"; }
   { name = "*Dev/";          text = "󱚊"; }
     { name = "*haskell/";      text = "󰲒"; }
@@ -52,6 +53,7 @@ programs.yazi.theme.icon.globs = [
     { name = "*hyprland/";     text = ""; }
       { name = "*autoname/";     text = "󰎏"; }
       { name ="*distraction-free/";text="󰚀"; }
+      { name = "*dialect/";      text = "󰗊"; }
       { name = "*icons/";        text = ""; }
         { name = "*gruvbox-plus-dark.nix"; text = "󰚠"; fg = "#7ebae4"; }
       { name = "*monitors/";     text = "󱡶"; }
