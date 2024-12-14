@@ -19,7 +19,7 @@ bind = [
   "$mainMod, N, exec, swaync-client -t -sw"
 
   "$mainMod, R, exec, rofi-appgrid"
-  "$mainMod, G, exec, open-translator"
+  "$mainMod, G, exec, open-dialect"
   "$mainMod, B, exec, open-resourceMonitor"
   "CTRL,     X, exec, open-clip"
   "$mainMod SHIFT, W, exec, wallpaperScript"

@@ -2,6 +2,7 @@
 
 imports = [
   # ./autoname
+  ./dialect
   ./distraction-free
   ./icons
   ./rofi-appgrid
