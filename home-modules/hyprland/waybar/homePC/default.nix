@@ -31,7 +31,8 @@ programs.waybar.settings.mainBar = {
     window-rewrite = {
       "title<.*Yazi.*>" = "󰇥";
       "class<obsidian>" = "";
-      "class<haguichi>" = "";
+      "class<com.github.ztefn.haguichi>" = "";
+      "class<draw.io>"  = "󰕣";
       "class<firefox>"  = "󰈹";
       "class<discord>"  = "";
       "class<kitty>"    = "";
@@ -53,13 +54,16 @@ programs.waybar.settings.mainBar = {
       "class<org.cvfosammmm.Setzer>"  = "󱗆";
       "class<org.telegram.desktop>"   = "";
       "class<libreoffice-writer>"     = "";
+      "class<app.drey.Dialect>" = "󱁥";
+      "class<org.pwmt.zathura>" = "";
       "class<teams-for-linux>"  = "󰊻";
       "class<dosbox-staging>"   = "󰚴";
       "class<localsend_app>"    = "󱗿";
       "class<virt-manager>" = "";
       "class<calculator>"   = "󰇃";
       "class<translator>"   = "󱁥";
-      "class<openscad>"     = "";
+      "class<Texmaker>" = "";
+      "class<openscad>" = "";
     };
   };
 
