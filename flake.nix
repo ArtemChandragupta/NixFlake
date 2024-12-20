@@ -7,24 +7,6 @@ let
 in
 {
   nixosConfigurations = {
-    nixos = inputs.nixpkgs.lib.nixosSystem {
-      inherit system;
-      specialArgs = {
-        inherit inputs;
-        var = {
-          user = "artem";
-          host = "ThinkBook13s";
-          init = false;
-        };
-        inherit pkgs-u-small;
-      };
-      modules = [
-        ./configuration.nix
-        inputs.home-manager.nixosModules.default
-        inputs.stylix.nixosModules.stylix
-      ];
-    };
-
     ThinkBook13s = inputs.nixpkgs.lib.nixosSystem {
       inherit system;
       specialArgs = {
