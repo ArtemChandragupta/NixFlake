@@ -59,20 +59,24 @@ programs.yazi.settings = {
     }
     {
       name = "*.tex";
-      use  = "Neovide";
+      use  = ["Neovide" "Hx" "Nvim"];
     }
     {
-      name = "*.hs";
-      use  = "Nvim";
+      name = "*.typ";
+      use  = ["Neovide" "Hx" "Nvim"];
     }
-    {
-      name = "*.js";
-      use  = "Nvim";
-    }
-    {
-      name = "*.tsx";
-      use  = "Nvim";
-    }
+    # {
+    #   name = "*.hs";
+    #   use  = "Nvim";
+    # }
+    # {
+    #   name = "*.js";
+    #   use  = "Nvim";
+    # }
+    # {
+    #   name = "*.tsx";
+    #   use  = "Nvim";
+    # }
     {
       mime = "text/*";
       use  = "text";
@@ -87,7 +91,7 @@ programs.yazi.settings = {
     }
     {
       mime = "application/pdf";
-      use  = "zathura";
+      use  = ["zathura" "papaers"];
     }
   ];
 };

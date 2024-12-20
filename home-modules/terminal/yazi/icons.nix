@@ -2,6 +2,7 @@
 
 programs.yazi.theme.icon.prepend_exts = [
   { name = "nu";  text = ""; fg = "#689D6A"; }
+  { name = "typ"; text = ""; fg = "#239DAD"; }
 ];
 
 programs.yazi.theme.icon.globs = [
@@ -17,6 +18,7 @@ programs.yazi.theme.icon.globs = [
     { name = "*myblog/";       text = "󰒪"; }
     { name = "*openscad/";     text = ""; }
     { name = "*python/";       text = "󰌠"; }
+    { name = "*typst/";        text = ""; }
     { name = "*waterfall*/";   text = "󱡉"; }
   { name = "*Documents/";    text = "󱔗"; }
   { name = "*Downloads/";    text = ""; }
@@ -43,17 +45,18 @@ programs.yazi.theme.icon.globs = [
       { name = "*volume/";       text = "󱄠"; }
       { name = "*workspace/";    text = ""; }
 
-    { name = "*firefox/";      text = "󰈹"; }
-      { name = "*solid/";        text = "󰌨"; }
-      { name = "*transparent/";  text = "󰧾"; }
-      { name = "*bookmarks.nix"; text = "󰸕"; fg = "#7ebae4"; }
-      { name = "*config.nix";    text = ""; fg = "#7ebae4"; }
-      { name = "*search.nix";    text = ""; fg = "#7ebae4"; }
+    { name = "*apps/";          text = ""; }
+      { name = "*dialect/";      text = "󰗊"; }
+      { name = "*firefox/";      text = "󰈹"; }
+        { name = "*solid/";        text = "󰌨"; }
+        { name = "*transparent/";  text = "󰧾"; }
+        { name = "*bookmarks.nix"; text = "󰸕"; fg = "#7ebae4"; }
+        { name = "*config.nix";    text = ""; fg = "#7ebae4"; }
+        { name = "*search.nix";    text = ""; fg = "#7ebae4"; }
+      { name = "*zathura.nix";   text = ""; fg = "#7ebae4"; }
 
     { name = "*hyprland/";     text = ""; }
       { name = "*autoname/";     text = "󰎏"; }
-      { name ="*distraction-free/";text="󰚀"; }
-      { name = "*dialect/";      text = "󰗊"; }
       { name = "*icons/";        text = ""; }
         { name = "*gruvbox-plus-dark.nix"; text = "󰚠"; fg = "#7ebae4"; }
       { name = "*monitors/";     text = "󱡶"; }
@@ -64,6 +67,7 @@ programs.yazi.theme.icon.globs = [
       { name = "*wallpaper/";    text = "󰸉"; }
         { name = "*fetchWlppr.nix";text = "󰭽"; fg = "#7ebae4"; }
       { name = "*waybar/";       text = "󱟛"; }
+      { name = "*zen-mode/";     text = "󰚀"; }
       { name = "*binds.nix";     text = "󰌌"; fg = "#7ebae4"; }
       { name = "*rules.nix";     text = ""; fg = "#7ebae4"; }
       { name = "*screenlock.nix";text = "󰷛"; fg = "#7ebae4"; }
@@ -92,7 +96,6 @@ programs.yazi.theme.icon.globs = [
       { name = "*shell/";       text = ""; }
         { name = "*nushell/";      text = ""; }
         { name = "*bash.nix";      text = ""; fg = "#7ebae4"; }
-      { name = "*translator/";   text = "󰗊"; }
       { name = "*yazi/";         text = "󰇥"; }
         { name = "*lua/";          text = ""; }
         { name = "*filetype.nix";  text = ""; fg = "#7ebae4"; }
@@ -104,7 +107,6 @@ programs.yazi.theme.icon.globs = [
       { name = "*git.nix";       text = "󰊢"; fg = "#7ebae4"; }
       { name = "*kitty.nix";     text = "󰄛"; fg = "#7ebae4"; }
       { name = "*starship.nix";  text = "󱓞"; fg = "#7ebae4"; }
-      { name = "*zathura.nix";   text = ""; fg = "#7ebae4"; }
 
     { name = "*stylix.nix";    text = "󰃣"; fg = "#7ebae4"; }
     { name = "*xdg.nix";       text = "󱅷"; fg = "#7ebae4"; }
