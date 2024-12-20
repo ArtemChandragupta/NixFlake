@@ -91,7 +91,7 @@ programs.yazi.settings = {
     }
     {
       mime = "application/pdf";
-      use  = ["zathura" "papaers"];
+      use  = ["zathura" "papers"];
     }
   ];
 };
