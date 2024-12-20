@@ -1,7 +1,7 @@
 { pkgs, ... }:{
 
-environment.systemPackages = with pkgs; [
-  moonlight-qt
+environment.systemPackages = [
+  pkgs.moonlight-qt # Remote desktop client
 ];
 
 }
