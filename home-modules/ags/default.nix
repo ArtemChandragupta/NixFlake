@@ -1,4 +1,4 @@
-{ inputs, var, ... }:{
+{ inputs, var, pkgs, ... }:{
 
 imports = [ 
   inputs.ags.homeManagerModules.default
@@ -6,7 +6,16 @@ imports = [
 
 programs.ags = {
   enable = !var.init;
-  configDir = ./config;
+  # configDir = ./config;
+  extraPackages = with pkgs; [
+    inputs.ags.packages.${pkgs.system}.hyprland
+    inputs.ags.packages.${pkgs.system}.tray
+    inputs.ags.packages.${pkgs.system}.battery
+    inputs.ags.packages.${pkgs.system}.network
+    inputs.ags.packages.${pkgs.system}.wireplumber
+
+    gobject-introspection
+  ];
 };
 
 }
