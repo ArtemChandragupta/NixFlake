@@ -11,18 +11,41 @@ let
   pkgs-u-small = import inputs.nixos-u-small {inherit system;};
 in
 {
-  nixosConfigurations.nixos = inputs.nixpkgs.lib.nixosSystem {
-    inherit system;
-    specialArgs = {
-      inherit inputs;
-      inherit var;
-      inherit pkgs-u-small;
+  nixosConfigurations = {
+    nixos = inputs.nixpkgs.lib.nixosSystem {
+      inherit system;
+      specialArgs = {
+        inherit inputs;
+        var = {
+          user = "artem";
+          host = "ThinkBook13s";
+          init = false;
+        };
+        inherit pkgs-u-small;
+      };
+      modules = [
+        ./configuration.nix
+        inputs.home-manager.nixosModules.default
+        inputs.stylix.nixosModules.stylix
+      ];
     };
-    modules = [
-      ./configuration.nix
-      inputs.home-manager.nixosModules.default
-      inputs.stylix.nixosModules.stylix
-    ];
+    homePC = inputs.nixpkgs.lib.nixosSystem {
+      inherit system;
+      specialArgs = {
+        inherit inputs;
+        var = {
+          user = "artem";
+          host = "ThinkBook13s";
+          init = false;
+        };
+        inherit pkgs-u-small;
+      };
+      modules = [
+        ./configuration.nix
+        inputs.home-manager.nixosModules.default
+        inputs.stylix.nixosModules.stylix
+      ];
+    };
   };
 };
 
