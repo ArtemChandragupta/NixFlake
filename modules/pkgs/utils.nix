@@ -7,8 +7,8 @@ environment.systemPackages = with pkgs; [
   ffmpegthumbnailer # Lib for tumbnails
   ripdrag # Drag and drop from terminal
 
-  wget   # Get things from internet
-
+  wget # Get things from internet
+  nurl # Get hash for derevation
   grex # Generate regex from examples
   dust # Disc usage tui
 ];

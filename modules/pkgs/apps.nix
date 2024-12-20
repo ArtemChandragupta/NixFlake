@@ -8,6 +8,7 @@ environment.systemPackages = if var.init
     fragments
     icon-library
     pandoc
+    arduino-ide
 
     telegram-desktop
     localsend
