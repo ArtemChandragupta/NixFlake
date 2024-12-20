@@ -2,8 +2,6 @@
 
 imports = [
   # ./autoname
-  ./dialect
-  ./distraction-free
   ./icons
   ./rofi-appgrid
   ./screenshots
@@ -11,6 +9,7 @@ imports = [
   ./swaync
   ./wallpaper
   ./waybar
+  ./zen-mode
 
   ./binds.nix
   ./rules.nix

@@ -1,12 +1,6 @@
 { pkgs, ... }:{
 
 gtk.iconTheme = {
-  # name = "Mint-Y-Sand";
-  # package = pkgs.mint-y-icons;
-  # name = "Gruvbox-Plus-Dark";
-  # package = pkgs.gruvbox-plus-icons;
-  # package = pkgs.morewaita-icon-theme;
-  # name = "MoreWaita";
   name = "Gruvbox Plus Dark";
   package = pkgs.callPackage ./gruvbox-plus-dark.nix { };
 };
