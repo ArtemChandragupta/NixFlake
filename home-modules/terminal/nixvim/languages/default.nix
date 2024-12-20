@@ -9,6 +9,7 @@ imports = [
   ./python.nix
   ./TeX.nix
   ./toml.nix
+  ./typst.nix
 ];
 
 programs.nixvim.plugins = {
@@ -19,14 +20,12 @@ programs.nixvim.plugins = {
   treesitter = {
     enable = true;
     nixGrammars = true;
-    grammarPackages = with pkgs.vimPlugins.nvim-treesitter.builtGrammars; [
-      nix
+    grammarPackages = [
+      pkgs.vimPlugins.nvim-treesitter.builtGrammars.nix 
     ];
     settings.highlight.enable = true;
   };
-  openscad = {
-    enable = true;
-  };
+  openscad.enable = true;
   # rainbow-delimiters.enable = true;
 };
 

@@ -1,11 +1,17 @@
-{ pkgs, ... }:{
+{
 
 programs.nixvim.plugins = {
+  nvim-autopairs.enable   = true; # Automatic {}
+  web-devicons.enable     = true; # Neo-tree need this 
+  indent-blankline.enable = true; # Vertical indent line
+  comment.enable  = true; # To comment line on shortcut
+  wrapping.enable = true; # To wrap lines in LaTeX
+
   lualine = { # Statusline
     enable = true;
     settings.options.icons_enabled = false;
   };
-  nvim-autopairs.enable   = true; # Automatic {}
+
   colorizer = {
     enable   = true; # Colored color codes
     settings.user_default_options = {
@@ -17,9 +23,26 @@ programs.nixvim.plugins = {
       names    = false;
     };
   };
-  indent-blankline.enable = true; # Vertical indent line
-  comment.enable  = true; # To comment line on shortcut
-  wrapping.enable = true; # To wrap lines in LaTeX
+
+  neo-tree = {
+    enable = true;
+    closeIfLastWindow = true;
+    buffers.followCurrentFile.enabled = true;
+  };
+
+  lazygit = {
+    enable = true;
+    settings.floating_window_border_chars = [
+      "╭"
+      "─"
+      "╮"
+      "│"
+      "╯"
+      "─"
+      "╰"
+      "│"
+    ];
+  };
 
   luasnip = {
     enable = true;
@@ -44,13 +67,6 @@ programs.nixvim.plugins = {
       };
     };
   };
-};
-
-programs.nixvim = {
-  extraPlugins = with pkgs.vimPlugins; [
-  ];
-
-  extraConfigLua = '''';
 };
 
 programs.nixvim.extraConfigVim = ''

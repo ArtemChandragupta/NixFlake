@@ -13,8 +13,8 @@ programs.nixvim = {
         end
       '';
     }
-    # { mode = "i"; key = "<Down>";         action = "<C-o>gj";                 }
-    # { mode = "i"; key = "<Up>";           action = "<C-o>gk";                }
+
+    { mode = "n"; key = "<localleader>g"; action = "<cmd>LazyGit<CR>";        }
     { mode = "n"; key = "<localleader>w"; action = "<cmd>ToggleWrapMode<CR>"; }
     { mode = "n"; key = "<localleader>v"; action = "<cmd>VimtexView<CR>";     }
     { mode = "n"; key = "<localleader>z"; action = "<cmd>ZenMode<CR>";        }
