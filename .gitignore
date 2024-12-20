@@ -1,2 +1,1 @@
-*.lock
-rhardware-configuration.nix
+.old-flakes/
