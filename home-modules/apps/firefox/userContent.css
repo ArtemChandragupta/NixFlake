@@ -1,0 +1,10 @@
+/* :root { */
+  /* --in-content-page-background: #00000000 !important; */
+  /* --in-content-box-background: #00000088 !important; */
+/* } */
+
+@-moz-document url-prefix("https://zed.dev") {
+  * {
+    --bg-color: #FFFFFF !important;
+  }
+}
