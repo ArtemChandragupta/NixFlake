@@ -3,16 +3,11 @@
 environment.systemPackages = with pkgs; [
   networkmanagerapplet # For tray
   inetutils # Utils?
-  impala # Tui
 ];
 
 networking = {
   hostName = "nixos";
-  networkmanager = {
-    enable = true;
-    wifi.backend = "iwd";
-  };
-  wireless.iwd.enable = true;
+  networkmanager.enable = true;
 };
 
 networking.firewall = {
