@@ -2,12 +2,7 @@
 
 outputs = inputs:
 let
-  system = "x86_64-linux";
-  var = {
-    user = "artem";
-    host = "ThinkBook13s";
-    init = false;
-  };
+  system       = "x86_64-linux"; 
   pkgs-u-small = import inputs.nixos-u-small {inherit system;};
 in
 {
@@ -29,13 +24,32 @@ in
         inputs.stylix.nixosModules.stylix
       ];
     };
-    homePC = inputs.nixpkgs.lib.nixosSystem {
+
+    ThinkBook13s = inputs.nixpkgs.lib.nixosSystem {
       inherit system;
       specialArgs = {
         inherit inputs;
         var = {
           user = "artem";
           host = "ThinkBook13s";
+          init = false;
+        };
+        inherit pkgs-u-small;
+      };
+      modules = [
+        ./configuration.nix
+        inputs.home-manager.nixosModules.default
+        inputs.stylix.nixosModules.stylix
+      ];
+    };
+
+    homePC = inputs.nixpkgs.lib.nixosSystem {
+      inherit system;
+      specialArgs = {
+        inherit inputs;
+        var = {
+          user = "artem";
+          host = "homePC";
           init = false;
         };
         inherit pkgs-u-small;

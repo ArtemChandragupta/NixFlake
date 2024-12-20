@@ -1,4 +1,4 @@
-{ pkgs, ... }:{
+{ pkgs, var, ... }:{
 
 environment.systemPackages = with pkgs; [
   networkmanagerapplet # For tray
@@ -6,7 +6,8 @@ environment.systemPackages = with pkgs; [
 ];
 
 networking = {
-  hostName = "nixos";
+  # hostName = "nixos";
+  hostName = "${var.host}";
   networkmanager.enable = true;
 };
 
