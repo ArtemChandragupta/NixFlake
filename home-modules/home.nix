@@ -8,7 +8,7 @@ imports = [
   ./terminal
 
   ./stylix.nix
-  ./xdg.nix
+  # ./xdg.nix
 ];
 
 programs.home-manager.enable = true;
