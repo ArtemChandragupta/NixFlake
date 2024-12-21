@@ -136,11 +136,11 @@
       },
       "locked": {
         "dir": "pkgs/firefox-addons",
-        "lastModified": 1734648163,
-        "narHash": "sha256-AK7nqONfzyxUzqVVeRoniO6NRv4SaxPrXwuyY8jtCXs=",
+        "lastModified": 1734753806,
+        "narHash": "sha256-DM3G8p6T2DTB/8JsN8ij64bEarPSRBT9TuY9XyzjrBg=",
         "owner": "rycee",
         "repo": "nur-expressions",
-        "rev": "2b5a7eb2719b146f6308dfa51c9a1c4b03d965a3",
+        "rev": "5e77d5baa6f77bf2af14ffea4ee8be0af6e24466",
         "type": "gitlab"
       },
       "original": {
@@ -453,11 +453,11 @@
     },
     "nixos-u-small": {
       "locked": {
-        "lastModified": 1734623593,
-        "narHash": "sha256-iA3kxtbds7yOc77oRBz2On9ZmOVI/1Pic+YQtYUyIsg=",
+        "lastModified": 1734753021,
+        "narHash": "sha256-xtqjYzqqGb723XT+V63weQOqW0LHj1Hov28Co+BMhIw=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "8af52ff6ba2ed83047881e877718db3bb02fad85",
+        "rev": "3f0036916daca9836ba2c3f236b0ae051949a0a8",
         "type": "github"
       },
       "original": {
@@ -528,11 +528,11 @@
         "treefmt-nix": "treefmt-nix"
       },
       "locked": {
-        "lastModified": 1734729157,
-        "narHash": "sha256-Om6x4hr735ZPPODQY3FHdGQELUsgGxzl2pvlHG+Fue0=",
+        "lastModified": 1734749627,
+        "narHash": "sha256-5HLarzO44i6tUBIr+DRMeAHJP3p84Z1b9wuElv85O1U=",
         "owner": "nix-community",
         "repo": "nixvim",
-        "rev": "6830c55d0945036ad9e15f068836dab346862ca3",
+        "rev": "9f32e25f3f2b029b76e79ef7c1f48cd3596938d8",
         "type": "github"
       },
       "original": {
