@@ -4,7 +4,6 @@ imports = [
   ./dm.nix
   ./hyprland.nix
   ./stylix.nix
-  ./xdg.nix
 ];
 
 programs.dconf.enable = true;
