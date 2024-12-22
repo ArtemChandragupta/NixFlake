@@ -45,6 +45,8 @@ gestures = {
 };
 
 misc = {
+  disable_hyprland_qtutils_check = true;
+
   force_default_wallpaper = 0;
   background_color = "rgb(000000)";
   disable_hyprland_logo     = true;
