@@ -15,7 +15,8 @@ programs.yazi.keymap.manager.prepend_keymap = [
     on = "<C-n>";
     run = ''
       # shell 'ripdrag -x -n -i -s 360 "$1"' --confirm
-      shell 'ripdrag "$@" -x 2>/dev/null &' --confirm
+      shell 'bash -c "ripdrag -x -n -i -s 360 \"$1\" &"' --confirm
+      # shell 'ripdrag "$@" -x 2>/dev/null &' --confirm
     '';
   }
 ];
