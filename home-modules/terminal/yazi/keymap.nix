@@ -11,12 +11,10 @@ programs.yazi.keymap.manager.prepend_keymap = [
     run  = "close";
     desc = "Cancel input";
   }
-  {
+  { # I escape to bash from nushell to get background tasks
     on = "<C-n>";
     run = ''
-      # shell 'ripdrag -x -n -i -s 360 "$1"' --confirm
       shell 'bash -c "ripdrag -x -n -i -s 360 \"$1\" &"' --confirm
-      # shell 'ripdrag "$@" -x 2>/dev/null &' --confirm
     '';
   }
 ];
