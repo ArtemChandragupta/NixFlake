@@ -57,8 +57,9 @@ misc = {
 
   enable_swallow = true;
   swallow_regex  = "^(kitty)$";
+  # swallow_regex  = "^(kitty|ripdrag)$";
   # swallow_exception_regex = "^(it.catboy.ripdrag)$"; # Broken
-  swallow_exception_regex = "^ripdrag$";
+  swallow_exception_regex = "ripdrag";
 };
 
 general = {
