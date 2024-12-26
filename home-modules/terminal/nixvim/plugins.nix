@@ -53,6 +53,10 @@ programs.nixvim.plugins = {
     fromLua = [{ paths = "~/nix/home-modules/terminal/nixvim/lua"; }];
   };
 
+  blink-cmp = {
+    enable = true;
+  };
+
   zen-mode = {
     enable = true;
     settings.window.options = {

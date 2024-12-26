@@ -6,7 +6,6 @@ environment.systemPackages = with pkgs; [
 ];
 
 networking = {
-  # hostName = "nixos";
   hostName = "${var.host}";
   networkmanager.enable = true;
 };
