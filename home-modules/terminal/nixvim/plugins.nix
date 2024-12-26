@@ -53,57 +53,56 @@ programs.nixvim.plugins = {
     fromLua = [{ paths = "~/nix/home-modules/terminal/nixvim/lua"; }];
   };
 
-  blink-cmp = {
-    enable = true;
-    # luaConfig.pre = "completion.list.selection = 'manual'";
-    settings = {
-      keymap = {
-      "<C-b>" = [
-        "scroll_documentation_up"
-        "fallback"
-      ];
-      "<C-e>" = [
-        "hide"
-      ];
-      "<C-f>" = [
-        "scroll_documentation_down"
-        "fallback"
-      ];
-      "<C-n>" = [
-        "select_next"
-        "fallback"
-      ];
-      "<C-p>" = [
-        "select_prev"
-        "fallback"
-      ];
-      "<C-space>" = [
-        "show"
-        "show_documentation"
-        "hide_documentation"
-      ];
-      "<C-y>" = [
-        "select_and_accept"
-      ];
-      "<C-Down>" = [
-        "select_next"
-        "fallback"
-      ];
-      "<S-Tab>" = [
-        "snippet_backward"
-        "fallback"
-      ];
-      "<Tab>" = [
-        "snippet_forward"
-        "fallback"
-      ];
-      "<C-Up>" = [
-        "select_prev"
-        "fallback"
-      ];
-      };
-    };
-  };
+  # blink-cmp = {
+  #   enable = true;
+  #   settings = {
+  #     keymap = {
+  #     "<C-b>" = [
+  #       "scroll_documentation_up"
+  #       "fallback"
+  #     ];
+  #     "<C-e>" = [
+  #       "hide"
+  #     ];
+  #     "<C-f>" = [
+  #       "scroll_documentation_down"
+  #       "fallback"
+  #     ];
+  #     "<C-n>" = [
+  #       "select_next"
+  #       "fallback"
+  #     ];
+  #     "<C-p>" = [
+  #       "select_prev"
+  #       "fallback"
+  #     ];
+  #     "<C-space>" = [
+  #       "show"
+  #       "show_documentation"
+  #       "hide_documentation"
+  #     ];
+  #     "<C-y>" = [
+  #       "select_and_accept"
+  #     ];
+  #     "<C-Down>" = [
+  #       "select_next"
+  #       "fallback"
+  #     ];
+  #     "<S-Tab>" = [
+  #       "snippet_backward"
+  #       "fallback"
+  #     ];
+  #     "<Tab>" = [
+  #       "snippet_forward"
+  #       "fallback"
+  #     ];
+  #     "<C-Up>" = [
+  #       "select_prev"
+  #       "fallback"
+  #     ];
+  #     };
+  #   };
+  # };
 
   zen-mode = {
     enable = true;

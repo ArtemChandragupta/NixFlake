@@ -14,7 +14,6 @@ programs.kitty = {
 
     cursor                = "#928374";
     cursor_text_color     = "background";
-    cursor_trail          = 3;
 
     url_color             = "#83a598";
 
