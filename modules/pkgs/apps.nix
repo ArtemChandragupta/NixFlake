@@ -9,6 +9,7 @@ environment.systemPackages = if var.init
     icon-library
     pandoc
     arduino-ide
+    github-desktop
 
     telegram-desktop
     localsend
