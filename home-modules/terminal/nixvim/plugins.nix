@@ -2,7 +2,6 @@
 
 programs.nixvim.plugins = {
   nvim-autopairs.enable   = true; # Automatic {}
-  web-devicons.enable     = true; # Neo-tree need this 
   indent-blankline.enable = true; # Vertical indent line
   comment.enable  = true; # To comment line on shortcut
   wrapping.enable = true; # To wrap lines in LaTeX
@@ -24,6 +23,7 @@ programs.nixvim.plugins = {
     };
   };
 
+  web-devicons.enable = true; # Neo-tree need this 
   neo-tree = {
     enable = true;
     closeIfLastWindow = true;
@@ -55,16 +55,14 @@ programs.nixvim.plugins = {
 
   zen-mode = {
     enable = true;
-    settings = {
-      window.options = {
-        signcolumn     = "no";
-        number         = false;
-        relativenumber = false;
-        cursorline     = false;
-        cursorcolumn   = false;
-        foldcolumn     = "0";
-        list           = false;
-      };
+    settings.window.options = {
+      signcolumn     = "no";
+      number         = false;
+      relativenumber = false;
+      cursorline     = false;
+      cursorcolumn   = false;
+      foldcolumn     = "0";
+      list           = false;
     };
   };
 };
