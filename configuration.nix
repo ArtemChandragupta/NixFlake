@@ -15,6 +15,7 @@ home-manager = {
 };
 
 documentation.nixos.enable = false;
-system.stateVersion = "24.05";
+# system.stateVersion = "24.05";
+system.stateVersion = "${var.base}";
 
 }

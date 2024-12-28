@@ -15,6 +15,7 @@ in
           user = "artem";
           host = "ThinkBook13s";
           init = false;
+          base = "24.05";
         };
         inherit pkgs-u-small;
       };
@@ -33,6 +34,7 @@ in
           user = "artem";
           host = "homePC";
           init = false;
+          base = "24.05";
         };
         inherit pkgs-u-small;
       };

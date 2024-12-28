@@ -1,9 +1,9 @@
 { pkgs, ... }:{
 
 services.sunshine = { # Server for remote desktop
-  enable = true;
-  autoStart = true;
-  capSysAdmin = true;
+  enable       = true;
+  autoStart    = true;
+  capSysAdmin  = true;
   openFirewall = true;
 };
 
