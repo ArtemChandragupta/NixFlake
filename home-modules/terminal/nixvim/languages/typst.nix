@@ -1,12 +1,12 @@
 {
 
 programs.nixvim.plugins = {
-  # lsp.servers.tinymist = { # Broken!
-  #   enable = true;
-  #   settings = {
-  #     single_file_support = true;
-  #   };
-  # };
+  lsp.servers.tinymist = { # Broken!
+    enable = true;
+    settings = {
+      single_file_support = true;
+    };
+  };
   typst-vim = {
     enable   = true;
     settings = {

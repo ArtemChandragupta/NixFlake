@@ -25,7 +25,7 @@ programs.nixvim.plugins = {
     ];
     settings.highlight.enable = true;
   };
-  openscad.enable = true;
+  # openscad.enable = true;
   # rainbow-delimiters.enable = true;
 };
 

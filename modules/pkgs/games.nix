@@ -5,8 +5,6 @@ environment.systemPackages = with pkgs; [
   pcsx2
   cartridges
 
-  xboxdrv
-
   prismlauncher
 ];
 
