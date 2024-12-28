@@ -16,7 +16,6 @@ programs.home-manager.enable = true;
 home = {
   username = var.user;
   homeDirectory = "/home/${var.user}";  
-  # stateVersion  = "24.05";
   stateVersion  = "${var.base}";
   sessionVariables = {
     BROWSER  = "firefox";
