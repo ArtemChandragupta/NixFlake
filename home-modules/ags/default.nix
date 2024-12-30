@@ -10,7 +10,7 @@ home.packages = [
 
 programs.ags = {
   enable = !var.init;
-  # configDir = ./config;
+  configDir = ./config;
   extraPackages = with pkgs; [
     inputs.ags.packages.${pkgs.system}.hyprland
     inputs.ags.packages.${pkgs.system}.tray
