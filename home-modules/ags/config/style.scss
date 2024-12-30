@@ -1,0 +1,74 @@
+$theme_fg_color: "@theme_fg_color";
+$theme_bg_color: "@theme_bg_color";
+
+* {
+  font-family: "Noto Sans";
+  font-size: 14px;
+  font-weight: 600;
+}
+
+window {
+  background-color: transparent;
+}
+
+window.Bar {
+  background: transparent;
+  color: #{$theme_bg_color};
+  font-weight: bold;
+
+  >centerbox {
+    background: transparent;
+    /* border-radius: 10px; */
+    /* margin-top   :  5px; */
+    /* margin-bottom: -4px; */
+  }
+
+  .WorkspaceModule,
+  .ClockModule,
+  .BatteryModule {
+    background: rgba(40, 40, 40, 0.9);
+    padding: 0 10px;
+    border-radius: 10px;
+    margin: 0 8px;
+    min-height: 24px;
+  }
+
+  .WorkspaceModule {
+    padding: 0;
+  }
+  .WorkspaceModule button {
+    min-width: 0px;
+    color: #6D5930;
+    border-radius: 10px;
+    background: transparent;
+  }
+  .WorkspaceModule button:hover {
+    background: #23232A;
+  }
+  .WorkspaceModule button.active {
+    color: #d79921;
+  }
+
+  /* .workspace-btn { */
+  /*   color: #6d5930; */
+  /*   border-radius: 10px; */
+  /* } */
+  /* .workspace-btn button:hover { */
+  /*   background: #23232A; */
+  /* } */
+  .focused-workspace {
+    color: #d79921;
+  }
+  /* .focused-workspace button:hover { */
+  /*   background: #23232A; */
+  /* } */
+
+  .ClockModule {
+    /* color: #b16286; */
+    color: #B8BB26;
+  }
+
+  .BatteryModule {
+    color: #B8BB26;
+  }
+}

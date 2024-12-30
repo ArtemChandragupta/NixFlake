@@ -1,0 +1,20 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "jsx": "react-jsx",
+        "jsxImportSource": "/home/artem/.local/share/ags/gtk3",
+        "module": "ES2022",
+        "moduleResolution": "Bundler",
+        "paths": {
+            "astal": [
+                "/home/artem/.local/share/ags"
+            ],
+            "astal/*": [
+                "/home/artem/.local/share/ags/*"
+            ]
+        },
+        "strict": true,
+        "target": "ES2022"
+    }
+}

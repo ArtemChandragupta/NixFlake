@@ -4,6 +4,10 @@ imports = [
   inputs.ags.homeManagerModules.default
 ];
 
+home.packages = [
+  inputs.ignis.packages.x86_64-linux.ignis
+];
+
 programs.ags = {
   enable = !var.init;
   # configDir = ./config;

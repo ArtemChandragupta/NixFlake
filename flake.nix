@@ -67,6 +67,7 @@ inputs = {
   };
 
   ags.url = "github:Aylur/ags";
+  ignis.url = "github:linkfrg/ignis";
   stylix.url = "github:danth/stylix";
 };
 
