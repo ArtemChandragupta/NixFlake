@@ -20,7 +20,7 @@ programs.yazi.keymap.manager.prepend_keymap = [
   { # I escape to bash from nushell to get background tasks
     on = "<C-m>";
     run = ''
-      shell 'ripdrag -tx | cp $in (pwd)' --confirm
+      shell 'cp (bash -c "ripdrag -tx &") (pwd)' --confirm
     '';
   }
 ];

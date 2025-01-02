@@ -9,7 +9,7 @@ environment.systemPackages = if var.init
     icon-library
     pandoc
     arduino-ide
-    hdrop
+    xdragon
 
     telegram-desktop
     localsend

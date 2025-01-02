@@ -4,6 +4,7 @@ import Battery  from "gi://AstalBattery"
 import { WorkspacesModule } from "./modules/workspace/main"
 import { ClockModule      } from "./modules/clock/main"
 import { BatteryModule    } from "./modules/battery/main"
+import { TrayModule       } from "./modules/tray/main"
 
 export default function Bar(gdkmonitor: Gdk.Monitor) {
   return <window
@@ -17,6 +18,7 @@ export default function Bar(gdkmonitor: Gdk.Monitor) {
   >
     <centerbox>
       <box hexpand halign = {Gtk.Align.START} className = "gap-children">
+        <TrayModule />
         <WorkspacesModule />
       </box>
       <ClockModule />

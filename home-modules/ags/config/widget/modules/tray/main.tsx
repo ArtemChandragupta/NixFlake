@@ -1,7 +1,7 @@
 import { bind } from "astal"
 import Tray     from "gi://AstalTray"
 
-export function SysTray() {
+export function TrayModule() {
   const tray = Tray.get_default()
 
   return <box className="SysTray">
