@@ -1,6 +1,6 @@
 {
 
-programs.nixvm.plugins.lualine = { # Statusline
+programs.nixvim.plugins.lualine = { # Statusline
   enable = true;
   settings.options.icons_enabled = false;
 };
