@@ -17,4 +17,11 @@ programs.nixvim = {
   '';
 };
 
+programs.nixvim.keymaps = [{ 
+  mode   = "n";
+  key    = "<localleader>p"; 
+  action = "<cmd>PasteImage<CR>";
+  options.remap = true;
+}];
+
 }

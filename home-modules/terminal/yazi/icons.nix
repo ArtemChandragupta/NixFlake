@@ -100,6 +100,7 @@ programs.yazi.theme.icon.globs = [
           { name = "*img-clip.nix";  text = "󰧸"; fg = "#7ebae4"; }
           { name = "*indent.nix";    text = "󰉶"; fg = "#7ebae4"; }
           { name = "*lazygit.nix";   text = "󰊢"; fg = "#7ebae4"; }
+          { name = "*leap.nix";      text = "󱏿"; fg = "#7ebae4"; }
           { name = "*lualine.nix";   text = "󱖫"; fg = "#7ebae4"; }
           { name = "*luasnip.nix";   text = "󰘤"; fg = "#7ebae4"; }
           { name = "*wrapping.nix";  text = "󰖶"; fg = "#7ebae4"; }
