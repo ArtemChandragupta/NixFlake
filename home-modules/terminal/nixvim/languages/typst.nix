@@ -1,7 +1,7 @@
 {
 
 programs.nixvim.plugins = {
-  lsp.servers.tinymist = { # Broken!
+  lsp.servers.tinymist = {
     enable = true;
     settings = {
       single_file_support = true;

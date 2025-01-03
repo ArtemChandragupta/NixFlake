@@ -1,9 +1,7 @@
 { pkgs, ... }:{
 
 programs.nixvim.plugins = {
-  lsp.servers.texlab = {
-    enable = true;
-  };
+  lsp.servers.texlab.enable = true;
   vimtex = {
     enable = true;
     texlivePackage = pkgs.texliveFull;
@@ -31,5 +29,11 @@ programs.nixvim.extraConfigLua = ''
     },
   }
 '';
+
+programs.nixvim.keymaps = [{ 
+  mode   = "n"; 
+  key    = "<localleader>v"; 
+  action = "<cmd>VimtexView<CR>";
+}];
 
 }

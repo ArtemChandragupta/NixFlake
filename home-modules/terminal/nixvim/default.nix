@@ -4,9 +4,10 @@ imports = [
   inputs.nixvim.homeManagerModules.nixvim
 
   ./languages
+  ./plugins
+
   ./keymap.nix
   ./neovide.nix
-  ./plugins.nix
 ];
 
 programs.nixvim = {
@@ -38,9 +39,6 @@ programs.nixvim = {
   colorschemes.gruvbox.enable  = true;
   extraConfigVim = ''
     inoremap <expr> <Esc> col('.') == 1 ? "<Esc>" : "<Esc>l"
-
-    hi! link StatusLine Normal
-    hi! link StatusLineNC Normal
   '';
 };
 
