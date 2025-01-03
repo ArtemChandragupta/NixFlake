@@ -2,10 +2,10 @@
 
 programs.nixvim.plugins = {
   nvim-autopairs.enable   = true; # Automatic {}
-  plugins.image.enable    = true; # Images in nvim!
   indent-blankline.enable = true; # Vertical indent line
   comment.enable  = true; # To comment line on shortcut
   wrapping.enable = true; # To wrap lines in LaTeX
+  yazi.enable     = true;
 
   lualine = { # Statusline
     enable = true;
