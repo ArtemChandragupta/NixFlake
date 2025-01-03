@@ -6,7 +6,7 @@ I love gruvbox colorscheme, but don't use default gruvbox-gtk-theme pkg for this
 
 Also I have a "control center" in flake.nix - var arg, which contains username, hostname for host-specific things such as amd kernel modules and init variable, used to skip unnecessary and heavy things on first rebuild for improved reproducebility.
 
-To rebuild system: 
+To rebuild system:
 - On initial setup: `sudo nixos-rebuild switch --flake ~/nix#hostname`
 After that hostname is set and all future rebuilds will default to that hostname.
 - On normal rebuild: `NixR`
