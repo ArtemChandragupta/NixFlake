@@ -15,6 +15,9 @@ programs.nixvim = {
       '';
     }
   ];
+  extraConfigVim = '' 
+    inoremap <expr> <Esc> col('.') == 1 ? "<Esc>" : "<Esc>l"
+  '';
 };
 
 }

@@ -36,10 +36,7 @@ programs.nixvim = {
     whichwrap = "<,>,[,]"; # To move cursor from end to new line
     signcolumn = "no";
   };
-  colorschemes.gruvbox.enable  = true;
-  extraConfigVim = ''
-    inoremap <expr> <Esc> col('.') == 1 ? "<Esc>" : "<Esc>l"
-  '';
+  colorschemes.gruvbox.enable  = true; 
 };
 
 }
