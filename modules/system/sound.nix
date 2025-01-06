@@ -5,8 +5,10 @@ environment.systemPackages = with pkgs; [
   alsa-utils
 ];
 
-hardware.pulseaudio.enable = false;
 security.rtkit.enable = true;
+
+services.pulseaudio.enable = false;
+services.mpd.enable = true;
 services.pipewire = {
   enable = true;
   alsa.enable = true;
@@ -17,7 +19,5 @@ services.pipewire = {
     extraConfig."10-disable-camera"."wireplumber.profiles".main."monitor.libcamera" = "disabled";
   };
 };
-
-services.mpd.enable = true;
 
 }
