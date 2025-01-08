@@ -8,6 +8,7 @@ environment.systemPackages = with pkgs; [
   ripdrag # Drag and drop from terminal
 
   wget # Get things from internet
+  just # Typst needs it
   nurl # Get hash for derevation
   grex # Generate regex from examples
   dust # Disc usage tui
