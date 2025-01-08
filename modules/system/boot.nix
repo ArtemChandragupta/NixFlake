@@ -9,7 +9,7 @@ boot = {
 
   kernelPackages = if var.host == "ThinkBook13s"
     then pkgs.linuxPackages_latest
-    else pkgs.linuxPackages;
+    else pkgs.linuxPackages_latest;
   kernelParams = [
     "quiet"
     "udev.log_level=0" 
