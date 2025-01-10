@@ -11,7 +11,7 @@ programs.nixvim.plugins = {
     enable   = true;
     settings = {
       pdf_viewer   = "zathura";
-      conceal_math = 1;
+      # conceal_math = 1;
     }; 
   };
 };
