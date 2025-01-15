@@ -11,6 +11,7 @@ programs.kitty = {
     window_padding_width = 5;
 
     background_opacity = "0.9";
+    dynamic_background_opacity = "yes";
 
     cursor                = "#928374";
     cursor_text_color     = "background";
