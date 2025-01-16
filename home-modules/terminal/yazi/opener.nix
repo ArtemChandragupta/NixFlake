@@ -50,6 +50,12 @@ programs.yazi.settings = {
         block = true;
       }
     ];
+    "tdf" = [
+      {
+        run  = ''tdf "$@"'';
+        block = true;
+      }
+    ];
   };
 
   open.prepend_rules = [
@@ -65,18 +71,6 @@ programs.yazi.settings = {
       name = "*.typ";
       use  = ["Neovide" "Hx" "Nvim"];
     }
-    # {
-    #   name = "*.hs";
-    #   use  = "Nvim";
-    # }
-    # {
-    #   name = "*.js";
-    #   use  = "Nvim";
-    # }
-    # {
-    #   name = "*.tsx";
-    #   use  = "Nvim";
-    # }
     {
       mime = "text/*";
       use  = "text";
@@ -91,7 +85,7 @@ programs.yazi.settings = {
     }
     {
       mime = "application/pdf";
-      use  = ["zathura" "papers"];
+      use  = ["zathura" "papers" "tdf"];
     }
   ];
 };

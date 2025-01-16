@@ -6,6 +6,7 @@ programs.helix = {
     nil nixfmt-rfc-style
     typescript-language-server
     texlab ltex-ls
+    tinymist
   ];
 
   languages.language = [
@@ -26,6 +27,9 @@ programs.helix = {
       name = "latex";
       file-types = [ "tex" ];
       language-servers = [ "texlab" "ltex" ];
+    }
+    {
+      name = "typst";
     }
   ];
 
