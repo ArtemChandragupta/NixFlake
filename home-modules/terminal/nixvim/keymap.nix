@@ -7,9 +7,19 @@ programs.nixvim = {
   };
   keymaps = [
     { mode = "v"; key = "<y>"; action = ''"+y"''; }
+    { mode = "v"; key = "<н>"; action = ''"+y"''; }
     { mode = "n"; key = "Ж";   action = ":";      }
+    { mode = "n"; key = "ш";   action = "i";      }
+    { mode = "n"; key = "м";   action = "v";      }
+    { mode = "i"; key = "г";   action = "u";      }
 
     { mode = "i"; lua = true; key = "<C-v>"; action = ''
+        function ()
+          vim.api.nvim_paste(vim.fn.getreg('+'), true, -1)
+        end
+      '';
+    }
+    { mode = "i"; lua = true; key = "<C-м>"; action = ''
         function ()
           vim.api.nvim_paste(vim.fn.getreg('+'), true, -1)
         end
