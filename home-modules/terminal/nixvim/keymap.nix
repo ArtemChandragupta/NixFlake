@@ -11,7 +11,7 @@ programs.nixvim = {
     { mode = "n"; key = "Ж";   action = ":";      }
     { mode = "n"; key = "ш";   action = "i";      }
     { mode = "n"; key = "м";   action = "v";      }
-    { mode = "i"; key = "г";   action = "u";      }
+    { mode = "n"; key = "г";   action = "u";      }
 
     { mode = "i"; lua = true; key = "<C-v>"; action = ''
         function ()
