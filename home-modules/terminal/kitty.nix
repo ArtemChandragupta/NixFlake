@@ -6,7 +6,23 @@ programs.kitty = {
     name = "JetBrainsMono Nerd Font";
     size = 12;
   };
+  keybindings = {
+    "ctrl+shift+f" = "toggle_layout stack";
+    "ctrl+shift+s" = "launch --location=split";
+    "ctrl+shift+q" = "close_window";
+
+    "ctrl+shift+left"  = "resize_window narrower";
+    "ctrl+shift+right" = "resize_window wider";
+    "ctrl+shift+up"    = "resize_window taller";
+    "ctrl+shift+down"  = "resize_window shorter";
+
+    "alt+left"  = "neighboring_window left";
+    "alt+right" = "neighboring_window right";
+    "alt+up"    = "neighboring_window up";
+    "alt+down"  = "neighboring_window down";
+  };
   settings = {
+    enabled_layouts = "splits,stack";
     confirm_os_window_close = 0;
     window_padding_width = 5;
 
