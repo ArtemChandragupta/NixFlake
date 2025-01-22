@@ -7,7 +7,7 @@ programs.nixvim = {
   };
   keymaps = [
     { mode = "v"; key = "<y>"; action = ''"+y"''; }
-    { mode = "v"; key = "<н>"; action = ''"+y"''; }
+    { mode = "v"; key = "н";   action = ''"+y"''; }
     { mode = "n"; key = "Ж";   action = ":";      }
     { mode = "n"; key = "ш";   action = "i";      }
     { mode = "n"; key = "м";   action = "v";      }
