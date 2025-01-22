@@ -20,6 +20,10 @@ let
     url = "https://static1.squarespace.com/static/5e949a92e17d55230cd1d44f/t/61103f14c1b8266a7c3445a4/1628454705441/macOSBlissRainy6K.png";
     sha256 = "1biplcl50zassc813lk6zgc7vzqazimbbd6fzkv1lk8jxwsch7vb";
   };
+  Flutter = pkgs.fetchurl {
+    url = "https://static1.squarespace.com/static/5e949a92e17d55230cd1d44f/t/678341bdc07b5c2e712243f5/1736655308172/F06_Mac.png";
+    sha256 = "sha256-sW5sgqjRHk7SFp1VqwVgDQfdBXl+4lzQVcdTZX1Jmqg=";
+  };
 in
 {
 
@@ -29,6 +33,7 @@ home.file = {
   ".wallpaper/SequoiaLight.png".source = SequoiaLight;
   ".wallpaper/BlissDay.png".source     = BlissDay;
   ".wallpaper/BlissRainy.png".source   = BlissRainy;
+  ".wallpaper/Flutter.png".source      = Flutter;
 };
 
 }
