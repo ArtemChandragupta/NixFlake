@@ -9,7 +9,7 @@ home.packages = [
 ];
 
 wayland.windowManager.hyprland.settings.bind = [
-  "$mainMod SHIFT, R, exec, zen-mode"
+  "$mainMod, Z, exec, zen-mode"
 ];
 
 }

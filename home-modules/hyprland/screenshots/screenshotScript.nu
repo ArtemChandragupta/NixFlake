@@ -10,8 +10,9 @@ def main [mode:string] {
 
 def window [] {
   let name    = $'($nameBase)-window.png'
+  let gaps    = hyprctl getoption general:gaps_in -j | from json | get custom | split words | first | into int
   let window  = hyprctl -j activewindow | from json
-  let padding = $window | get at size | $'($in.0.0 - 5),($in.0.1 - 5) ($in.1.0 + 10)x($in.1.1 + 10)'
+  let padding = $window | get at size | $'($in.0.0 - $gaps),($in.0.1 - $gaps) ($in.1.0 + 2 * $gaps)x($in.1.1 + 2 * $gaps)'
 
   match ($window | get fullscreen) { # Is active window in fullscreen?
     0 => {grim -g $padding $name} # If no,  take screenshot with padding to catch wlppr
