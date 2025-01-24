@@ -1,7 +1,7 @@
 {
 
 programs.nixvim.plugins = {
-  yazi.enable     = true; # Yazi filemanager!
+  yazi.enable = true; # Yazi filemanager!
 };
 
 programs.nixvim.keymaps = [{ 

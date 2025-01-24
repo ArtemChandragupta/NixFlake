@@ -1,7 +1,7 @@
 {
 
 programs.nixvim.plugins.colorizer = {
-  enable   = true; # Colored color codes
+  enable = true; # Colored color codes
   settings.user_default_options = {
     RGB      = true;
     RRGGBB   = true;

@@ -1,7 +1,7 @@
 {
 
 programs.nixvim.plugins = {
-  comment.enable  = true; # To comment line on shortcut
+  comment.enable = true; # To comment line on shortcut
 };
 
 programs.nixvim = {
