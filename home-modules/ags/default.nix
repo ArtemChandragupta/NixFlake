@@ -5,7 +5,7 @@ imports = [
 ];
 
 home.packages = [
-  inputs.ignis.packages.x86_64-linux.ignis
+  # inputs.ignis.packages.x86_64-linux.ignis
 ];
 
 programs.ags = {
