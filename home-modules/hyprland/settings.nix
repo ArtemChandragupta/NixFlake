@@ -66,7 +66,8 @@ general = {
 };
 
 decoration = {
-  rounding = 10;
+  rounding       = 10;
+  rounding_power = 4;
   blur = {
     enabled  = true;
     size     = 3;

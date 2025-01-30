@@ -15,7 +15,8 @@ imports = [
 programs.nixvim.plugins = {
   lsp = {
     enable = true;
-    servers.nil_ls.enable = true;
+    # servers.nil_ls.enable = true;
+    servers.nixd.enable = true;
   };
   treesitter = {
     enable = true;
@@ -25,8 +26,6 @@ programs.nixvim.plugins = {
     ];
     settings.highlight.enable = true;
   };
-  # openscad.enable = true;
-  # rainbow-delimiters.enable = true;
 };
 
 }

@@ -12,9 +12,9 @@ programs.helix = {
     theme = "gruvbox";
     editor = {
       line-number = "relative";
-      completion-trigger-len = 1;
-      bufferline = "multiple";
       color-modes = true;
+
+      soft-wrap.enable = true;
       
       statusline = {
         left = [
