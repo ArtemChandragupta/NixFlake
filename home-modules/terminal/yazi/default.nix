@@ -1,5 +1,5 @@
 { pkgs, ... }:let
-  paste = pkgs.writers.writeNuBin "paste" (builtins.readFile ./scripts/paste.nu);
+  paste = pkgs.writers.writeNuBin "paste" (builtins.readFile ./paste.nu);
 in{
 
 imports = [
