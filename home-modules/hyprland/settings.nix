@@ -74,7 +74,14 @@ decoration = {
     passes   = 1;
     vibrancy = 0.1696;
   };
-  shadow.enabled = false;
+  shadow = {
+    enabled = false;
+    range = 30;
+    render_power = 4;
+    color = "rgba(1a1a1aaf)";
+    offset = "4 4";
+    scale = 0.9;
+  };
 };
 
 animations = {

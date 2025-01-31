@@ -2,57 +2,51 @@
 
 programs.yazi.settings = {
   opener = {
-    "text" = [
-      {
-        run = ''nvim "$@"'';
-        block = true;
-      }
-    ];
     "video" = [
       {
-        run  = ''clapper "$@"'';
+        run   = ''clapper "$@"'';
         block = true;
       }
     ];
     "image" = [
       {
-        run  = ''loupe "$@"'';
+        run   = ''loupe "$@"'';
         block = true;
       }
     ];
     "Nvim" = [
       {
-        run = ''nvim "$@"'';
+        run   = ''nvim "$@"'';
         block = true;
       }
     ];
     "Neovide" = [
       {
-        run = ''neovide "$@"'';
+        run   = ''neovide "$@"'';
         block = true;
       }
     ];
     "Hx" = [
       {
-        run = ''hx "$@"'';
+        run   = ''hx "$@"'';
         block = true;
       }
     ];
     "zathura" = [
       {
-        run  = ''zathura "$@"'';
+        run   = ''zathura "$@"'';
         block = true;
       }
     ];
     "papers" = [
       {
-        run  = ''papers "$@"'';
+        run   = ''papers "$@"'';
         block = true;
       }
     ];
     "tdf" = [
       {
-        run  = ''tdf "$@"'';
+        run   = ''tdf "$@"'';
         block = true;
       }
     ];
@@ -73,7 +67,7 @@ programs.yazi.settings = {
     }
     {
       mime = "text/*";
-      use  = "text";
+      use  = ["Nvim" "Neovide" "Hx"];
     }
     {
       mime = "image/*";
