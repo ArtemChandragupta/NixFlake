@@ -8,5 +8,4 @@ def main [ direction:int ] {
   }
 
   do -i {swww kill} | swww init # Reload daemon (using deprecated keyword)
-
 }

@@ -12,18 +12,21 @@ programs.yazi.keymap.manager.prepend_keymap = [
     desc = "Cancel input";
   }
   { # I escape to bash from nushell to get background tasks
-    on = "<C-n>";
+    on  = "<C-n>";
     run = ''
       shell 'bash -c "ripdrag -xnis 350 \"$1\" &"' --confirm
     '';
   }
-  { # I escape to bash from nushell to get background tasks
-    on = "<C-m>";
-    run = ''
-      # shell 'cp (bash -c "ripdrag -tx &") (pwd)' --confirm
-      # shell 'bash -c "ripdrag -tx &"' --confirm
-      shell 'bash -c "ripdrag -tx &" | cp $in (pwd)' --confirm
-    '';
+  {
+    on  = "<C-y>";
+    run = [
+      ''shell 'echo "$@" | wl-copy' ''
+      ''toggle_all --state=off''
+    ];
+  }
+  {
+    on  = "<C-p>";
+    run = ''shell 'nu -c "paste" ' '';
   }
 ];
 
