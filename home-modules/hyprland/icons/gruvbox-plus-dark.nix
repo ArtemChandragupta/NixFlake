@@ -11,8 +11,8 @@ stdenvNoCC.mkDerivation rec {
   src = fetchFromGitHub {
     owner = "SylEleuth";
     repo  = "gruvbox-plus-icon-pack";
-    rev   = "d41c375cc8d3f6c92a8b6de3bc33edb041935881";
-    hash  = "sha256-Qqrwi7JNnFQZKTtFeE6icRVQ4du1faPqHUAO50c0mGk=";
+    rev   = "40f21c1fc2b62dbebc4b679b4cdc563652df510c";
+    hash  = "sha256-z+J3PDpKf9Sb0xl1cIyn7NiEMuMEiyyPaUgrLw2B4K0=";
   };
 
   dontBuild = true;
