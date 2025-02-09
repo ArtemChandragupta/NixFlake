@@ -30,14 +30,6 @@ programs.starship = {
       format = "[ $path ]($style)";
       truncation_length = 3;
       truncation_symbol = "…/";
-      substitutions = {
-        "Documents"  = "󱔗 ";
-        "Downloads"  = " ";
-        "media"      = " ";
-        "hyprland"   = " ";
-        "Games"      = "󰊖 ";
-        "PortProton" = "󰹻 ";
-      };
     };
 
     git_branch = {
