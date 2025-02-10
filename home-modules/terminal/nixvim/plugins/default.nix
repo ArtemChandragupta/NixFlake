@@ -2,6 +2,7 @@
 
 imports = [
   ./autopairs.nix
+  # ./blink-cmp.nix
   ./colorizer.nix
   ./comment.nix
   ./img-clip.nix
@@ -9,6 +10,7 @@ imports = [
   ./lazygit.nix
   ./lualine.nix
   ./luasnip.nix
+  ./neogit.nix
   ./wrapping.nix
   ./yazi.nix
   ./zen-mode.nix

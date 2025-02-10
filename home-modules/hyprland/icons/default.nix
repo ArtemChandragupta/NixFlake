@@ -1,10 +1,9 @@
 { pkgs, ... }:{
 
-# gtk.iconTheme = {
-  # name = "Gruvbox Plus Dark";
-  # package = pkgs.callPackage ./gruvbox-plus-dark.nix { };
-  # package= pkgs.gruvbox-plus-icons;
-# };
+gtk.iconTheme = {
+  name = "Gruvbox Plus Dark";
+  package = pkgs.callPackage ./gruvbox-plus-dark.nix { };
+};
 
 xdg.desktopEntries = {
   auto-cpufreq-gtk = {
