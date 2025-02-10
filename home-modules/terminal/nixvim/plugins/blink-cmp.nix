@@ -1,7 +1,7 @@
 {
 
 programs.nixvim.plugins = {
-  blink-cmp.enable = true; # Vertical indent line
+  # blink-cmp.enable = true; # Vertical indent line
 };
 
 }

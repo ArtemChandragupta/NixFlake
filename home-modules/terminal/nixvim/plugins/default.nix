@@ -2,7 +2,7 @@
 
 imports = [
   ./autopairs.nix
-  ./blink-cmp.nix
+  # ./blink-cmp.nix
   ./colorizer.nix
   ./comment.nix
   ./img-clip.nix
