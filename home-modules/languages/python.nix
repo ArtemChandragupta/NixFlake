@@ -8,6 +8,7 @@ home.packages = with pkgs; [
     numpy # these two are
     scipy # probably redundant to pandas
     pandas
+    openpyxl
     statsmodels
     scikitlearn
   ]))

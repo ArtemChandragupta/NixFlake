@@ -10,6 +10,9 @@ environment.systemPackages = if var.init
     pandoc
     arduino-ide
     tdf
+    showtime
+    processing
+    file-roller
 
     telegram-desktop
     localsend
