@@ -7,10 +7,9 @@ environment.systemPackages = if var.init
     obsidian
     fragments
     icon-library
-    pandoc
     arduino-ide
+    mpv
     tdf
-    showtime
     processing
     file-roller
 
