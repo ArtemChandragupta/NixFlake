@@ -12,7 +12,6 @@ imports = [
   ./luasnip.nix
   ./neogit.nix
   ./wrapping.nix
-  ./yazi.nix
   ./zen-mode.nix
 ];
 

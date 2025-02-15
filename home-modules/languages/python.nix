@@ -9,6 +9,7 @@ home.packages = with pkgs; [
     scipy # probably redundant to pandas
     pandas
     openpyxl
+    kivy
     statsmodels
     scikitlearn
   ]))
