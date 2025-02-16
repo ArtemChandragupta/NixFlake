@@ -7,9 +7,11 @@ home.packages = with pkgs; [
 
     numpy # these two are
     scipy # probably redundant to pandas
-    pandas
-    openpyxl
-    kivy
+
+    pandas     # Data manipulation
+    openpyxl   # excel
+    kivy       # GUI
+
     statsmodels
     scikitlearn
   ]))
