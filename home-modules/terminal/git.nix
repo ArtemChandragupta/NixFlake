@@ -17,6 +17,19 @@ programs = {
         nerdFontsVersion = "3";
         border = "single";
       };
+      spinner = {
+        frames = [
+          "⠋"
+          "⠙"
+          "⠩"
+          "⠸"
+          "⠼"
+          "⠴"
+          "⠦"
+          "⠧"
+        ];
+        rate = 60;
+      };
     };
   };
 };
