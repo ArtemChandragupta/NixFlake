@@ -2,9 +2,15 @@
 
 programs.yazi.settings = {
   opener = {
-    "video" = [
+    "clapper" = [
       {
         run   = ''clapper "$@"'';
+        block = true;
+      }
+    ];
+    "mpv" = [
+      {
+        run = ''mpv "$@"'';
         block = true;
       }
     ];
@@ -75,7 +81,7 @@ programs.yazi.settings = {
     }
     {
       mime = "video/*";
-      use  = "video";
+      use  = ["mpv" "clapper"];
     }
     {
       mime = "application/pdf";

@@ -12,6 +12,7 @@ environment.systemPackages = if var.init
     tdf
     processing
     file-roller
+    celluloid
 
     telegram-desktop
     localsend
