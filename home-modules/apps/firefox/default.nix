@@ -12,7 +12,7 @@ imports =[
 programs.firefox = {
   enable = true;
   profiles.default = {
-    extensions = with inputs.firefox-addons.packages."x86_64-linux"; [ sidebery ];
+    extensions.packages = with inputs.firefox-addons.packages."x86_64-linux"; [ sidebery ];
     userContent = builtins.readFile ./userContent.css;
   };
 };
