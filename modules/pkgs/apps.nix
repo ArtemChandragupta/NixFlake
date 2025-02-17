@@ -8,11 +8,9 @@ environment.systemPackages = if var.init
     fragments
     icon-library
     arduino-ide
-    mpv
     tdf
     processing
     file-roller
-    celluloid
 
     telegram-desktop
     localsend

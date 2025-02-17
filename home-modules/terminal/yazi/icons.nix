@@ -53,6 +53,7 @@ programs.yazi.theme.icon.globs = [
         { name = "*bookmarks.nix"; text = "󰸕"; fg = "#7ebae4"; }
         { name = "*config.nix";    text = ""; fg = "#7ebae4"; }
         { name = "*search.nix";    text = ""; fg = "#7ebae4"; }
+      { name = "*mpv.nix";       text = "󰃽"; fg = "#7ebae4"; }
       { name = "*zathura.nix";   text = ""; fg = "#7ebae4"; }
 
     { name = "*hyprland/";     text = ""; }
