@@ -1,6 +1,9 @@
 { var, ... }:{
 
-imports = [ ./${var.host} ];
+  imports = [ 
+    ./${var.host}
+    ./icons.nix
+  ];
 
 programs.waybar = {
   enable = true;
