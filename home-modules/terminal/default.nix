@@ -9,6 +9,7 @@ imports = [
   ./yazi
 
   ./btm.nix
+  ./direnv.nix
   ./fastfetch.nix
   ./git.nix
   ./kitty.nix

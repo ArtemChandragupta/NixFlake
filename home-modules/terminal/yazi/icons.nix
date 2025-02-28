@@ -90,6 +90,7 @@ programs.yazi.theme.icon.globs = [
         { name = "*js.nix";        text = ""; fg = "#7ebae4"; }
         { name = "*lua.nix";       text = "󰢱"; fg = "#7ebae4"; }
         { name = "*nushell.nix";   text = ""; fg = "#7ebae4"; }
+        { name = "*btm.nix";       text = ""; fg = "#7ebae4"; }
         { name = "*toml.nix";      text = ""; fg = "#7ebae4"; }
         { name = "*typst.nix";     text = ""; fg = "#7ebae4"; }
         { name = "*keymap.nix";    text = "󰌌"; fg = "#7ebae4"; }
@@ -116,6 +117,7 @@ programs.yazi.theme.icon.globs = [
         { name = "*opener.nix";    text = ""; fg = "#7ebae4"; }
         { name = "*theme.nix";     text = "󰣆"; fg = "#7ebae4"; }
       { name = "*btm.nix";       text = "󱔓"; fg = "#7ebae4"; }
+      { name = "*direnv.nix";    text = "󰇐"; fg = "#7ebae4"; }
       { name = "*fastfetch.nix"; text = "󱡠"; fg = "#7ebae4"; }
       { name = "*git.nix";       text = "󰊢"; fg = "#7ebae4"; }
       { name = "*kitty.nix";     text = "󰄛"; fg = "#7ebae4"; }

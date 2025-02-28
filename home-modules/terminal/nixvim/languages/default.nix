@@ -7,6 +7,7 @@ imports = [
   ./lua.nix
   ./nushell.nix
   ./python.nix
+  ./rust.nix
   ./TeX.nix
   ./toml.nix
   ./typst.nix
