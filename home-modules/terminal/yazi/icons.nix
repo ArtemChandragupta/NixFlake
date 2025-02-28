@@ -90,7 +90,7 @@ programs.yazi.theme.icon.globs = [
         { name = "*js.nix";        text = ""; fg = "#7ebae4"; }
         { name = "*lua.nix";       text = "󰢱"; fg = "#7ebae4"; }
         { name = "*nushell.nix";   text = ""; fg = "#7ebae4"; }
-        { name = "*btm.nix";       text = ""; fg = "#7ebae4"; }
+        { name = "*rust.nix";      text = ""; fg = "#7ebae4"; }
         { name = "*toml.nix";      text = ""; fg = "#7ebae4"; }
         { name = "*typst.nix";     text = ""; fg = "#7ebae4"; }
         { name = "*keymap.nix";    text = "󰌌"; fg = "#7ebae4"; }
