@@ -8,9 +8,7 @@ environment.systemPackages = if var.init
     fragments
     icon-library
     arduino-ide
-    tdf
     file-roller
-    php
 
     telegram-desktop
     localsend

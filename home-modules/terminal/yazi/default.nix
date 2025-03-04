@@ -10,7 +10,7 @@ imports = [
   ./theme.nix
 ];
 
-home.packages = [ paste ];
+home.packages = [ paste pkgs.ouch ];
 
 programs.zoxide = {
   enable = true;
@@ -36,8 +36,17 @@ programs.yazi = {
     "smart-enter" = ./lua/smart-enter;
     "full-border" = ./lua/full-border;
     "starship"    = ./lua/starship;
+    "ouch"        = ./lua/ouch;
   };
   initLua = ./lua/init.lua;
+  settings.plugin.prepend_previewers = [
+      { mime = "application/*zip";            run = "ouch"; }
+      { mime = "application/x-tar";           run = "ouch"; }
+      { mime = "application/x-bzip2";         run = "ouch"; }
+      { mime = "application/x-7z-compressed"; run = "ouch"; }
+      { mime = "application/x-rar";           run = "ouch"; }
+      { mime = "application/x-xz";            run = "ouch"; }
+  ];
 };
 
 }

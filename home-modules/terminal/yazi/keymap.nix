@@ -22,6 +22,11 @@ programs.yazi.keymap = {
       run  = "shell 'paste' ";
       desk = "Paste files from path in system clipboard";
     }
+    {
+      on   = "C";
+      run  = "plugin ouch --args=zip";
+      desc = "Compress with ouch";
+    }
   ];
   input.prepend_keymap = [
     {
