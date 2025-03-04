@@ -9,8 +9,8 @@ environment.systemPackages = if var.init
     icon-library
     arduino-ide
     tdf
-    processing
     file-roller
+    php
 
     telegram-desktop
     localsend
