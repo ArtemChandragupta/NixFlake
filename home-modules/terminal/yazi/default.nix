@@ -3,6 +3,8 @@
 in{
 
 imports = [
+  ./plugins
+
   ./filetype.nix
   ./icons.nix
   ./keymap.nix
@@ -31,22 +33,6 @@ programs.yazi = {
     show_symlink = true;
     linemode = "mtime";
   };
-
-  plugins = {
-    "smart-enter" = ./lua/smart-enter;
-    "full-border" = ./lua/full-border;
-    "starship"    = ./lua/starship;
-    "ouch"        = ./lua/ouch;
-  };
-  initLua = ./lua/init.lua;
-  settings.plugin.prepend_previewers = [
-      { mime = "application/*zip";            run = "ouch"; }
-      { mime = "application/x-tar";           run = "ouch"; }
-      { mime = "application/x-bzip2";         run = "ouch"; }
-      { mime = "application/x-7z-compressed"; run = "ouch"; }
-      { mime = "application/x-rar";           run = "ouch"; }
-      { mime = "application/x-xz";            run = "ouch"; }
-  ];
 };
 
 }
