@@ -10,6 +10,8 @@ imports = [
   ./lazygit.nix
   ./lualine.nix
   ./luasnip.nix
+  ./noice.nix
+  ./whichkey.nix
   ./wrapping.nix
   ./zen-mode.nix
 ];

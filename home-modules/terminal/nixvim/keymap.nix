@@ -28,6 +28,8 @@ programs.nixvim = {
   ];
   extraConfigVim = '' 
     inoremap <expr> <Esc> col('.') == 1 ? "<Esc>" : "<Esc>l"
+    imap <silent> <Down> <C-o>gj
+    imap <silent> <Up> <C-o>gk
 
     cnoreabbrev Q q
     cnoreabbrev Wq wq

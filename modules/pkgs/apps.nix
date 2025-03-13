@@ -9,6 +9,7 @@ environment.systemPackages = if var.init
     icon-library
     arduino-ide
     file-roller
+    presenterm
 
     telegram-desktop
     localsend

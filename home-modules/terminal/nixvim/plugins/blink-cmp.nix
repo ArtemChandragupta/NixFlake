@@ -6,7 +6,8 @@ programs.nixvim.plugins = {
     settings = {
       completion = {
         menu = {
-          auto_show = false;
+          # auto_show = false;
+          border = "single";
         };
       };
     };

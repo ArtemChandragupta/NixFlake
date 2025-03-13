@@ -105,6 +105,8 @@ programs.yazi.theme.icon.globs = [
           { name = "*lazygit.nix";   text = "󰊢"; fg = "#7ebae4"; }
           { name = "*lualine.nix";   text = "󱖫"; fg = "#7ebae4"; }
           { name = "*luasnip.nix";   text = "󰘤"; fg = "#7ebae4"; }
+          { name = "*noice.nix";     text = "󱆞"; fg = "#7ebae4"; }
+          { name = "*whichkey.nix";  text = "󰌒"; fg = "#7ebae4"; }
           { name = "*wrapping.nix";  text = "󰖶"; fg = "#7ebae4"; }
           { name = "*zen-mode.nix";  text = "󰚀"; fg = "#7ebae4"; }
       { name = "*shell/";       text = ""; }
