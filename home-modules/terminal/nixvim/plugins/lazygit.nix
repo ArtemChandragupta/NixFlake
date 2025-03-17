@@ -2,6 +2,7 @@
 
 programs.nixvim.plugins.lazygit = {
   enable = true;
+  settings.floating_window_scaling_factor =  1;
   settings.floating_window_border_chars = [
     "┌"
     "─"
