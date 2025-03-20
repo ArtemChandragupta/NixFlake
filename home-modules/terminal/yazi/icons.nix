@@ -77,6 +77,7 @@ programs.yazi.theme.icon.globs = [
 
     { name = "*languages/";    text = ""; }
       { name = "*haskell.nix";   text = "󰲒"; fg = "#7ebae4"; }
+      { name = "*julia.nix";     text = ""; fg = "#7ebae4"; }
       { name = "*python.nix";    text = "󰌠"; fg = "#7ebae4"; }
       { name = "*TeX.nix";       text = ""; fg = "#7ebae4"; }
 
@@ -120,6 +121,7 @@ programs.yazi.theme.icon.globs = [
         { name = "*theme.nix";     text = "󰣆"; fg = "#7ebae4"; }
       { name = "*btm.nix";       text = "󱔓"; fg = "#7ebae4"; }
       { name = "*direnv.nix";    text = "󰇐"; fg = "#7ebae4"; }
+      { name = "*distrobox.nix"; text = "󰬋"; fg = "#7ebae4"; }
       { name = "*fastfetch.nix"; text = "󱡠"; fg = "#7ebae4"; }
       { name = "*git.nix";       text = "󰊢"; fg = "#7ebae4"; }
       { name = "*kitty.nix";     text = "󰄛"; fg = "#7ebae4"; }
