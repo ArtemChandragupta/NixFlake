@@ -10,7 +10,6 @@ imports = [
 
   ./btm.nix
   ./direnv.nix
-  ./distrobox.nix
   ./fastfetch.nix
   ./git.nix
   ./kitty.nix
