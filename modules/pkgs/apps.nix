@@ -7,9 +7,7 @@ environment.systemPackages = if var.init
     obsidian
     fragments
     icon-library
-    arduino-ide
     file-roller
-    presenterm
 
     telegram-desktop
     localsend
@@ -18,9 +16,9 @@ environment.systemPackages = if var.init
     zola
     mendeley
 
-    openscad-unstable
-    exhibit
-    inkscape
+    # openscad-unstable
+    # exhibit
+    # inkscape
     drawio
     dosbox-staging
   ];

@@ -1,4 +1,4 @@
-{ var, ... }:{
+{
 
 imports = [
   ./bluetooth.nix
@@ -10,9 +10,6 @@ imports = [
   ./system.nix
   ./usb.nix
   ./users.nix
-] ++ ( if var.init 
-  then [ ]
-  else [ ./virtual.nix ]
-);
+];
 
 }
