@@ -22,7 +22,7 @@ programs.yazi.theme.icon.globs = [
     { name = "*openscad/";     text = ""; }
     { name = "*python/";       text = "󰌠"; }
     { name = "*Rust/";         text = "󱘗"; }
-    { name = "simulink*/";     text = ""; }
+    { name = "*simulink/";     text = ""; }
     { name = "*typst/";        text = ""; }
   { name = "*Documents/";    text = "󱔗"; }
   { name = "*Downloads/";    text = ""; }
