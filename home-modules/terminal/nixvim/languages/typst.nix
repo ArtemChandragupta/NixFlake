@@ -16,7 +16,10 @@ programs.nixvim.plugins = {
   };
 };
 
-programs.nixvim.extraConfigLua = ''
-'';
+programs.nixvim.keymaps = [{ 
+  mode   = "n"; 
+  key    = "<localleader>t"; 
+  action = "<cmd>TypstWatch<CR>";
+}];
 
 }
