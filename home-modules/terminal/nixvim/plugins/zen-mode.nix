@@ -13,10 +13,17 @@ programs.nixvim.plugins.zen-mode = {
   };
 };
 
-programs.nixvim.keymaps = [{ 
-  mode   = "n";
-  key    = "<localleader>z"; 
-  action = "<cmd>ZenMode<CR>";
-}];
+programs.nixvim.keymaps = [
+  { 
+    mode   = "n";
+    key    = "<localleader>z";
+    action = "<cmd>ZenMode<CR>";
+  }
+  { 
+    mode   = "n";
+    key    = "<localleader>я";
+    action = "<cmd>ZenMode<CR>";
+  }
+];
 
 }

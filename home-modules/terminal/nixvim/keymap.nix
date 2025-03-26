@@ -8,10 +8,15 @@ programs.nixvim = {
   keymaps = [
     { mode = "v"; key = "<y>"; action = ''"+y"''; }
     { mode = "v"; key = "н";   action = ''"+y"''; }
+
     { mode = "n"; key = "Ж";   action = ":";      }
     { mode = "n"; key = "ш";   action = "i";      }
     { mode = "n"; key = "м";   action = "v";      }
     { mode = "n"; key = "г";   action = "u";      }
+
+    { mode = "n"; key = "в";   action = "d";      }
+    { mode = "o"; key = "в";   action = "d";      }
+    { mode = "v"; key = "в";   action = "d";      }
 
     { mode = "i"; lua = true; key = "<C-v>"; action = ''
         function ()

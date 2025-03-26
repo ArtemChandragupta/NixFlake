@@ -16,10 +16,17 @@ programs.nixvim.plugins = {
   };
 };
 
-programs.nixvim.keymaps = [{ 
-  mode   = "n"; 
-  key    = "<localleader>t"; 
-  action = "<cmd>TypstWatch<CR>";
-}];
+programs.nixvim.keymaps = [
+  {
+    mode   = "n";
+    key    = "<localleader>t";
+    action = "<cmd>TypstWatch<CR>";
+  }
+  {
+    mode   = "n";
+    key    = "<localleader>е";
+    action = "<cmd>TypstWatch<CR>";
+  }
+];
 
 }

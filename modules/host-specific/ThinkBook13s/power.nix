@@ -3,7 +3,7 @@
 powerManagement.enable = true;
 
 services.auto-cpufreq = { 
-  enable = true;
+  # enable = true;
   settings = {
     battery =  {
       governor = "powersave";
@@ -16,7 +16,10 @@ services.auto-cpufreq = {
   };
 };
 services.upower.enable = true; # For battery service
-# services.power-profiles-daemon.enable = false; 
+# services.power-profiles-daemon.enable = false;
+services.power-profiles-daemon = {
+  enable = true;
+};
 
 
 }
