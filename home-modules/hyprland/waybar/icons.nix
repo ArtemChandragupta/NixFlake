@@ -29,6 +29,7 @@ programs.waybar.settings.mainBar."hyprland/workspaces" = {
     "class<org.telegram.desktop>"   = "";
     "class<libreoffice-writer>"     = "";
     "class<libreoffice-calc>"       = "";
+    "class<libreoffice-startcenter>"= "";
     "class<app.drey.Dialect>" = "󱁥";
     "class<org.pwmt.zathura>" = "";
     "class<teams-for-linux>"  = "󰊻";

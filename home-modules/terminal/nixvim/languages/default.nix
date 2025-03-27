@@ -2,13 +2,13 @@
 
 imports = [
   ./css.nix
-  ./haskell.nix
+  # ./haskell.nix
   ./js.nix
   ./lua.nix
   ./nushell.nix
   ./python.nix
   ./rust.nix
-  ./TeX.nix
+  # ./TeX.nix
   ./toml.nix
   ./typst.nix
 ];

@@ -1,7 +1,7 @@
 {
 
 programs.yazi.keymap = {
-    manager.prepend_keymap = [
+  manager.prepend_keymap = [
     {
       on   = "<Enter>";
       run  = "plugin smart-enter";
@@ -26,6 +26,32 @@ programs.yazi.keymap = {
       on   = "C";
       run  = "plugin ouch --args=zip";
       desc = "Compress with ouch";
+    }
+
+    {
+      on   = "й";
+      run  = "quit";
+      desc = "Russian quit";
+    }
+    {
+      on   = "м";
+      run  = "visual_mode";
+      desc = "Russian visual mode enter";
+    }
+    {
+      on   = "н";
+      run  = "yank";
+      desc = "Russian yank";
+    }
+    {
+      on   = "ч";
+      run  = "yank --cut";
+      desc = "Russian cut";
+    }
+    {
+      on   = "з";
+      run  = "paste";
+      desc = "Russian paste";
     }
   ];
   input.prepend_keymap = [
