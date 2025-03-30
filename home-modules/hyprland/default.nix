@@ -1,7 +1,6 @@
 {
 
 imports = [
-  # ./autoname
   ./icons
   ./rofi-appgrid
   ./screenshots
