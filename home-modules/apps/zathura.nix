@@ -42,6 +42,12 @@ programs.zathura = {
     recolor-darkcolor  = "#EBDBB2";
     recolor-keephue    = true;
   };
+  extraConfig = ''
+    map <C-к> recolor
+    map <C-т> toggle_statusbar
+    map й quit
+    map . focus_inputbar
+  '';
 };
 
 }

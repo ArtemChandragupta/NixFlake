@@ -18,7 +18,7 @@ environment.systemPackages = if var.init
 
     # openscad-unstable
     # exhibit
-    # inkscape
+    inkscape
     drawio
     dosbox-staging
   ];
