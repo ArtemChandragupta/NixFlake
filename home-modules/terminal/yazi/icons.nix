@@ -22,7 +22,6 @@ programs.yazi.theme.icon.globs = [
     { name = "*openscad/";     text = ""; }
     { name = "*python/";       text = "󰌠"; }
     { name = "*Rust/";         text = "󱘗"; }
-    { name = "*simulink/";     text = ""; }
     { name = "*typst/";        text = ""; }
   { name = "*Documents/";    text = "󱔗"; }
   { name = "*Downloads/";    text = ""; }
@@ -61,7 +60,6 @@ programs.yazi.theme.icon.globs = [
       { name = "*zathura.nix";   text = ""; fg = "#7ebae4"; }
 
     { name = "*hyprland/";     text = ""; }
-      { name = "*autoname/";     text = "󰎏"; }
       { name = "*icons/";        text = ""; }
         { name = "*gruvbox-plus-dark.nix"; text = "󰚠"; fg = "#7ebae4"; }
       { name = "*monitors/";     text = "󱡶"; }

@@ -1,4 +1,4 @@
-{ inputs, ... }:{
+{ pkgs, inputs, ... }:{
 
 imports =[
   ./solid
@@ -6,11 +6,12 @@ imports =[
 
   # ./bookmarks.nix
   ./config.nix
-  # ./search.nix
+  ./search.nix
 ];
 
 programs.firefox = {
   enable = true;
+  package = pkgs.firefox-esr;
   profiles.default.extensions.packages = [
     inputs.firefox-addons.packages."x86_64-linux".sidebery 
   ];

@@ -44,14 +44,34 @@ programs.yazi.keymap = {
       desc = "Russian yank";
     }
     {
+      on   = "Н";
+      run  = "unyank";
+      desc = "Russian unyank";
+    }
+    {
       on   = "ч";
       run  = "yank --cut";
       desc = "Russian cut";
     }
     {
+      on   = "Ч";
+      run  = "unyank";
+      desc = "Russian uncut";
+    }
+    {
       on   = "з";
       run  = "paste";
       desc = "Russian paste";
+    }
+    {
+      on   = "в";
+      run  = "remove";
+      desc = "Russian trash";
+    }
+    {
+      on   = "В";
+      run  = "remove --permanently";
+      desc = "Russian delete";
     }
   ];
   input.prepend_keymap = [

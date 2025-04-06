@@ -13,6 +13,10 @@ imports = [
   ./typst.nix
 ];
 
+programs.nixvim.diagnostics = {
+    virtual_lines = true;
+  };
+
 programs.nixvim.plugins = {
   lsp = {
     enable = true;

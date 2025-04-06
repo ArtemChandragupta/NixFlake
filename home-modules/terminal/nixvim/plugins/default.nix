@@ -9,7 +9,7 @@ imports = [
   ./indent.nix
   ./lazygit.nix
   ./lualine.nix
-  ./luasnip.nix
+  # ./luasnip.nix
   ./noice.nix
   ./whichkey.nix
   ./wrapping.nix

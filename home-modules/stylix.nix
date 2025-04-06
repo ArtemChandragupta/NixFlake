@@ -22,13 +22,13 @@ stylix = {
     base0F = "#d65d0e"; # brown
   }; 
   targets.gtk.enable = true;
-  
+
   cursor = {
     package = pkgs.bibata-cursors;
     name = "Bibata-Original-Classic";
     size = 24;
   };
-  
+
   fonts = {
     sizes = {
       applications = 12;

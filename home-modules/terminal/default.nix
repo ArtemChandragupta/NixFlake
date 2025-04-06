@@ -3,6 +3,7 @@
 imports = [
   ./calculator
   ./clipse
+  # ./helix
   ./nixvim
   ./shell
   ./yazi

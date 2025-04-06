@@ -32,6 +32,12 @@ programs.yazi.settings = {
         block = true;
       }
     ];
+    "hx" = [
+      {
+        run   = ''hx "$@"'';
+        block = true;
+      }
+    ];
     "zathura" = [
       {
         run   = ''zathura "$@"'';
@@ -57,11 +63,11 @@ programs.yazi.settings = {
     }
     {
       name = "*.typ";
-      use  = ["Neovide" "Nvim"];
+      use  = ["Neovide" "hx" "Nvim"];
     }
     {
       mime = "text/*";
-      use  = ["Nvim" "Neovide"];
+      use  = ["Nvim" "hx" "Neovide"];
     }
     {
       mime = "image/*";

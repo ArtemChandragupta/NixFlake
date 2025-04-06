@@ -1,22 +1,14 @@
 { pkgs, ... }:{
 
 programs.firefox.profiles.default.search = {
-  default = "DuckDuckGo (HTML)";
+  default = "google";
   order = [
-    "Google"
     "GitHub"
     "Nix Packages"
     "Home Manager"
   ];
   force = true;
   engines = {
-    "DuckDuckGo (HTML)" = {
-      urls = [{
-        template = "https://html.duckduckgo.com/html";
-        params = [{ name = "q"; value = "{searchTerms}"; }];
-      }];
-    };
-    
     "Nix Packages" = {
       urls = [{
         template = "https://search.nixos.org/packages";
@@ -46,14 +38,14 @@ programs.firefox.profiles.default.search = {
         template = "https://github.com/search";
         params = [{ name = "q"; value = "{searchTerms}"; }];
       }];
-      iconUpdateURL = "https://github.githubassets.com/favicons/favicon-dark.png";
+      icon = "https://github.githubassets.com/favicons/favicon-dark.png";
       definedAliases = ["@gh"];
     };
     
-    "Google".metaData.alias = "@g";
-    "Bing".metaData.hidden = true;
-    "Wikipedia (en)".metaData.hidden = true;
-    "DuckDuckGo".metaData.hidden = true;
+    "GitHub".metaData.alias = "@gh";
+    "bing".metaData.hidden = true;
+    "wikipedia".metaData.hidden = true;
+    "ddg".metaData.hidden = true;
   };
 };
 

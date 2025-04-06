@@ -11,9 +11,6 @@ home.packages = with pkgs; [
     pandas     # Data manipulation
     openpyxl   # excel
     # kivy       # GUI
-
-    statsmodels
-    scikitlearn
   ]))
 ];
 

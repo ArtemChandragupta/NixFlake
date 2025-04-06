@@ -7,6 +7,9 @@ programs.kitty = {
     size = 12;
   };
   keybindings = {
+    "ctrl+shift+м" = "paste_from_clipboard";
+    "ctrl+shift+с" = "copy_to_clipboard";
+
     "ctrl+shift+f" = "toggle_layout stack";
     "ctrl+shift+s" = "launch --location=split";
     "ctrl+shift+q" = "close_window";
@@ -29,9 +32,10 @@ programs.kitty = {
     background_opacity = "0.9";
     dynamic_background_opacity = "yes";
 
-    cursor                = "#928374";
-    cursor_text_color     = "background";
-    cursor_trail          = 3;
+    cursor            = "#928374";
+    cursor_text_color = "background";
+    # cursor_shape      = "block";
+    cursor_trail      = 3;
 
     url_color             = "#83a598";
 

@@ -24,7 +24,7 @@ programs.firefox.profiles.default.settings = {
   "extensions.htmlaboutaddons.recommendations.enabled" = false;
 
   # Enable cool bahavior
-  "browser.urlbar.placeholderName" = "DuckDuckGo";
+  "browser.urlbar.placeholderName" = "Find!";
   "browser.urlbar.trim" = true; # Trim https!
   "browser.startup.page" = 3; # Restore session
   "extensions.autoDisableScopes" = 0; # Auto-enable extesions
