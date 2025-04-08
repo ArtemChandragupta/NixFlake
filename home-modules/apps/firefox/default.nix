@@ -4,7 +4,7 @@ imports =[
   ./solid
   # ./transparent
 
-  # ./bookmarks.nix
+  ./bookmarks.nix
   ./config.nix
   ./search.nix
 ];

@@ -2,9 +2,13 @@
 
 programs.neovide = {
   enable = true;
-  settings.font = {
-    normal = ["JetBrainsMono Nerd Font"];
-    size   = 16.0;
+  settings = {
+    neovide_cursor_trail_size = 0.7;
+    neovide_cursor_animation_length = 0.04;
+    font = {
+      normal = ["JetBrainsMono Nerd Font"];
+      size   = 16.0;
+    };
   };
 };
 
