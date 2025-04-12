@@ -27,6 +27,7 @@ programs.waybar.settings.mainBar."hyprland/workspaces" = {
     "class<com.saivert.pwvucontrol>"    = "󰴸";
     "class<com.usebottles.bottles>" = "";
     "class<page.kramo.Cartridges>"  = "";
+    "class<org.inkscape.Inkscape>"  = "";
     "class<org.telegram.desktop>"   = "";
     "class<libreoffice-writer>"     = "";
     "class<libreoffice-calc>"       = "";
@@ -36,7 +37,8 @@ programs.waybar.settings.mainBar."hyprland/workspaces" = {
     "class<teams-for-linux>"  = "󰊻";
     "class<dosbox-staging>"   = "󰚴";
     "class<localsend_app>"    = "󱗿";
-    "class<virt-manager>" = "";
+    "class<virt-manager>"          = "";
+    "class<.virt-manager-wrapped>" = "";
     "class<calc>"     = "󰇃";
     "class<openscad>" = "";
   };
