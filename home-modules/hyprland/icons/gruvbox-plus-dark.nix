@@ -1,18 +1,15 @@
-{ lib
-, stdenvNoCC
+{ stdenvNoCC
 , fetchFromGitHub
-, gnome-themes-extra
-, gtk-engine-murrine
 }:
-stdenvNoCC.mkDerivation rec {
+stdenvNoCC.mkDerivation {
   name = "Gruvbox Plus Dark";
   pname = "Gruvbox Plus Dark";
 
   src = fetchFromGitHub {
     owner = "SylEleuth";
     repo = "gruvbox-plus-icon-pack";
-    rev = "7989d08cdfa0ca4a370b9941f7cfe896622d2003";
-    hash = "sha256-PkRetdMJcimTUCWWk9hxJrXxiT/oDEnyZS9S+vOv/xA=";
+    rev = "6c8cad23e667bf8c1ca62b33fb8a35e464b22981";
+    hash = "sha256-3zC9YlEk4e69+SC5nVMezRuexQa3DvYU63ec2zm1dUw=";
   };
 
   dontBuild = true;

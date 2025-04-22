@@ -5,7 +5,7 @@ in{
 
 home.packages = [
   pkgs.numbat
-  pkgs.kalker
+  # pkgs.kalker
   open-calc
 ];
 
