@@ -13,8 +13,8 @@ imports = [
   ./typst.nix
 ];
 
-programs.nixvim.diagnostics = {
-    virtual_lines = true;
+programs.nixvim.diagnostic = {
+    config.virtual_lines = true;
   };
 
 programs.nixvim.plugins = {
