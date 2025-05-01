@@ -8,6 +8,7 @@ environment.systemPackages = if var.init
     fragments
     icon-library
     file-roller
+    showtime
 
     telegram-desktop
     localsend
