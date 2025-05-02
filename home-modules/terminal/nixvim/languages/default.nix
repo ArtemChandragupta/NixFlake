@@ -14,7 +14,7 @@ imports = [
 ];
 
 programs.nixvim.diagnostic = {
-    config.virtual_lines = true;
+    settings.virtual_lines = true;
   };
 
 programs.nixvim.plugins = {
