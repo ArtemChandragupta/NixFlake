@@ -19,8 +19,8 @@ programs.mpv = {
     top_bar     = "never";
     font_scale  = 1.5;
     text_border = 0;
-    border_radius=0;
     color       = "foreground=EBDBB2,foreground_text=282828,background=282828,background_text=EBDBB2";
+    controls    = "menu,space,shuffle,loop-playlist,loop-file,gap,prev,items,next";
   };
 };
 
