@@ -11,7 +11,7 @@ imports =[
 
 programs.firefox = {
   enable = true;
-  package = pkgs.firefox-esr;
+  # package = pkgs.firefox-esr;
   profiles.default.extensions.packages = [
     inputs.firefox-addons.packages."x86_64-linux".sidebery 
   ];

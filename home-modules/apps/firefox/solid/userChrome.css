@@ -31,11 +31,12 @@
 }
 #navigator-toolbox {
   border: none !important; /*no line under former navbar*/
+  z-index: 1 !important; /*v137 fix*/
 }
 
 /*Move buttons*/
 #back-button, #forward-button, #stop-reload-button{ 
-  transform: translate(120px, 40px) /*move navigation buttons*/
+  transform: translate(80px, 40px) /*move navigation buttons*/
 }
 #PanelUI-button { /*settings button*/
   position: fixed !important;
