@@ -35,9 +35,6 @@
 }
 
 /*Move buttons*/
-#back-button, #forward-button, #stop-reload-button{ 
-  transform: translate(80px, 40px) /*move navigation buttons*/
-}
 #PanelUI-button { /*settings button*/
   position: fixed !important;
   top:        5px !important;
@@ -53,6 +50,21 @@
   position: fixed !important;
   top:       5px  !important;
   left:     65px  !important;
+}
+#back-button {
+  position: fixed !important;
+  top:        5px !important;
+  left:       135px !important;
+}
+#forward-button {
+  position: fixed !important;
+  top:        5px !important;
+  left:       165px !important;
+}
+#stop-reload-button {
+  position: fixed !important;
+  top:        5px !important;
+  left:       195px !important;
 }
 
 /* Sidebery */
