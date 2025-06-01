@@ -11,9 +11,16 @@ programs.nixvim.plugins = {
     enable   = true;
     settings = {
       pdf_viewer   = "zathura";
-      # conceal_math = 1; # Slow
     }; 
   };
+  # markview = {
+  #   enable = true;
+  #   settings.preview = {
+  #     filetypes = [
+  #       "typst"
+  #     ];
+  #   };
+  # };
 };
 
 programs.nixvim.keymaps = [

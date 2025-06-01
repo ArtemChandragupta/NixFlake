@@ -2,7 +2,7 @@
 
 programs.yazi.theme = {
 
-  manager = {
+  mgr = {
     cwd = { fg = "#b8bb26"; };
 
     hovered         = { bg = "#3c3836"; fg = "#ebdbb2"; };

@@ -23,7 +23,7 @@ programs.yazi = {
   enable = true;
   enableNushellIntegration = true;
 
-  settings.manager = {
+  settings.mgr = {
     layout = [ 1 4 3 ];
     sort_by = "alphabetical";
     sort_sensitive = false;
