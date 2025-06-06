@@ -5,6 +5,7 @@ programs.nixvim.plugins = {
     enable = true;
     settings = {
       single_file_support = true;
+      # exportPdf = "onType";
     };
   };
   typst-vim = {
@@ -15,10 +16,16 @@ programs.nixvim.plugins = {
   };
   # markview = {
   #   enable = true;
-  #   settings.preview = {
-  #     filetypes = [
-  #       "typst"
-  #     ];
+  #   settings = {
+  #     typst = {
+  #       enable = true;
+  #     };
+  #     preview = {
+  #       filetypes = [
+  #         "typst"
+  #         "markdown"
+  #       ];
+  #     };
   #   };
   # };
 };
@@ -28,11 +35,13 @@ programs.nixvim.keymaps = [
     mode   = "n";
     key    = "<localleader>t";
     action = "<cmd>TypstWatch<CR>";
+    # action = "<cmd>!job spawn { zathura main.pdf }<CR>";
   }
   {
     mode   = "n";
     key    = "<localleader>е";
     action = "<cmd>TypstWatch<CR>";
+    # action = "<cmd>!job spawn { zathura main.pdf }<CR>";
   }
 ];
 
