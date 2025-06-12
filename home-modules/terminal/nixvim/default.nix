@@ -23,8 +23,8 @@ programs.nixvim = {
     incsearch  = true;
     hlsearch   = true;
 
-    conceallevel  = 2;    # For VimTeX - shorten formulas
-    concealcursor = "nc"; # For VimTeX - don't show full formula text in normal mode
+    # conceallevel  = 2;    # For VimTeX - shorten formulas
+    # concealcursor = "nc"; # For VimTeX - don't show full formula text in normal mode
 
     wrap          = false;
     breakindent   = true;

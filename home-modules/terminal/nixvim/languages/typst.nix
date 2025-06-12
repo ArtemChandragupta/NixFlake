@@ -1,33 +1,21 @@
-{
+{ pkgs, ... }:{
 
 programs.nixvim.plugins = {
   lsp.servers.tinymist = {
     enable = true;
     settings = {
       single_file_support = true;
-      # exportPdf = "onType";
     };
   };
+  # treesitter.grammarPackages = [
+  #   pkgs.vimPlugins.nvim-treesitter.builtGrammars.typst
+  # ];
   typst-vim = {
     enable   = true;
     settings = {
       pdf_viewer   = "zathura";
     }; 
   };
-  # markview = {
-  #   enable = true;
-  #   settings = {
-  #     typst = {
-  #       enable = true;
-  #     };
-  #     preview = {
-  #       filetypes = [
-  #         "typst"
-  #         "markdown"
-  #       ];
-  #     };
-  #   };
-  # };
 };
 
 programs.nixvim.keymaps = [
