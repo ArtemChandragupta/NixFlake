@@ -1,6 +1,4 @@
-{ pkgs, ... }:{
-
-home.packages = [ pkgs.gh ];
+{
 
 programs = {
   git = {
@@ -8,6 +6,12 @@ programs = {
     userName  = "ArtemChandragupta";
     userEmail = "artem020503@gmail.com";
     diff-so-fancy.enable = true;
+  };
+  gh = {
+    enable = true;
+    gitCredentialHelper = {
+      enable = true;
+    };
   };
   lazygit = {
     enable = true;
