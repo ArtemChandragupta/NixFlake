@@ -2,7 +2,8 @@
 
 programs.nixvim.plugins = {
   blink-cmp = {
-    enable = true; # Completion
+    enable = true;
+
     settings = {
       completion = {
         menu = {

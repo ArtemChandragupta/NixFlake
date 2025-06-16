@@ -6,10 +6,8 @@ programs.nixvim.plugins = {
 
 programs.nixvim.autoCmd = [
   {
-    # command = "setlocal wrap";
     command = "ToggleWrapMode";
     pattern = ["*.md" "*.typ"];
-    # group   = "group";
     event   = ["BufEnter"];
   }
 ];
