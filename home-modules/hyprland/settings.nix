@@ -6,9 +6,8 @@ exec-once = [
   "kitty"
   "blueman-applet"
   "nm-applet"
-  # "soteria" # Polkit agent
-  "systemctl --user start hyprpolkitagent"
-  "telegram-desktop -startintray"
+  "soteria" # Polkit agent
+  "Telegram -startintray"
 ];
 
 env = [

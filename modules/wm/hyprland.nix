@@ -17,9 +17,6 @@ environment.systemPackages = with pkgs; [
   weather
   dconf-editor # GTK settings - remove buttons
 
-  # soteria # Polkit agent
-  hyprpolkitagent
-
   hyprpicker
 ];
 
