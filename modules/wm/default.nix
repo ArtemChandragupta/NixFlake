@@ -1,4 +1,4 @@
-{ pkgs, ... }:{
+{
 
 imports = [
   ./dm.nix
@@ -8,10 +8,5 @@ imports = [
 
 programs.dconf.enable = true;
 services.dbus.enable  = true;
-
-services.xserver = {
-  enable = true;
-  excludePackages = [ pkgs.xterm ];
-};
 
 }

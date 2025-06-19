@@ -1,22 +1,7 @@
-{ pkgs, ... }:{
+{
 
 programs.hyprland = {
   enable  = true;
 };
-
-environment.variables.EDITOR = "nvim";
-
-environment.systemPackages = with pkgs; [
-  loupe  # Gnome photo
-  papers # Gnome pdf
-  baobab # Gnome disk analizer
-  nautilus # Gnome file manager
-  snapshot # Gnome camera
-  gnome-disk-utility
-  weather
-  dconf-editor # GTK settings - remove buttons
-
-  hyprpicker
-];
 
 }

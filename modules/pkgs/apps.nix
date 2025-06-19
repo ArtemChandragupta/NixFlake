@@ -1,24 +1,31 @@
-{ pkgs, var, ... }:{
+{ pkgs, ... }:{
 
-environment.systemPackages = if var.init
-  then with pkgs; [ kitty ]
-  else with pkgs; [
-    kitty
-    obsidian
-    fragments
-    icon-library
-    file-roller
+environment.systemPackages = with pkgs; [
+  loupe              # Gnome photo
+  papers             # Gnome pdf
+  baobab             # Gnome disk analizer
+  nautilus           # Gnome file manager
+  snapshot           # Gnome camera
+  gnome-disk-utility # Gnome disk scanner
+  dconf-editor       # GTK settings - remove buttons
 
-    telegram-desktop
-    localsend
+  hyprpicker
 
-    libreoffice
-    zola
-    mendeley
+  obsidian
+  fragments
+  icon-library
+  file-roller
 
-    inkscape
-    # drawio
-    dosbox-staging
-  ];
+  telegram-desktop
+  localsend
+
+  libreoffice
+  zola
+  mendeley
+
+  inkscape
+  # drawio
+  dosbox-staging
+];
 
 }
