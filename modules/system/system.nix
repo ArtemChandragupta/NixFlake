@@ -19,8 +19,6 @@ programs.nh = {
 };
 
 services.gvfs.enable     = true; # For trash folder and other
-hardware.graphics.enable = true;
-security.soteria.enable  = true;
-# security.polkit.enable   = true;
+security.soteria.enable  = true; # For polkit authentification
 
 }
