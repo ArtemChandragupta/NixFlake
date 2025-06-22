@@ -7,6 +7,7 @@ nixpkgs.config = {
 
 nixpkgs.overlays = [( final: prev: {
   # xdg-desktop-portal-hyprland = pkgs-u-small.xdg-desktop-portal-hyprland;
+  mpd = pkgs-u-small.mpd;
 })];
 
 }
