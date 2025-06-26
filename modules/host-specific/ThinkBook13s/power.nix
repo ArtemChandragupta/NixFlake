@@ -16,7 +16,6 @@ services.auto-cpufreq = {
   };
 };
 services.upower.enable = true; # For battery service
-# services.power-profiles-daemon.enable = false;
 services.power-profiles-daemon = {
   enable = true;
 };

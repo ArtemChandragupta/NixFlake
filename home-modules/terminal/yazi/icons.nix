@@ -71,6 +71,7 @@ programs.yazi.theme.icon.globs = [
         { name = "*fetchWlppr.nix";text = "󰭽"; fg = "#7ebae4"; }
       { name = "*waybar/";       text = "󱟛"; }
       { name = "*zen-mode/";     text = "󰚀"; }
+        { name = "*modules.nix"; text = "󰞤"; fg = "#7ebae4"; }
       { name = "*binds.nix";     text = "󰌌"; fg = "#7ebae4"; }
       { name = "*rules.nix";     text = ""; fg = "#7ebae4"; }
       { name = "*screenlock.nix";text = "󰷛"; fg = "#7ebae4"; }
@@ -129,7 +130,6 @@ programs.yazi.theme.icon.globs = [
       { name = "*starship.nix";  text = "󱓞"; fg = "#7ebae4"; }
 
     { name = "*stylix.nix";    text = "󰃣"; fg = "#7ebae4"; }
-    { name = "*xdg.nix";       text = "󱅷"; fg = "#7ebae4"; }
 
   { name = "*modules/";      text = "󱁿"; }
     { name = "*host-specific/";text = "󰛧"; }
@@ -138,7 +138,6 @@ programs.yazi.theme.icon.globs = [
         { name = "*power.nix";     text = "󰓅"; fg = "#7ebae4"; }
         { name ="*remote-desktop.nix";text="󰢹"; fg ="#7ebae4"; }
       { name = "*homePC/";      text = "󰪫"; }
-        { name = "*autologin.nix"; text = "󰗽"; fg = "#7ebae4"; }
         { name = "*nvidia.nix";    text = "󰖂"; fg = "#7ebae4"; }
         { name = "*virtual.nix";   text = ""; fg = "#7ebae4"; }
 
@@ -155,7 +154,6 @@ programs.yazi.theme.icon.globs = [
       { name = "*boot.nix";      text = "󱫡"; fg = "#7ebae4"; }
       { name = "*locales.nix";   text = "󱀍"; fg = "#7ebae4"; }
       { name = "*networking.nix";text = "󰀂"; fg = "#7ebae4"; }
-      { name = "*nixpkgs.nix";   text = "󰏖"; fg = "#7ebae4"; }
       { name = "*sound.nix";     text = "󱀞"; fg = "#7ebae4"; }
       { name = "*system.nix";    text = "󰘳"; fg = "#7ebae4"; }
       { name = "*usb.nix";       text = "󱊞"; fg = "#7ebae4"; }
@@ -163,7 +161,6 @@ programs.yazi.theme.icon.globs = [
 
     { name = "*wm/";           text = ""; }
       { name = "*dm.nix";        text = "󰍂"; fg = "#7ebae4"; }
-      { name = "*gnome.nix";     text = ""; fg = "#7ebae4"; }
       { name = "*hyprland.nix";  text = ""; fg = "#7ebae4"; }
 ];
 

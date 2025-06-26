@@ -1,14 +1,8 @@
 {
 
 programs.waybar.settings.mainBar = {
-
   margin = "5px 10px -4px 10px";
   layer  = "top";
-
-  modules-left   = [ "custom/flake" "tray" "hyprland/workspaces" ];
-  modules-center = [ "clock" ];
-  modules-right  = [ "battery" "cpu" "temperature" "memory" "backlight" "pulseaudio" ];
-
 
   "custom/flake" = {
     format   = " ";
@@ -26,6 +20,47 @@ programs.waybar.settings.mainBar = {
     all-outputs = "true";
     format   = "{id}: {windows}";
     on-click = "activate";
+    window-rewrite-default = "";
+    window-rewrite = {
+      "title<.*Yazi.*>" = "󰇥";
+      "class<obsidian>" = "";
+      "class<com.github.ztefn.haguichi>" = "";
+      "class<draw.io>"  = "󰕣";
+      "class<firefox>"     = "󰈹";
+      "class<firefox-esr>" = "󰈹";
+      "class<discord>"  = "";
+      "class<kitty>"    = "";
+      "class<mpv>"      = "󰃽";
+      "class<neovide>"  = "";
+
+      "class<org.gnome.Software>" = "󱗼";
+      "class<org.gnome.Nautilus>" = "󰪶";
+      "class<org.gnome.Papers>"   = "";
+      "class<org.gnome.Loupe>"    = "";
+
+      "class<com.moonlight_stream.Moonlight>"= "󰢹";
+      "class<com.github.rafostar.Clapper>"   = "󱉺";
+      "class<Mendeley Reference Manager>" = "";
+      "class<de.haeckerfelix.Fragments>"  = "";
+      "class<io.github.nokse22.Exhibit>"  = "󰐫";
+      "class<com.saivert.pwvucontrol>"    = "󰴸";
+      "class<com.usebottles.bottles>" = "";
+      "class<page.kramo.Cartridges>"  = "";
+      "class<org.inkscape.Inkscape>"  = "";
+      "class<org.telegram.desktop>"   = "";
+      "class<libreoffice-writer>"     = "";
+      "class<libreoffice-calc>"       = "";
+      "class<libreoffice-startcenter>"= "";
+      "class<app.drey.Dialect>" = "󱁥";
+      "class<org.pwmt.zathura>" = "";
+      "class<teams-for-linux>"  = "󰊻";
+      "class<dosbox-staging>"   = "󰚴";
+      "class<localsend_app>"    = "󱗿";
+      "class<virt-manager>"          = "";
+      "class<.virt-manager-wrapped>" = "";
+      "class<calc>"     = "󰇃";
+      "class<openscad>" = "";
+    };
   };
 
 
@@ -74,6 +109,14 @@ programs.waybar.settings.mainBar = {
     format-icons   = ["󰃞 " "󰃟 " "󰃠 "];
   };
   "pulseaudio" = {
+    format-icons = [" " " " " " ];
+    format = "{icon}{volume}% {format_source}";
+    format-muted = "<span color='#6D5930'> {volume}%</span> {format_source}";
+    format-source = "";
+    format-source-muted = "<span color='#6D5930'></span>";
+    on-click = "focusCursor center | pwvucontrol";
+  };
+  "pulseaudio#home" = {
     format-icons = [" " " " " " ];
     format = "{icon}{volume}% {format_source}";
     format-muted = "<span color='#6D5930'> {volume}%</span> {format_source}";

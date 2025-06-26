@@ -1,13 +1,24 @@
 { var, ... }:{
 
-  imports = [ 
-    ./${var.host}
-    ./icons.nix
-  ];
+imports = [ 
+  ./modules.nix
+];
 
 programs.waybar = {
   enable = true;
-  style  = ./${var.host}/style.css;
+
+  settings.mainBar = {
+    modules-left   = [ "custom/flake" "tray" "hyprland/workspaces" ];
+    modules-center = [ "clock" ];
+  };
+  
+  settings.mainBar.modules-right = if var.host == "homePC" then [ 
+              "cpu" "temperature" "memory"             "pulseaudio#home" 
+  ] else [ 
+    "battery" "cpu" "temperature" "memory" "backlight" "pulseaudio" 
+  ];
+
+  style = ./style.css;
 };
 
 wayland.windowManager.hyprland.settings.exec-once = ["waybar"];

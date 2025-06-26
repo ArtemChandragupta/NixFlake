@@ -1,4 +1,4 @@
-{
+{ pkgs-u-small, inputs, ... }:{
 
 imports = [
   ./apps.nix
@@ -8,5 +8,14 @@ imports = [
   ./games.nix
   ./utils.nix
 ];
+
+nixpkgs.config = {
+  permittedInsecurePackages = [];
+  allowUnfree = true;
+};
+
+nixpkgs.overlays = [( final: prev: {
+  # mpd = pkgs-u-small.mpd;
+})];
 
 }

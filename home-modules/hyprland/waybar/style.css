@@ -1,8 +1,5 @@
 * {
-  /* font-family: "JetBrainsMono Nerd Font"; */
-  /* font-family: "NotoSans Nerd Font Propo"; */
   font-family: "Noto Sans NF";
-  /* font-family: "JetBrainsMono Nerd Font Propo"; */
   font-size: 14px;
   font-weight: 600;
 }
@@ -28,7 +25,8 @@ tooltip {
 #temperature,
 #memory,
 #backlight,
-#pulseaudio {
+#pulseaudio,
+#pulseaudio.home {
   background: rgba(40, 40, 40, 0.9);
   padding: 0 10px;
   border-radius: 10px;
@@ -43,6 +41,7 @@ tooltip {
 
 #tray {
   margin: 0 8px;
+  color: #EBDBB2;
 }
 
 #workspaces {
@@ -96,7 +95,7 @@ tooltip {
 #memory {
   color: #83a589;
   border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
   margin-right: 8px;
 }
 
@@ -111,4 +110,8 @@ tooltip {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   padding-left: 0;
+}
+
+#pulseaudio.home {
+  color: #d79921;
 }

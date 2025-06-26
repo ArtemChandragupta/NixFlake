@@ -3,15 +3,9 @@
 gtk.iconTheme = {
   name = "Gruvbox Plus Dark";
   package = pkgs.callPackage ./gruvbox-plus-dark.nix { };
-  # package = pkgs.papirus-icon-theme;
-  # name    = "Papirus-Dark";
 };
 
 xdg.desktopEntries = {
-  auto-cpufreq-gtk = {
-    name      = "AutoCpuFreq";
-    noDisplay = true;
-  };
   Helix = {
     name      = "Helix";
     noDisplay = true;

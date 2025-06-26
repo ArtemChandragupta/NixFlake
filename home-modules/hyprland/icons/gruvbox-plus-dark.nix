@@ -7,17 +7,10 @@ stdenvNoCC.mkDerivation {
 
   src = fetchFromGitHub {
     owner = "SylEleuth";
-    repo = "gruvbox-plus-icon-pack";
-    rev = "5acbc2fd175bfedcafe37740fcc9581a92ea6588";
-    hash = "sha256-hIbWjg8QsH6nqD3T6US6e2WAgmofjzCrejwWVvZywoA=";
+    repo  = "gruvbox-plus-icon-pack";
+    rev   = "5bc0d6fceba1f55b80fd3957c8cda1d7b1d7a2b6";
+    hash  = "sha256-EoS1+j6fCYDGwlTEli4YQGBVSy3wtV6wwjUyqP+TPVE=";
   };
-
-  # src = fetchFromGitHub {
-  #   owner = "artemchandragupta";
-  #   repo = "gruvbox-plus-icon-pack";
-  #   rev = "e2b9a8fdeadc231dec0f9a733c3770356abf94a8";
-  #   hash = "sha256-CH2PhTdwBAC2YjDMbyX0Yu/ggq/qWjGhceujUZ8uy+I=";
-  # };
 
   dontBuild = true;
 
