@@ -1,10 +1,8 @@
 { pkgs, var, ... }:{
 
 environment.systemPackages = with pkgs; [
-  ppsspp-sdl-wayland
-  pcsx2
+  bottles
   cartridges
-
   prismlauncher
 ];
 
@@ -22,8 +20,8 @@ services.logmein-hamachi.enable = true;
 services.syncthing = {
   enable = true;
   user   = "${var.user}";
-  dataDir   = "/home/${var.user}/Sync";
-  configDir = "/home/${var.user}/Sync/.config";
+  dataDir   = "/home/${var.user}/Games/Sync";
+  configDir = "/home/${var.user}/Games/Sync/.config";
 };
 
 }

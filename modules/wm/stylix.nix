@@ -1,6 +1,7 @@
 { pkgs, ... }:{
 
 stylix = {
+  enable = true;
   autoEnable = false;
   image = pkgs.fetchurl {
     url = "https://github.com/lunik1/nixos-logo-gruvbox-wallpaper/blob/master/png/gruvbox-dark-blue.png?raw=true";
