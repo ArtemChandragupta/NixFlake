@@ -1,8 +1,0 @@
-{
-  "allowDuplicates":false,
-  "historyFile":"hystory.json",
-  "logFile":"clipse.log",
-  "maxHistory":400,
-  "tempDir":"tmp_files",
-  "themeFile":"gruvbox.json"
-}

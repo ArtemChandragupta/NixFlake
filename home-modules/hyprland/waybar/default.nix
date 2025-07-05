@@ -21,6 +21,4 @@ programs.waybar = {
   style = ./style.css;
 };
 
-wayland.windowManager.hyprland.settings.exec-once = ["waybar"];
-
 }

@@ -13,8 +13,4 @@ home.packages = [
   wallpaperScript
 ];
 
-wayland.windowManager.hyprland.settings.exec-once = [
-  "swww-daemon"
-];
-
 }

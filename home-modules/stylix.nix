@@ -22,6 +22,7 @@ stylix = {
     base0F = "#d65d0e"; # brown
   }; 
   targets.gtk.enable = true;
+  targets.gtk.flatpakSupport.enable = true;
 
   cursor = {
     package = pkgs.bibata-cursors;

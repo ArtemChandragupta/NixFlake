@@ -18,6 +18,7 @@ environment.systemPackages = with pkgs; [
 
   telegram-desktop
   localsend
+  translate-shell
 
   libreoffice
   zola

@@ -85,8 +85,6 @@ programs.yazi.theme.icon.globs = [
       { name = "*TeX.nix";       text = ""; fg = "#7ebae4"; }
 
     { name = "*terminal/";     text = ""; }
-      { name = "*calculator/";   text = "󰇃"; }
-      { name = "*clipse/";       text = "󱓥"; }
       { name = "*helix/";        text = "󰚄"; }
         { name = "*languages.nix"; text = ""; fg = "#7ebae4"; }
       { name = "*nixvim/";       text = ""; }
@@ -123,10 +121,12 @@ programs.yazi.theme.icon.globs = [
         { name = "*opener.nix";    text = ""; fg = "#7ebae4"; }
         { name = "*theme.nix";     text = "󰣆"; fg = "#7ebae4"; }
       { name = "*btm.nix";       text = "󱔓"; fg = "#7ebae4"; }
+      { name = "*clipse.nix";    text = "󱓥"; fg = "#7ebae4"; }
       { name = "*direnv.nix";    text = "󰇐"; fg = "#7ebae4"; }
       { name = "*fastfetch.nix"; text = "󱡠"; fg = "#7ebae4"; }
       { name = "*git.nix";       text = "󰊢"; fg = "#7ebae4"; }
       { name = "*kitty.nix";     text = "󰄛"; fg = "#7ebae4"; }
+      { name = "*numbat.nix";    text = "󰇃"; fg = "#7ebae4"; }
       { name = "*starship.nix";  text = "󱓞"; fg = "#7ebae4"; }
 
     { name = "*stylix.nix";    text = "󰃣"; fg = "#7ebae4"; }
