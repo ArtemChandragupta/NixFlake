@@ -2,35 +2,24 @@
 
 programs = {
   git = {
-    enable = true;
+    enable    = true;
     userName  = "ArtemChandragupta";
     userEmail = "artem020503@gmail.com";
     diff-so-fancy.enable = true;
   };
   gh = {
     enable = true;
-    gitCredentialHelper = {
-      enable = true;
-    };
+    gitCredentialHelper.enable = true;
   };
   lazygit = {
-    enable = true;
+    enable  = true;
     settings = {
       git.paging.pager = "diff-so-fancy";
       gui = {
         nerdFontsVersion = "3";
-        border = "single";
+        border= "single";
         spinner = {
-          frames = [
-            "⠋"
-            "⠙"
-            "⠩"
-            "⠸"
-            "⠼"
-            "⠴"
-            "⠦"
-            "⠧"
-          ];
+          frames = [ "⠋" "⠙" "⠩" "⠸" "⠼" "⠴" "⠦" "⠧" ];
           rate = 60;
         };
       };
