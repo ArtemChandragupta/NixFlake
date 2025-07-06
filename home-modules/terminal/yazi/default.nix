@@ -1,14 +1,14 @@
-{ pkgs, ... }:let
+{ pkgs, ... }:
+let
   paste = pkgs.writers.writeNuBin "paste" (builtins.readFile ./paste.nu);
 in{
 
 imports = [
-  ./plugins
-
   ./filetype.nix
   ./icons.nix
   ./keymap.nix
   ./opener.nix
+  ./plugins.nix  
   ./theme.nix
 ];
 

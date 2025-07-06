@@ -1,13 +1,16 @@
-{
+{ pkgs, ... }:{
 
 programs.yazi = {
-  plugins = {
-    "smart-enter" = ./smart-enter;
-    "full-border" = ./full-border;
-    "starship"    = ./starship;
-    "ouch"        = ./ouch;
+  plugins = with pkgs.yaziPlugins; {
+    "smart-enter" = smart-enter;
+    "full-border" = full-border;
+    "starship"    = starship;
+    "ouch"        = ouch;
   };
-  initLua = ./init.lua;
+  initLua = /*lua*/''
+    require("full-border"):setup()
+    require("starship"   ):setup()
+  '';
   settings.plugin.prepend_previewers = [
       { mime = "application/*zip";            run = "ouch"; }
       { mime = "application/x-tar";           run = "ouch"; }

@@ -97,6 +97,7 @@ programs.yazi.theme.icon.globs = [
         { name = "*typst.nix";     text = ""; fg = "#7ebae4"; }
         { name = "*keymap.nix";    text = "󰌌"; fg = "#7ebae4"; }
         { name = "*neovide.nix";   text = "󱘗"; fg = "#7ebae4"; }
+        { name = "*lua/";          text = ""; }
         { name = "*plugins/";      text = "󰐱"; }
           { name = "*autopairs.nix"; text = "󰅩"; fg = "#7ebae4"; }
           { name = "*blink-cmp.nix"; text = "󰫢"; fg = "#7ebae4"; }
@@ -115,10 +116,10 @@ programs.yazi.theme.icon.globs = [
         { name = "*nushell/";      text = ""; }
         { name = "*bash.nix";      text = ""; fg = "#7ebae4"; }
       { name = "*yazi/";         text = "󰇥"; }
-        { name = "*lua/";          text = ""; }
         { name = "*filetype.nix";  text = ""; fg = "#7ebae4"; }
         { name = "*icons.nix";     text = ""; fg = "#7ebae4"; }
         { name = "*opener.nix";    text = ""; fg = "#7ebae4"; }
+        { name = "*plugins.nix";    text = "󰐱"; fg = "#7ebae4"; }
         { name = "*theme.nix";     text = "󰣆"; fg = "#7ebae4"; }
       { name = "*btm.nix";       text = "󱔓"; fg = "#7ebae4"; }
       { name = "*clipse.nix";    text = "󱓥"; fg = "#7ebae4"; }
