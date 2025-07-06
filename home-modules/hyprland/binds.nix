@@ -25,9 +25,6 @@ bind = [
   " , XF86Calculator, exec, open-calc"
 
   "$mainMod, W, exec, nu -c 'try {pkill waybar} catch {waybar}'"
-  "$mainMod, A, exec, nu -c 'ags -q | ags'"
-  "$mainMod, I, exec, ags -t icon-browser"
-  "$mainMod SHIFT, I, exec, ags -t applauncher"
 
   "$mainMod, left, movefocus, l"
   "$mainMod, right, movefocus, r"
