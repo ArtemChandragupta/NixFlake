@@ -11,7 +11,6 @@ bind = [
   "$mainMod, F, fullscreen"
   "$mainMod, V, togglefloating,"
   "$mainMod, J, togglesplit,"
-  "$mainMod, P, pseudo,"
 
   "$mainMod, T, exec, kitty"
   "$mainMod, C, exec, hyprpicker -a"

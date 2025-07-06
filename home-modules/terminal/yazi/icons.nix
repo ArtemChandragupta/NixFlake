@@ -72,6 +72,7 @@ programs.yazi.theme.icon.globs = [
       { name = "*waybar/";       text = "󱟛"; }
       { name = "*zen-mode/";     text = "󰚀"; }
         { name = "*modules.nix"; text = "󰞤"; fg = "#7ebae4"; }
+      { name = "*autostart.nix"; text = "󱣲"; fg = "#7ebae4"; }
       { name = "*binds.nix";     text = "󰌌"; fg = "#7ebae4"; }
       { name = "*rules.nix";     text = ""; fg = "#7ebae4"; }
       { name = "*screenlock.nix";text = "󰷛"; fg = "#7ebae4"; }
