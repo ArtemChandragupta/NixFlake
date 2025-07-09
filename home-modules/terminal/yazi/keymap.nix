@@ -3,6 +3,11 @@
 programs.yazi.keymap = {
   mgr.prepend_keymap = [
     {
+      on   = [ "g" "i" ];
+      run  = "plugin lazygit";
+      desc = "run lazygit";
+    }
+    {
       on   = "<Enter>";
       run  = "plugin smart-enter";
       desc = "Enter directory or open file";

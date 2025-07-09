@@ -5,6 +5,7 @@ programs.yazi = {
     "smart-enter" = smart-enter;
     "full-border" = full-border;
     "starship"    = starship;
+    "lazygit"     = lazygit;
     "ouch"        = ouch;
   };
   initLua = /*lua*/''
