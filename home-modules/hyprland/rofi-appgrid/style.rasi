@@ -1,6 +1,5 @@
 * {
-  font:  "noto sans medium 15";
-  /* font: "dejavu sans 15"; */
+  font: "JetBrainsMono Nerd Font medium 15";
   text-color:  #989899FF;
 }
 
