@@ -3,7 +3,7 @@
 programs.yazi.keymap = {
   mgr.prepend_keymap = [
     {
-      on   = [ "g" "i" ];
+      on   = [ "g" "g" ];
       run  = "plugin lazygit";
       desc = "run lazygit";
     }
