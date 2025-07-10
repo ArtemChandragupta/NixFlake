@@ -1,10 +1,5 @@
 { pkgs, var, ... }:{
 
-services.displayManager.gdm = {
-  # enable  = true;
-  wayland = true;
-};
-
 services.greetd = {
   enable = true;
   settings = {
