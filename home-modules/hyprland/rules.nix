@@ -8,6 +8,7 @@ wayland.windowManager.hyprland.settings.windowrulev2 = [
   "float,class:(de.haeckerfelix.Fragments)"
   "float,class:(com.saivert.pwvucontrol)"
   "float,class:(.blueman-manager-wrapped)"
+  "float,class:(.Telegram-wrapped)"
 ];
 
 }
