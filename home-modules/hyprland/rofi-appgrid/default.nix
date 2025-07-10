@@ -12,7 +12,7 @@ home = {
 programs.rofi = {
   enable  = true;
   package = pkgs.rofi-wayland;
-  extraConfig.terminal = "kitty";
+  terminal = "kitty";
 };
 
 }
