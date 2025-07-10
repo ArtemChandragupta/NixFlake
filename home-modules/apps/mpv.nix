@@ -2,10 +2,10 @@
 
 programs.mpv = {
   enable = true;
-  scripts = with pkgs; [
-    mpvScripts.uosc
-    mpvScripts.thumbfast
-    mpvScripts.mpv-cheatsheet
+  scripts = with pkgs.mpvScripts; [
+    uosc
+    thumbfast
+    mpv-cheatsheet
   ];
   config = {
     osc       = false;

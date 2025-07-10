@@ -84,20 +84,20 @@ programs.yazi.theme.icon.globs = [
       { name = "*julia.nix";     text = ""; fg = "#7ebae4"; }
       { name = "*python.nix";    text = "󰌠"; fg = "#7ebae4"; }
       { name = "*TeX.nix";       text = ""; fg = "#7ebae4"; }
+      { name = "*css.nix";       text = "󰌜"; fg = "#7ebae4"; }
+      { name = "*js.nix";        text = ""; fg = "#7ebae4"; }
+      { name = "*lua.nix";       text = "󰢱"; fg = "#7ebae4"; }
+      { name = "*nushell.nix";   text = ""; fg = "#7ebae4"; }
+      { name = "*rust.nix";      text = ""; fg = "#7ebae4"; }
+      { name = "*toml.nix";      text = ""; fg = "#7ebae4"; }
+      { name = "*typst.nix";     text = ""; fg = "#7ebae4"; }
+      { name = "*keymap.nix";    text = "󰌌"; fg = "#7ebae4"; }
+      { name = "*neovide.nix";   text = "󱘗"; fg = "#7ebae4"; }
 
     { name = "*terminal/";     text = ""; }
       { name = "*helix/";        text = "󰚄"; }
         { name = "*languages.nix"; text = ""; fg = "#7ebae4"; }
       { name = "*nixvim/";       text = ""; }
-        { name = "*css.nix";       text = "󰌜"; fg = "#7ebae4"; }
-        { name = "*js.nix";        text = ""; fg = "#7ebae4"; }
-        { name = "*lua.nix";       text = "󰢱"; fg = "#7ebae4"; }
-        { name = "*nushell.nix";   text = ""; fg = "#7ebae4"; }
-        { name = "*rust.nix";      text = ""; fg = "#7ebae4"; }
-        { name = "*toml.nix";      text = ""; fg = "#7ebae4"; }
-        { name = "*typst.nix";     text = ""; fg = "#7ebae4"; }
-        { name = "*keymap.nix";    text = "󰌌"; fg = "#7ebae4"; }
-        { name = "*neovide.nix";   text = "󱘗"; fg = "#7ebae4"; }
         { name = "*lua/";          text = ""; }
         { name = "*plugins/";      text = "󰐱"; }
           { name = "*autopairs.nix"; text = "󰅩"; fg = "#7ebae4"; }
