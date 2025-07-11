@@ -35,6 +35,7 @@ programs.waybar.settings.mainBar = {
 
       "class<org.gnome.Software>" = "󱗼";
       "class<org.gnome.Nautilus>" = "󰪶";
+      "class<org.gnome.baobab>"   = "󰙅";
       "class<org.gnome.Papers>"   = "";
       "class<org.gnome.Loupe>"    = "";
 
