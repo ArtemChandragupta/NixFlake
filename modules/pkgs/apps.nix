@@ -7,7 +7,7 @@ environment.systemPackages = with pkgs; [
   nautilus           # Gnome file manager
   snapshot           # Gnome camera
   gnome-disk-utility # Gnome disk scanner
-  dconf-editor       # GTK settings - remove buttons
+  refine             # GTK settings - remove buttons
 
   hyprpicker
 
