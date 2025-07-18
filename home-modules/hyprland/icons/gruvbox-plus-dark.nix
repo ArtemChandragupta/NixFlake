@@ -2,14 +2,14 @@
 , fetchFromGitHub
 }:
 stdenvNoCC.mkDerivation {
-  name = "Gruvbox Plus Dark";
+  name  = "Gruvbox Plus Dark";
   pname = "Gruvbox Plus Dark";
 
   src = fetchFromGitHub {
     owner = "SylEleuth";
     repo  = "gruvbox-plus-icon-pack";
-    rev = "0985e0665c0185cea7ef27572b04fb6110bb5cbc";
-    hash = "sha256-Fe6I/Okg/Lrir2BRSmqd16xBMNiVlhgxDZ15xPI0ctQ=";
+    rev   = "145f7ee4e0f8f167b0383e7e0a3e153034ab4634";
+    hash  = "sha256-1BNJ0zsixkQ++SaSq2pCmxlXmQJCCs5bAXjqNuvt7Yg=";
   };
 
   dontBuild = true;

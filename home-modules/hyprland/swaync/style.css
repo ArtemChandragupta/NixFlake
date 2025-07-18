@@ -1,21 +1,23 @@
 * {
   font-family: cantarell;
+  /* font-family: Jet brains mono nerd font; */
 }
 
 
 .control-center {
   background: alpha(#282828, 0.9);
   border-radius: 16px;
+  width: 10px;
 }
 
 
 .widget-buttons-grid {
   font-size: 36px;
-  background: transparent;
+  color: #989899;
 }
 .widget-buttons-grid>flowbox>flowboxchild>button {
   padding: 6px 62px;
-  background: transparent;
+  background-color: transparent;
   border-radius: 8px;
 }
 .widget-buttons-grid>flowbox>flowboxchild>button:hover {
@@ -24,13 +26,15 @@
 }
 .widget-buttons-grid>flowbox>flowboxchild:last-child {
   border-left: 2px solid #989899;
+  border-radius: 0px;
 }
 .widget-buttons-grid>flowbox>flowboxchild:first-child {
   border-right: 2px solid #989899;
+  border-radius: 0px;
 }
 
 
-.widget-dnd {
+.widget-dnd>label {
   color: #989899;
   background: transparent;
   font-size: 24px;
@@ -48,6 +52,9 @@
 .widget-dnd > switch:checked:hover {
   background: #fb4934;
 }
+.widget-dnd>switch>slider {
+  background: #383838;
+}
 
 
 .widget-title {
@@ -55,6 +62,7 @@
   font-size: 24px;
   border-top: 2px solid #989899;
   padding: 16px 0;
+  margin: 16px 0;
 }
 .widget-title button {
   border-radius: 16px;
@@ -70,12 +78,28 @@
   background: #cc241d;
 }
 
+.notification-background {
+  background-color: transparent;
+}
+
+.notification-group {
+  background-color: transparent;
+}
+
+.notification-group-icon, .notification-group-header, .notification-group-buttons {
+  color: #989899;
+  opacity: 1;
+}
 
 .notification {
   border: none;
   box-shadow: none;
   color: #989899;
   opacity: 1;
+}
+
+.notification-default-action>label {
+  color: #989899;
 }
 
 
@@ -90,4 +114,5 @@
 .control-center-list-placeholder {
   color: #989899;
   opacity: 1;
+  font-size: 24px;
 }
