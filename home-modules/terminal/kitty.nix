@@ -28,6 +28,7 @@ programs.kitty = {
     enabled_layouts = "splits,stack";
     confirm_os_window_close = 0;
     window_padding_width = 5;
+    allow_remote_control = "yes";
 
     background_opacity = "0.9";
     dynamic_background_opacity = "yes";

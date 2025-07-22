@@ -1,7 +1,7 @@
 {
 
 imports = [
-  ./languages.nix
+  ./languages
   ./keymap.nix
 ];
 
@@ -13,8 +13,17 @@ programs.helix = {
       line-number = "relative";
       color-modes = true;
 
+      statusline = {
+        right = [
+          "diagnostics"
+          "position"
+          "position-percentage"
+          "spacer"
+        ];
+      };
+
       gutters = [
-        "line-numbers"
+        # "line-numbers"
         "diff"
       ];
 
@@ -26,8 +35,8 @@ programs.helix = {
       soft-wrap.wrap-indicator = "";
 
       cursor-shape = {
-        # normal = "underline";
-        # select = "underline";
+        normal = "underline";
+        select = "underline";
         insert = "bar";
       };
       whitespace.render.tab = "all";

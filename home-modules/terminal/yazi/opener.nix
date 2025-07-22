@@ -38,6 +38,20 @@ programs.yazi.settings = {
         block = true;
       }
     ];
+    
+    "hx-write" = [
+      {
+        run   = ''
+          kitty @ set-font-size 16
+          kitty @ set-background-opacity 1
+          hx "$@"
+          clear
+          kitty @ set-font-size 0
+          kitty @ set-background-opacity --toggle 1
+        '';
+        block = true;
+      }
+    ];
     "zathura" = [
       {
         run   = ''zathura "$@"'';
@@ -63,11 +77,11 @@ programs.yazi.settings = {
     }
     {
       name = "*.typ";
-      use  = ["Neovide" "hx" "Nvim"];
+      use  = ["hx-write" "Neovide" "hx" "Nvim"];
     }
     {
       mime = "text/*";
-      use  = ["Nvim" "hx" "Neovide"];
+      use  = ["hx" "Nvim" "Neovide"];
     }
     {
       mime = "image/*";
