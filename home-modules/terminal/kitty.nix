@@ -19,10 +19,10 @@ programs.kitty = {
     "ctrl+shift+up"    = "resize_window taller";
     "ctrl+shift+down"  = "resize_window shorter";
 
-    "alt+left"  = "neighboring_window left";
-    "alt+right" = "neighboring_window right";
-    "alt+up"    = "neighboring_window up";
-    "alt+down"  = "neighboring_window down";
+    # "alt+left"  = "neighboring_window left";
+    # "alt+right" = "neighboring_window right";
+    # "alt+up"    = "neighboring_window up";
+    # "alt+down"  = "neighboring_window down";
   };
   settings = {
     enabled_layouts = "splits,stack";

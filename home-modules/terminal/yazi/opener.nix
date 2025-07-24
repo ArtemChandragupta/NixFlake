@@ -37,8 +37,7 @@ programs.yazi.settings = {
         run   = ''hx "$@"'';
         block = true;
       }
-    ];
-    
+    ];    
     "hx-write" = [
       {
         run   = ''
@@ -50,6 +49,7 @@ programs.yazi.settings = {
           kitty @ set-background-opacity --toggle 1
         '';
         block = true;
+        desc = "hx-writer";
       }
     ];
     "zathura" = [
@@ -81,7 +81,7 @@ programs.yazi.settings = {
     }
     {
       mime = "text/*";
-      use  = ["hx" "Nvim" "Neovide"];
+      use  = ["hx" "hx-write" "Nvim" "Neovide"];
     }
     {
       mime = "image/*";
