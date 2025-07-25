@@ -9,7 +9,9 @@
       "C-g" = [
         ":write-all"
         ":new"
-        ":insert-output lazygit"
+        ":insert-output lazygit >/dev/tty"
+        ":set mouse false"
+        ":set mouse true"
         ":buffer-close!"
         ":redraw"
         ":reload-all"

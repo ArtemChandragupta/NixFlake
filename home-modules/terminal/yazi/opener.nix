@@ -76,6 +76,10 @@ programs.yazi.settings = {
       use  = ["Neovide" "Nvim"];
     }
     {
+      name = "*.md";
+      use  = ["hx-write" "Nvim"];
+    }
+    {
       name = "*.typ";
       use  = ["hx-write" "Neovide" "hx" "Nvim"];
     }

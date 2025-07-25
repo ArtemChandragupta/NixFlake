@@ -87,12 +87,11 @@ programs.yazi.theme.icon.globs = [
       { name = "*css.nix";       text = "󰌜"; fg = "#7ebae4"; }
       { name = "*js.nix";        text = ""; fg = "#7ebae4"; }
       { name = "*lua.nix";       text = "󰢱"; fg = "#7ebae4"; }
+      { name = "*markdown.nix";  text = "󰍔"; fg = "#7ebae4"; }
       { name = "*nushell.nix";   text = ""; fg = "#7ebae4"; }
       { name = "*rust.nix";      text = ""; fg = "#7ebae4"; }
       { name = "*toml.nix";      text = ""; fg = "#7ebae4"; }
       { name = "*typst.nix";     text = ""; fg = "#7ebae4"; }
-      { name = "*keymap.nix";    text = "󰌌"; fg = "#7ebae4"; }
-      { name = "*neovide.nix";   text = "󱘗"; fg = "#7ebae4"; }
 
     { name = "*terminal/";     text = ""; }
       { name = "*helix/";        text = "󰚄"; }
@@ -113,6 +112,8 @@ programs.yazi.theme.icon.globs = [
           { name = "*whichkey.nix";  text = "󰌒"; fg = "#7ebae4"; }
           { name = "*wrapping.nix";  text = "󰖶"; fg = "#7ebae4"; }
           { name = "*zen-mode.nix";  text = "󰚀"; fg = "#7ebae4"; }
+        { name = "*keymap.nix";    text = "󰌌"; fg = "#7ebae4"; }
+        { name = "*neovide.nix";   text = "󱘗"; fg = "#7ebae4"; }
       { name = "*shell/";       text = ""; }
         { name = "*nushell/";      text = ""; }
         { name = "*bash.nix";      text = ""; fg = "#7ebae4"; }
