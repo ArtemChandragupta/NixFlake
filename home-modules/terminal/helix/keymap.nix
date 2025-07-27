@@ -10,11 +10,7 @@ programs.helix.settings.keys = {
     ];
     g.g = [
       ":write-all"
-      ":new"
-      ":insert-output lazygit"
-      ":set mouse false"
-      ":set mouse true"
-      ":buffer-close!"
+      ":! kitty @ launch --no-response --type=overlay --cwd=current lazygit"
       ":redraw"
       ":reload-all"
     ];
