@@ -12,13 +12,6 @@ programs.helix = {
     language-server.tinymist.config = {
       typstExtraArgs = [ "main.typ" ]; # maybe I need set this in typst projects
       exportPdf = "onType";
-      preview.background = {
-        # enabled = true;
-        args = [
-          "--invert-colors=never"
-          "--open"
-        ];
-      };
     };
 
   };

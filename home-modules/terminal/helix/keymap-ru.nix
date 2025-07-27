@@ -2,13 +2,13 @@
 
 programs.helix.settings.keys = {
   normal = {
-    "q" = [":quit"];
-    "y" = ["yank_to_clipboard"];
-    "d" = [
+    "й" = [":quit"];
+    "н" = ["yank_to_clipboard"];
+    "в" = [
       "yank_to_clipboard"        
       "delete_selection_noyank"
     ];
-    g.g = [
+    "п"."п" = [
       ":write-all"
       ":new"
       ":insert-output lazygit"
@@ -18,17 +18,17 @@ programs.helix.settings.keys = {
       ":redraw"
       ":reload-all"
     ];
-    "C-t" = [ ":! zathura main.pdf &" ];
+    "C-е" = [ ":! zathura main.pdf &" ];
   };
   select = {
-    "y" = [ "yank_to_clipboard" ];
-    "d" = [
+    "н" = [ "yank_to_clipboard" ];
+    "в" = [
       "yank_to_clipboard"        
       "delete_selection_noyank"
     ];
   };
   insert = {
-    "C-v" = [ "paste_clipboard_before" ];
+    "C-м" = [ "paste_clipboard_before" ];
   };
 };
 
