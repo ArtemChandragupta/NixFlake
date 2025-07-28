@@ -11,8 +11,6 @@ programs.helix.settings.keys = {
     g.g = [
       ":write-all"
       ":! kitty @ launch --no-response --type=overlay --cwd=current lazygit"
-      ":new"
-      ":buffer-close!"
       ":redraw"
       ":reload-all"
     ];
