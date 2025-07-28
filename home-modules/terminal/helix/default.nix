@@ -2,6 +2,7 @@
 
 imports = [
   ./languages
+  ./keymap-ru.nix
   ./keymap.nix
 ];
 
