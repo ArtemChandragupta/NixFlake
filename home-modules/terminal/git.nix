@@ -17,12 +17,14 @@ programs = {
       git.paging.pager = "diff-so-fancy";
       gui = {
         nerdFontsVersion = "3";
-        border= "single";
+        border = "single";
         spinner = {
           frames = [ "⠋" "⠙" "⠩" "⠸" "⠼" "⠴" "⠦" "⠧" ];
           rate = 60;
         };
         showCommandLog = false;
+        showPanelJumps = false;
+        showBottomLine = false;
       };
     };
   };
