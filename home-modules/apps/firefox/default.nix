@@ -2,7 +2,6 @@
 
 imports =[
   ./solid
-  # ./transparent
 
   ./bookmarks.nix
   ./config.nix
