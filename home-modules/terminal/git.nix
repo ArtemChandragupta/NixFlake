@@ -22,6 +22,7 @@ programs = {
           frames = [ "⠋" "⠙" "⠩" "⠸" "⠼" "⠴" "⠦" "⠧" ];
           rate = 60;
         };
+        showCommandLog = false;
       };
     };
   };
