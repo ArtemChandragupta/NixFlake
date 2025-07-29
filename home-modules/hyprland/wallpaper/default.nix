@@ -1,12 +1,10 @@
-{ pkgs, var, ... }:
+{ pkgs, ... }:
 let
   wallpaperScript = pkgs.writers.writeNuBin "wallpaperScript"
     (builtins.readFile ./wallpaperScript.nu);
 in{
 
-imports = if !var.init 
-  then [ ./fetchWlppr.nix ]
-  else [ ];
+imports = [ ./fetchWlppr.nix ];
 
 home.packages = [
   pkgs.swww  

@@ -1,11 +1,11 @@
-{ var, ... }:{
+{
 
-imports = if !var.init then [
+imports = [
   # ./haskell.nix
   ./julia.nix
   ./python.nix
   # ./TeX.nix
   ./typst.nix
-] else [ ];
+];
 
 }
