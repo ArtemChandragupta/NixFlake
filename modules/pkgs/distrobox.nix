@@ -2,8 +2,6 @@
 
 virtualisation.docker.enable = true;
 
-environment.systemPackages = [
-  pkgs.distrobox
-];
+environment.systemPackages = [ pkgs.distrobox ];
 
 }
