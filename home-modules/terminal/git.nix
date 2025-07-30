@@ -24,7 +24,6 @@ programs = {
         };
         showCommandLog = false;
         showPanelJumps = false;
-        # showBottomLine = false;
       };
     };
   };

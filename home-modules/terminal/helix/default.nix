@@ -34,7 +34,7 @@ programs.helix = {
         cursor-line = "info";
       };
 
-      soft-wrap.wrap-indicator = "";
+      # soft-wrap.wrap-indicator = "";
 
       # cursor-shape = {
       #   normal = "underline";
