@@ -44,7 +44,6 @@ programs.yazi.settings = {
           kitty @ set-font-size 16
           kitty @ set-background-opacity 1
           hx "$@"
-          clear
           kitty @ set-font-size 0
           kitty @ set-background-opacity --toggle 1
         '';
