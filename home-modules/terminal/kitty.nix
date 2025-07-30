@@ -9,33 +9,19 @@ programs.kitty = {
   keybindings = {
     "ctrl+shift+м" = "paste_from_clipboard";
     "ctrl+shift+с" = "copy_to_clipboard";
-
-    "ctrl+shift+f" = "toggle_layout stack";
-    "ctrl+shift+s" = "launch --location=split";
-    "ctrl+shift+q" = "close_window";
-
-    "ctrl+shift+left"  = "resize_window narrower";
-    "ctrl+shift+right" = "resize_window wider";
-    "ctrl+shift+up"    = "resize_window taller";
-    "ctrl+shift+down"  = "resize_window shorter";
-
-    # "alt+left"  = "neighboring_window left";
-    # "alt+right" = "neighboring_window right";
-    # "alt+up"    = "neighboring_window up";
-    # "alt+down"  = "neighboring_window down";
+    "ctrl+shift+enter" = "launch --cwd=current --type=os-window";
   };
   settings = {
     enabled_layouts = "splits,stack";
     confirm_os_window_close = 0;
     window_padding_width = 5;
-    allow_remote_control = "yes";
+    allow_remote_control = "yes"; # for helix to make font large and dark background
 
     background_opacity = "0.9";
     dynamic_background_opacity = "yes";
 
     cursor            = "#928374";
     cursor_text_color = "background";
-    # cursor_shape      = "block";
     cursor_trail      = 3;
 
     url_color             = "#83a598";

@@ -36,11 +36,11 @@ programs.helix = {
 
       soft-wrap.wrap-indicator = "";
 
-      cursor-shape = {
-        normal = "underline";
-        select = "underline";
-        insert = "bar";
-      };
+      # cursor-shape = {
+      #   normal = "underline";
+      #   select = "underline";
+      #   insert = "bar";
+      # };
       whitespace.render.tab = "all";
       indent-guides = {
         render = true;
