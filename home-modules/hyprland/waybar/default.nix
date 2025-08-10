@@ -8,7 +8,7 @@ programs.waybar = {
   enable = true;
 
   settings.mainBar = {
-    modules-left   = [ "custom/flake" "tray" "hyprland/workspaces" ];
+    modules-left   = [ "hyprland/language" "tray" "hyprland/workspaces" ];
     modules-center = [ "clock" ];
   };
   

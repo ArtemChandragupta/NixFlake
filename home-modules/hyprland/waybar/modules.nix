@@ -8,6 +8,12 @@ programs.waybar.settings.mainBar = {
     format   = " ";
     on-click = "focusCursor center | rofi-appgrid";
   };
+  "hyprland/language" = {
+    format-en = "<span color='#98971a'> </span>";
+    format-ru = "<span color='#458588'> </span>";
+    keyboard-name = "at-translated-set-2-keyboard";
+    on-click = "focusCursor center | rofi-appgrid";
+  };
 
   "tray" = {
     spacing = 8;
