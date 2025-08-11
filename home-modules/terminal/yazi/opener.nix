@@ -48,7 +48,7 @@ programs.yazi.settings = {
           kitty @ set-background-opacity --toggle 1
         '';
         block = true;
-        desc = "hx-writer";
+        desc  = "hx-writer";
       }
     ];
     "zathura" = [

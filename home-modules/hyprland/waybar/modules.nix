@@ -9,8 +9,8 @@ programs.waybar.settings.mainBar = {
     on-click = "focusCursor center | rofi-appgrid";
   };
   "hyprland/language" = {
-    format-en = "<span color='#98971a'> </span>";
-    format-ru = "<span color='#458588'> </span>";
+    format-en = "<span color='#98971A'> </span>";
+    format-ru = "<span color='#9D0006'> </span>";
     keyboard-name = "at-translated-set-2-keyboard";
     on-click = "focusCursor center | rofi-appgrid";
   };
@@ -20,8 +20,6 @@ programs.waybar.settings.mainBar = {
   };
 
   "hyprland/workspaces" = {
-    on-scroll-up   = "hyprctl dispatch workspace e+1";
-    on-scroll-down = "hyprctl dispatch workspace e-1";
     disable-scroll = "true";
     all-outputs = "true";
     format   = "{id}: {windows}";
