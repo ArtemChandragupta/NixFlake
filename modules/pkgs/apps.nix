@@ -8,7 +8,6 @@ environment.systemPackages = with pkgs; [
   snapshot           # Gnome camera
   gnome-disk-utility # Gnome disk scanner
   refine             # GTK settings - remove buttons
-  # ghostty
 
   hyprpicker
 

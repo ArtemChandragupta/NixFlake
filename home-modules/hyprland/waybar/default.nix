@@ -7,16 +7,15 @@ imports = [
 programs.waybar = {
   enable = true;
 
-  settings.mainBar = {
+  settings.mainBar = if var.host == "homePC" then {
+    modules-left   = [ "hyprland/language#home" "tray" "hyprland/workspaces" ];
+    modules-center = [ "clock" ];
+    modules-right  = [ "cpu" "temperature" "memory" "pulseaudio#home" ];
+  } else {
     modules-left   = [ "hyprland/language" "tray" "hyprland/workspaces" ];
     modules-center = [ "clock" ];
+    modules-right  = [ "battery" "cpu" "temperature" "memory" "backlight" "pulseaudio" ];
   };
-  
-  settings.mainBar.modules-right = if var.host == "homePC" then [ 
-              "cpu" "temperature" "memory"             "pulseaudio#home" 
-  ] else [ 
-    "battery" "cpu" "temperature" "memory" "backlight" "pulseaudio" 
-  ];
 
   style = ./style.css;
 };

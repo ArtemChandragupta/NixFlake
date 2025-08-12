@@ -16,8 +16,8 @@ tooltip {
 }
 
 
-#custom-flake,
 #language,
+#language.home,
 #tray,
 #workspaces,
 #clock,
@@ -33,13 +33,7 @@ tooltip {
   border-radius: 10px;
 }
 
-#language {
-  font-size: 23px;
-  padding: 1px 1px 1px 6px;
-}
-
-#custom-flake {
-  color: #98971a;
+#language, #language.home {
   font-size: 23px;
   padding: 1px 1px 1px 6px;
 }

@@ -4,14 +4,16 @@ programs.waybar.settings.mainBar = {
   margin = "5px 10px -4px 10px";
   layer  = "top";
 
-  "custom/flake" = {
-    format   = " ";
-    on-click = "focusCursor center | rofi-appgrid";
-  };
   "hyprland/language" = {
     format-en = "<span color='#98971A'> </span>";
     format-ru = "<span color='#9D0006'> </span>";
     keyboard-name = "at-translated-set-2-keyboard";
+    on-click = "focusCursor center | rofi-appgrid";
+  };
+  "hyprland/language#home" = {
+    format-en = "<span color='#98971A'> </span>";
+    format-ru = "<span color='#9D0006'> </span>";
+    keyboard-name = "compx-2.4g-wireless-receiver";
     on-click = "focusCursor center | rofi-appgrid";
   };
 
