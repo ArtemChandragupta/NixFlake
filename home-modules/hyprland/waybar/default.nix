@@ -8,7 +8,7 @@ programs.waybar = {
   enable = true;
 
   settings.mainBar = if var.host == "homePC" then {
-    modules-left   = [ "hyprland/language#home" "tray" "hyprland/workspaces" ];
+    modules-left   = [ "hyprland/language" "tray" "hyprland/workspaces" ];
     modules-center = [ "clock" ];
     modules-right  = [ "cpu" "temperature" "memory" "pulseaudio#home" ];
   } else {

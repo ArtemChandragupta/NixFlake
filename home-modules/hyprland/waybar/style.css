@@ -17,7 +17,6 @@ tooltip {
 
 
 #language,
-#language.home,
 #tray,
 #workspaces,
 #clock,
@@ -33,7 +32,7 @@ tooltip {
   border-radius: 10px;
 }
 
-#language, #language.home {
+#language {
   font-size: 23px;
   padding: 1px 1px 1px 6px;
 }

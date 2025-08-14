@@ -1,4 +1,4 @@
-{
+{ var, ... }:{
 
 programs.yazi.settings = {
   opener = {
@@ -34,7 +34,7 @@ programs.yazi.settings = {
     ];
     "hx-writer" = [
       {
-        run   = ''hx-writer "$@"'';
+        run   = ''hx-writer "$@" ${var.keyb}'';
         block = true;
       }
     ];

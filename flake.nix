@@ -14,6 +14,7 @@ in
         var = {
           user = "artem";
           host = "ThinkBook13s";
+          keyb = "at-translated-set-2-keyboard";
           base = "24.05";
         };
         inherit pkgs-u-small;
@@ -32,6 +33,7 @@ in
         var = {
           user = "artem";
           host = "homePC";
+          keyb = "compx-2.4g-wireless-receiver";
           base = "24.05";
         };
         inherit pkgs-u-small;
