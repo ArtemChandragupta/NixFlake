@@ -6,13 +6,13 @@ programs.waybar.settings.mainBar = {
 
   "hyprland/language" = {
     format-en = "<span color='#98971A'> </span>";
-    format-ru = "<span color='#9D0006'> </span>";
+    format-ru = "<span color='#B16286'> </span>";
     keyboard-name = "at-translated-set-2-keyboard";
     on-click = "focusCursor center | rofi-appgrid";
   };
   "hyprland/language#home" = {
     format-en = "<span color='#98971A'> </span>";
-    format-ru = "<span color='#9D0006'> </span>";
+    format-ru = "<span color='#B16286'> </span>";
     keyboard-name = "compx-2.4g-wireless-receiver";
     on-click = "focusCursor center | rofi-appgrid";
   };

@@ -1,6 +1,7 @@
 { pkgs, ... }:
 let
   paste = pkgs.writers.writeNuBin "paste" (builtins.readFile ./paste.nu);
+  hx-writer = pkgs.writers.writeNuBin "hx-writer" (builtins.readFile ./hx-writer.nu);
 in{
 
 imports = [
@@ -8,11 +9,11 @@ imports = [
   ./icons.nix
   ./keymap.nix
   ./opener.nix
-  ./plugins.nix  
+  ./plugins.nix
   ./theme.nix
 ];
 
-home.packages = [ paste pkgs.ouch ];
+home.packages = [ paste hx-writer pkgs.ouch ];
 
 programs.zoxide = {
   enable = true;

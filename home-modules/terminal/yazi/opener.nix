@@ -2,12 +2,6 @@
 
 programs.yazi.settings = {
   opener = {
-    "clapper" = [
-      {
-        run   = ''clapper "$@"'';
-        block = true;
-      }
-    ];
     "mpv" = [
       {
         run = ''mpv "$@"'';
@@ -37,18 +31,25 @@ programs.yazi.settings = {
         run   = ''hx "$@"'';
         block = true;
       }
-    ];    
+    ];
+    "hx-writer" = [
+      {
+        run   = ''hx-writer "$@"'';
+        block = true;
+      }
+    ];
     "hx-write" = [
       {
         run   = ''
           kitty @ set-font-size 16
           kitty @ set-background-opacity 1
+          kitty @ set-window-title --temporary hx-writer
           hx "$@"
           kitty @ set-font-size 0
           kitty @ set-background-opacity --toggle 1
         '';
         block = true;
-        desc  = "hx-writer";
+        desc  = "hx-write";
       }
     ];
     "zathura" = [
@@ -72,19 +73,19 @@ programs.yazi.settings = {
     }
     {
       name = "*.tex";
-      use  = ["Neovide" "Nvim"];
+      use  = "hx-writer";
     }
     {
       name = "*.md";
-      use  = ["hx-write" "Nvim"];
+      use  = "hx-writer";
     }
     {
       name = "*.typ";
-      use  = ["hx-write" "Neovide" "hx" "Nvim"];
+      use  = ["hx-writer" "hx"];
     }
     {
       mime = "text/*";
-      use  = ["hx" "hx-write" "Nvim" "Neovide"];
+      use  = ["hx" "hx-writer"];
     }
     {
       mime = "image/*";
@@ -92,7 +93,7 @@ programs.yazi.settings = {
     }
     {
       mime = "video/*";
-      use  = ["mpv" "clapper"];
+      use  = "mpv";
     }
     {
       mime = "application/pdf";

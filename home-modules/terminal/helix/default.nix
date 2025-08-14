@@ -9,8 +9,13 @@ imports = [
 programs.helix = {
   enable = true;
   defaultEditor = true;
+  themes.gruvbox-recoloring-cursor = {
+    inherits = "gruvbox";
+    "ui.cursor.primary.normal" = { bg = "black"; };
+    "ui.statusline.normal"     = { bg = "black"; };
+  };
   settings = {
-    theme = "gruvbox";
+    theme = "gruvbox-recoloring-cursor";
     editor = {
       line-number = "relative";
       color-modes = true;
@@ -36,11 +41,11 @@ programs.helix = {
 
       # soft-wrap.wrap-indicator = "";
 
-      # cursor-shape = {
+      cursor-shape = {
       #   normal = "underline";
-      #   select = "underline";
-      #   insert = "bar";
-      # };
+        # select = "underline";
+        insert = "bar";
+      };
       whitespace.render.tab = "all";
       indent-guides = {
         render = true;

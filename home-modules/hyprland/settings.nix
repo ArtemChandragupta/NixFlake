@@ -33,6 +33,8 @@ wayland.windowManager.hyprland.settings = {
     gaps_in     = 5;
     gaps_out    = 10;
     border_size = 0;
+    "col.inactive_border" = "0xff282828";
+    "col.active_border"   = "0xff83A598";
   };
 
   decoration = {
