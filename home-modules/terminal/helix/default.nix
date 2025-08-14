@@ -1,10 +1,15 @@
-{
+{ pkgs, ... }:
+let
+  hx-writer = pkgs.writers.writeNuBin "hx-writer" (builtins.readFile ./hx-writer.nu);
+in{
 
 imports = [
   ./languages
   ./keymap-ru.nix
   ./keymap.nix
 ];
+
+home.packages = [ hx-writer ];
 
 programs.helix = {
   enable = true;
