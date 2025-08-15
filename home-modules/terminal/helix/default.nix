@@ -14,13 +14,15 @@ home.packages = [ hx-writer ];
 programs.helix = {
   enable = true;
   defaultEditor = true;
-  themes.gruvbox-recoloring-cursor = {
+
+  themes.gruvbox-recolor = {
     inherits = "gruvbox";
+    "ui.statusline" = { bg = "black"; };
     "ui.cursor.primary.normal" = { bg = "black"; };
-    "ui.statusline.normal"     = { bg = "black"; };
   };
+
   settings = {
-    theme = "gruvbox-recoloring-cursor";
+    theme = "gruvbox-recolor";
     editor = {
       line-number = "relative";
       color-modes = true;
@@ -44,13 +46,11 @@ programs.helix = {
         cursor-line = "info";
       };
 
-      # soft-wrap.wrap-indicator = "";
-
-      cursor-shape = {
+      # cursor-shape = {
       #   normal = "underline";
         # select = "underline";
-        insert = "bar";
-      };
+        # insert = "bar";
+      # };
       whitespace.render.tab = "all";
       indent-guides = {
         render = true;

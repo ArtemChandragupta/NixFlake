@@ -1,7 +1,6 @@
 { pkgs, ... }:
 let
-  zen-mode = pkgs.writers.writeNuBin "zen-mode"
-    (builtins.readFile ./zen-mode.nu);
+  zen-mode = pkgs.writers.writeNuBin "zen-mode" (builtins.readFile ./zen-mode.nu);
 in{
 
 home.packages = [
