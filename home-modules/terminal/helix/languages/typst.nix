@@ -17,6 +17,10 @@ programs.helix = {
       };
       ltex = {
         command = "ltex-ls-plus";
+        config = {
+          ltex.enabled = false;
+          ltex.language = "ru-RU";
+        };
       };
     };
 
