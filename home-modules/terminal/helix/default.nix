@@ -26,6 +26,7 @@ programs.helix = {
     editor = {
       line-number = "relative";
       color-modes = true;
+      bufferline  = "multiple";
 
       statusline = {
         right = [
@@ -46,12 +47,8 @@ programs.helix = {
         cursor-line = "info";
       };
 
-      # cursor-shape = {
-      #   normal = "underline";
-        # select = "underline";
-        # insert = "bar";
-      # };
       whitespace.render.tab = "all";
+      lsp.display-progress-messages = true;
       indent-guides = {
         render = true;
         character = "▎";

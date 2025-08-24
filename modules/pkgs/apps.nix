@@ -17,8 +17,6 @@ environment.systemPackages = with pkgs; [
   file-roller
 
   telegram-desktop
-  localsend
-  translate-shell
 
   libreoffice
   zola

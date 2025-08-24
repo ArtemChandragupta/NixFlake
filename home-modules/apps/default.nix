@@ -1,7 +1,6 @@
 {
 
 imports = [
-  ./dialect
   ./firefox
 
   ./mpv.nix

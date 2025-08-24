@@ -23,6 +23,7 @@ services.syncthing = {
   user   = "${var.user}";
   dataDir   = "/home/${var.user}/Games/Sync";
   configDir = "/home/${var.user}/Games/Sync/.config";
+  openDefaultPorts = true;
 };
 
 }
