@@ -14,18 +14,6 @@ programs.yazi.settings = {
         block = true;
       }
     ];
-    "Nvim" = [
-      {
-        run   = ''nvim "$@"'';
-        block = true;
-      }
-    ];
-    "Neovide" = [
-      {
-        run   = ''neovide "$@"'';
-        block = true;
-      }
-    ];
     "hx" = [
       {
         run   = ''hx "$@"'';
@@ -36,20 +24,6 @@ programs.yazi.settings = {
       {
         run   = ''hx-writer "$@"'';
         block = true;
-      }
-    ];
-    "hx-write" = [
-      {
-        run   = ''
-          kitty @ set-font-size 16
-          kitty @ set-background-opacity 1
-          kitty @ set-window-title --temporary hx-writer
-          hx "$@"
-          kitty @ set-font-size 0
-          kitty @ set-background-opacity --toggle 1
-        '';
-        block = true;
-        desc  = "hx-write";
       }
     ];
     "zathura" = [
