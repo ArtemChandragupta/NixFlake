@@ -2,7 +2,6 @@
 
 imports = [
   ./helix
-  # ./nixvim
   ./shell
   ./yazi
 

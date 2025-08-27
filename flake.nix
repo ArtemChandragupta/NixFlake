@@ -51,11 +51,6 @@ inputs = {
   nixpkgs.url = "nixpkgs/nixos-unstable";
   nixos-u-small.url = "nixpkgs/nixos-unstable-small";
 
-  nixvim = {
-    url = "github:nix-community/nixvim";
-    # inputs.nixpkgs.follows = "nixpkgs";
-  };
-
   home-manager = {
     url = "github:nix-community/home-manager";
     inputs.nixpkgs.follows = "nixpkgs";

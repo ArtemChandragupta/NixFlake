@@ -5,6 +5,8 @@ programs.firefox.profiles.default.settings = {
   "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
   "svg.context-properties.content.enabled" = true;
 
+  "startup.homepage_welcome_url" = "https://github.com/ArtemChandragupta/NixFlake/tree/main/home-modules/firefox/solid";
+
   "ui.key.menuAccessKeyFocuses" = false; # Remove ALT menu
 
   # Performance
@@ -22,6 +24,7 @@ programs.firefox.profiles.default.settings = {
   "browser.vpn_promo.enabled" = false;
   "extensions.pocket.enabled" = false;
   "extensions.htmlaboutaddons.recommendations.enabled" = false;
+  "browser.tabs.allow_transparent_browser" = false;
 
   # Enable cool bahavior
   "browser.urlbar.trim" = true; # Trim https!

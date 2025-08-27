@@ -1,8 +1,6 @@
-{ pkgs, inputs, ... }:{
+{ inputs, ... }:{
 
 imports =[
-  ./solid
-
   ./bookmarks.nix
   ./config.nix
   ./search.nix
@@ -10,10 +8,12 @@ imports =[
 
 programs.firefox = {
   enable = true;
-  # package = pkgs.firefox-esr;
-  profiles.default.extensions.packages = [
-    inputs.firefox-addons.packages."x86_64-linux".sidebery 
-  ];
+  profiles.default = {
+    userChrome  = builtins.readFile ./userChrome.css;
+    extensions.packages = [
+      inputs.firefox-addons.packages."x86_64-linux".sidebery 
+    ];
+  };
 };
 
 }

@@ -3,7 +3,7 @@
 home.packages = with pkgs; [
   (python3.withPackages (ps: with ps; [
     jupyterlab # Notebooks
-    marimo     # Better notebook
+    # marimo     # Better notebook
     matplotlib # Mathematical plotting
 
     numpy # these two are

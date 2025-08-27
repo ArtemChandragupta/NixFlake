@@ -48,7 +48,6 @@ programs.helix = {
       };
 
       whitespace.render.tab = "all";
-      lsp.display-progress-messages = true;
       indent-guides = {
         render = true;
         character = "▎";
