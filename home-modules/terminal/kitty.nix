@@ -12,10 +12,9 @@ programs.kitty = {
     "ctrl+shift+enter" = "launch --cwd=current --type=os-window";
   };
   settings = {
-    enabled_layouts = "splits,stack";
     confirm_os_window_close = 0;
     window_padding_width = 5;
-    allow_remote_control = "yes"; # for helix to make font large and dark background
+    allow_remote_control = "yes";
 
     background_opacity = "0.9";
     dynamic_background_opacity = "yes";

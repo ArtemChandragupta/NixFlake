@@ -10,10 +10,6 @@ xdg.desktopEntries = {
     name      = "Helix";
     noDisplay = true;
   };
-  nvim = {
-    name      = "NeoVim";
-    noDisplay = true;
-  };
   bottom = {
     name      = "bottom";
     noDisplay = true;
