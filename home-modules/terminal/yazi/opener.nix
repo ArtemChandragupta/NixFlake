@@ -4,7 +4,7 @@ programs.yazi.settings = {
   opener = {
     "mpv" = [
       {
-        run = ''mpv "$@"'';
+        run = ''mpv --no-terminal "$@" 2&>/dev/null'';
         block = true;
       }
     ];
