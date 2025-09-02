@@ -141,9 +141,9 @@
 #context-video-fullscreen,            /* Full Screen                     */
 #context-media-hidecontrols,          /* Hide Controls                   */
 #context-media-showcontrols,          /* Show Controls                   */
-/* #context-media-sep-video-commands,    /************ Separator ************/
+#context-media-sep-video-commands,    /************ Separator ************/
 #context-video-pictureinpicture,      /* Watch in Picture-in-Picture     */
-/* #context-media-sep-commands,          /************ Separator ************/
+#context-media-sep-commands,          /************ Separator ************/
 #context-video-saveimage,             /* Take Snapshot…                  */
 #context-saveaudio,                   /* Save Audio As…                  */
 #context-copyvideourl,                /* Copy Video Link                 */
