@@ -162,3 +162,10 @@
 #context-savelink {                     /* Save Link As…                    */
   display:none !important;
 }
+
+/*Extensions*/
+#contentAreaContextMenu menu[image*="moz-extension://"],
+#contentAreaContextMenu menuitem[image*="moz-extension://"],
+#contentAreaContextMenu #context-media-eme-separator {
+  display: none;
+}
