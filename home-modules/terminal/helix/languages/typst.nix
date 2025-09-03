@@ -7,7 +7,10 @@ programs.helix = {
     language = [{
       name = "typst";
       soft-wrap.enable = true;
-      language-servers = ["tinymist" "ltex"];
+      language-servers = [
+        "tinymist"
+        # "ltex"
+      ];
     }];
     
     language-server = {
