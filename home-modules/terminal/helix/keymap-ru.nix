@@ -9,9 +9,12 @@ programs.helix.settings.keys = {
       "delete_selection_noyank"
     ];
     "C-е" = [ ":! zathura main.pdf &" ];
+
+    "ш"   = ["insert_mode"];
+    "C-с" = ["toggle_comments"];
   };
   select = {
-    "н" = [ "yank_to_clipboard" ];
+    "н" = ["yank_to_clipboard"];
     "в" = [
       "yank_to_clipboard"        
       "delete_selection_noyank"
