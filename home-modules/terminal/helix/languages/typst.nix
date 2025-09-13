@@ -1,7 +1,7 @@
 { pkgs, ... }:{
 
 programs.helix = {
-  extraPackages = [ pkgs.tinymist pkgs.ltex-ls-plus];
+  extraPackages = [ pkgs.tinymist ];
   languages = {
     
     language = [{
@@ -9,7 +9,6 @@ programs.helix = {
       soft-wrap.enable = true;
       language-servers = [
         "tinymist"
-        # "ltex"
       ];
     }];
     
@@ -17,13 +16,6 @@ programs.helix = {
       tinymist.config = {
         typstExtraArgs = [ "main.typ" ]; # maybe I need set this in typst projects
         exportPdf = "onType";
-      };
-      ltex = {
-        command = "ltex-ls-plus";
-        config = {
-          ltex.enabled = false;
-          ltex.language = "ru-RU";
-        };
       };
     };
 
