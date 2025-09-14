@@ -1,6 +1,10 @@
 {
 
 wayland.windowManager.hyprland.settings = {
+  ecosystem = {
+    no_update_news  = true;
+    no_donation_nag = true;
+  };
 
   input = {
     kb_layout    = "us,ru";
@@ -13,10 +17,9 @@ wayland.windowManager.hyprland.settings = {
 
   dwindle.preserve_split = true;
 
-  gestures = {
-    workspace_swipe        = true;
-    workspace_swipe_invert = true;
-  };
+  gesture = [
+    "3, horizontal, workspace"
+  ];
 
   misc = {
     force_default_wallpaper  = 0;
