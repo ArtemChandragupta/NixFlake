@@ -6,6 +6,7 @@ in{
 home.packages = [ recolor-border ];
 
 wayland.windowManager.hyprland.settings.exec-once = [
+  "waybar"
   "recolor-border"
   "kitty"
   "Telegram -startintray"

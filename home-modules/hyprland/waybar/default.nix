@@ -6,7 +6,6 @@ imports = [
 
 programs.waybar = {
   enable = true;
-  systemd.enable = true;
 
   settings.mainBar = if var.host == "homePC" then {
     modules-left   = [ "hyprland/language" "tray" "hyprland/workspaces" ];
