@@ -22,7 +22,14 @@ programs.yazi.settings = {
     ];
     "hx-writer" = [
       {
-        run   = ''hx-writer "$@"'';
+        desc = "hx-writer";
+        run = ''
+            kitty @ set-font-size 16
+            kitty @ set-background-opacity 1
+            hx "$@"
+            kitty @ set-font-size 0
+            kitty @ set-background-opacity --toggle 1
+          '';
         block = true;
       }
     ];

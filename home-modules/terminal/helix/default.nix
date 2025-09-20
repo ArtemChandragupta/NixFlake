@@ -1,7 +1,4 @@
-{ pkgs, ... }:
-let
-  hx-writer = pkgs.writers.writeNuBin "hx-writer" (builtins.readFile ./hx-writer.nu);
-in{
+{
 
 imports = [
   ./languages
@@ -9,20 +6,12 @@ imports = [
   ./keymap.nix
 ];
 
-home.packages = [ hx-writer ];
-
 programs.helix = {
   enable = true;
   defaultEditor = true;
 
-  themes.gruvbox-recolor = {
-    inherits = "gruvbox";
-    "ui.statusline" = { bg = "black"; };
-    "ui.cursor.primary.normal" = { bg = "black"; };
-  };
-
   settings = {
-    theme = "gruvbox-recolor";
+    theme = "gruvbox";
     editor = {
       line-number = "relative";
       color-modes = true;
@@ -38,7 +27,6 @@ programs.helix = {
       };
 
       gutters = [
-        # "line-numbers"
         "diff"
       ];
 
