@@ -6,9 +6,8 @@ in{
 
 imports = [ ./fetchWlppr.nix ];
 
-home.packages = [
-  pkgs.swww  
-  wallpaperScript
-];
+services.swww.enable = true;
+
+home.packages = [ wallpaperScript ];
 
 }

@@ -7,7 +7,6 @@ home.packages = [ recolor-border ];
 
 wayland.windowManager.hyprland.settings.exec-once = [
   "recolor-border"
-  "swww-daemon"
   "waybar"
   "kitty"
   "blueman-applet"
