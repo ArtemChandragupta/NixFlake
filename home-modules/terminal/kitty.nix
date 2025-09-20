@@ -75,38 +75,4 @@ programs.kitty = {
   };
 };
 
-home.file.".config/kitty/theme-ru.conf".text = ''
-  active_border_color #d3869b
-  active_tab_background #665c54
-  active_tab_foreground #fbf1c7
-  background #282828
-  bell_border_color #8ec07c
-  color0 #B16286
-  color1 #cc241d
-  color10 #b8bb26
-  color11 #fabd2f
-  color12 #83a598
-  color13 #d3869b
-  color14 #8ec07c
-  color15 #bdae93
-  color2 #98971a
-  color3 #d79921
-  color4 #458588
-  color5 #b16286
-  color6 #689d6a
-  color7 #a89984
-  color8 #7c6f64
-  color9 #fb4934
-  cursor #928374
-  cursor_text_color background
-  foreground #ebdbb2
-  inactive_border_color #665c54
-  inactive_tab_background #3c3836
-  inactive_tab_foreground #a89984
-  selection_background #ebdbb2
-  selection_foreground #928374
-  url_color #83a598
-  visual_bell_color #8ec07c
-'';
-
 }
