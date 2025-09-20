@@ -1,7 +1,6 @@
 { pkgs, var, ... }:{
 
 environment.systemPackages = with pkgs; [
-  networkmanagerapplet # For tray
   inetutils # Utils?
 ];
 
@@ -11,6 +10,9 @@ networking = {
   firewall.enable = true;
 };
 
-programs.localsend.enable = true;
+programs = {
+  localsend.enable = true;
+  nm-applet.enable = true;
+};
 
 }

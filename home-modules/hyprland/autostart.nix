@@ -7,10 +7,7 @@ home.packages = [ recolor-border ];
 
 wayland.windowManager.hyprland.settings.exec-once = [
   "recolor-border"
-  "waybar"
   "kitty"
-  "blueman-applet"
-  "nm-applet"
   "Telegram -startintray"
 ];
 

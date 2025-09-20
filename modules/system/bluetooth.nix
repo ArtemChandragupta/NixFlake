@@ -1,6 +1,7 @@
-{
+{ var, ... }:{
 
-services.blueman.enable   = true;
 hardware.bluetooth.enable = true;
+services.blueman.enable   = true;
+home-manager.users.${var.user}.services.blueman-applet.enable = true;
 
 }
