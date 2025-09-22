@@ -46,6 +46,7 @@ programs.hyprlock.settings = {
     size = "300, 50";
     outline_thickness = 0;
     inner_color = "rgb(458588)";
+    check_color = "rgb(d79921)";
     font_color  = "rgb(282828)";
     fail_color  = "rgb(cc241d)";
     fade_on_empty = false;

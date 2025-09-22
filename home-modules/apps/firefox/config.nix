@@ -25,6 +25,11 @@ programs.firefox.profiles.default.settings = {
   "extensions.pocket.enabled" = false;
   "extensions.htmlaboutaddons.recommendations.enabled" = false;
   "browser.tabs.allow_transparent_browser" = false;
+  # Disable ai
+  "browser.ml.chat.enabled"   = false;
+  "browser.ml.enable"         = false;
+  "browser.ml.chat.shortcuts" = false;
+  "extensions.ml.enabled"     = false;
 
   # Enable cool bahavior
   "browser.urlbar.trim" = true; # Trim https!

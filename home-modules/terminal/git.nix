@@ -6,6 +6,7 @@ programs = {
     userName  = "ArtemChandragupta";
     userEmail = "artem020503@gmail.com";
     diff-so-fancy.enable = true;
+    extraConfig.init.defaultBranch = "main";
   };
   gh = {
     enable = true;
