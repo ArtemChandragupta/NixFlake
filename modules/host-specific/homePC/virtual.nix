@@ -3,13 +3,7 @@
 programs.virt-manager.enable = true;
 
 virtualisation = {
-  libvirtd = { 
-    enable = true;
-    qemu.ovmf = {
-      enable   = true;
-      packages = [ pkgs.OVMFFull.fd ];
-    };
-  };
+  libvirtd.enable = true;
   spiceUSBRedirection.enable = true;
 };
 
