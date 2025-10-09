@@ -14,8 +14,8 @@ programs.mpv = {
     loop-file = "inf";
     osd-font  = "JetBrainsMono Nerd Font";
     osd-color = "#EBDBB2";
-    profile   = "high-quality";
-    video-sync= "display-resample";
+    # profile   = "high-quality";
+    # video-sync= "display-resample";
   };
   scriptOpts.uosc = {
     top_bar     = "never";

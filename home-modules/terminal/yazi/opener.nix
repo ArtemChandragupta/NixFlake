@@ -54,7 +54,11 @@ programs.yazi.settings = {
     }
     {
       name = "*.tex";
-      use  = "hx-writer";
+      use  = ["hx-writer" "hx"];
+    }
+    {
+      name = "*.txt";
+      use  = ["hx-writer" "hx"];
     }
     {
       name = "*.md";

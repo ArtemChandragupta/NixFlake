@@ -11,7 +11,7 @@ home.packages = [
 
 services.clipse = {
   enable = true;
-  historySize = 400;
+  # historySize = 400;
   imageDisplay.type = "kitty";
   theme = {
     DimmedDesc         = "#928374";
