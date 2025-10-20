@@ -2,18 +2,23 @@
 
 programs = {
   git = {
-    enable    = true;
-    userName  = "ArtemChandragupta";
-    userEmail = "artem020503@gmail.com";
-    diff-so-fancy.enable = true;
-    extraConfig.init.defaultBranch = "main";
+    enable = true;
+    settings = {
+      user.name  = "ArtemChandragupta";
+      user.email = "artem020503@gmail.com";
+      init.defaultBranch   = "main";
+    };
+  };
+  diff-so-fancy = {
+    enable = true;
+    enableGitIntegration = true;
   };
   gh = {
     enable = true;
     gitCredentialHelper.enable = true;
   };
   lazygit = {
-    enable  = true;
+    enable = true;
     settings = {
       git.paging.pager = "diff-so-fancy";
       gui = {
