@@ -15,6 +15,7 @@ users.users.${var.user} = {
     "audio"
     "video"
     "input"
+    "uinput"
     "libvirtd"
     "docker"
   ];
