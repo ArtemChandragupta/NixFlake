@@ -2,7 +2,7 @@
 
 environment.systemPackages = with pkgs; [
   amdgpu_top
-  microcodeAmd
+  microcode-amd
 ];
 
 boot = { 
