@@ -20,7 +20,7 @@ programs = {
   lazygit = {
     enable = true;
     settings = {
-      git.paging.pager = "diff-so-fancy";
+      git.pagers = [{ pager = "diff-so-fancy"; }];
       gui = {
         nerdFontsVersion = "3";
         border = "single";
