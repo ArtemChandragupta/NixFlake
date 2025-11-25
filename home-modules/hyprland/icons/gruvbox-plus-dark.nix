@@ -8,8 +8,8 @@ stdenvNoCC.mkDerivation {
   src = fetchFromGitHub {
     owner = "SylEleuth";
     repo  = "gruvbox-plus-icon-pack";
-    rev   = "c83b1e81f4d5bb9895503715306c2a80d7720ba1";
-    hash  = "sha256-P01vMjRlegjQ9gcx5tvMGx8T7rtNwKn+OkoUPDbofd0=";
+    rev   = "f5046dd8d060c360c9280da6f946fec258f17269";
+    hash  = "sha256-8SHS2ibYTqNhpuPG3cE4GJsjZp7rgwatMedpg4ROruo=";
   };
 
   dontBuild = true;

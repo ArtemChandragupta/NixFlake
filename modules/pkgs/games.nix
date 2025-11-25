@@ -1,10 +1,12 @@
 { pkgs, var, ... }:{
 
 environment.systemPackages = with pkgs; [
-  bottles
+  (bottles.override {removeWarningPopup = true;})
   cartridges
   prismlauncher
 ];
+
+hardware.graphics.enable32Bit = true;
 
 programs.gamemode = {
   enable = true;
