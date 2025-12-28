@@ -1,7 +1,7 @@
 { pkgs, ... }:{
 
 services.flatpak.enable = true;
-environment.systemPackages = [ pkgs.gnome-software ];
+environment.systemPackages = [ pkgs.bazaar ];
 xdg.portal = {
   enable = true;
   extraPortals = [ pkgs.xdg-desktop-portal-gtk ];

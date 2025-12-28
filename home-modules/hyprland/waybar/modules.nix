@@ -34,6 +34,7 @@ programs.waybar.settings.mainBar = {
       "class<neovide>"  = "";
 
       "class<org.gnome.Software>" = "󱗼";
+      "class<io.github.kolunmi.Bazaar>" = "󱗼";
       "class<org.gnome.Nautilus>" = "󰪶";
       "class<org.gnome.baobab>"   = "󰙅";
       "class<org.gnome.Papers>"   = "";
@@ -61,6 +62,7 @@ programs.waybar.settings.mainBar = {
       "class<.virt-manager-wrapped>" = "";
       "class<calc>"     = "󰇃";
       "class<openscad>" = "";
+      "class<gnome-disks>" = "󱛟";
     };
   };
 
