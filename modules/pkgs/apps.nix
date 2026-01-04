@@ -20,7 +20,7 @@ environment.systemPackages = with pkgs; [
 
   libreoffice
   zola
-  mendeley
+  # mendeley
 
   inkscape
   # drawio

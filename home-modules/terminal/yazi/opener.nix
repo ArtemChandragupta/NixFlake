@@ -49,24 +49,24 @@ programs.yazi.settings = {
 
   open.prepend_rules = [
     {
-      name = "*.djvu";
-      use  = "papers";
+      url = "*.djvu";
+      use = "papers";
     }
     {
-      name = "*.tex";
-      use  = ["hx-writer" "hx"];
+      url = "*.tex";
+      use = ["hx-writer" "hx"];
     }
     {
-      name = "*.txt";
-      use  = ["hx-writer" "hx"];
+      url = "*.txt";
+      use = ["hx-writer" "hx"];
     }
     {
-      name = "*.md";
-      use  = "hx-writer";
+      url = "*.md";
+      use = "hx-writer";
     }
     {
-      name = "*.typ";
-      use  = ["hx-writer" "hx"];
+      url = "*.typ";
+      use = ["hx-writer" "hx"];
     }
     {
       mime = "text/*";

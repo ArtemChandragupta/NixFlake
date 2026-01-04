@@ -11,9 +11,9 @@ programs.bottom.enable = true;
 
 home.packages = [ open-btm ];
 
-wayland.windowManager.hyprland.settings.windowrulev2 = [
-  "float        , class:(resourceMonitor)"
-  "size 1200 900, class:(resourceMonitor)"
+wayland.windowManager.hyprland.settings.windowrule = [
+  "match:class resourceMonitor, float 1"
+  "match:class resourceMonitor, size 1200 900"
 ];
 
 }

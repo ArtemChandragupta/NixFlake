@@ -6,167 +6,167 @@ programs.yazi.theme.icon.prepend_exts = [
 ];
 
 programs.yazi.theme.icon.globs = [
-  { name = "*default.nix";   text = ""; fg = "#d65d0e"; }
-  { name = "*home.nix";      text = ""; fg = "#d65d0e"; }
+  { url = "*default.nix";   text = ""; fg = "#d65d0e"; }
+  { url = "*home.nix";      text = ""; fg = "#d65d0e"; }
 
-  { name = "*Arduino/";      text = ""; }
-  { name = "*Desktop/";      text = "󰧨"; }
-  { name = "*Dev/";          text = "󱚊"; }
-    { name = "*haskell/";      text = "󰲒"; }
-      { name = "*waterfall*/";   text = "󱡉"; }
-    { name = "*julia/";        text = ""; }
-    { name = "*lab/";          text = ""; }
-    { name = "*LaTeX/";        text = ""; }
-    { name = "*letters/";      text = "󰾸"; }
-    { name = "*myblog/";       text = "󰒪"; }
-    { name = "*openscad/";     text = ""; }
-    { name = "*python/";       text = "󰌠"; }
-    { name = "*Rust/";         text = "󱘗"; }
-    { name = "*Turbothesis/";  text = "󱪂"; }
-    { name = "*typst/";        text = ""; }
-  { name = "*Documents/";    text = "󱔗"; }
-  { name = "*Downloads/";    text = ""; }
-  { name = "*Games/";        text = "󰊖"; }
-  { name = "*media/";        text = ""; }
-  { name = "*nix/";          text = ""; }
-  { name = "*PortProton/";   text = "󰹻"; }
-  { name = "*Screenshots/";  text = ""; }
-  { name = "*Studythings/";  text = "󰗚"; }
-  { name = "*Sync/";         text = ""; }
-  { name = "*Vaults/";       text = "󰘳"; }
-  { name = "*virtual/";      text = ""; }
+  { url = "*Arduino/";      text = ""; }
+  { url = "*Desktop/";      text = "󰧨"; }
+  { url = "*Dev/";          text = "󱚊"; }
+    { url = "*haskell/";      text = "󰲒"; }
+      { url = "*waterfall*/";   text = "󱡉"; }
+    { url = "*julia/";        text = ""; }
+    { url = "*lab/";          text = ""; }
+    { url = "*LaTeX/";        text = ""; }
+    { url = "*letters/";      text = "󰾸"; }
+    { url = "*myblog/";       text = "󰒪"; }
+    { url = "*openscad/";     text = ""; }
+    { url = "*python/";       text = "󰌠"; }
+    { url = "*Rust/";         text = "󱘗"; }
+    { url = "*Turbothesis/";  text = "󱪂"; }
+    { url = "*typst/";        text = ""; }
+  { url = "*Documents/";    text = "󱔗"; }
+  { url = "*Downloads/";    text = ""; }
+  { url = "*Games/";        text = "󰊖"; }
+  { url = "*media/";        text = ""; }
+  { url = "*nix/";          text = ""; }
+  { url = "*PortProton/";   text = "󰹻"; }
+  { url = "*Screenshots/";  text = ""; }
+  { url = "*Studythings/";  text = "󰗚"; }
+  { url = "*Sync/";         text = ""; }
+  { url = "*Vaults/";       text = "󰘳"; }
+  { url = "*virtual/";      text = ""; }
 
-  { name = "*home-modules/"; text = "󱂵"; }
-    { name = "*ags/";          text = ""; }
-      { name = "*backlight/";    text = "󰃠"; }
-      { name = "*battery/";      text = "󰂄"; }
-      { name = "*clock/";        text = "󰅐"; }
-      { name = "*cpu/";          text = ""; }
-      { name = "*flake/";        text = "󱄅"; }
-      { name = "*memory/";       text = ""; }
-      { name = "*temperature/";  text = "󰔐"; }
-      { name = "*tray/";         text = ""; }
-      { name = "*volume/";       text = "󱄠"; }
-      { name = "*workspace/";    text = ""; }
+  { url = "*home-modules/"; text = "󱂵"; }
+    { url = "*ags/";          text = ""; }
+      { url = "*backlight/";    text = "󰃠"; }
+      { url = "*battery/";      text = "󰂄"; }
+      { url = "*clock/";        text = "󰅐"; }
+      { url = "*cpu/";          text = ""; }
+      { url = "*flake/";        text = "󱄅"; }
+      { url = "*memory/";       text = ""; }
+      { url = "*temperature/";  text = "󰔐"; }
+      { url = "*tray/";         text = ""; }
+      { url = "*volume/";       text = "󱄠"; }
+      { url = "*workspace/";    text = ""; }
 
-    { name = "*apps/";          text = ""; }
-      { name = "*dialect/";      text = "󰗊"; }
-      { name = "*firefox/";      text = "󰈹"; }
-        { name = "*solid/";        text = "󰌨"; }
-        { name = "*transparent/";  text = "󰧾"; }
-        { name = "*bookmarks.nix"; text = "󰸕"; fg = "#7ebae4"; }
-        { name = "*config.nix";    text = ""; fg = "#7ebae4"; }
-        { name = "*search.nix";    text = ""; fg = "#7ebae4"; }
-      { name = "*mpv.nix";       text = "󰃽"; fg = "#7ebae4"; }
-      { name = "*zathura.nix";   text = ""; fg = "#7ebae4"; }
+    { url = "*apps/";          text = ""; }
+      { url = "*dialect/";      text = "󰗊"; }
+      { url = "*firefox/";      text = "󰈹"; }
+        { url = "*solid/";        text = "󰌨"; }
+        { url = "*transparent/";  text = "󰧾"; }
+        { url = "*bookmarks.nix"; text = "󰸕"; fg = "#7ebae4"; }
+        { url = "*config.nix";    text = ""; fg = "#7ebae4"; }
+        { url = "*search.nix";    text = ""; fg = "#7ebae4"; }
+      { url = "*mpv.nix";       text = "󰃽"; fg = "#7ebae4"; }
+      { url = "*zathura.nix";   text = ""; fg = "#7ebae4"; }
 
-    { name = "*hyprland/";     text = ""; }
-      { name = "*icons/";        text = ""; }
-        { name = "*gruvbox-plus-dark.nix"; text = "󰚠"; fg = "#7ebae4"; }
-      { name = "*monitors/";     text = "󱡶"; }
-      { name = "*rofi-appgrid/"; text = "󱗼"; }
-        { name = "*style.rasi";    text = "󱜧"; fg = "#cc241d"; }
-        { name = "*pkg.nix";       text = ""; fg = "#7ebae4"; }
-      { name = "*swaync/";       text = "󱅫"; }
-      { name = "*wallpaper/";    text = "󰸉"; }
-        { name = "*fetchWlppr.nix";text = "󰭽"; fg = "#7ebae4"; }
-      { name = "*waybar/";       text = "󱟛"; }
-      { name = "*zen-mode/";     text = "󰚀"; }
-        { name = "*modules.nix"; text = "󰞤"; fg = "#7ebae4"; }
-      { name = "*autostart.nix"; text = "󱣲"; fg = "#7ebae4"; }
-      { name = "*binds.nix";     text = "󰌌"; fg = "#7ebae4"; }
-      { name = "*rules.nix";     text = ""; fg = "#7ebae4"; }
-      { name = "*screenlock.nix";text = "󰷛"; fg = "#7ebae4"; }
-      { name = "*screenshot.nix";text = ""; fg = "#7ebae4"; }
-      { name = "*settings.nix";  text = ""; fg = "#7ebae4"; }
+    { url = "*hyprland/";     text = ""; }
+      { url = "*icons/";        text = ""; }
+        { url = "*gruvbox-plus-dark.nix"; text = "󰚠"; fg = "#7ebae4"; }
+      { url = "*monitors/";     text = "󱡶"; }
+      { url = "*rofi-appgrid/"; text = "󱗼"; }
+        { url = "*style.rasi";    text = "󱜧"; fg = "#cc241d"; }
+        { url = "*pkg.nix";       text = ""; fg = "#7ebae4"; }
+      { url = "*swaync/";       text = "󱅫"; }
+      { url = "*wallpaper/";    text = "󰸉"; }
+        { url = "*fetchWlppr.nix";text = "󰭽"; fg = "#7ebae4"; }
+      { url = "*waybar/";       text = "󱟛"; }
+      { url = "*zen-mode/";     text = "󰚀"; }
+        { url = "*modules.nix"; text = "󰞤"; fg = "#7ebae4"; }
+      { url = "*autostart.nix"; text = "󱣲"; fg = "#7ebae4"; }
+      { url = "*binds.nix";     text = "󰌌"; fg = "#7ebae4"; }
+      { url = "*rules.nix";     text = ""; fg = "#7ebae4"; }
+      { url = "*screenlock.nix";text = "󰷛"; fg = "#7ebae4"; }
+      { url = "*screenshot.nix";text = ""; fg = "#7ebae4"; }
+      { url = "*settings.nix";  text = ""; fg = "#7ebae4"; }
 
-    { name = "*languages/";    text = ""; }
-      { name = "*haskell.nix";   text = "󰲒"; fg = "#7ebae4"; }
-      { name = "*julia.nix";     text = ""; fg = "#7ebae4"; }
-      { name = "*python.nix";    text = "󰌠"; fg = "#7ebae4"; }
-      { name = "*TeX.nix";       text = ""; fg = "#7ebae4"; }
-      { name = "*css.nix";       text = "󰌜"; fg = "#7ebae4"; }
-      { name = "*js.nix";        text = ""; fg = "#7ebae4"; }
-      { name = "*lua.nix";       text = "󰢱"; fg = "#7ebae4"; }
-      { name = "*markdown.nix";  text = "󰍔"; fg = "#7ebae4"; }
-      { name = "*nushell.nix";   text = ""; fg = "#7ebae4"; }
-      { name = "*rust.nix";      text = ""; fg = "#7ebae4"; }
-      { name = "*toml.nix";      text = ""; fg = "#7ebae4"; }
-      { name = "*typst.nix";     text = ""; fg = "#7ebae4"; }
+    { url = "*languages/";    text = ""; }
+      { url = "*haskell.nix";   text = "󰲒"; fg = "#7ebae4"; }
+      { url = "*julia.nix";     text = ""; fg = "#7ebae4"; }
+      { url = "*python.nix";    text = "󰌠"; fg = "#7ebae4"; }
+      { url = "*TeX.nix";       text = ""; fg = "#7ebae4"; }
+      { url = "*css.nix";       text = "󰌜"; fg = "#7ebae4"; }
+      { url = "*js.nix";        text = ""; fg = "#7ebae4"; }
+      { url = "*lua.nix";       text = "󰢱"; fg = "#7ebae4"; }
+      { url = "*markdown.nix";  text = "󰍔"; fg = "#7ebae4"; }
+      { url = "*nushell.nix";   text = ""; fg = "#7ebae4"; }
+      { url = "*rust.nix";      text = ""; fg = "#7ebae4"; }
+      { url = "*toml.nix";      text = ""; fg = "#7ebae4"; }
+      { url = "*typst.nix";     text = ""; fg = "#7ebae4"; }
 
-    { name = "*terminal/";     text = ""; }
-      { name = "*helix/";        text = "󰚄"; }
-        { name = "*languages.nix"; text = ""; fg = "#7ebae4"; }
-        { name = "*keymap-ru.nix"; text = "󰌌"; fg = "#7ebae4"; }
-      { name = "*nixvim/";       text = ""; }
-        { name = "*lua/";          text = ""; }
-        { name = "*plugins/";      text = "󰐱"; }
-          { name = "*autopairs.nix"; text = "󰅩"; fg = "#7ebae4"; }
-          { name = "*blink-cmp.nix"; text = "󰫢"; fg = "#7ebae4"; }
-          { name = "*colorizer.nix"; text = "󰸱"; fg = "#7ebae4"; }
-          { name = "*comment.nix";   text = "#"; fg = "#7ebae4"; }
-          { name = "*img-clip.nix";  text = "󰧸"; fg = "#7ebae4"; }
-          { name = "*indent.nix";    text = "󰉶"; fg = "#7ebae4"; }
-          { name = "*lazygit.nix";   text = "󰊢"; fg = "#7ebae4"; }
-          { name = "*lualine.nix";   text = "󱖫"; fg = "#7ebae4"; }
-          { name = "*luasnip.nix";   text = "󰘤"; fg = "#7ebae4"; }
-          { name = "*noice.nix";     text = "󱆞"; fg = "#7ebae4"; }
-          { name = "*whichkey.nix";  text = "󰌒"; fg = "#7ebae4"; }
-          { name = "*wrapping.nix";  text = "󰖶"; fg = "#7ebae4"; }
-          { name = "*zen-mode.nix";  text = "󰚀"; fg = "#7ebae4"; }
-        { name = "*keymap.nix";    text = "󰌌"; fg = "#7ebae4"; }
-        { name = "*neovide.nix";   text = "󱘗"; fg = "#7ebae4"; }
-      { name = "*shell/";       text = ""; }
-        { name = "*nushell/";      text = ""; }
-        { name = "*bash.nix";      text = ""; fg = "#7ebae4"; }
-      { name = "*yazi/";         text = "󰇥"; }
-        { name = "*filetype.nix";  text = ""; fg = "#7ebae4"; }
-        { name = "*icons.nix";     text = ""; fg = "#7ebae4"; }
-        { name = "*opener.nix";    text = ""; fg = "#7ebae4"; }
-        { name = "*plugins.nix";    text = "󰐱"; fg = "#7ebae4"; }
-        { name = "*theme.nix";     text = "󰣆"; fg = "#7ebae4"; }
-      { name = "*btm.nix";       text = "󱔓"; fg = "#7ebae4"; }
-      { name = "*clipse.nix";    text = "󱓥"; fg = "#7ebae4"; }
-      { name = "*direnv.nix";    text = "󰇐"; fg = "#7ebae4"; }
-      { name = "*fastfetch.nix"; text = "󱡠"; fg = "#7ebae4"; }
-      { name = "*git.nix";       text = "󰊢"; fg = "#7ebae4"; }
-      { name = "*kitty.nix";     text = "󰄛"; fg = "#7ebae4"; }
-      { name = "*numbat.nix";    text = "󰇃"; fg = "#7ebae4"; }
-      { name = "*starship.nix";  text = "󱓞"; fg = "#7ebae4"; }
+    { url = "*terminal/";     text = ""; }
+      { url = "*helix/";        text = "󰚄"; }
+        { url = "*languages.nix"; text = ""; fg = "#7ebae4"; }
+        { url = "*keymap-ru.nix"; text = "󰌌"; fg = "#7ebae4"; }
+      { url = "*nixvim/";       text = ""; }
+        { url = "*lua/";          text = ""; }
+        { url = "*plugins/";      text = "󰐱"; }
+          { url = "*autopairs.nix"; text = "󰅩"; fg = "#7ebae4"; }
+          { url = "*blink-cmp.nix"; text = "󰫢"; fg = "#7ebae4"; }
+          { url = "*colorizer.nix"; text = "󰸱"; fg = "#7ebae4"; }
+          { url = "*comment.nix";   text = "#"; fg = "#7ebae4"; }
+          { url = "*img-clip.nix";  text = "󰧸"; fg = "#7ebae4"; }
+          { url = "*indent.nix";    text = "󰉶"; fg = "#7ebae4"; }
+          { url = "*lazygit.nix";   text = "󰊢"; fg = "#7ebae4"; }
+          { url = "*lualine.nix";   text = "󱖫"; fg = "#7ebae4"; }
+          { url = "*luasnip.nix";   text = "󰘤"; fg = "#7ebae4"; }
+          { url = "*noice.nix";     text = "󱆞"; fg = "#7ebae4"; }
+          { url = "*whichkey.nix";  text = "󰌒"; fg = "#7ebae4"; }
+          { url = "*wrapping.nix";  text = "󰖶"; fg = "#7ebae4"; }
+          { url = "*zen-mode.nix";  text = "󰚀"; fg = "#7ebae4"; }
+        { url = "*keymap.nix";    text = "󰌌"; fg = "#7ebae4"; }
+        { url = "*neovide.nix";   text = "󱘗"; fg = "#7ebae4"; }
+      { url = "*shell/";       text = ""; }
+        { url = "*nushell/";      text = ""; }
+        { url = "*bash.nix";      text = ""; fg = "#7ebae4"; }
+      { url = "*yazi/";         text = "󰇥"; }
+        { url = "*filetype.nix";  text = ""; fg = "#7ebae4"; }
+        { url = "*icons.nix";     text = ""; fg = "#7ebae4"; }
+        { url = "*opener.nix";    text = ""; fg = "#7ebae4"; }
+        { url = "*plugins.nix";    text = "󰐱"; fg = "#7ebae4"; }
+        { url = "*theme.nix";     text = "󰣆"; fg = "#7ebae4"; }
+      { url = "*btm.nix";       text = "󱔓"; fg = "#7ebae4"; }
+      { url = "*clipse.nix";    text = "󱓥"; fg = "#7ebae4"; }
+      { url = "*direnv.nix";    text = "󰇐"; fg = "#7ebae4"; }
+      { url = "*fastfetch.nix"; text = "󱡠"; fg = "#7ebae4"; }
+      { url = "*git.nix";       text = "󰊢"; fg = "#7ebae4"; }
+      { url = "*kitty.nix";     text = "󰄛"; fg = "#7ebae4"; }
+      { url = "*numbat.nix";    text = "󰇃"; fg = "#7ebae4"; }
+      { url = "*starship.nix";  text = "󱓞"; fg = "#7ebae4"; }
 
-    { name = "*stylix.nix";    text = "󰃣"; fg = "#7ebae4"; }
+    { url = "*stylix.nix";    text = "󰃣"; fg = "#7ebae4"; }
 
-  { name = "*modules/";      text = "󱁿"; }
-    { name = "*host-specific/";text = "󰛧"; }
-      { name = "*ThinkBook13s/"; text = "󰌢"; }
-        { name = "*AMD.nix";       text = "󰆦"; fg = "#7ebae4"; }
-        { name = "*power.nix";     text = "󰓅"; fg = "#7ebae4"; }
-        { name ="*remote-desktop.nix";text="󰢹"; fg ="#7ebae4"; }
-      { name = "*homePC/";      text = "󰪫"; }
-        { name = "*nvidia.nix";    text = "󰖂"; fg = "#7ebae4"; }
-        { name = "*virtual.nix";   text = ""; fg = "#7ebae4"; }
+  { url = "*modules/";      text = "󱁿"; }
+    { url = "*host-specific/";text = "󰛧"; }
+      { url = "*ThinkBook13s/"; text = "󰌢"; }
+        { url = "*AMD.nix";       text = "󰆦"; fg = "#7ebae4"; }
+        { url = "*power.nix";     text = "󰓅"; fg = "#7ebae4"; }
+        { url ="*remote-desktop.nix";text="󰢹"; fg ="#7ebae4"; }
+      { url = "*homePC/";      text = "󰪫"; }
+        { url = "*nvidia.nix";    text = "󰖂"; fg = "#7ebae4"; }
+        { url = "*virtual.nix";   text = ""; fg = "#7ebae4"; }
 
-    { name = "*pkgs/";         text = "󰏖"; }
-      { name = "*apps.nix";      text = ""; fg = "#7ebae4"; }
-      { name = "*distrobox.nix"; text = "󰬋"; fg = "#7ebae4"; }
-      { name = "*flatpak.nix";   text = "󰹍"; fg = "#7ebae4"; }
-      { name = "*fonts.nix";     text = ""; fg = "#7ebae4"; }
-      { name = "*games.nix";     text = "󰊖"; fg = "#7ebae4"; }
-      { name = "*utils.nix";     text = "󱌢"; fg = "#7ebae4"; }
+    { url = "*pkgs/";         text = "󰏖"; }
+      { url = "*apps.nix";      text = ""; fg = "#7ebae4"; }
+      { url = "*distrobox.nix"; text = "󰬋"; fg = "#7ebae4"; }
+      { url = "*flatpak.nix";   text = "󰹍"; fg = "#7ebae4"; }
+      { url = "*fonts.nix";     text = ""; fg = "#7ebae4"; }
+      { url = "*games.nix";     text = "󰊖"; fg = "#7ebae4"; }
+      { url = "*utils.nix";     text = "󱌢"; fg = "#7ebae4"; }
 
-    { name = "*system/";       text = ""; }
-      { name = "*bluetooth.nix"; text = "󰂰"; fg = "#7ebae4"; }
-      { name = "*boot.nix";      text = "󱫡"; fg = "#7ebae4"; }
-      { name = "*locales.nix";   text = "󱀍"; fg = "#7ebae4"; }
-      { name = "*networking.nix";text = "󰀂"; fg = "#7ebae4"; }
-      { name = "*sound.nix";     text = "󱀞"; fg = "#7ebae4"; }
-      { name = "*system.nix";    text = "󰘳"; fg = "#7ebae4"; }
-      { name = "*usb.nix";       text = "󱊞"; fg = "#7ebae4"; }
-      { name = "*users.nix";     text = ""; fg = "#7ebae4"; }
+    { url = "*system/";       text = ""; }
+      { url = "*bluetooth.nix"; text = "󰂰"; fg = "#7ebae4"; }
+      { url = "*boot.nix";      text = "󱫡"; fg = "#7ebae4"; }
+      { url = "*locales.nix";   text = "󱀍"; fg = "#7ebae4"; }
+      { url = "*networking.nix";text = "󰀂"; fg = "#7ebae4"; }
+      { url = "*sound.nix";     text = "󱀞"; fg = "#7ebae4"; }
+      { url = "*system.nix";    text = "󰘳"; fg = "#7ebae4"; }
+      { url = "*usb.nix";       text = "󱊞"; fg = "#7ebae4"; }
+      { url = "*users.nix";     text = ""; fg = "#7ebae4"; }
 
-    { name = "*wm/";           text = ""; }
-      { name = "*dm.nix";        text = "󰍂"; fg = "#7ebae4"; }
-      { name = "*hyprland.nix";  text = ""; fg = "#7ebae4"; }
+    { url = "*wm/";           text = ""; }
+      { url = "*dm.nix";        text = "󰍂"; fg = "#7ebae4"; }
+      { url = "*hyprland.nix";  text = ""; fg = "#7ebae4"; }
 ];
 
 }

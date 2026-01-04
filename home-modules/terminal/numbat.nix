@@ -1,6 +1,6 @@
 { pkgs, ...}:
 let
-  open-calc = pkgs.writers.writeNuBin "open-calc" "focusCursor center | kitty -o background_opacity=0.95 --class calc -e 'numbat'";
+  open-calc = pkgs.writers.writeNuBin "open-calc" "focusCursor center | kitty -o background_opacity=0.95 -e 'numbat'";
 in{
 
 home.packages = [
@@ -18,10 +18,5 @@ programs.numbat = {
     exchange-rates.fetching-policy = "on-startup";
   };
 };
-
-wayland.windowManager.hyprland.settings.windowrulev2 = [
-  "float        , class:(calc)"
-  "size 1200 900, class:(calc)"
-];
 
 }

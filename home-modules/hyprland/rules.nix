@@ -1,14 +1,14 @@
 {
 
-wayland.windowManager.hyprland.settings.windowrulev2 = [
-  "suppressevent maximize, class:.*"
-  "float,class:(org.gnome.Calculator)"
-  "float,class:(localsend_app)"
-  "float,class:(Yad)"
-  "float,class:(de.haeckerfelix.Fragments)"
-  "float,class:(com.saivert.pwvucontrol)"
-  "float,class:(.blueman-manager-wrapped)"
-  "float,class:(.Telegram-wrapped)"
+wayland.windowManager.hyprland.settings.windowrule = [
+  "match:class .*, suppress_event maximize"
+  "match:class org.gnome.Calculator,      float 1"
+  "match:class localsend_app,             float 1"
+  "match:class Yad,                       float 1"
+  "match:class de.haeckerfelix.Fragments, float 1"
+  "match:class com.saivert.pwvucontrol,   float 1"
+  "match:class .blueman-manager-wrapped,  float 1"
+  "match:class .Telegram-wrapped,         float 1"
 ];
 
 }

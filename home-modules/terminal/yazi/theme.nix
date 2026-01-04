@@ -2,11 +2,15 @@
 
 programs.yazi.theme = {
 
+  indicator = {
+    padding = { open = "█"; close = "█"; };
+    current = { bg = "#3c3836"; fg = "#ebdbb2"; };
+    parent  = { bg = "#3c3836"; fg = "#ebdbb2"; };
+    preview = { underline = true; };
+  };
+
   mgr = {
     cwd = { fg = "#b8bb26"; };
-
-    hovered         = { bg = "#3c3836"; fg = "#ebdbb2"; };
-    preview_hovered = { underline = true; };
 
     find_keyword  = { fg = "#b8bb26"; italic = true; };
     find_position = { fg = "#fe8019"; bg = "reset"; italic = true; };

@@ -1,8 +1,8 @@
 {
 
 programs.yazi.theme.filetype.rules = [
-  { name = "*";  fg = "#a89984"; }
-  { name = "*/"; fg = "#458588"; }
+  { url = "*";  fg = "#a89984"; }
+  { url = "*/"; fg = "#458588"; }
 ];
 
 }
