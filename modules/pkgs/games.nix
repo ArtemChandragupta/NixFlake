@@ -16,16 +16,15 @@ programs.gamemode = {
   };
 };
 
-# programs.haguichi.enable = true;
-# services.logmein-hamachi.enable = true;
+programs.haguichi.enable = true;
+services.logmein-hamachi.enable = true;
 # services.tailscale.enable = true;
 
 services.syncthing = {
-  # enable = true;
+  enable = true;
   user   = "${var.user}";
-  dataDir   = "/home/${var.user}/Games/Sync";
-  configDir = "/home/${var.user}/Games/Sync/.config";
-  extraFlags = [ "--no-default-folder" ];
+  dataDir   = "/home/${var.user}/Games/sync";
+  configDir = "/home/${var.user}/Games/sync/.config";
   openDefaultPorts = true;
 };
 

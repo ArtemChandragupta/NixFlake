@@ -13,6 +13,7 @@ home.packages = [ open-btm ];
 
 wayland.windowManager.hyprland.settings.windowrule = [
   "match:class resourceMonitor, float 1"
+  "match:class resourceMonitor, center 1"
   "match:class resourceMonitor, size 1200 900"
 ];
 
