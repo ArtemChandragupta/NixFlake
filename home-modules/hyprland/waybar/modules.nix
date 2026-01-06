@@ -50,6 +50,7 @@ programs.waybar.settings.mainBar = {
       "class<io.github.nokse22.Exhibit>"  = "󰐫";
       "class<com.saivert.pwvucontrol>"    = "󰴸";
       "class<com.usebottles.bottles>" = "";
+      "class<steam_proton>" = "󰊖";
       "class<page.kramo.Cartridges>"  = "";
       "class<org.inkscape.Inkscape>"  = "";
       "class<org.telegram.desktop>"   = "";
