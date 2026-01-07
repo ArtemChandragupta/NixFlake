@@ -15,10 +15,6 @@ wayland.windowManager.hyprland.settings = {
     "match:class com.saivert.pwvucontrol,   center 1"
     "match:class .blueman-manager-wrapped,  center 1"
     "match:class .Telegram-wrapped,         center 1"
-    # "no_anim 1, match:namespace Rofi"
-  ];
-  layerrule = [
-    # "no_anim 1, match:namespace Rofi"
   ];
 };
 

@@ -36,8 +36,8 @@ services.swaync = {
 
 wayland.windowManager.hyprland.settings = {
   layerrule = [
-    "match:class swaync-control-center,      animation slide top"
-    "match:class swaync-notification-window, animation slide top"
+    "match:namespace swaync-control-center,      animation slide top"
+    "match:namespace swaync-notification-window, animation slide top"
   ];
 };
 
