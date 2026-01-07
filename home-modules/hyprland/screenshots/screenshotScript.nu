@@ -37,5 +37,5 @@ def redact [] {
   let screen = hyprctl -j monitors | from json | where focused == true | get name.0
   
   grim -o $screen - 
-  | satty --filename - --output-filename $name --copy-command 'wl-copy' --early-exit
+  | satty --filename - --output-filename $name
 }

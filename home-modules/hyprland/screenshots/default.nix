@@ -8,12 +8,22 @@ in{
 
 home.packages = with pkgs; [
   grim
-  satty
   wf-recorder
 
   recorderScript
   screenshotScript
 ];
+
+programs.satty = {
+  enable = true;
+  settings = {
+    general = {
+      fullscreen   = true;
+      early-exit   = true;
+      copy-command = "wl-copy";
+    };
+  };
+};
 
 wayland.windowManager.hyprland.settings = {
   bind = [
@@ -24,7 +34,6 @@ wayland.windowManager.hyprland.settings = {
     "$mainMod, U, exec, recorderScript"
   ];
   windowrule = [
-    "match:class com.gabm.satty, fullscreen 1"
     "match:class com.gabm.satty, animation popin"
   ];
 };
