@@ -23,9 +23,9 @@ wayland.windowManager.hyprland.settings = {
 
     "$mainMod, U, exec, recorderScript"
   ];
-  windowrulev2 = [
-    "fullscreen, class:(com.gabm.satty)"
-    "float,      class:(com.gabm.satty)"
+  windowrule = [
+    "match:class com.gabm.satty, fullscreen 1"
+    "match:class com.gabm.satty, animation popin"
   ];
 };
 
