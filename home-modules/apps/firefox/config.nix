@@ -29,6 +29,7 @@ programs.firefox.profiles.default.settings = {
   "browser.ml.chat.enabled"   = false;
   "browser.ml.enable"         = false;
   "browser.ml.chat.shortcuts" = false;
+  "browser.ml.linkPreview.enabled" = false;
   "extensions.ml.enabled"     = false;
 
   # Enable cool bahavior
