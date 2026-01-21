@@ -3,6 +3,10 @@
   /* font-family: Jet brains mono nerd font; */
 }
 
+:root {
+  --font-size-body: 16px;
+}
+
 
 .control-center {
   background: alpha(#282828, 0.9);

@@ -57,6 +57,7 @@ programs.waybar.settings.mainBar = {
       "class<libreoffice-writer>"     = "";
       "class<libreoffice-calc>"       = "";
       "class<libreoffice-startcenter>"= "";
+      "class<libreoffice-impress>    "= "󰈧";
       "class<app.drey.Dialect>" = "󱁥";
       "class<org.pwmt.zathura>" = "";
       "class<teams-for-linux>"  = "󰊻";
