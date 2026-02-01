@@ -3,6 +3,7 @@
 environment.systemPackages = with pkgs; [
   pwvucontrol
   alsa-utils
+  qpwgraph
 ];
 
 security.rtkit.enable = true;

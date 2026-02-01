@@ -1,4 +1,4 @@
-{ var, ... }:{
+{
 
 programs.waybar.settings.mainBar = {
   margin = "5px 10px -4px 10px";
@@ -7,7 +7,6 @@ programs.waybar.settings.mainBar = {
   "hyprland/language" = {
     format-en = "<span color='#98971A'> </span>";
     format-ru = "<span color='#B16286'> </span>";
-    keyboard-name = var.keyb;
     on-click = "focusCursor center | rofi-appgrid";
   };
 

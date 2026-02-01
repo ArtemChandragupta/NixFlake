@@ -1,4 +1,5 @@
-{ pkgs-u-small, inputs, ... }:{
+# { pkgs-u-small, ... }:
+{
 
 imports = [
   ./apps.nix

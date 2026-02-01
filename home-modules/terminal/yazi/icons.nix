@@ -5,6 +5,10 @@ programs.yazi.theme.icon.prepend_exts = [
   { name = "typ"; text = ""; fg = "#239DAD"; }
 ];
 
+programs.yazi.theme.icon.prepend_conds = [
+  { "if" = "dir"; text = "󰉋"; fg = "#478487"; }
+];
+
 programs.yazi.theme.icon.globs = [
   { url = "*default.nix";   text = ""; fg = "#d65d0e"; }
   { url = "*home.nix";      text = ""; fg = "#d65d0e"; }
@@ -30,6 +34,7 @@ programs.yazi.theme.icon.globs = [
   { url = "*media/";        text = ""; }
   { url = "*nix/";          text = ""; }
   { url = "*PortProton/";   text = "󰹻"; }
+  { url = "*Pictures/";     text = ""; }
   { url = "*Screenshots/";  text = ""; }
   { url = "*Studythings/";  text = "󰗚"; }
   { url = "*Sync/";         text = ""; }

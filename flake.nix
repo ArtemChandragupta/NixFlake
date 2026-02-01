@@ -3,7 +3,7 @@
 outputs = inputs:
 let
   system       = "x86_64-linux"; 
-  pkgs-u-small = import inputs.nixos-u-small {inherit system;};
+  # pkgs-u-small = import inputs.nixos-u-small {inherit system;};
 in
 {
   nixosConfigurations = {
@@ -14,10 +14,9 @@ in
         var = {
           user = "artem";
           host = "ThinkBook13s";
-          keyb = "at-translated-set-2-keyboard";
           base = "24.05";
         };
-        inherit pkgs-u-small;
+        # inherit pkgs-u-small;
       };
       modules = [
         ./configuration.nix
@@ -33,10 +32,9 @@ in
         var = {
           user = "artem";
           host = "homePC";
-          keyb = "compx-2.4g-wireless-receiver";
           base = "24.05";
         };
-        inherit pkgs-u-small;
+        # inherit pkgs-u-small;
       };
       modules = [
         ./configuration.nix
@@ -49,7 +47,7 @@ in
 
 inputs = {
   nixpkgs.url = "nixpkgs/nixos-unstable";
-  nixos-u-small.url = "nixpkgs/nixos-unstable-small";
+  # nixos-u-small.url = "nixpkgs/nixos-unstable-small";
 
   home-manager = {
     url = "github:nix-community/home-manager";
