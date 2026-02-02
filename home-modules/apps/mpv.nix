@@ -14,6 +14,7 @@ programs.mpv = {
     loop-file = "inf";
     osd-font  = "JetBrainsMono Nerd Font";
     osd-color = "#EBDBB2";
+    target-colorspace-hint = "no";
     # profile   = "high-quality";
     # video-sync= "display-resample";
   };

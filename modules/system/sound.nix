@@ -3,7 +3,7 @@
 environment.systemPackages = with pkgs; [
   pwvucontrol
   alsa-utils
-  qpwgraph
+  helvum
 ];
 
 security.rtkit.enable = true;
