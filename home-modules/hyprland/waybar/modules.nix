@@ -36,28 +36,26 @@ programs.waybar.settings.mainBar = {
       "class<neovide>"  = "";
 
       "class<org.gnome.Software>" = "󱗼";
-      "class<io.github.kolunmi.Bazaar>" = "󱗼";
       "class<org.gnome.Nautilus>" = "󰪶";
       "class<org.gnome.baobab>"   = "󰙅";
       "class<org.gnome.Papers>"   = "";
       "class<org.gnome.Loupe>"    = "";
 
       "class<com.moonlight_stream.Moonlight>"= "󰢹";
-      "class<com.github.rafostar.Clapper>"   = "󱉺";
       "class<Mendeley Reference Manager>" = "";
       "class<de.haeckerfelix.Fragments>"  = "";
       "class<io.github.nokse22.Exhibit>"  = "󰐫";
       "class<com.saivert.pwvucontrol>"    = "󰴸";
       "class<com.usebottles.bottles>" = "";
-      "class<steam_proton>" = "󰊖";
-      "class<page.kramo.Cartridges>"  = "";
+      "class<steam_proton>"           = "󰊖";
       "class<org.inkscape.Inkscape>"  = "";
       "class<org.telegram.desktop>"   = "";
+      
       "class<libreoffice-writer>"     = "";
       "class<libreoffice-calc>"       = "";
       "class<libreoffice-startcenter>"= "";
       "class<libreoffice-impress>    "= "󰈧";
-      "class<app.drey.Dialect>" = "󱁥";
+      
       "class<org.pwmt.zathura>" = "";
       "class<teams-for-linux>"  = "󰊻";
       "class<dosbox-staging>"   = "󰚴";

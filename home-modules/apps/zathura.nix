@@ -26,11 +26,6 @@ programs.zathura = {
     highlight-color        = "rgba(152,151,26,0.5)";
     highlight-active-color = "rgba(121,116,14,0.5)";
 
-    index-bg        = "#282828";
-    index-fg        = "#EBDBB2";
-    index-active-bg = "#98971A";
-    index-active-fg = "#282828";
-
     notification-warning-bg = "#D79921";
     notification-warning-fg = "#282828";
     notification-error-bg   = "#CC241D";

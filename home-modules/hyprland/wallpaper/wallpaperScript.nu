@@ -5,6 +5,6 @@ mkdir .cache/swww # Ensure cache dir exist
 touch $cache      # Ensure cache file exist
 
 let wlppr = ls .wallpaper | get name | path expand # Get names and resolve symlinks
-| where ($it != (open $cache)) | shuffle | first   # Choose random, but not current
+| where not (open $cache | str contains $it) | shuffle | first   # Choose random, but not current
 
 swww img -o $screen $wlppr

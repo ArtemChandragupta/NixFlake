@@ -2,7 +2,6 @@
 
 environment.systemPackages = with pkgs; [
   (bottles.override {removeWarningPopup = true;})
-  cartridges
   prismlauncher
 ];
 

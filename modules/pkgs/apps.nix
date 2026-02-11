@@ -11,7 +11,6 @@ environment.systemPackages = with pkgs; [
 
   hyprpicker
 
-  obsidian
   fragments
   icon-library
   file-roller

@@ -20,9 +20,21 @@ let
     url = "https://static1.squarespace.com/static/5e949a92e17d55230cd1d44f/t/61103f14c1b8266a7c3445a4/1628454705441/macOSBlissRainy6K.png";
     sha256 = "1biplcl50zassc813lk6zgc7vzqazimbbd6fzkv1lk8jxwsch7vb";
   };
-  Flutter = pkgs.fetchurl {
+  FlutterBronze = pkgs.fetchurl {
     url = "https://static1.squarespace.com/static/5e949a92e17d55230cd1d44f/t/678341bdc07b5c2e712243f5/1736655308172/F06_Mac.png";
     sha256 = "sha256-sW5sgqjRHk7SFp1VqwVgDQfdBXl+4lzQVcdTZX1Jmqg=";
+  };
+  FlutterSky = pkgs.fetchurl {
+    url = "https://static1.squarespace.com/static/5e949a92e17d55230cd1d44f/t/6783420390d60650532f0aab/1736655375387/F08_Mac.png";
+    sha256 = "sha256-SRIOI71x8ghT//dxDB4SUo+6ZpaR0KStxR5DSvIHDg4=";
+  };
+  FlutterSunset = pkgs.fetchurl {
+    url = "https://static1.squarespace.com/static/5e949a92e17d55230cd1d44f/t/67834196e3cc347185c02241/1736655274086/F05_Mac.png";
+    sha256 = "sha256-7CnCXruoEm1zSkpCODfM5WmQ+CRUF6COy81Ti1pjyXg=";
+  };
+  FlutterSonoma = pkgs.fetchurl {
+    url = "https://static1.squarespace.com/static/5e949a92e17d55230cd1d44f/t/6980fa4328829334c89817ff/1770060355992/FGrad_Feb03_Mac.png";
+    sha256 = "sha256-/Nz4TghaSs7SupIY1/XPzusEU0EfnGc6GiSUydM5ihY=";
   };
 in
 {
@@ -31,9 +43,12 @@ home.file = {
   ".wallpaper/BetterSonoma.png".source = BetterSonoma;
   ".wallpaper/SequoiaDark.png".source  = SequoiaDark;
   ".wallpaper/SequoiaLight.png".source = SequoiaLight;
-  ".wallpaper/BlissDay.png".source     = BlissDay;
-  ".wallpaper/BlissRainy.png".source   = BlissRainy;
-  ".wallpaper/Flutter.png".source      = Flutter;
+  ".wallpaper/BlissDay.png".source   = BlissDay;
+  ".wallpaper/BlissRainy.png".source = BlissRainy;
+  ".wallpaper/FlutterBronze.png".source = FlutterBronze;
+  ".wallpaper/FlutterSky.png".source    = FlutterSky;
+  ".wallpaper/FlutterSunset.png".source = FlutterSunset;
+  ".wallpaper/FlutterSonoma.png".source = FlutterSonoma;
 };
 
 }

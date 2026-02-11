@@ -2,7 +2,6 @@
 
 programs.yazi.theme.icon.prepend_exts = [
   { name = "nu";  text = ""; fg = "#689D6A"; }
-  { name = "typ"; text = ""; fg = "#239DAD"; }
 ];
 
 programs.yazi.theme.icon.prepend_conds = [

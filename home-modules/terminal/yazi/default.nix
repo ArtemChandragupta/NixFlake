@@ -23,16 +23,7 @@ programs.yazi = {
   enable = true;
   enableNushellIntegration = true;
 
-  settings.mgr = {
-    layout = [ 1 4 3 ];
-    sort_by = "alphabetical";
-    sort_sensitive = false;
-    sort_reverse   = false;
-    sort_dir_first = true;
-    show_hidden  = false;
-    show_symlink = true;
-    linemode = "mtime";
-  };
+  settings.mgr.linemode = "mtime";
 };
 
 }
