@@ -22,6 +22,7 @@ programs.zoxide = {
 programs.yazi = {
   enable = true;
   enableNushellIntegration = true;
+  shellWrapperName = "yy"; # Silencing warning
 
   settings.mgr.linemode = "mtime";
 };
