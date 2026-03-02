@@ -5,7 +5,7 @@ programs.mpv = {
   scripts = with pkgs.mpvScripts; [
     uosc
     thumbfast
-    mpv-cheatsheet
+    mpv-cheatsheet-ng
   ];
   config = {
     osc       = false;
