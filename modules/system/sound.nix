@@ -3,7 +3,7 @@
 environment.systemPackages = with pkgs; [
   pwvucontrol
   alsa-utils
-  helvum
+  crosspipe
 ];
 
 security.rtkit.enable = true;
