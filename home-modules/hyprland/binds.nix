@@ -21,10 +21,10 @@ bind = [
   "$mainMod, G, exec, open-dialect"
   "$mainMod, B, exec, open-resourceMonitor"
   "CTRL,     X, exec, open-clip"
-  "$mainMod SHIFT, W, exec, wallpaperScript"
+  "$mainMod, W, exec, wallpaperScript"
   " , XF86Calculator, exec, open-calc"
 
-  "$mainMod, W, exec, nu -c 'try {pkill waybar} catch {waybar}'"
+  "$mainMod SHIFT, W, exec, nu -c 'try {pkill waybar} catch {waybar}'"
 
   "$mainMod, left,  movefocus, l"
   "$mainMod, right, movefocus, r"
