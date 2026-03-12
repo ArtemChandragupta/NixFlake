@@ -4,10 +4,6 @@ let
     url = "https://static1.squarespace.com/static/5e949a92e17d55230cd1d44f/t/65ca8d7e72b2b13769ced989/1707773333181/BSonoma_Mac.png";
     sha256 = "0y57gfzbb25idryq20i1mcxxsix2k6nnkc6djvhjy4s44j7n3873";
   };
-  SequoiaDark = pkgs.fetchurl {
-    url = "https://static1.squarespace.com/static/5e949a92e17d55230cd1d44f/t/666797c50267ef33983aa221/1718065110482/SequoiaDark.png";
-    sha256 = "1kbssp7w82xfd4sqcrff8lsw0a0z8slg77r98lfzq33j7mnij5rn";
-  };
   SequoiaLight = pkgs.fetchurl {
     url = "https://static1.squarespace.com/static/5e949a92e17d55230cd1d44f/t/66679789de52f27958b42936/1718065050515/SequoiaLight.png";
     sha256 = "0nanpiap95839d70p5ll9ydg867r23ph8svvp1jmy4qxp79yhyqp";
@@ -32,23 +28,17 @@ let
     url = "https://static1.squarespace.com/static/5e949a92e17d55230cd1d44f/t/67834196e3cc347185c02241/1736655274086/F05_Mac.png";
     sha256 = "sha256-7CnCXruoEm1zSkpCODfM5WmQ+CRUF6COy81Ti1pjyXg=";
   };
-  FlutterSonoma = pkgs.fetchurl {
-    url = "https://static1.squarespace.com/static/5e949a92e17d55230cd1d44f/t/6980fa4328829334c89817ff/1770060355992/FGrad_Feb03_Mac.png";
-    sha256 = "sha256-/Nz4TghaSs7SupIY1/XPzusEU0EfnGc6GiSUydM5ihY=";
-  };
 in
 {
 
 home.file = {
   ".wallpaper/BetterSonoma.png".source = BetterSonoma;
-  ".wallpaper/SequoiaDark.png".source  = SequoiaDark;
   ".wallpaper/SequoiaLight.png".source = SequoiaLight;
   ".wallpaper/BlissDay.png".source   = BlissDay;
   ".wallpaper/BlissRainy.png".source = BlissRainy;
   ".wallpaper/FlutterBronze.png".source = FlutterBronze;
   ".wallpaper/FlutterSky.png".source    = FlutterSky;
   ".wallpaper/FlutterSunset.png".source = FlutterSunset;
-  ".wallpaper/FlutterSonoma.png".source = FlutterSonoma;
 };
 
 }
