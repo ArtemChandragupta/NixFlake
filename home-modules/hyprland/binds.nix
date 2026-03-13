@@ -10,7 +10,7 @@ bind = [
   "$mainMod, Delete, exit,"
   "$mainMod, F, fullscreen"
   "$mainMod, V, togglefloating,"
-  "$mainMod, J, togglesplit,"
+  "$mainMod, J, layoutmsg, togglesplit"
 
   "$mainMod, T, exec, kitty"
   "$mainMod, C, exec, hyprpicker -a"
