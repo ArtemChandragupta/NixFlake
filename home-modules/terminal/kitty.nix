@@ -15,6 +15,7 @@ programs.kitty = {
     confirm_os_window_close = 0;
     window_padding_width = 5;
     allow_remote_control = "yes";
+    momentum_scroll = 0;
 
     background_opacity = "0.9";
     dynamic_background_opacity = "yes";

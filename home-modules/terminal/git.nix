@@ -8,6 +8,7 @@ programs = {
       user.email = "artem020503@gmail.com";
       init.defaultBranch   = "main";
     };
+    signing.format = null; # For hm less then 25.05
   };
   diff-so-fancy = {
     enable = true;
