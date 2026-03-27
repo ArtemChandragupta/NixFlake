@@ -84,6 +84,8 @@
 #star-button-box,
 #identity-box,
 #permission-icon-container,
+#urlbar-revert-button-container,
+#urlbar-searchmode-switcher,
 #tracking-protection-icon-container { 
   display: none !important; 
 }

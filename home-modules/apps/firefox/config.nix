@@ -17,6 +17,7 @@ programs.firefox.profiles.default.settings = {
   # Disable useless things
   "browser.aboutConfig.showWarning" = false;
   "browser.toolbars.bookmarks.visibility" = "never";
+  "browser.urlbar.trustPanel.featureGate" = false; # Remove new shield
   "browser.tabs.tabmanager.enabled" = false;
   "reader.parse-on-load.enabled" = false;
   "browser.translations.enable" = false;
@@ -25,6 +26,7 @@ programs.firefox.profiles.default.settings = {
   "extensions.pocket.enabled" = false;
   "extensions.htmlaboutaddons.recommendations.enabled" = false;
   "browser.tabs.allow_transparent_browser" = false;
+
   # Disable ai
   "browser.ml.chat.enabled"   = false;
   "browser.ml.enable"         = false;
