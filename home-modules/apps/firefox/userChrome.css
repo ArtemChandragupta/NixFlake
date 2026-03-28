@@ -44,12 +44,12 @@
   list-style-image: url("chrome://global/skin/icons/chevron.svg") !important;
   position: fixed !important;
   top:       5px  !important;
-  left:     35px  !important;
+  left:     38px  !important;
 }
 #downloads-button { /*download button*/
   position: fixed !important;
   top:       5px  !important;
-  left:     65px  !important;
+  left:     71px  !important;
 }
 #back-button {
   position: fixed !important;
