@@ -69,6 +69,10 @@ programs.yazi.settings = {
       use = ["hx-writer" "hx"];
     }
     {
+      url = "*.py";
+      use = ["hx-writer" "hx"];
+    }
+    {
       mime = "text/*";
       use  = ["hx" "hx-writer"];
     }

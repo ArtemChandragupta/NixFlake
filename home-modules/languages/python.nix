@@ -4,10 +4,10 @@ home.packages = with pkgs; [
   (python3.withPackages (ps: with ps; [
     jupyterlab # Notebooks
     matplotlib # Mathematical plotting
-    networkx
+    networkx   # For tubes
 
-    numpy # these two are
-    scipy # probably redundant to pandas
+    numpy # These two are
+    scipy # Probably redundant to pandas
 
     pandas     # Data manipulation
     openpyxl   # excel
