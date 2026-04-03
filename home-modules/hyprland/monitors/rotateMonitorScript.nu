@@ -7,5 +7,5 @@ def main [ direction:int ] {
     _ => {hyprctl $'keyword monitor eDP-1,preferred,auto,1,transform,($newRotation)'}
   }
 
-  do -i {swww kill} | swww init # Reload daemon (using deprecated keyword)
+  do -i {awww kill} | awww init # Reload daemon (using deprecated keyword)
 }
