@@ -15,6 +15,8 @@ nixpkgs.config = {
   allowUnfree = true;
 };
 
+programs.nix-ld.enable = true;
+
 nixpkgs.overlays = [( final: prev: {
   # mpd = pkgs-u-small.mpd;
 })];

@@ -8,6 +8,7 @@ imports =[
 
 programs.firefox = {
   enable = true;
+  configPath = ".mozilla/firefox";
   profiles.default = {
     userChrome  = builtins.readFile ./userChrome.css;
     extensions.packages = [
