@@ -10,12 +10,7 @@ users.users.${var.user} = {
   shell = pkgs.nushell;
   extraGroups = [ 
     "networkmanager"
-    "media"
     "wheel"
-    "audio"
-    "video"
-    "input"
-    "uinput"
     "libvirtd"
     "docker"
   ];

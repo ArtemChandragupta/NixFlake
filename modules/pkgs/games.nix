@@ -6,6 +6,7 @@ environment.systemPackages = with pkgs; [
 ];
 
 hardware.graphics.enable32Bit = true;
+hardware.xpadneo.enable = true;
 
 programs.gamemode = {
   enable = true;

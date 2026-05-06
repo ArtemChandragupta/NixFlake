@@ -1,8 +1,4 @@
-{ pkgs, var, ... }:{
-
-environment.systemPackages = with pkgs; [
-  inetutils # Utils?
-];
+{ var, ... }:{
 
 networking = {
   hostName = "${var.host}";

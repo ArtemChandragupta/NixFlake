@@ -10,7 +10,7 @@ boot = {
   kernelPackages = pkgs.linuxPackages_latest;
   kernelParams = [
     "quiet"
-    "udev.log_level=0" 
+    "udev.log_level=3"
   ];
 
   plymouth = {

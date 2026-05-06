@@ -1,15 +1,7 @@
-{ pkgs, config, ... }:{
+{
 
-environment.systemPackages = with pkgs; [
-  amdgpu_top
-  microcode-amd
-];
-
-boot = { 
-  #kernelParams = [ "amd_pstate=active" "processor.max_cstate=1" ];
-  #extraModulePackages = with config.boot.kernelPackages; [ zenpower ];
-};
-
+hardware.cpu.amd.updateMicrocode = true;
+boot.kernelParams = [ "amd_pstate=active" ];
 services.xserver.videoDrivers = ["amdgpu"];
 
 }
