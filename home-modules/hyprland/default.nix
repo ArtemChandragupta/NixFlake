@@ -19,6 +19,7 @@ imports = [
 
 wayland.windowManager.hyprland = {
   enable  = true;
+  configType = "hyprlang";
   systemd.variables = [ "--all" ];
   settings.env = [
     "XCURSOR_SIZE,24" # unified cursor size
