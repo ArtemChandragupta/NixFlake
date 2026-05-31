@@ -25,17 +25,4 @@ programs.satty = {
   };
 };
 
-wayland.windowManager.hyprland.settings = {
-  bind = [
-    "     , PRINT, exec, screenshotScript window"
-    "SUPER, PRINT, exec, screenshotScript screen"
-    " CTRL, PRINT, exec, screenshotScript redact"
-
-    "$mainMod, U, exec, recorderScript"
-  ];
-  windowrule = [
-    "match:class com.gabm.satty, animation popin"
-  ];
-};
-
 }

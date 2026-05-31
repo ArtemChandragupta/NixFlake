@@ -7,8 +7,4 @@ home.packages = [
   zen-mode
 ];
 
-wayland.windowManager.hyprland.settings.bind = [
-  "$mainMod, Z, exec, zen-mode"
-];
-
 }

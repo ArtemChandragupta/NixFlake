@@ -19,15 +19,15 @@ imports = [
 
 wayland.windowManager.hyprland = {
   enable  = true;
-  configType = "hyprlang";
+  configType = "lua";
   systemd.variables = [ "--all" ];
   settings.env = [
-    "XCURSOR_SIZE,24" # unified cursor size
-    "QT_QPA_PLATFORMTHEME, gtk3" # for telegram file manager
+     { _args = [ "XCURSOR_SIZE" "24"           ]; } # unified cursor size
+     { _args = [ "QT_QPA_PLATFORMTHEME" "gtk3" ]; } # for telegram file manager
 
-    "XDG_CURRENT_DESKTOP, Hyprland" # for display manager and other
-    "XDG_SESSION_TYPE, wayland"
-    "XDG_SESSION_DESKTOP, Hyprland"
+     { _args = [ "XDG_CURRENT_DESKTOP" "Hyprland" ]; } # for display manager and other
+     { _args = [ "XDG_SESSION_TYPE" "wayland"     ]; }
+     { _args = [ "XDG_SESSION_DESKTOP" "Hyprland" ]; }
   ];
 };
 

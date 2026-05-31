@@ -9,7 +9,7 @@ def handle [event: string] {
             0xffB16286
         }
 
-        hyprctl keyword general:col.active_border $color
+        hyprctl eval $"hl.config { general = { col = { active_border = '($color)' } } }"
     }
 }
 

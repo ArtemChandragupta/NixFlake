@@ -70,7 +70,7 @@ programs.waybar.settings.mainBar = {
 
 
   "clock" = {
-    tooltip-format = "<tt><small>{calendar}</small></tt>";
+    tooltip-format = "<tt>{calendar}</tt>";
     format = "{:%H:%M}";
     calendar = {
       mode = "year";

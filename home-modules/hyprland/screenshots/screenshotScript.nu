@@ -10,7 +10,7 @@ def main [mode:string] {
 
 def window [] {
   let name    = $'($nameBase)-window.png'
-  let gaps    = hyprctl getoption general:gaps_in -j | from json | get custom | split words | first | into int
+  let gaps    = hyprctl getoption general:gaps_in -j | from json | get css | split words | first | into int
   let window  = hyprctl -j activewindow | from json
   let padding = $window | get at size | $'($in.0.0 - $gaps),($in.0.1 - $gaps) ($in.1.0 + 2 * $gaps)x($in.1.1 + 2 * $gaps)'
 

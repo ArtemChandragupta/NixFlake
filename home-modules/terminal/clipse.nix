@@ -34,10 +34,4 @@ services.clipse = {
   };
 };
 
-wayland.windowManager.hyprland.settings.windowrule = [
-  "match:class clipse, float 1"
-  "match:class clipse, center 1"
-  "match:class clipse, size 800 800"
-];
-
 }

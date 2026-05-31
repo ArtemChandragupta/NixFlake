@@ -1,64 +1,72 @@
-{
+{ lib, ... }: {
 
 wayland.windowManager.hyprland.settings = {
-  ecosystem = {
-    no_update_news  = true;
-    no_donation_nag = true;
+  gesture = {
+    _args = [
+      (lib.generators.mkLuaInline ''{
+        fingers = 3,
+        direction = "horizontal",
+        action = "workspace",
+      }'')
+    ];
   };
 
-  input = {
-    kb_layout    = "us,ru";
-    kb_options   = "grp:caps_toggle";
-    touchpad = {
-      natural_scroll       = false;
-      disable_while_typing = false;
+  config = {
+    ecosystem = {
+      no_update_news  = true;
+      no_donation_nag = true;
     };
-  };
 
-  dwindle.preserve_split = true;
-
-  gesture = [
-    "3, horizontal, workspace"
-    "3, vertical, workspace"
-  ];
-
-  misc = {
-    force_default_wallpaper  = 0;
-    disable_hyprland_logo    = true;
-    disable_splash_rendering = true;
-
-    animate_manual_resizes   = true;
-
-    enable_swallow = true;
-    swallow_regex  = "^(kitty)$";
-  };
-
-  general = {
-    gaps_in     = 5;
-    gaps_out    = 10;
-    border_size = 0;
-    "col.inactive_border" = "0xff282828";
-    "col.active_border"   = "0xff83A598";
-  };
-
-  decoration = {
-    rounding       = 10;
-    rounding_power = 4;
-    shadow.enabled = false;
-    blur = {
-      enabled  = true;
-      size     = 3;
-      passes   = 4;
-      vibrancy = 0.1696;
+    input = {
+      kb_layout    = "us,ru";
+      kb_options   = "grp:caps_toggle";
+      touchpad = {
+        natural_scroll       = false;
+        disable_while_typing = false;
+      };
     };
+
+    dwindle.preserve_split = true;
+
+    misc = {
+      force_default_wallpaper  = 0;
+      disable_hyprland_logo    = true;
+      disable_splash_rendering = true;
+
+      animate_manual_resizes   = true;
+
+      enable_swallow = true;
+      swallow_regex  = "^(kitty)$";
+    };
+
+    general = {
+      gaps_in     = 5;
+      gaps_out    = 10;
+      border_size = 0;
+      col = {
+        inactive_border = "0xff282828";
+        active_border   = "0xff83A598";
+      };
+    };
+
+    decoration = {
+      rounding       = 10;
+      rounding_power = 4;
+      shadow.enabled = false;
+      blur = {
+        enabled  = true;
+        size     = 3;
+        passes   = 4;
+        vibrancy = 0.1696;
+      };
+    };
+
+    # animations.animation = [
+    #   "windows, 1, 7, default, slide"
+    #   "windowsOut, 1, 7, default, slide"
+    #   "fade, 1, 7, default"
+    # ];
+
   };
-
-  animations.animation = [
-    "windows, 1, 7, default, slide"
-    "windowsOut, 1, 7, default, slide"
-    "fade, 1, 7, default"
-  ];
-
 };
-
 }

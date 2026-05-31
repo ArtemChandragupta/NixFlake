@@ -7,10 +7,10 @@ match ($rounding == 10) { # Is rounding standart?
 
 def remove-distraction [] {
   try {pkill waybar}
-  hyprctl keyword general:gaps_out    0
-  hyprctl keyword general:gaps_in     0
-  hyprctl keyword decoration:rounding 0
-  hyprctl keyword general:border_size 8
+  hyprctl eval 'hl.config({ general    = { gaps_out    = 0 } })'
+  hyprctl eval 'hl.config({ general    = { gaps_in     = 0 } })'
+  hyprctl eval 'hl.config({ decoration = { rounding    = 0 } })'
+  hyprctl eval 'hl.config({ general    = { border_size = 8 } })'
 }
 
 def restore-order [] {
