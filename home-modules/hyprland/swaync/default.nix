@@ -34,9 +34,4 @@ services.swaync = {
   };
 };
 
-wayland.windowManager.hyprland.settings.layer_rule = [
-  { match.class = "swaync-control-center";      animation   = "slide top"; }
-  { match.class = "swaync-notification-window"; animation   = "slide top"; }
-];
-
 }

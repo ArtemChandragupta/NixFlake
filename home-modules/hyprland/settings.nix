@@ -11,6 +11,10 @@ wayland.windowManager.hyprland.settings = {
     ];
   };
 
+  animation = [
+    { leaf = "windows"; enabled = true; speed = 7; bezier = "default"; style = "slide"; }
+  ];
+
   config = {
     ecosystem = {
       no_update_news  = true;
@@ -60,13 +64,6 @@ wayland.windowManager.hyprland.settings = {
         vibrancy = 0.1696;
       };
     };
-
-    # animations.animation = [
-    #   "windows, 1, 7, default, slide"
-    #   "windowsOut, 1, 7, default, slide"
-    #   "fade, 1, 7, default"
-    # ];
-
   };
 };
 }
