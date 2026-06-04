@@ -6,7 +6,7 @@ programs = {
     settings = {
       user.name  = "ArtemChandragupta";
       user.email = "artem020503@gmail.com";
-      init.defaultBranch   = "main";
+      init.defaultBranch = "main";
     };
     signing.format = null; # For hm less then 25.05
   };
