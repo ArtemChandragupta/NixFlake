@@ -22,6 +22,7 @@ environment.systemPackages = with pkgs; [
   # mendeley
 
   inkscape
+  gimp
   # drawio
   dosbox-staging
 ];
