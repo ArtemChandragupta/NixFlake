@@ -30,7 +30,7 @@ services.clipse = {
     StatusMsg          = "#cc241d";
     TitleFore          = "#b8bb26";
     TitleInfo          = "#555555";
-    useCustomTheme     = true;
+    useCustom          = true;
   };
 };
 

@@ -19,9 +19,6 @@ programs.nix-ld.enable = true;
 
 nixpkgs.overlays = [( final: prev: {
   # mpd = pkgs-u-small.mpd;
-  openldap = prev.openldap.overrideAttrs {
-    doCheck = !prev.stdenv.hostPlatform.isi686;
-  };
 })];
 
 }
