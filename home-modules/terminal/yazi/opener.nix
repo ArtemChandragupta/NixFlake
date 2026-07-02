@@ -73,6 +73,10 @@ programs.yazi.settings = {
       use = ["hx-writer" "hx"];
     }
     {
+      url = "*.rs";
+      use = ["hx-writer" "hx"];
+    }
+    {
       mime = "text/*";
       use  = ["hx" "hx-writer"];
     }
