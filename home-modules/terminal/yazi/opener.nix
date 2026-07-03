@@ -10,7 +10,7 @@ programs.yazi.settings = {
     ];
     "image" = [
       {
-        run   = ''loupe "$@"'';
+        run   = ''loupe "$@" 2&>/dev/null'';
         block = true;
       }
     ];
