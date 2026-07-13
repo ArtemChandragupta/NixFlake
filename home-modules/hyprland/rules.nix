@@ -4,10 +4,6 @@ wayland.windowManager.hyprland.settings = {
   window_rule = [
     { match.class = ".*"; suppress_event = "maximize"; }
 
-    { match.class = "localsend_app";             float = true; center = true; }
-    { match.class = "Yad";                       float = true; center = true; }
-    { match.class = "de.haeckerfelix.Fragments"; float = true; center = true; }
-
     {
       match.class = "resourceMonitor"; stay_focused = true; pin = true;
       float = true; center = true; size = lib.generators.mkLuaInline "{1200, 900}";
