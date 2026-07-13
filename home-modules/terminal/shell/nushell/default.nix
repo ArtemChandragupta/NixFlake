@@ -2,13 +2,10 @@
 let
   rebuildScript = pkgs.writers.writeNuBin "nixR"
     (builtins.readFile ./rebuildScript.nu);
-  focusCursorScript = pkgs.writers.writeNuBin "focusCursor"
-    (builtins.readFile ./focusCursorScript.nu);
 in{
 
 home.packages = [
   rebuildScript
-  focusCursorScript
 ];
 
 programs.nushell = {

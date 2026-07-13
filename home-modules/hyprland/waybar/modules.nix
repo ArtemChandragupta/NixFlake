@@ -34,6 +34,7 @@ programs.waybar.settings.mainBar = {
       "class<kitty>"    = "";
       "class<mpv>"      = "󰃽";
       "class<neovide>"  = "";
+      "class<.blueman-manager-wrapped>" = "";
 
       "class<org.gnome.Software>" = "󱗼";
       "class<org.gnome.Nautilus>" = "󰪶";

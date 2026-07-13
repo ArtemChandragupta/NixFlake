@@ -1,7 +1,7 @@
 { pkgs, ...}:
 let
   open-clip = pkgs.writers.writeNuBin "open-clip"
-    "focusCursor center | kitty -o font_size=15 -o background_opacity=0.95 --class clipse -e 'clipse'";
+    "kitty -o font_size=15 -o background_opacity=0.95 --class clipse -e 'clipse'";
 in{
 
 home.packages = [
@@ -11,7 +11,9 @@ home.packages = [
 
 services.clipse = {
   enable = true;
-  imageDisplay.type = "kitty";
+  settings = {
+    imageDisplay.type = "kitty";
+  };
   theme = {
     DimmedDesc         = "#928374";
     DimmedTitle        = "#928374";

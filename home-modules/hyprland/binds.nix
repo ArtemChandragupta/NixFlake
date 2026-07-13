@@ -47,7 +47,7 @@ wayland.windowManager.hyprland.settings.bind = [
   (bind "CTRL  + X" (dsp.exec "open-clip"))
   (bind "SUPER + Z" (dsp.exec "zen-mode"))
   (bind "SUPER + W" (dsp.exec "wallpaperScript"))
-  (bind "XF86Calculator" (dsp.exec "open-calc"))
+  (bind "XF86Calculator" (dsp.exec "kitty -o background_opacity=0.95 -e 'numbat'"))
   (bind "SUPER + SHIFT + W" (dsp.exec "nu -c 'try {pkill waybar} catch {waybar}'"))
 
   # Screenshots and screen record

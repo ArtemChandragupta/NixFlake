@@ -1,7 +1,4 @@
-{ pkgs, ... }:
-let
-  paste = pkgs.writers.writeNuBin "paste" (builtins.readFile ./paste.nu);
-in{
+{ pkgs, ... }:{
 
 imports = [
   ./filetype.nix
@@ -12,7 +9,7 @@ imports = [
   ./theme.nix
 ];
 
-home.packages = [ paste pkgs.ouch ];
+home.packages = [ pkgs.ouch ];
 
 programs.zoxide = {
   enable = true;
