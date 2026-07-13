@@ -38,4 +38,6 @@ home.sessionVariables = {
   XDG_SESSION_DESKTOP = "Hyprland";
 };
 
+home.file.".config/hypr/hyprtoolkit.conf".source = ./hyprtoolkit.conf;
+
 }

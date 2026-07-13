@@ -4,6 +4,7 @@ environment.systemPackages = with pkgs; [
   pwvucontrol
   alsa-utils
   crosspipe
+  hyprpwcenter
 ];
 
 security.rtkit.enable = true;
