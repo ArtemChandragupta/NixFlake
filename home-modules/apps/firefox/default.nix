@@ -1,4 +1,4 @@
-{ inputs, ... }:{
+{ var, inputs, ... }:{
 
 imports =[
   ./bookmarks.nix
@@ -8,7 +8,7 @@ imports =[
 
 programs.firefox = {
   enable = true;
-  configPath = ".mozilla/firefox";
+  configPath = "/home/${var.user}/.config/mozilla/firefox";
   profiles.default = {
     userChrome  = builtins.readFile ./userChrome.css;
     extensions.packages = [

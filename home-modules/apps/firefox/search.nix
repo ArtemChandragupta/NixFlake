@@ -5,7 +5,6 @@ programs.firefox.profiles.default.search = {
   order = [
     "GitHub"
     "Nix Packages"
-    "Home Manager"
   ];
   force = true;
   engines = {
@@ -19,18 +18,6 @@ programs.firefox.profiles.default.search = {
       }];
       icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
       definedAliases = [ "@pkg" ];
-    };
-
-    "Home Manager" = {
-      urls = [{
-        template = "https://home-manager-options.extranix.com/";
-        params = [
-          { name = "query";   value = "{searchTerms}"; }
-          { name = "release"; value = "master";        }
-        ];
-      }];
-      icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
-      definedAliases = [ "@hm" ];
     };
 
     "GitHub" = {
