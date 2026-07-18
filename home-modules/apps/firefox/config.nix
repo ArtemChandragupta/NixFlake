@@ -5,7 +5,7 @@ programs.firefox.profiles.default.settings = {
   "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
   "svg.context-properties.content.enabled" = true;
 
-  "startup.homepage_welcome_url" = "https://github.com/ArtemChandragupta/NixFlake/tree/main/home-modules/firefox/solid";
+  "startup.homepage_welcome_url" = "https://github.com/ArtemChandragupta/NixFlake/tree/main/home-modules/apps/firefox";
 
   "ui.key.menuAccessKeyFocuses" = false; # Remove ALT menu
 

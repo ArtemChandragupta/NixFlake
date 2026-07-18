@@ -5,6 +5,7 @@ fonts.packages = with pkgs; [
   nerd-fonts.jetbrains-mono # Favourite monospace font
 
   stix-two # Best font for scientific documents
+  cormorant # Impressive font
 
   iosevka  # Only for clock on nix output manager
 

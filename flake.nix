@@ -2,8 +2,8 @@
 
 outputs = inputs:
 let
-  system       = "x86_64-linux"; 
-  # pkgs-u-small = import inputs.nixos-u-small {inherit system;};
+  system = "x86_64-linux"; 
+  # pkgs-small = import inputs.nixos-u-small {inherit system;};
 in
 {
   nixosConfigurations = {
@@ -16,7 +16,7 @@ in
           host = "ThinkBook13s";
           base = "24.05";
         };
-        # inherit pkgs-u-small;
+        # inherit pkgs-small;
       };
       modules = [
         ./configuration.nix
@@ -34,7 +34,7 @@ in
           host = "homePC";
           base = "24.05";
         };
-        # inherit pkgs-u-small;
+        # inherit pkgs-small;
       };
       modules = [
         ./configuration.nix
@@ -47,7 +47,7 @@ in
 
 inputs = {
   nixpkgs.url = "nixpkgs/nixos-unstable";
-  # nixos-u-small.url = "nixpkgs/nixos-unstable-small";
+  # nixos-small.url = "nixpkgs/nixos-unstable-small";
 
   home-manager = {
     url = "github:nix-community/home-manager";
