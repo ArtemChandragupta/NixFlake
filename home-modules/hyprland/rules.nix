@@ -19,7 +19,7 @@ wayland.windowManager.hyprland.settings = {
 
     { match.class = "com.gabm.satty"; no_anim = true; float = true; workspace = "special"; }
     {
-      match.class = ".blueman-manager-wrapped";
+      match.class = "blueman-manager";
       animation = "popin"; maximize = true; workspace = "special";
     }
 

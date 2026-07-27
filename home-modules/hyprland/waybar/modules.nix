@@ -7,7 +7,7 @@ programs.waybar.settings.mainBar = {
   "hyprland/language" = {
     format-en = "<span color='#98971A'> </span>";
     format-ru = "<span color='#B16286'> </span>";
-    on-click = "focusCursor center | rofi-appgrid";
+    on-click  = "rofi-appgrid";
   };
 
   "tray" = {
@@ -120,7 +120,7 @@ programs.waybar.settings.mainBar = {
     format-muted = "<span color='#6D5930'> {volume}%</span> {format_source}";
     format-source = "";
     format-source-muted = "<span color='#6D5930'></span>";
-    on-click = "focusCursor center | pwvucontrol";
+    on-click = "pwvucontrol";
   };
   "pulseaudio#home" = {
     format-icons = [" " " " " " ];
@@ -128,7 +128,7 @@ programs.waybar.settings.mainBar = {
     format-muted = "<span color='#6D5930'> {volume}%</span> {format_source}";
     format-source = "";
     format-source-muted = "<span color='#6D5930'></span>";
-    on-click = "focusCursor center | pwvucontrol";
+    on-click = "pwvucontrol";
   };
 };
 
