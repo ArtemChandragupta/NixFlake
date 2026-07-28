@@ -16,6 +16,7 @@ environment.systemPackages = with pkgs; [
   file-roller
 
   telegram-desktop
+  gitui
 
   libreoffice
   zola
