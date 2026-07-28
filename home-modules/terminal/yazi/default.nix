@@ -2,7 +2,8 @@
 
 imports = [
   ./filetype.nix
-  ./icons.nix
+  ./noicons.nix
+  # ./icons.nix
   ./keymap.nix
   ./opener.nix
   ./plugins.nix
