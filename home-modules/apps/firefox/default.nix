@@ -11,6 +11,7 @@ programs.firefox = {
   configPath = "/home/${var.user}/.config/mozilla/firefox";
   profiles.default = {
     userChrome  = builtins.readFile ./userChrome.css;
+    userContent = builtins.readFile ./userContent.css;
     extensions.packages = [
       inputs.firefox-addons.packages."x86_64-linux".sidebery 
     ];

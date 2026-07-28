@@ -17,7 +17,7 @@ programs.kitty = {
     allow_remote_control = "yes";
     momentum_scroll = 0;
 
-    background_opacity = "0.9";
+    # background_opacity = "0.9";
     dynamic_background_opacity = "yes";
 
     cursor            = "#928374";

@@ -1,0 +1,16 @@
+@-moz-document url("about:newtab"), url("about:home") {
+  body {
+    background-color: #282828 !important;
+  }
+
+  .logo-and-wordmark-wrapper, .logo {
+    display: none !important;
+  }
+  
+}
+
+@-moz-document url("about:blank") {
+  html, body, #viewport {
+    background-color: #282828 !important;
+  }
+}

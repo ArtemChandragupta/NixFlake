@@ -5,6 +5,12 @@
   --toolbar-field-focus-background-color: #414141 !important; /*urlbar focused*/
 }
 
+/* Recolor startup blink */
+.browserContainer,
+browser {
+  background-color: var(--uc-frame-color) !important;
+}
+
 :has(#sidebar-box:not([hidden])) { /*enable padding with sidebar is on*/
   browser { /* round corners of content section and its background*/
     background: var(--uc-frame-color) !important;
@@ -19,7 +25,7 @@
   background: var(--uc-frame-color) !important;
 }
 
-/*Remove upper bars*/
+/* Remove upper bars */
 #titlebar,
 #TabsToolbar { 
   display: none !important; /*hide upper tabs*/
@@ -34,7 +40,7 @@
   z-index:   1 !important; /*v137 fix*/
 }
 
-/*Move buttons*/
+/* Move buttons */
 #PanelUI-button { /*settings button*/
   position: fixed !important;
   top:        5px !important;
@@ -79,7 +85,7 @@
   display: none;
 }
 
-/*Remove icons in urlbar and status in the left down angle*/
+/* Remove icons in urlbar and status in the left down angle */
 #statuspanel,
 #star-button-box,
 #identity-box,
@@ -90,7 +96,7 @@
   display: none !important; 
 }
 
-/*Urlbar*/
+/* Urlbar */
 :has(#sidebar-box:not([hidden])) {
   #urlbar-background,#urlbar {
     border-radius: 10px !important; /*Urlbar corner radius*/
@@ -111,7 +117,7 @@
 
 /* Context menu - https://github.com/stonecrusher/simpleMenuWizard */
 
-/*Blank*/
+/* Blank */
 #context-navigation,             /* Hide whole navigation bar            */
 #context-sep-navigation,         /************** Separator ***************/
 #context-savepage,               /* Save Page As...                      */
@@ -123,20 +129,20 @@
   display:none !important;
 }
 
-/*Image*/
+/* Image */
 #context-copyimage,               /* Copy Image Link                 */
 #context-sendimage {              /* Email Image…                    */
   display:none !important;
 }
 
-/*Seletion*/
+/* Seletion */
 #context-print-selection,              /* Print Selection                  */
 #context-viewpartialsource-selection,  /* View Selection Source            */
 #context-inspect-a11y {                /* Inspect Accessibility Properties */
   display:none !important;
 }
 
-/*Media*/
+/* Media */
 #context-media-playbackrate,          /* Speed                           */
 #context-media-loop,                  /* Loop                            */
 #context-leave-dom-fullscreen,        /* Exit Full Screen                */
@@ -155,7 +161,7 @@
   display:none !important;
 }
 
-/*Input*/
+/* Input */
 #context-openlinkinusercontext-menu,    /* Open Link in New Container Tab   */
 #context-openlink,                      /* Open Link in New Window          */
 #context-openlinkprivate,               /* Open Link in New Private Window  */
@@ -165,7 +171,7 @@
   display:none !important;
 }
 
-/*Extensions*/
+/* Extensions */
 #contentAreaContextMenu menu[image*="moz-extension://"],
 #contentAreaContextMenu menuitem[image*="moz-extension://"],
 #contentAreaContextMenu #context-media-eme-separator {
