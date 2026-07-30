@@ -70,6 +70,10 @@ tooltip {
 #battery {
   color: #b8bb26;
 }
+#battery.critical:not(.charging),
+#battery.critical:not(.plugged) {
+  color: #cc241d;
+}
 #battery.charging, #battery.plugged {
   background: #b8bb26;
   color: #282828;

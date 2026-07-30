@@ -96,6 +96,7 @@ programs.waybar.settings.mainBar = {
     format-plugged  = " ";
     format-icons    = ["󰂎" "󰁻" "󰁾" "󰂀" "󰁹"];
     # format-icons    = [" " " " " " " " " "];
+    states = { critical = 20; };
   };
 
   "cpu" = {
