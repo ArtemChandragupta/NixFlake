@@ -69,10 +69,10 @@ wayland.windowManager.hyprland.settings.bind = [
   (bind "SUPER + CTRL + down"  (dsp.swap "down"))
 
   # Resize windows
-  (bind "ALT + SHIFT + up"    (dsp.resize_v "-20"))
-  (bind "ALT + SHIFT + down"  (dsp.resize_v  "20"))
-  (bind "ALT + SHIFT + right" (dsp.resize_h  "20"))
-  (bind "ALT + SHIFT + left"  (dsp.resize_h "-20"))
+  (bind "ALT + SHIFT + up"    (dsp.resize_v "-80"))
+  (bind "ALT + SHIFT + down"  (dsp.resize_v  "80"))
+  (bind "ALT + SHIFT + right" (dsp.resize_h  "80"))
+  (bind "ALT + SHIFT + left"  (dsp.resize_h "-80"))
 
   # Monitors
   (bind "SUPER + SHIFT + up"    (dsp.exec "movecurrentworkspacetomonitor, HDMI-A-1"))
