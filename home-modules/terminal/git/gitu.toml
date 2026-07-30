@@ -1,13 +1,17 @@
 [style]
 selection_line = {}
+selection_bar  = { symbol = " " }
 selection_area = { bg = "#3c3836" }
 
 [bindings]
-root.toggle_section = ["left","right","tab","space"]
-root.move_up_line = ["up"]
-root.move_down_line = ["down"]
-root.move_up = ["ctrl+up"]
-root.move_down = ["ctrl+down"]
-root.unstage = ["S"]
-root.stage = ["s"]
-root.discard = ["d"]
+root.toggle_section = [ "left", "right", "tab", "space" ]
+
+root.move_up_line   = [ "up"   ]
+root.move_down_line = [ "down" ]
+root.move_up        = [ "ctrl+up"   ]
+root.move_down      = [ "ctrl+down" ]
+
+root.push_menu = ["p"]
+root.unstage   = ["S"]
+root.stage     = ["s"]
+root.discard   = ["d"]
