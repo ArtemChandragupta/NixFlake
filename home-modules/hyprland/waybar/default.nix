@@ -14,7 +14,7 @@ programs.waybar = {
   } else {
     modules-left   = [ "hyprland/language" "tray" "hyprland/workspaces" ];
     modules-center = [ "clock" ];
-    modules-right  = [ "battery" "cpu" "temperature" "memory" "backlight" "pulseaudio" ];
+    modules-right  = [ "battery" "cpu" "temperature" "memory" "idle_inhibitor" "backlight" "pulseaudio" ];
   };
 
   style = ./style.css;

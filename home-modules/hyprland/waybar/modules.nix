@@ -110,6 +110,13 @@ programs.waybar.settings.mainBar = {
     format = " {}%";
   };
 
+  "idle_inhibitor" = {
+    format = "{icon}";
+    format-icons = {
+      activated   = "󰈉";
+      deactivated = "󰈈";
+    };
+  };
   "backlight" = {
     format = "{icon}{percent}%";
     format-icons   = ["󰃞 " "󰃟 " "󰃠 "];

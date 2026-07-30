@@ -24,6 +24,7 @@ tooltip {
 #cpu,
 #temperature,
 #memory,
+#idle_inhibitor,
 #backlight,
 #pulseaudio,
 #pulseaudio.home {
@@ -98,16 +99,23 @@ tooltip {
 }
 
 
-#backlight {
-  color: #d79921;
+#idle_inhibitor {
+  color: #6D5930;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+}
+#idle_inhibitor.activated {
+  color: #d79921;
+}
+#backlight {
+  color: #d79921;
+  border-radius: 0;
+  padding: 0;
 }
 #pulseaudio {
   color: #d79921;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  padding-left: 0;
 }
 
 #pulseaudio.home {
