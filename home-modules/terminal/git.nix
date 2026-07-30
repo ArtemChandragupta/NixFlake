@@ -1,4 +1,4 @@
-{
+{ pkgs, ... }:{
 
 programs = {
   git = {
@@ -31,9 +31,29 @@ programs = {
         };
         showCommandLog = false;
         showPanelJumps = false;
+        theme.optionsTextColor = [ "default" ];
       };
     };
   };
+};
+
+home = {
+  packages = [ pkgs.gitu ];
+  file.".config/gitu/config.toml".text = /*toml*/''
+[style]
+selection_line = {}
+selection_area = { bg = "#3c3836" }
+
+[bindings]
+root.toggle_section = ["left","right","tab","space"]
+root.move_up_line = ["up"]
+root.move_down_line = ["down"]
+root.move_up = ["ctrl+up"]
+root.move_down = ["ctrl+down"]
+root.unstage = ["S"]
+root.stage = ["s"]
+root.discard = ["d"]
+    '';
 };
 
 }

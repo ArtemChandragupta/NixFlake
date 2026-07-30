@@ -1,12 +1,13 @@
 { pkgs, ... }:{
 
 programs.yazi = {
-  plugins = with pkgs.yaziPlugins; {
-    "smart-enter" = smart-enter;
-    "full-border" = full-border;
-    "starship"    = starship;
-    "lazygit"     = lazygit;
-    "ouch"        = ouch;
+  plugins = {
+    smart-enter = pkgs.yaziPlugins.smart-enter;
+    full-border = pkgs.yaziPlugins.full-border;
+    starship    = pkgs.yaziPlugins.starship;
+    lazygit     = pkgs.yaziPlugins.lazygit;
+    ouch        = pkgs.yaziPlugins.ouch;
+    gitu        = ./plugin-gitu;
   };
   initLua = /*lua*/''
     require("full-border"):setup()

@@ -16,6 +16,7 @@ programs.kitty = {
     window_padding_width = 5;
     allow_remote_control = "yes";
     momentum_scroll = 0;
+    tab_bar_style = "separator";
 
     # background_opacity = "0.9";
     dynamic_background_opacity = "yes";

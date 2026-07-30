@@ -11,7 +11,7 @@ programs.helix.settings.keys = {
     g.g = [
       ":write-all"
       # ":! kitty @ launch --wait-for-child-to-exit --type=overlay --cwd=current lazygit"
-      ":noop %sh{kitty @ launch --type=overlay --wait-for-child-to-exit --cwd $(pwd) lazygit}"
+      ":noop %sh{kitty @ launch --type=overlay --wait-for-child-to-exit --cwd $(pwd) gitu}"
       ":redraw"
       ":reload-all"
     ];
