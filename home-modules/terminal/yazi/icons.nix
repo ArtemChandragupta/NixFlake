@@ -99,6 +99,7 @@ programs.yazi.theme.icon.globs = [
       { url = "*typst.nix";     text = ""; fg = "#7ebae4"; }
 
     { url = "*terminal/";     text = ""; }
+      { url = "*git/";          text = "󰊢"; }
       { url = "*helix/";        text = "󰚄"; }
         { url = "*languages.nix"; text = ""; fg = "#7ebae4"; }
         { url = "*keymap-ru.nix"; text = "󰌌"; fg = "#7ebae4"; }
@@ -133,7 +134,6 @@ programs.yazi.theme.icon.globs = [
       { url = "*clipse.nix";    text = "󱓥"; fg = "#7ebae4"; }
       { url = "*direnv.nix";    text = "󰇐"; fg = "#7ebae4"; }
       { url = "*fastfetch.nix"; text = "󱡠"; fg = "#7ebae4"; }
-      { url = "*git.nix";       text = "󰊢"; fg = "#7ebae4"; }
       { url = "*kitty.nix";     text = "󰄛"; fg = "#7ebae4"; }
       { url = "*numbat.nix";    text = "󰇃"; fg = "#7ebae4"; }
       { url = "*starship.nix";  text = "󱓞"; fg = "#7ebae4"; }

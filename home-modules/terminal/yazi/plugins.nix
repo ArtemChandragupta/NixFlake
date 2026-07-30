@@ -10,8 +10,8 @@ programs.yazi = {
     gitu        = ./plugin-gitu;
   };
   initLua = /*lua*/''
-    require("full-border"):setup()
     require("starship"   ):setup()
+    require("full-border"):setup { type = ui.Border.PLAIN }
   '';
   settings.plugin.prepend_previewers = [
       { mime = "application/*zip";            run = "ouch"; }

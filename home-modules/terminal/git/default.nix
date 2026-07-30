@@ -10,14 +10,17 @@ programs = {
     };
     signing.format = null; # For hm less then 25.05
   };
+  
   diff-so-fancy = {
     enable = true;
     enableGitIntegration = true;
   };
+  
   gh = {
     enable = true;
     gitCredentialHelper.enable = true;
   };
+  
   lazygit = {
     enable = true;
     settings = {
@@ -39,21 +42,7 @@ programs = {
 
 home = {
   packages = [ pkgs.gitu ];
-  file.".config/gitu/config.toml".text = /*toml*/''
-[style]
-selection_line = {}
-selection_area = { bg = "#3c3836" }
-
-[bindings]
-root.toggle_section = ["left","right","tab","space"]
-root.move_up_line = ["up"]
-root.move_down_line = ["down"]
-root.move_up = ["ctrl+up"]
-root.move_down = ["ctrl+down"]
-root.unstage = ["S"]
-root.stage = ["s"]
-root.discard = ["d"]
-    '';
+  file.".config/gitu/config.toml".source = ./gitu.toml;
 };
 
 }

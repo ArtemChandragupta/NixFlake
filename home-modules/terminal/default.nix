@@ -1,6 +1,7 @@
 {
 
 imports = [
+  ./git
   ./helix
   ./shell
   ./yazi
@@ -9,7 +10,6 @@ imports = [
   ./clipse.nix
   ./direnv.nix
   ./fastfetch.nix
-  ./git.nix
   ./kitty.nix
   ./numbat.nix
   ./starship.nix
