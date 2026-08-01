@@ -1,7 +1,6 @@
 { pkgs, ... }:{
 
 imports = [
-  ./filetype.nix
   # ./noicons.nix
   ./icons.nix
   ./keymap.nix

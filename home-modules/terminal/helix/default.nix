@@ -16,6 +16,8 @@ programs.helix = {
       line-number = "relative";
       color-modes = true;
       bufferline  = "multiple";
+      continue-comments = false;
+      completion-replace = true;
 
       statusline = {
         right = [

@@ -1,5 +1,10 @@
 {
 
+programs.yazi.theme.filetype.rules = [
+  { url = "*";  fg = "#a89984"; }
+  { url = "*/"; fg = "#458588"; }
+];
+
 programs.yazi.theme.icon.prepend_exts = [
   { name = "nu";  text = ""; fg = "#689D6A"; }
 ];
