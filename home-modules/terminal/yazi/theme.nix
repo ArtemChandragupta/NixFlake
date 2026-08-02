@@ -10,14 +10,19 @@ programs.yazi.theme = {
   };
 
   mgr = {
-    cwd = { fg = "#b8bb26"; };
+    cwd = { fg = "#ebdbb2"; };
 
     find_keyword  = { fg = "#b8bb26"; italic = true; };
     find_position = { fg = "#fe8019"; bg = "reset"; italic = true; };
 
-    marker_selected = { fg = "#b8bb26"; bg = "#b8bb26"; };
+    marker_selected = { fg = "#d79921"; bg = "#d79921"; };
     marker_copied   = { fg = "#b8bb26"; bg = "#b8bb26"; };
     marker_cut      = { fg = "#fb4934"; bg = "#fb4934"; };
+    marker_marked   = { fg = "#fe8019"; bg = "#fe8019"; };
+
+    count_copied   = { fg = "#282828"; bg = "#b8bb26"; };
+    count_cut      = { fg = "#282828"; bg = "#fb4934"; };
+    count_selected = { fg = "#282828"; bg = "#d79921"; };
 
     tab_active   = { fg = "#282828"; bg = "#504945"; };
     tab_inactive = { fg = "#a89984"; bg = "#3c3836"; };
@@ -28,8 +33,8 @@ programs.yazi.theme = {
   };
 
   status = {
-    separator_open  = "";
-    separator_close = "";
+    sep_left  = { open = ""; close = ""; };
+    sep_right = { open = ""; close = ""; };
     separator_style = { fg = "#3c3836"; bg = "#3c3836"; };
 
     progress_label  = { fg = "#ebdbb2"; bold = true; };
@@ -44,12 +49,12 @@ programs.yazi.theme = {
   };
 
   mode = {
-    normal_main = { fg = "#282828"; bg = "#458588"; bold = true; };
-    select_main = { fg = "#282828"; bg = "#b8bb26"; bold = true; };
+    normal_main = { fg = "#282828"; bg = "#bdae93"; bold = true; };
+    select_main = { fg = "#282828"; bg = "#fe8019"; bold = true; };
     unset_main  = { fg = "#282828"; bg = "#d3869b"; bold = true; };
-    normal_alt  = { bg = "#3C3836"; fg = "#458588"; bold = true; };
-    select_alt  = { bg = "#3C3836"; fg = "#b8bb26"; bold = true; };
-    unset_alt   = { bg = "#3C3836"; fg = "#d3869b"; bold = true; };
+    normal_alt  = { bg = "#504945"; fg = "#ebdbb2"; bold = true; };
+    select_alt  = { bg = "#504945"; fg = "#ebdbb2"; bold = true; };
+    unset_alt   = { bg = "#504945"; fg = "#ebdbb2"; bold = true; };
   };
 
   input = {
@@ -75,9 +80,9 @@ programs.yazi.theme = {
     mask            = { bg = "#3c3836"; };
     cand            = { fg = "#83a598"; };
     rest            = { fg = "#928374"; };
-    desc            = { fg = "#fe8019"; };
-    separator       = "  ";
-    separator_style = { fg = "#504945"; };
+    desc            = { fg = "#83a598"; };
+    separator       = " -> ";
+    separator_style = { fg = "#665c54"; };
   };
 
   help = {
