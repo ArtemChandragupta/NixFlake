@@ -1,6 +1,10 @@
 { lib, ... }: {
 
 wayland.windowManager.hyprland.settings = {
+  animation = [
+    { leaf = "windows"; enabled = true; speed = 7; bezier = "default"; style = "slide"; }
+    { leaf = "specialWorkspace"; enabled = true; speed = 7; bezier = "default"; style = "fade"; }
+  ];
   window_rule = [
     { match.class = ".*"; suppress_event = "maximize"; }
 

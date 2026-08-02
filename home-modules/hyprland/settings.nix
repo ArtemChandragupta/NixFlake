@@ -11,10 +11,14 @@ wayland.windowManager.hyprland.settings = {
     ];
   };
 
-  animation = [
-    { leaf = "windows"; enabled = true; speed = 7; bezier = "default"; style = "slide"; }
-    { leaf = "specialWorkspace"; enabled = true; speed = 7; bezier = "default"; style = "fade"; }
-  ];
+  wayland.windowManager.hyprland.extraConfig = /*lua*/''
+    hl.on("hyprland.start", function()
+      hl.exec_cmd("kitty")
+      hl.exec_cmd("recolor-border")
+      hl.exec_cmd("waybar")
+      hl.exec_cmd("Telegram -startintray")
+    end)
+  '';
 
   config = {
     ecosystem = {

@@ -2,15 +2,14 @@
 
 imports = [
   ./icons
+  ./monitors
   ./rofi-appgrid
   ./screenshots
-  ./monitors
+  ./scripts
   ./swaync
   ./wallpaper
   ./waybar
-  ./zen-mode
 
-  ./autostart.nix
   ./binds.nix
   ./rules.nix
   ./screenlock.nix

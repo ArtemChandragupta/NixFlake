@@ -42,24 +42,10 @@ programs.yazi.theme.icon.globs = [
   { url = "*Screenshots/";  text = ""; }
   { url = "*Studythings/";  text = "󰗚"; }
   { url = "*Sync/";         text = ""; }
-  { url = "*Vaults/";       text = "󰘳"; }
   { url = "*virtual/";      text = ""; }
 
   { url = "*home-modules/"; text = "󱂵"; }
-    { url = "*ags/";          text = ""; }
-      { url = "*backlight/";    text = "󰃠"; }
-      { url = "*battery/";      text = "󰂄"; }
-      { url = "*clock/";        text = "󰅐"; }
-      { url = "*cpu/";          text = ""; }
-      { url = "*flake/";        text = "󱄅"; }
-      { url = "*memory/";       text = ""; }
-      { url = "*temperature/";  text = "󰔐"; }
-      { url = "*tray/";         text = ""; }
-      { url = "*volume/";       text = "󱄠"; }
-      { url = "*workspace/";    text = ""; }
-
     { url = "*apps/";          text = ""; }
-      { url = "*dialect/";      text = "󰗊"; }
       { url = "*firefox/";      text = "󰈹"; }
         { url = "*solid/";        text = "󰌨"; }
         { url = "*transparent/";  text = "󰧾"; }
@@ -76,17 +62,14 @@ programs.yazi.theme.icon.globs = [
       { url = "*rofi-appgrid/"; text = "󱗼"; }
         { url = "*style.rasi";    text = "󱜧"; fg = "#cc241d"; }
         { url = "*pkg.nix";       text = ""; fg = "#7ebae4"; }
+      { url = "*scripts/";      text = ""; }
       { url = "*swaync/";       text = "󱅫"; }
       { url = "*wallpaper/";    text = "󰸉"; }
         { url = "*fetchWlppr.nix";text = "󰭽"; fg = "#7ebae4"; }
       { url = "*waybar/";       text = "󱟛"; }
-      { url = "*zen-mode/";     text = "󰚀"; }
-        { url = "*modules.nix"; text = "󰞤"; fg = "#7ebae4"; }
-      { url = "*autostart.nix"; text = "󱣲"; fg = "#7ebae4"; }
       { url = "*binds.nix";     text = "󰌌"; fg = "#7ebae4"; }
       { url = "*rules.nix";     text = ""; fg = "#7ebae4"; }
       { url = "*screenlock.nix";text = "󰷛"; fg = "#7ebae4"; }
-      { url = "*screenshot.nix";text = ""; fg = "#7ebae4"; }
       { url = "*settings.nix";  text = ""; fg = "#7ebae4"; }
 
     { url = "*languages/";    text = ""; }
