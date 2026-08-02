@@ -18,7 +18,7 @@ programs.nh = {
   flake  = "/home/${var.user}/nix";
 };
 
-services.gvfs.enable     = true; # For trash folder and other
-security.soteria.enable  = true; # For polkit authentification
+services.gvfs.enable    = true; # For trash folder and other
+security.soteria.enable = true; # For polkit authentification
 
 }

@@ -56,16 +56,12 @@ programs.yazi.theme.icon.globs = [
       { url = "*zathura.nix";   text = ""; fg = "#7ebae4"; }
 
     { url = "*hyprland/";     text = ""; }
-      { url = "*icons/";        text = ""; }
-        { url = "*gruvbox-plus-dark.nix"; text = "󰚠"; fg = "#7ebae4"; }
       { url = "*monitors/";     text = "󱡶"; }
       { url = "*rofi-appgrid/"; text = "󱗼"; }
         { url = "*style.rasi";    text = "󱜧"; fg = "#cc241d"; }
         { url = "*pkg.nix";       text = ""; fg = "#7ebae4"; }
       { url = "*scripts/";      text = ""; }
       { url = "*swaync/";       text = "󱅫"; }
-      { url = "*wallpaper/";    text = "󰸉"; }
-        { url = "*fetchWlppr.nix";text = "󰭽"; fg = "#7ebae4"; }
       { url = "*waybar/";       text = "󱟛"; }
       { url = "*binds.nix";     text = "󰌌"; fg = "#7ebae4"; }
       { url = "*rules.nix";     text = ""; fg = "#7ebae4"; }
@@ -85,6 +81,12 @@ programs.yazi.theme.icon.globs = [
       { url = "*rust.nix";      text = ""; fg = "#7ebae4"; }
       { url = "*toml.nix";      text = ""; fg = "#7ebae4"; }
       { url = "*typst.nix";     text = ""; fg = "#7ebae4"; }
+
+    { url = "*style/";        text = "󰃣"; }
+      { url = "*icons/";        text = ""; }
+        { url = "*gruvbox-plus-dark.nix"; text = "󰚠"; fg = "#7ebae4"; }
+      { url = "*stylix.nix";    text = "󰃣"; fg = "#7ebae4"; }
+      { url = "*wallpapers.nix";text = "󰸉"; fg = "#7ebae4"; }
 
     { url = "*terminal/";     text = ""; }
       { url = "*git/";          text = "󰊢"; }
@@ -126,8 +128,6 @@ programs.yazi.theme.icon.globs = [
       { url = "*numbat.nix";    text = "󰇃"; fg = "#7ebae4"; }
       { url = "*starship.nix";  text = "󱓞"; fg = "#7ebae4"; }
 
-    { url = "*stylix.nix";    text = "󰃣"; fg = "#7ebae4"; }
-
   { url = "*modules/";      text = "󱁿"; }
     { url = "*host-specific/";text = "󰛧"; }
       { url = "*ThinkBook13s/"; text = "󰌢"; }
@@ -139,7 +139,6 @@ programs.yazi.theme.icon.globs = [
         { url = "*virtual.nix";   text = ""; fg = "#7ebae4"; }
 
     { url = "*pkgs/";         text = "󰏖"; }
-      { url = "*apps.nix";      text = ""; fg = "#7ebae4"; }
       { url = "*distrobox.nix"; text = "󰬋"; fg = "#7ebae4"; }
       { url = "*flatpak.nix";   text = "󰹍"; fg = "#7ebae4"; }
       { url = "*fonts.nix";     text = ""; fg = "#7ebae4"; }

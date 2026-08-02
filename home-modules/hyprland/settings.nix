@@ -1,5 +1,14 @@
 { lib, ... }: {
 
+wayland.windowManager.hyprland.extraConfig = /*lua*/''
+  hl.on("hyprland.start", function()
+    hl.exec_cmd("kitty")
+    hl.exec_cmd("recolor-border")
+    hl.exec_cmd("waybar")
+    hl.exec_cmd("Telegram -startintray")
+  end)
+'';
+
 wayland.windowManager.hyprland.settings = {
   gesture = {
     _args = [
@@ -10,15 +19,6 @@ wayland.windowManager.hyprland.settings = {
       }'')
     ];
   };
-
-  wayland.windowManager.hyprland.extraConfig = /*lua*/''
-    hl.on("hyprland.start", function()
-      hl.exec_cmd("kitty")
-      hl.exec_cmd("recolor-border")
-      hl.exec_cmd("waybar")
-      hl.exec_cmd("Telegram -startintray")
-    end)
-  '';
 
   config = {
     ecosystem = {

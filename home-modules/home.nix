@@ -4,9 +4,8 @@ imports = [
   ./apps
   ./hyprland
   ./languages
+  ./style
   ./terminal
-
-  ./stylix.nix
 ];
 
 programs.home-manager.enable = true;

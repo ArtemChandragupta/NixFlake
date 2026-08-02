@@ -1,13 +1,11 @@
 {
 
 imports = [
-  ./icons
   ./monitors
   ./rofi-appgrid
   ./screenshots
   ./scripts
   ./swaync
-  ./wallpaper
   ./waybar
 
   ./binds.nix
@@ -36,7 +34,5 @@ home.sessionVariables = {
   XDG_CURRENT_DESKTOP = "Hyprland";
   XDG_SESSION_DESKTOP = "Hyprland";
 };
-
-home.file.".config/hypr/hyprtoolkit.conf".source = ./hyprtoolkit.conf;
 
 }

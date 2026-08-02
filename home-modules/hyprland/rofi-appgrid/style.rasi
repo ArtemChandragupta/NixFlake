@@ -29,8 +29,8 @@ inputbar {
   background-color:  white / 16%;
 }
 entry {
-  cursor:             text;
-  placeholder:        "Search";
+  cursor:            text;
+  placeholder:       "Search";
 }
 
 

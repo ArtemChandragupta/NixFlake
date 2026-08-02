@@ -27,6 +27,8 @@ let
 in
 {
 
+services.awww.enable = true;
+
 home.file = {
   ".wallpaper/BetterSonoma.png".source = BetterSonoma;
   ".wallpaper/SequoiaLight.png".source = SequoiaLight;
