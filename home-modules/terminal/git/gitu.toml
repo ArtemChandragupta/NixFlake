@@ -1,7 +1,12 @@
 [style]
+cursor = { symbol = "▌", fg = "#bdae93" }
+
 selection_line = {}
 selection_bar  = { symbol = " " }
 selection_area = { bg = "#3c3836" }
+
+section_header = { fg = "#83a598" }
+hash = { fg = "magenta" }
 
 [bindings]
 root.toggle_section = [ "left", "right", "tab", "space" ]
