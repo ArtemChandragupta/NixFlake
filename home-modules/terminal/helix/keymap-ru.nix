@@ -11,7 +11,7 @@ programs.helix.settings.keys = {
     "C-е" = [ ":! zathura main.pdf &" ];
 
     "ш"   = ["insert_mode"];
-    "Ж"   = [":! hyprctl switchxkblayout all 0" "command_mode"];
+    "Ж"   = [":! hyprctl switchxkblayout all 0 &> /dev/null" "command_mode"];
     "м"   = ["select_mode"];
     
     "C-с" = ["toggle_comments"];
