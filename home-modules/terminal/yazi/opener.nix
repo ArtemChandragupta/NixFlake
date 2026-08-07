@@ -20,19 +20,6 @@ programs.yazi.settings = {
         block = true;
       }
     ];
-    "hx-writer" = [
-      {
-        desc = "hx-writer";
-        run = ''
-            kitty @ set-font-size 16
-            kitty @ set-background-opacity 1
-            hx "$@"
-            kitty @ set-font-size 0
-            kitty @ set-background-opacity --toggle 1
-          '';
-        block = true;
-      }
-    ];
     "zathura" = [
       {
         run   = ''zathura "$@"'';
@@ -53,32 +40,12 @@ programs.yazi.settings = {
       use = "papers";
     }
     {
-      url = "*.tex";
-      use = ["hx-writer" "hx"];
-    }
-    {
-      url = "*.txt";
-      use = ["hx-writer" "hx"];
-    }
-    {
-      url = "*.md";
-      use = "hx-writer";
-    }
-    {
-      url = "*.typ";
-      use = ["hx-writer" "hx"];
-    }
-    {
-      url = "*.py";
-      use = ["hx-writer" "hx"];
-    }
-    {
-      url = "*.rs";
-      use = ["hx-writer" "hx"];
+      url = "*.svg";
+      use = ["image" "hx"];
     }
     {
       mime = "text/*";
-      use  = ["hx" "hx-writer"];
+      use  = "hx";
     }
     {
       mime = "image/*";

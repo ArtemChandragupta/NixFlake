@@ -10,6 +10,9 @@ programs.kitty = {
     "ctrl+shift+м" = "paste_from_clipboard";
     "ctrl+shift+с" = "copy_to_clipboard";
     "ctrl+shift+enter" = "launch --cwd=current --type=os-window";
+    "ctrl+shift+plus" = "change_font_size all +4.0";
+    "ctrl+shift+equal" = "change_font_size all +4.0";
+    "ctrl+shift+minus" = "change_font_size all -4.0";
   };
   settings = {
     confirm_os_window_close = 0;
@@ -22,7 +25,7 @@ programs.kitty = {
     tab_separator = "│";
 
     # background_opacity = "0.9";
-    dynamic_background_opacity = "yes";
+    # dynamic_background_opacity = "yes";
 
     cursor            = "#928374";
     cursor_text_color = "background";
