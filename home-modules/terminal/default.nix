@@ -12,7 +12,6 @@ imports = [
   ./fastfetch.nix
   ./kitty.nix
   ./numbat.nix
-  ./starship.nix
 ];
 
 }

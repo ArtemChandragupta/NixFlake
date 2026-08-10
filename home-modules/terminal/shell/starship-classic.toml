@@ -1,0 +1,47 @@
+format = "[](#458588)[󰘳](bg:#458588 fg:#282828)$username[](bg:#83a598 fg:#458588)$directory[](fg:#83a598 bg:#458588)$git_branch$git_status[](fg:#458588 bg:#665c54)$nodejs$haskell$python[](fg:#665c54 bg:#3c3836)$time[](fg:#3c3836)$line_break$character "
+
+[character]
+error_symbol = "[>>-](bold fg:#cc241a)"
+success_symbol = "[>>-](bold fg:#98971a)"
+
+[directory]
+format = "[ $path ]($style)"
+style = "fg:#282828 bg:#83a598"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[git_branch]
+format = "[[ $symbol $branch ](fg:#fbf1c7 bg:#458588)]($style)"
+style = "bg:#458588"
+symbol = ""
+
+[git_status]
+format = "[[($all_status$ahead_behind )](fg:#fbf1c7 bg:#458588)]($style)"
+style = "bg:#458588"
+
+[haskell]
+format = "[[ $symbol( $version) ](fg:#fbf1c7 bg:#665c54)]($style)"
+style = "bg:#665c54"
+symbol = ""
+
+[nodejs]
+format = "[[ $symbol( $version) ](fg:#fbf1c7 bg:#665c54)]($style)"
+style = "bg:#665c54"
+symbol = " "
+
+[python]
+format = "[[ $symbol( $version) ](fg:#fbf1c7 bg:#665c54)]($style)"
+style = "bg:#665c54"
+symbol = "󰌠"
+
+[time]
+disabled = false
+format = "[[  $time ](fg:#fbf1c7 bg:#3c3836)]($style)"
+style = "bg:#3c3836"
+time_format = "%R"
+
+[username]
+format = "[ $user ]($style)"
+show_always = true
+style_root = "bg:#458588 fg:#cc241a"
+style_user = "bg:#458588 fg:#282828"

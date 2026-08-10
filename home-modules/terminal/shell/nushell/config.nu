@@ -6,6 +6,7 @@ $env.EDITOR = 'hx';
 
 $env.config = {
   show_banner: false,
+  table: {mode: single},
   completions: {
     case_sensitive: false,
     quick: true,

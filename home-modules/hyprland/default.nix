@@ -1,7 +1,6 @@
 {
 
 imports = [
-  ./monitors
   ./rofi-appgrid
   ./screenshots
   ./scripts
