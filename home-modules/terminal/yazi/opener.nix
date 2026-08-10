@@ -4,31 +4,31 @@ programs.yazi.settings = {
   opener = {
     "mpv" = [
       {
-        run = ''mpv --no-terminal "$@" 2&>/dev/null'';
+        run = "mpv --no-terminal %s";
         block = true;
       }
     ];
     "image" = [
       {
-        run   = ''loupe "$@" 2&>/dev/null'';
+        run   = "loupe %s";
         block = true;
       }
     ];
     "hx" = [
       {
-        run   = ''hx "$@"'';
+        run   = "hx %s";
         block = true;
       }
     ];
     "zathura" = [
       {
-        run   = ''zathura "$@"'';
+        run   = "zathura %s";
         block = true;
       }
     ];
     "papers" = [
       {
-        run   = ''papers "$@"'';
+        run   = "papers %s";
         block = true;
       }
     ];

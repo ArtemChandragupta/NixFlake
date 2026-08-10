@@ -9,6 +9,7 @@ environment.systemPackages = with pkgs; [
   socat   # Watch UNIX sockets
   wget # Get things from internet
   nurl # Get hash for derevation
+  gcc
 ];
 
 }
