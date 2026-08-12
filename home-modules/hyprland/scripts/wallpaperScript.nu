@@ -1,5 +1,6 @@
 let screen = hyprctl -j monitors | from json | where focused == true | get name | first
-let cache  = $'.cache/awww/($screen)'
+let version = awww -V | split row " " | last
+let cache  = $'.cache/awww/($version)/($screen)'
 
 mkdir .cache/awww # Ensure cache dir exist
 touch $cache      # Ensure cache file exist
