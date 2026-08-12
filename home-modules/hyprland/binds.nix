@@ -36,7 +36,6 @@ wayland.windowManager.hyprland.settings.bind = [
   (bind "SUPER + Delete" dsp.exit)
   (bind "SUPER + F" dsp.fullscreen)
   (bind "SUPER + V" dsp.float)
-  (bind "SUPER + J" (dsp.layout "togglesplit"))
 
   (bind "SUPER + T" (dsp.exec "kitty"))
   (bind "SUPER + C" (dsp.exec "hyprpicker -a"))

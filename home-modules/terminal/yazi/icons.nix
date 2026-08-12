@@ -38,8 +38,8 @@ programs.yazi.theme.icon.globs = [
   { url = "*media/";        text = ""; }
   { url = "*nix/";          text = ""; }
   { url = "*PortProton/";   text = "󰹻"; }
-  { url = "*Pictures/";     text = ""; }
-  { url = "*Screenshots/";  text = ""; }
+  { url = "*Pictures/";     text = ""; }
+  { url = "*Screenshots/";  text = "󰊓"; }
   { url = "*Studythings/";  text = "󰗚"; }
   { url = "*Sync/";         text = ""; }
   { url = "*virtual/";      text = ""; }
