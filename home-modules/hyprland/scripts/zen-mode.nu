@@ -18,8 +18,5 @@ def remove-distraction [] {
 def restore-order [] {
   hyprctl reload
   systemctl --user start waybar
-
-  try {
-    ps | where name == 'recolor-border' | get pid | each {kill $in}
-  }
+  pkill recolor-border
 }

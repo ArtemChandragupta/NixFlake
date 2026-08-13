@@ -8,7 +8,7 @@ in{
 
 home.packages = with pkgs; [
   grim
-  wf-recorder
+  wl-screenrec
 
   recorderScript
   screenshotScript

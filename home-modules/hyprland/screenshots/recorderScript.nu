@@ -1,6 +1,4 @@
-let process = ps | where name == wf-recorder # Get recorder process id
-
-match ($process | is-empty) { # Is recorder inactive?
+match (ps | where name == wl-screenrec | is-empty) { # Is recorder inactive?
   true  => {recordStart}
   false => {recordStop }
 }
@@ -10,10 +8,10 @@ def recordStart [] {
   let screen = hyprctl -j monitors | from json | where focused == true | get name | first
 
   notify-send Record Start
-  | wf-recorder -o $screen -f $name
+  | wl-screenrec --ffmpeg-encoder-options "profile=main" -o $screen -f $name
 }
 
 def recordStop [] {
   notify-send Record Stop
-  | $process | get pid | first | kill $in
+  | pkill wl-screenrec
 }
