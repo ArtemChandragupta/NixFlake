@@ -1,7 +1,7 @@
 { lib, ... }:
 let
   lua = lib.generators.mkLuaInline;
-  
+
   dsp = {
     exec  = cmd: lua ''hl.dsp.exec_cmd("${cmd}")'';
     close = lua "hl.dsp.window.close()";
@@ -29,7 +29,7 @@ let
       (bind "SUPER + SHIFT + ${key}" (dsp.moveToWorkspace i))
     ]
   ) (lib.range 1 10);
-  
+
 in {
 wayland.windowManager.hyprland.settings.bind = [
   (bind "SUPER + Q" dsp.close)
@@ -46,8 +46,8 @@ wayland.windowManager.hyprland.settings.bind = [
   (bind "CTRL  + X" (dsp.exec "open-clip"))
   (bind "SUPER + Z" (dsp.exec "zen-mode"))
   (bind "SUPER + W" (dsp.exec "wallpaperScript"))
-  (bind "XF86Calculator" (dsp.exec "kitty -o background_opacity=0.95 -e 'numbat'"))
-  (bind "SUPER + SHIFT + W" (dsp.exec "nu -c 'try {pkill waybar} catch {waybar}'"))
+  (bind "XF86Calculator" (dsp.exec "kitty -e 'numbat'"))
+  (bind "SUPER + SHIFT + W" (dsp.exec "nu -c 'try {pkill waybar} catch {systemctl --user start waybar}'"))
 
   # Screenshots and screen record
   (bind "PRINT" (dsp.exec "screenshotScript window"))
@@ -78,7 +78,7 @@ wayland.windowManager.hyprland.settings.bind = [
   (bind "SUPER + SHIFT + down"  (dsp.exec "movecurrentworkspacetomonitor, eDP-1"))
   (bind "SUPER + SHIFT + right" (dsp.exec "rotateMonitorScript 1"))
   (bind "SUPER + SHIFT + left"  (dsp.exec "rotateMonitorScript 3"))
-  
+
   # Brightness
   (bindOpts "XF86MonBrightnessUp"   (dsp.exec "brightnessctl set +5%") { locked = true; })
   (bindOpts "XF86MonBrightnessDown" (dsp.exec "brightnessctl set 5%-") { locked = true; })
@@ -86,8 +86,8 @@ wayland.windowManager.hyprland.settings.bind = [
   (bindOpts "ALT + XF86MonBrightnessDown" (dsp.exec "brightnessctl --device='platform::kbd_backlight' set 1-") { locked = true; })
 
    # Volume keys
-  (bindOpts "XF86AudioRaiseVolume" (dsp.exec "wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%+") { locked = true; repeating = true; })
-  (bindOpts "XF86AudioLowerVolume" (dsp.exec "wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%-") { locked = true; repeating = true; })
+  (bindOpts "XF86AudioRaiseVolume" (dsp.exec "wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%+") { locked = true; })
+  (bindOpts "XF86AudioLowerVolume" (dsp.exec "wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%-") { locked = true; })
   (bindOpts "XF86AudioMute" (dsp.exec "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle") { locked = true; })
   (bindOpts "XF86AudioMicMute" (dsp.exec "amixer set Capture toggle") { locked = true; })
 
