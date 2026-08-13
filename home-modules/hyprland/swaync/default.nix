@@ -29,7 +29,7 @@ services.swaync = {
         text = "Notifications";
         clear-all-button = true;
         button-text = "󰆴";
-      };    
+      };
     };
   };
 };

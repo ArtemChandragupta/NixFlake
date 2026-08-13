@@ -1,5 +1,5 @@
 def main [mode?:string] {
-  match $mode { # Rebuild or save old flake and Update 
+  match $mode { # Rebuild or save old flake and Update
     null => {nh os switch ~/nix}
     'U'  => {backup | nh os switch ~/nix --update}
   }

@@ -8,7 +8,7 @@ nix.settings.trusted-users = [
 users.users.${var.user} = {
   isNormalUser = true;
   shell = pkgs.nushell;
-  extraGroups = [ 
+  extraGroups = [
     "networkmanager"
     "wheel"
     "libvirtd"

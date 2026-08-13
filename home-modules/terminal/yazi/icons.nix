@@ -39,7 +39,7 @@ programs.yazi.theme.icon.globs = [
   { url = "*nix/";          text = ""; }
   { url = "*PortProton/";   text = "󰹻"; }
   { url = "*Pictures/";     text = ""; }
-  { url = "*Screenshots/";  text = "󰊓"; }
+  { url = "*Screenshots/";  text = ""; }
   { url = "*Studythings/";  text = "󰗚"; }
   { url = "*Sync/";         text = ""; }
   { url = "*virtual/";      text = ""; }

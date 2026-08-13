@@ -10,17 +10,17 @@ programs = {
     };
     signing.format = null; # For hm less then 25.05
   };
-  
+
   diff-so-fancy = {
     enable = true;
     enableGitIntegration = true;
   };
-  
+
   gh = {
     enable = true;
     gitCredentialHelper.enable = true;
   };
-  
+
   lazygit = {
     enable = true;
     settings = {

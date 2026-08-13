@@ -5,7 +5,7 @@ programs.helix.settings.keys = {
     "й" = [":quit"];
     "н" = ["yank_to_clipboard"];
     "в" = [
-      "yank_to_clipboard"        
+      "yank_to_clipboard"
       "delete_selection_noyank"
     ];
     "C-е" = [ ":! zathura main.pdf &" ];
@@ -13,7 +13,7 @@ programs.helix.settings.keys = {
     "ш"   = ["insert_mode"];
     "Ж"   = [":! hyprctl switchxkblayout all 0 &> /dev/null" "command_mode"];
     "м"   = ["select_mode"];
-    
+
     "C-с" = ["toggle_comments"];
     "ч"   = ["extend_line_below"];
     "Ч"   = [
@@ -24,7 +24,7 @@ programs.helix.settings.keys = {
   select = {
     "н" = ["yank_to_clipboard"];
     "в" = [
-      "yank_to_clipboard"        
+      "yank_to_clipboard"
       "delete_selection_noyank"
     ];
   };

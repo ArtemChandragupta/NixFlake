@@ -13,7 +13,7 @@ programs.firefox = {
     userChrome  = builtins.readFile ./userChrome.css;
     userContent = builtins.readFile ./userContent.css;
     extensions.packages = [
-      inputs.firefox-addons.packages."x86_64-linux".sidebery 
+      inputs.firefox-addons.packages."x86_64-linux".sidebery
     ];
   };
 };

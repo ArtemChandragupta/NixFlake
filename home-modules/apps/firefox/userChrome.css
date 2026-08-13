@@ -27,7 +27,7 @@ browser {
 
 /* Remove upper bars */
 #titlebar,
-#TabsToolbar { 
+#TabsToolbar {
   display: none !important; /*hide upper tabs*/
 }
 #nav-bar {
@@ -92,8 +92,8 @@ browser {
 #permission-icon-container,
 #urlbar-revert-button-container,
 #urlbar-searchmode-switcher,
-#tracking-protection-icon-container { 
-  display: none !important; 
+#tracking-protection-icon-container {
+  display: none !important;
 }
 
 /* Urlbar */

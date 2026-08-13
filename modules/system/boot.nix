@@ -1,6 +1,6 @@
 { pkgs, ... }:{
 
-boot = { 
+boot = {
   loader = {
     timeout = 0;
     systemd-boot.enable = true;

@@ -5,7 +5,7 @@ programs.helix.settings.keys = {
     "q" = [":quit"];
     "y" = ["yank_to_clipboard"];
     "d" = [
-      "yank_to_clipboard"        
+      "yank_to_clipboard"
       "delete_selection_noyank"
     ];
     g.g = [
@@ -20,7 +20,7 @@ programs.helix.settings.keys = {
   select = {
     "y" = [ "yank_to_clipboard" ];
     "d" = [
-      "yank_to_clipboard"        
+      "yank_to_clipboard"
       "delete_selection_noyank"
     ];
   };

@@ -36,7 +36,7 @@ After that hostname is set and all future rebuilds will default to that hostname
 
 In _module_ directory there are common NixOS modules and host-specific things like amd kernel modules.
 
-In _home-modules_ there are home-manager configs, like Hyprland bindings and editor configs. 
+In _home-modules_ there are home-manager configs, like Hyprland bindings and editor configs.
 
 ## Screenshots
 ![image](https://github.com/user-attachments/assets/4a620985-5189-4202-a418-470708ae77cc)

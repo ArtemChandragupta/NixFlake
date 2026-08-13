@@ -35,7 +35,7 @@ def screen [] {
 def redact [] {
   let name   = $'($nameBase)-redact.png'
   let screen = hyprctl -j monitors | from json | where focused == true | get name.0
-  
-  grim -o $screen - 
+
+  grim -o $screen -
   | satty --filename - --output-filename $name
 }

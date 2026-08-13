@@ -12,7 +12,7 @@ programs.home-manager.enable = true;
 
 home = {
   username = var.user;
-  homeDirectory = "/home/${var.user}";  
+  homeDirectory = "/home/${var.user}";
   stateVersion  = "${var.base}";
   sessionVariables = {
     BROWSER  = "firefox";

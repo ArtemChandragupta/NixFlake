@@ -28,7 +28,7 @@ programs.firefox.profiles.default.search = {
       icon = "https://github.githubassets.com/favicons/favicon-dark.png";
       definedAliases = ["@gh"];
     };
-    
+
     "GitHub".metaData.alias = "@gh";
     "bing".metaData.hidden = true;
     "wikipedia".metaData.hidden = true;

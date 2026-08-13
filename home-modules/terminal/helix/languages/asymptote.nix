@@ -2,7 +2,7 @@
 
 programs.helix = {
   languages = {
-    
+
     language = [{
       name = "asymptote";
       scope = "source.asy";
@@ -10,7 +10,7 @@ programs.helix = {
       comment-tokens = "//";
       soft-wrap.enable = true;
     }];
-    
+
   };
 };
 

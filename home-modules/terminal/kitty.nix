@@ -48,7 +48,7 @@ programs.kitty = {
     active_tab_background   = "#665c54";
     inactive_tab_foreground = "#a89984";
     inactive_tab_background = "#3c3836";
-  
+
     # black  (bg3/bg4)
     color0  = "#665c54";
     color8  = "#7c6f64";

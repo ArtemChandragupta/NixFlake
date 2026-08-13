@@ -8,7 +8,7 @@ virtualisation = {
 };
 
 environment.systemPackages = with pkgs; [
-  spice 
+  spice
   spice-gtk
   spice-protocol
   win-spice
@@ -20,7 +20,7 @@ home-manager.users.${var.user}.dconf.settings = {
   "org/virt-manager/virt-manager/connections" = {
     autoconnect = [ "qemu:///system" ];
     uris = [ "qemu:///system" ];
-  };  
+  };
 };
 
 }

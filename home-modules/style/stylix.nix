@@ -20,7 +20,7 @@ stylix = {
     base0D = "#b8bb26"; # accent green
     base0E = "#d3869b"; # pink
     base0F = "#d65d0e"; # brown
-  }; 
+  };
   targets.gtk.enable = true;
   targets.gtk.flatpakSupport.enable = true;
 

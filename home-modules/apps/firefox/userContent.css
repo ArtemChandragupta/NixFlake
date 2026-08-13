@@ -6,7 +6,7 @@
   .logo-and-wordmark-wrapper, .logo {
     display: none !important;
   }
-  
+
 }
 
 @-moz-document url("about:blank") {

@@ -2,7 +2,7 @@
 
 outputs = inputs:
 let
-  system = "x86_64-linux"; 
+  system = "x86_64-linux";
   # pkgs-small = import inputs.nixos-u-small {inherit system;};
 in
 {

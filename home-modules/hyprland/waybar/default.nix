@@ -1,6 +1,6 @@
 { var, ... }:{
 
-imports = [ 
+imports = [
   ./modules.nix
 ];
 
