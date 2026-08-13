@@ -11,9 +11,15 @@ def remove-distraction [] {
   hyprctl eval 'hl.config({ general    = { gaps_in     = 0 } })'
   hyprctl eval 'hl.config({ decoration = { rounding    = 0 } })'
   hyprctl eval 'hl.config({ general    = { border_size = 8 } })'
+
+  hyprctl dispatch(exec 'recolor-border')
 }
 
 def restore-order [] {
   hyprctl reload
-  try {pkill waybar} catch {waybar}
+  systemctl --user start waybar
+
+  try {
+    ps | where name == 'recolor-border' | get pid | each {kill $in}
+  }
 }

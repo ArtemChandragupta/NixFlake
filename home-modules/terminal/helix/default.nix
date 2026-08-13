@@ -18,6 +18,7 @@ programs.helix = {
       bufferline  = "multiple";
       continue-comments = false;
       completion-replace = true;
+      trim-trailing-whitespace = true;
 
       statusline = {
         right = [

@@ -3,7 +3,6 @@
 wayland.windowManager.hyprland.extraConfig = /*lua*/''
   hl.on("hyprland.start", function()
     hl.exec_cmd("kitty")
-    hl.exec_cmd("recolor-border")
     hl.exec_cmd("Telegram -startintray")
   end)
 '';
