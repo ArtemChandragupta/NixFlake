@@ -8,7 +8,6 @@ programs.helix = {
       scope = "source.asy";
       file-types = ["asy"];
       comment-tokens = "//";
-      soft-wrap.enable = true;
     }];
 
   };

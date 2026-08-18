@@ -16,6 +16,7 @@ programs.helix = {
       line-number = "relative";
       color-modes = true;
       bufferline  = "multiple";
+      soft-wrap.enable = true;
       continue-comments = false;
       completion-replace = true;
       trim-trailing-whitespace = true;
