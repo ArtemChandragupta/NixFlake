@@ -11,33 +11,11 @@ programs = {
     signing.format = null; # For hm less then 25.05
   };
 
-  diff-so-fancy = {
-    enable = true;
-    enableGitIntegration = true;
-  };
-
   gh = {
     enable = true;
     gitCredentialHelper.enable = true;
   };
 
-  lazygit = {
-    enable = true;
-    settings = {
-      git.diffRenderers = [{ command = "diff-so-fancy"; }];
-      gui = {
-        nerdFontsVersion = "3";
-        border = "single";
-        spinner = {
-          frames = [ "⠋" "⠙" "⠩" "⠸" "⠼" "⠴" "⠦" "⠧" ];
-          rate = 60;
-        };
-        showCommandLog = false;
-        showPanelJumps = false;
-        theme.optionsTextColor = [ "default" ];
-      };
-    };
-  };
 };
 
 home = {
