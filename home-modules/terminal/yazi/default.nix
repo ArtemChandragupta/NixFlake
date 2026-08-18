@@ -11,14 +11,10 @@ imports = [
 
 home.packages = [ pkgs.ouch ];
 
-programs.zoxide = {
-  enable = true;
-  enableNushellIntegration = true;
-};
+programs.zoxide.enable = true;
 
 programs.yazi = {
   enable = true;
-  enableNushellIntegration = true;
   shellWrapperName = "y"; # Silencing warning
 
   settings.mgr.linemode = "mtime";

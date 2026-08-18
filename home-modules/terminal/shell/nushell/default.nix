@@ -8,6 +8,8 @@ home.packages = [
   rebuildScript
 ];
 
+home.shell.enableNushellIntegration = true;
+
 programs.nushell = {
   enable = true;
   configFile.source = ./config.nu;
@@ -19,9 +21,6 @@ programs.nushell = {
   };
 };
 
-programs.carapace = {
-  enable = true;
-  enableNushellIntegration = true;
-};
+programs.carapace.enable = true;
 
 }
