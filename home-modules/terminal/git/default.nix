@@ -24,7 +24,7 @@ programs = {
   lazygit = {
     enable = true;
     settings = {
-      git.pagers = [{ pager = "diff-so-fancy"; }];
+      git.diffRenderers = [{ command = "diff-so-fancy"; }];
       gui = {
         nerdFontsVersion = "3";
         border = "single";

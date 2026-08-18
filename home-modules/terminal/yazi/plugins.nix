@@ -5,7 +5,6 @@ programs.yazi = {
     smart-enter = pkgs.yaziPlugins.smart-enter;
     full-border = pkgs.yaziPlugins.full-border;
     starship    = pkgs.yaziPlugins.starship;
-    lazygit     = pkgs.yaziPlugins.lazygit;
     ouch        = pkgs.yaziPlugins.ouch;
     gitu        = ./plugin-gitu;
   };

@@ -2,14 +2,13 @@
 
 environment.systemPackages = with pkgs; [
   brightnessctl # Brightness control
-  libnotify     # Notification sender
-  ffmpeg  # Lib for media manipulations
+  libnotify # Notification sender
+  ffmpeg # Lib for media manipulations
   ffmpegthumbnailer # Lib for tumbnails
-  ripdrag # Drag and drop from terminal
-  socat   # Watch UNIX sockets
+  socat # Watch UNIX sockets
   wget # Get things from internet
   nurl # Get hash for derevation
-  gcc
+  gcc # C compiler for supplementaries
 ];
 
 }

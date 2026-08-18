@@ -83,6 +83,7 @@ programs.yazi.theme = {
     desc            = { fg = "#83a598"; };
     separator       = " -> ";
     separator_style = { fg = "#665c54"; };
+    border          = { fg = "#ebdbb2"; };
   };
 
   help = {
