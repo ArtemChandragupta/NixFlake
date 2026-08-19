@@ -11,7 +11,7 @@ browser {
   background-color: var(--uc-frame-color) !important;
 }
 
-:has(#sidebar-box:not([hidden])) { /*enable padding with sidebar is on*/
+:root:not([inDOMFullscreen]):has(#sidebar-box:not([hidden])) { /*enable padding with sidebar is on*/
   browser { /* round corners of content section and its background*/
     background: var(--uc-frame-color) !important;
     border-radius: 10px;
