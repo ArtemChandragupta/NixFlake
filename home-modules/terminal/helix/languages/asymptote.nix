@@ -1,16 +1,12 @@
 {
 
 programs.helix = {
-  languages = {
-
-    language = [{
-      name = "asymptote";
-      scope = "source.asy";
-      file-types = ["asy"];
-      comment-tokens = "//";
-    }];
-
-  };
+  languages.language = [{
+    name = "asymptote";
+    scope = "source.asy";
+    file-types = ["asy"];
+    comment-tokens = "//";
+  }];
 };
 
 }

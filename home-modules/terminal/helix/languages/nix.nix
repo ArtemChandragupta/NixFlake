@@ -1,8 +1,7 @@
-{ pkgs, var, ... }:{
+{ var, ... }:{
 
-programs.helix = {
-  extraPackages = [ pkgs.nixd ];
-  languages.language-server.nixd = {
+programs.helix.languages.language-server = {
+  nixd = {
     command = "nixd";
     args = [ "--semantic-tokens=true" ];
     config.nixd =
