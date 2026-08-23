@@ -3,6 +3,7 @@
 imports = [
   ./git
   ./helix
+  ./languages
   ./shell
   ./yazi
 

@@ -9,9 +9,6 @@ home = {
   file.".config/rofi/launchers/rofi-appgrid/style.rasi".source = ./style.rasi;
 };
 
-programs.rofi = {
-  enable  = true;
-  terminal = "kitty";
-};
+programs.rofi.enable  = true;
 
 }

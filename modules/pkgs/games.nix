@@ -1,9 +1,4 @@
-{ pkgs, var, ... }:{
-
-environment.systemPackages = with pkgs; [
-  # (bottles.override {removeWarningPopup = true;})
-  prismlauncher
-];
+{ var, ... }:{
 
 hardware.graphics.enable32Bit = true;
 hardware.xpadneo.enable = true;

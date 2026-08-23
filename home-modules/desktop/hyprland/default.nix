@@ -1,11 +1,7 @@
 {
 
 imports = [
-  ./rofi-appgrid
-  ./screenshots
   ./scripts
-  ./swaync
-  ./waybar
 
   ./binds.nix
   ./rules.nix

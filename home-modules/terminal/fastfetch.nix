@@ -30,11 +30,6 @@ programs.fastfetch = {
         outputColor = "blue";
       }
       {
-        type = "packages";
-        key = "  {#0}│ {#blue}󰏖  {#0}pkgs   │";
-        outputColor = "blue";
-      }
-      {
         type = "shell";
         key = "  {#0}│ {#blue}  {#0}shell  │";
         outputColor = "blue";

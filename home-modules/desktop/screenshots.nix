@@ -1,17 +1,8 @@
-{ pkgs, ... }:
-let
-  recorderScript = pkgs.writers.writeNuBin "recorderScript"
-    (builtins.readFile ./recorderScript.nu);
-  screenshotScript = pkgs.writers.writeNuBin "screenshotScript"
-    (builtins.readFile ./screenshotScript.nu);
-in{
+{ pkgs, ... }:{
 
 home.packages = with pkgs; [
   grim
   wl-screenrec
-
-  recorderScript
-  screenshotScript
 ];
 
 programs.satty = {

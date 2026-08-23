@@ -2,9 +2,7 @@
 
 imports = [
   ./apps
-  ./hyprland
-  ./languages
-  ./style
+  ./desktop
   ./terminal
 ];
 

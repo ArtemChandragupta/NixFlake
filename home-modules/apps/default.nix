@@ -3,6 +3,7 @@
 imports = [
   ./firefox
 
+  ./games.nix
   ./mpv.nix
   ./zathura.nix
 ];
@@ -19,7 +20,6 @@ home.packages = with pkgs; [
   hyprpicker
 
   fragments
-  icon-library
   file-roller
 
   telegram-desktop

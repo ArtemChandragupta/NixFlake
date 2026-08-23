@@ -2,22 +2,25 @@
 {
 
 imports = [
-  ./distrobox.nix
+  # ./distrobox.nix
   ./flatpak.nix
   ./fonts.nix
   ./games.nix
   ./utils.nix
 ];
 
-nixpkgs.config = {
-  permittedInsecurePackages = [];
-  allowUnfree = true;
+nixpkgs = {
+  config = {
+    permittedInsecurePackages = [];
+    allowUnfree = true;
+  };
+  overlays = [( final: prev: {
+    # mpd = pkgs-u-small.mpd;
+  })];
 };
 
-programs.nix-ld.enable = true;
+documentation.enable = false;
 
-nixpkgs.overlays = [( final: prev: {
-  # mpd = pkgs-u-small.mpd;
-})];
+programs.nix-ld.enable = true;
 
 }
