@@ -16,6 +16,14 @@ let
     url = "https://static1.squarespace.com/static/5e949a92e17d55230cd1d44f/t/678341bdc07b5c2e712243f5/1736655308172/F06_Mac.png";
     sha256 = "sha256-sW5sgqjRHk7SFp1VqwVgDQfdBXl+4lzQVcdTZX1Jmqg=";
   };
+  MontGray = pkgs.fetchurl {
+    url = "https://static1.squarespace.com/static/5e949a92e17d55230cd1d44f/t/6a8a657ac6c4251b1827e6dc/1787454843276/Rundle_Mac.png";
+    sha256 = "sha256-ZPkoFSBD6utMvX0AYfs0ukKWhubQU4Gxg4LBUidAmQU=";
+  };
+  MontBronze = pkgs.fetchurl {
+    url = "https://static1.squarespace.com/static/5e949a92e17d55230cd1d44f/t/6a8a64ee4dcaf1665b86b956/1787454703876/Untitled_Mac.png";
+    sha256 = "sha256-q3QF2Qlc+clRJhUxhPWcVHzyBI0+iuw40kKIQv/Z8ic=";
+  };
 in
 {
 
@@ -26,6 +34,8 @@ home.file = {
   ".wallpaper/BlissDay.png".source   = BlissDay;
   ".wallpaper/BlissRainy.png".source = BlissRainy;
   ".wallpaper/FlutterBronze.png".source = FlutterBronze;
+  ".wallpaper/MontGray.png".source = MontGray;
+  ".wallpaper/MontBronze.png".source = MontBronze;
 };
 
 }

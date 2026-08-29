@@ -158,6 +158,7 @@ programs.yazi.theme.icon.globs = [
     { url = "*wm/";           text = ""; }
       { url = "*dm.nix";        text = "󰍂"; fg = "#7ebae4"; }
       { url = "*hyprland.nix";  text = ""; fg = "#7ebae4"; }
+      { url = "*niri.nix";      text = "󰗢"; fg = "#7ebae4"; }
 ];
 
 }

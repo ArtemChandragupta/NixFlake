@@ -2,7 +2,7 @@
 let
   open-btm = pkgs.writers.writeNuBin "open-resourceMonitor" /*nu*/''
     do --ignore-errors {pkill btm}
-    kitty -o background_opacity=0.95 --class resourceMonitor -e "btm"
+    kitty --class resourceMonitor -- btm -b -T -a --hide_k_threads --disable_advanced_kill --process_default_sort CPU%
   '';
 in{
 
