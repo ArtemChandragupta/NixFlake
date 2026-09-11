@@ -13,7 +13,13 @@ programs.waybar = {
     modules-center = [ "clock" ];
     modules-right  = [ "cpu" "temperature" "memory" "pulseaudio#home" ];
   } else {
-    modules-left   = [ "hyprland/language" "tray" "hyprland/workspaces" ];
+    modules-left   = [
+      "hyprland/language"
+      "niri/language"
+      "tray"
+      "hyprland/workspaces"
+      "cffi/niri-windows"
+    ];
     modules-center = [ "clock" ];
     modules-right  = [ "battery" "cpu" "temperature" "memory" "idle_inhibitor" "backlight" "pulseaudio" ];
   };

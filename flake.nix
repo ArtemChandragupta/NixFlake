@@ -58,6 +58,10 @@ inputs = {
     url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
     inputs.nixpkgs.follows = "nixpkgs";
   };
+  piri = {
+    url = "github:Asthestarsfalll/piri";
+    inputs.nixpkgs.follows = "nixpkgs";
+  };
 
   stylix.url = "github:danth/stylix";
 };

@@ -41,7 +41,7 @@ wayland.windowManager.hyprland.settings.bind = [
   (bind "SUPER + C" (dsp.exec "hyprpicker -a"))
   (bind "SUPER + L" (dsp.exec "hyprlock"))
   (bind "SUPER + N" (dsp.exec "swaync-client -t -sw"))
-  (bind "SUPER + R" (dsp.exec "rofi-appgrid"))
+  (bind "SUPER + D" (dsp.exec "rofi-appgrid"))
   (bind "SUPER + B" (dsp.exec "open-resourceMonitor"))
   (bind "CTRL  + X" (dsp.exec "open-clip"))
   (bind "SUPER + Z" (dsp.exec "zen-mode"))
@@ -76,8 +76,6 @@ wayland.windowManager.hyprland.settings.bind = [
   # Monitors
   (bind "SUPER + SHIFT + up"    (dsp.exec "movecurrentworkspacetomonitor, HDMI-A-1"))
   (bind "SUPER + SHIFT + down"  (dsp.exec "movecurrentworkspacetomonitor, eDP-1"))
-  (bind "SUPER + SHIFT + right" (dsp.exec "rotateMonitorScript 1"))
-  (bind "SUPER + SHIFT + left"  (dsp.exec "rotateMonitorScript 3"))
 
   # Brightness
   (bindOpts "XF86MonBrightnessUp"   (dsp.exec "brightnessctl set +5%") { locked = true; })

@@ -1,10 +1,19 @@
-{
+{ pkgs, ...  }:
+let
+  waybarNiriWindows = pkgs.callPackage ./waybar-niri-windows.nix { };
+in {
 
 programs.waybar.settings.mainBar = {
   margin = "5px 10px -4px 10px";
   layer  = "top";
 
   "hyprland/language" = {
+    format-en = "<span color='#98971A'> </span>";
+    format-ru = "<span color='#B16286'> </span>";
+    on-click  = "rofi-appgrid";
+  };
+
+  "niri/language" = {
     format-en = "<span color='#98971A'> </span>";
     format-ru = "<span color='#B16286'> </span>";
     on-click  = "rofi-appgrid";
@@ -51,12 +60,12 @@ programs.waybar.settings.mainBar = {
       "class<steam_proton>"           = "󰊖";
       "class<org.inkscape.Inkscape>"  = "";
       "class<org.telegram.desktop>"   = "";
-      
+
       "class<libreoffice-writer>"     = "";
       "class<libreoffice-calc>"       = "";
       "class<libreoffice-startcenter>"= "";
       "class<libreoffice-impress>    "= "󰈧";
-      
+
       "class<org.pwmt.zathura>" = "";
       "class<teams-for-linux>"  = "󰊻";
       "class<dosbox-staging>"   = "󰚴";
@@ -66,6 +75,25 @@ programs.waybar.settings.mainBar = {
       "class<calc>"     = "󰇃";
       "class<openscad>" = "";
       "class<gnome-disks>" = "󱛟";
+    };
+  };
+  "cffi/niri-windows" = {
+    module_path = "${waybarNiriWindows}/lib/waybar-niri-windows.so";
+    options = {
+      mode = "graphical";
+      rules = [
+        { icon = "󰈹"; app-id = "firefox"; }
+        { icon = ""; app-id = "kitty"; }
+        { icon = "󰃽"; app-id = "mpv"; }
+        { icon = ""; app-id = "org.pwmt.zathura"; }
+        { icon = "󰇥"; title = "yazi:.*"; }
+        { icon = ""; app-id = "org.telegram.desktop"; }
+        { icon = ""; app-id = "libreoffice-writer"; }
+        { icon = ""; app-id = "libreoffice-calc"; }
+        { icon = ""; app-id = "libreoffice-startcenter"; }
+        { icon = "󰈧"; app-id = "libreoffice-impress"; }
+        # { icon = ""; app-id = ""; }
+      ];
     };
   };
 

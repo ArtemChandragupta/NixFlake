@@ -1,15 +1,11 @@
-{ pkgs, var, ... }:{
+{ var, config, ... }:{
 
 services.greetd = {
   enable = true;
   settings = {
     default_session = {
-      command = "${pkgs.cage}/bin/cage -s -d -- ${pkgs.gtkgreet}/bin/gtkgreet -c start-hyprland &> /tmp/hypland-start.log";
-      user    = "greeter";
-    };
-    initial_session = {
-      command = "start-hyprland &> /tmp/hypland-start.log";
-      user    = "${var.user}";
+      command = "${config.programs.niri.package}/bin/niri-session > /dev/null 2>&1";
+      user = "${var.user}";
     };
   };
 };
