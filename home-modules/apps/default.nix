@@ -2,6 +2,7 @@
 
 imports = [
   ./firefox
+  ./swayimg
 
   ./games.nix
   ./mpv.nix
@@ -18,6 +19,7 @@ home.packages = with pkgs; [
   refine             # GTK settings - remove buttons
 
   hyprpicker
+  faugus-launcher
 
   fragments
   file-roller

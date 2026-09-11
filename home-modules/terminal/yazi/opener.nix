@@ -10,7 +10,8 @@ programs.yazi.settings = {
     ];
     "image" = [
       {
-        run   = "loupe %s";
+        run   = ''swayimg %s %d'';
+        # run   = "loupe %s";
         block = true;
       }
     ];

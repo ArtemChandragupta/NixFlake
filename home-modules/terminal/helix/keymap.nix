@@ -9,11 +9,11 @@ programs.helix.settings.keys = {
       "delete_selection_noyank"
     ];
     g.g = [
-      ":write-all"
+      # ":write-all"
       # ":! kitty @ launch --wait-for-child-to-exit --type=overlay --cwd=current lazygit"
       ":noop %sh{kitty @ launch --type=overlay --wait-for-child-to-exit --cwd $(pwd) gitu}"
-      ":redraw"
-      ":reload-all"
+      # ":redraw"
+      # ":reload-all"
     ];
     "C-t" = [ ":! zathura main.pdf &" ];
   };

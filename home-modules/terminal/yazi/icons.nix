@@ -34,11 +34,12 @@ programs.yazi.theme.icon.globs = [
     { url = "*typst/";        text = ""; }
   { url = "*Documents/";    text = "󱔗"; }
   { url = "*Downloads/";    text = ""; }
+  { url = "*Faugus/";       text = "󰊖"; }
   { url = "*Games/";        text = "󰊖"; }
   { url = "*media/";        text = ""; }
   { url = "*nix/";          text = ""; }
-  { url = "*PortProton/";   text = "󰹻"; }
   { url = "*Pictures/";     text = ""; }
+  { url = "*PortProton/";   text = "󰹻"; }
   { url = "*Screenshots/";  text = ""; }
   { url = "*Studythings/";  text = "󰗚"; }
   { url = "*Sync/";         text = ""; }
@@ -47,11 +48,10 @@ programs.yazi.theme.icon.globs = [
   { url = "*home-modules/"; text = "󱂵"; }
     { url = "*apps/";          text = ""; }
       { url = "*firefox/";      text = "󰈹"; }
-        { url = "*solid/";        text = "󰌨"; }
-        { url = "*transparent/";  text = "󰧾"; }
         { url = "*bookmarks.nix"; text = "󰸕"; fg = "#7ebae4"; }
         { url = "*config.nix";    text = ""; fg = "#7ebae4"; }
         { url = "*search.nix";    text = ""; fg = "#7ebae4"; }
+      { url = "*swayimg/";      text = ""; }
       { url = "*mpv.nix";       text = "󰃽"; fg = "#7ebae4"; }
       { url = "*zathura.nix";   text = ""; fg = "#7ebae4"; }
 
@@ -67,20 +67,7 @@ programs.yazi.theme.icon.globs = [
       { url = "*rules.nix";     text = ""; fg = "#7ebae4"; }
       { url = "*screenlock.nix";text = "󰷛"; fg = "#7ebae4"; }
       { url = "*settings.nix";  text = ""; fg = "#7ebae4"; }
-
-    { url = "*languages/";    text = ""; }
-      { url = "*haskell.nix";   text = "󰲒"; fg = "#7ebae4"; }
-      { url = "*julia.nix";     text = ""; fg = "#7ebae4"; }
-      { url = "*python.nix";    text = "󰌠"; fg = "#7ebae4"; }
-      { url = "*TeX.nix";       text = ""; fg = "#7ebae4"; }
-      { url = "*css.nix";       text = "󰌜"; fg = "#7ebae4"; }
-      { url = "*js.nix";        text = ""; fg = "#7ebae4"; }
-      { url = "*lua.nix";       text = "󰢱"; fg = "#7ebae4"; }
-      { url = "*markdown.nix";  text = "󰍔"; fg = "#7ebae4"; }
-      { url = "*nushell.nix";   text = ""; fg = "#7ebae4"; }
-      { url = "*rust.nix";      text = ""; fg = "#7ebae4"; }
-      { url = "*toml.nix";      text = ""; fg = "#7ebae4"; }
-      { url = "*typst.nix";     text = ""; fg = "#7ebae4"; }
+      { url = "*sсreenshots.nix";text = ""; fg = "#7ebae4"; }
 
     { url = "*style/";        text = "󰃣"; }
       { url = "*icons/";        text = ""; }
@@ -92,7 +79,17 @@ programs.yazi.theme.icon.globs = [
       { url = "*git/";          text = "󰊢"; }
       { url = "*helix/";        text = "󰚄"; }
         { url = "*languages.nix"; text = ""; fg = "#7ebae4"; }
+        { url = "*keymap.nix";    text = "󰌌"; fg = "#7ebae4"; }
         { url = "*keymap-ru.nix"; text = "󰌌"; fg = "#7ebae4"; }
+      { url = "*languages/";    text = ""; }
+        { url = "*haskell.nix";   text = "󰲒"; fg = "#7ebae4"; }
+        { url = "*julia.nix";     text = ""; fg = "#7ebae4"; }
+        { url = "*lua.nix";       text = "󰢱"; fg = "#7ebae4"; }
+        { url = "*markdown.nix";  text = "󰍔"; fg = "#7ebae4"; }
+        { url = "*python.nix";    text = "󰌠"; fg = "#7ebae4"; }
+        { url = "*rust.nix";      text = ""; fg = "#7ebae4"; }
+        { url = "*TeX.nix";       text = ""; fg = "#7ebae4"; }
+        { url = "*typst.nix";     text = ""; fg = "#7ebae4"; }
       { url = "*nixvim/";       text = ""; }
         { url = "*lua/";          text = ""; }
         { url = "*plugins/";      text = "󰐱"; }
@@ -109,7 +106,6 @@ programs.yazi.theme.icon.globs = [
           { url = "*whichkey.nix";  text = "󰌒"; fg = "#7ebae4"; }
           { url = "*wrapping.nix";  text = "󰖶"; fg = "#7ebae4"; }
           { url = "*zen-mode.nix";  text = "󰚀"; fg = "#7ebae4"; }
-        { url = "*keymap.nix";    text = "󰌌"; fg = "#7ebae4"; }
         { url = "*neovide.nix";   text = "󱘗"; fg = "#7ebae4"; }
       { url = "*shell/";       text = ""; }
         { url = "*nushell/";      text = ""; }

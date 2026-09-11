@@ -18,6 +18,9 @@ programs.mpv = {
     # profile   = "high-quality";
     # video-sync= "display-resample";
   };
+  bindings = {
+    "ctrl+r" = "cycle_values video-rotate 90 180 270 0";
+  };
   scriptOpts.uosc = {
     top_bar     = "never";
     font_scale  = 1.5;

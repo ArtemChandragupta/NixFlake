@@ -88,12 +88,20 @@ browser {
 /* Remove icons in urlbar and status in the left down angle */
 #statuspanel,
 #star-button-box,
-#identity-box,
-#permission-icon-container,
 #urlbar-revert-button-container,
 #urlbar-searchmode-switcher,
 #tracking-protection-icon-container {
   display: none !important;
+}
+
+/* Allow hidden camera and microphone popup source */
+#identity-box,
+#permission-icon-container {
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
 }
 
 /* Urlbar */
