@@ -5,14 +5,14 @@ programs.yazi.settings = {
     "mpv" = [
       {
         run = "mpv --no-terminal %s";
-        block = true;
+        # block = true;
       }
     ];
     "image" = [
       {
         run   = ''swayimg %s %d'';
         # run   = "loupe %s";
-        block = true;
+        # block = true;
       }
     ];
     "hx" = [
@@ -24,13 +24,13 @@ programs.yazi.settings = {
     "zathura" = [
       {
         run   = "zathura %s";
-        block = true;
+        # block = true;
       }
     ];
     "papers" = [
       {
         run   = "papers %s";
-        block = true;
+        # block = true;
       }
     ];
   };

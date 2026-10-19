@@ -9,6 +9,8 @@ environment.systemPackages = with pkgs; [
   wget # Get things from internet
   nurl # Get hash for derevation
   gcc # C compiler for supplementaries
+  wev # For keyboard keys
+  wakeonlan # For wlan
 ];
 
 }

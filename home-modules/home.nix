@@ -18,4 +18,6 @@ home = {
   };
 };
 
+nixpkgs.config.allowUnfree = true;
+
 }

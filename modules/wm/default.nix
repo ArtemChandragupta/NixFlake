@@ -2,7 +2,7 @@
 
 imports = [
   ./dm.nix
-  ./hyprland.nix
+  # ./hyprland.nix
   ./niri.nix
   ./stylix.nix
 ];

@@ -19,7 +19,7 @@ home.packages = with pkgs; [
   refine             # GTK settings - remove buttons
 
   hyprpicker
-  faugus-launcher
+  opencode
 
   fragments
   file-roller

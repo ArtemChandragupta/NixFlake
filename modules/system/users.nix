@@ -12,7 +12,6 @@ users.users.${var.user} = {
     "networkmanager"
     "wheel"
     "libvirtd"
-    "docker"
   ];
 };
 

@@ -5,7 +5,6 @@ imports = [
 
   ./binds.nix
   ./rules.nix
-  ./screenlock.nix
   ./settings.nix
 ];
 

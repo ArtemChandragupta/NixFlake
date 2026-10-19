@@ -3,12 +3,14 @@
   --uc-frame-color: #282828; /*main color*/
   --toolbar-field-background-color: #414141 !important; /*urlbar unfocused*/
   --toolbar-field-focus-background-color: #414141 !important; /*urlbar focused*/
+  --focus-outline-color: #282828 !important;
 }
 
 /* Recolor startup blink */
 .browserContainer,
 browser {
   background-color: var(--uc-frame-color) !important;
+  border-width: 0 !important;
 }
 
 :root:not([inDOMFullscreen]):has(#sidebar-box:not([hidden])) { /*enable padding with sidebar is on*/
@@ -76,14 +78,27 @@ browser {
 /* Sidebery */
 #sidebar-box {
   background: var(--uc-frame-color) !important; /*sidebar background - not the sidebar! visible in corners*/
-  width:      193px !important;
+  width:      230px !important;
   margin-top:  80px !important;
-  margin-left:  7px !important;
+  margin-left:  0px !important;
+
+  border: none !important;
+  /* box-shadow: none !important; */
 }
 #sidebar-header,    /*no "Tabs" header*/
+#sidebar-panel-header,
 #sidebar-splitter { /*no movable splitline*/
   display: none;
 }
+
+#appMenu-popup {
+    --panel-border-color: transparent !important;
+    --panel-separator-color: transparent !important;
+    --panel-separator-padding: 0px !important;
+    & #appMenu-fxa-separator { display: none !important; }
+    ---panel-background-color: #282828 !important;
+}
+
 
 /* Remove icons in urlbar and status in the left down angle */
 #statuspanel,

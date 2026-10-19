@@ -2,7 +2,6 @@
 {
 
 imports = [
-  # ./distrobox.nix
   ./flatpak.nix
   ./fonts.nix
   ./games.nix
