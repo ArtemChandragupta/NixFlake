@@ -1,9 +1,51 @@
 /* Variables */
 :root{
+  /* Palette */
   --uc-frame-color: #282828; /*main color*/
-  --toolbar-field-background-color: #414141 !important; /*urlbar unfocused*/
-  --toolbar-field-focus-background-color: #414141 !important; /*urlbar focused*/
-  --focus-outline-color: #282828 !important;
+  --uc-raised:      #2e2e2e;
+  --uc-field:       #414141;
+  --uc-border:      #3a3a3a;
+  --uc-text:        #e8e8e8;
+  --uc-dim:         #a0a0a0;
+  --uc-accent:      #c8c8c8; /*was violet #b89cff in Nova*/
+
+  /* Popups and panels (Nova) */
+  --popup-background-color: var(--uc-frame-color) !important;
+  --panel-background-color: var(--uc-frame-color) !important;
+  --panel-text-color:       var(--uc-text) !important;
+  --panel-border-color:     var(--uc-border) !important;
+  --panel-separator-color:  var(--uc-border) !important;
+  --panel-border-radius:    10px !important;
+
+  /* Accent (Nova defaults to violet) */
+  --color-accent-primary:        var(--uc-accent) !important;
+  --color-accent-primary-hover:  #d8d8d8 !important;
+  --color-accent-primary-active: #e8e8e8 !important;
+  --toolbarbutton-icon-fill-attention: var(--uc-accent) !important;
+  --toolbarbutton-icon-fill-attention-text: #202020 !important;
+  --button-attention-dot-color:     var(--uc-accent) !important;
+  --tab-attention-dot-color:        var(--uc-accent) !important;
+  --uei-button-attention-dot-color: var(--uc-accent) !important;
+
+  /* Neutral hovers instead of Nova violet tint */
+  --toolbarbutton-background-color-hover:  rgba(255, 255, 255, 0.12) !important;
+  --toolbarbutton-background-color-active: rgba(255, 255, 255, 0.20) !important;
+  --toolbarbutton-icon-fill: var(--uc-text) !important;
+
+  /* Urlbar */
+  --toolbar-field-background-color: var(--uc-field) !important;
+  --toolbar-field-background-color-focus: var(--uc-field) !important;
+  --toolbar-field-text-color: var(--uc-text) !important;
+  --focus-outline-color: var(--uc-dim) !important;
+}
+
+/* Context menus and non-arrow panels use the system Menu color by default */
+:is(menupopup, panel):not(#confirmation-hint):not(#ctrlTab-panel) {
+  --panel-background-color: var(--uc-frame-color) !important;
+  --panel-text-color:       var(--uc-text) !important;
+  --panel-border-color:     var(--uc-border) !important;
+  --panel-separator-color:  var(--uc-border) !important;
+  --panel-border-radius:    10px !important;
 }
 
 /* Recolor startup blink */
@@ -92,11 +134,7 @@ browser {
 }
 
 #appMenu-popup {
-    --panel-border-color: transparent !important;
-    --panel-separator-color: transparent !important;
-    --panel-separator-padding: 0px !important;
     & #appMenu-fxa-separator { display: none !important; }
-    ---panel-background-color: #282828 !important;
 }
 
 
