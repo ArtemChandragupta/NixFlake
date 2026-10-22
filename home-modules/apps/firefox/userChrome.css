@@ -172,7 +172,16 @@ browser {
     left:  8px !important;
     right: auto;
     width: 220px !important;
-    padding-left: 8px !important;
+
+    /* No "wings": keep the open urlbar and its results the same width */
+    --urlbar-background-overhang-open: 0px !important;
+    --urlbarView-margin-inline: 0px !important;
+  }
+  #urlbar .urlbarView-background {
+    inset-inline: 0 !important; /* keep the results card the same width as the urlbar */
+  }
+  #urlbar .urlbar-input-box {
+    padding-inline-start: 8px !important; /* text indent without shifting the popover anchor */
   }
 }
 
