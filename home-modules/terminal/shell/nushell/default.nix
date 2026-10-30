@@ -13,6 +13,7 @@ home.shell.enableNushellIntegration = true;
 programs.nushell = {
   enable = true;
   configFile.source = ./config.nu;
+  loadSessionVariables = true;
   shellAliases = { # Better to use nixR script because of nh!
     rebuild = "sudo nixos-rebuild switch --flake ~/nix";
     update  = "nix flake update ~/nix and sudo nixos-rebuild switch --flake ~/nix";

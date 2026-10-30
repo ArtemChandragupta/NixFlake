@@ -10,7 +10,7 @@ programs.yazi = {
   };
   initLua = /*lua*/''
     require("starship"   ):setup()
-    require("full-border"):setup { type = ui.Border.PLAIN }
+    require("full-border"):setup { set = "plain" }
   '';
   settings.plugin.prepend_previewers = [
       { mime = "application/*zip";            run = "ouch"; }

@@ -18,7 +18,6 @@ boot = {
     theme  = "bgrt";
   };
 
-  initrd.verbose  = false;
   consoleLogLevel = 0;
 };
 
