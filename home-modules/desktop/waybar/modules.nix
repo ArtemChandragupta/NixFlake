@@ -21,9 +21,9 @@ programs.waybar.settings.mainBar = {
 
   "tray" = {
     spacing = 8;
-    icons = {
-      "tray-id" = "sunshine";
-    };
+    # icons = {
+    #   "tray-id" = "sunshine";
+    # };
   };
 
   "hyprland/workspaces" = {
