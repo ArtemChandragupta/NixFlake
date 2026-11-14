@@ -194,8 +194,16 @@ browser {
 #context-selectall,              /* Select All                           */
 #context-sep-selectall,          /************** Separator ***************/
 #context-take-screenshot,        /* Take Screenshot                      */
+#context-use-mini-window,        /* Move Section to Mini Window          */
 #context-sep-screenshots,        /************** Separator ***************/
 #context-viewsource {            /* View Page Source                     */
+  display:none !important;
+}
+
+/* Separator under "Inspect": Firefox normally hides it together with
+   "Send Page to Device", but extensions appending items at the end of the
+   menu break that auto-cleanup, leaving an orphan line. */
+#context-sep-sendpagetodevice:has(+ #context-sendpagetodevice[hidden]) {
   display:none !important;
 }
 
