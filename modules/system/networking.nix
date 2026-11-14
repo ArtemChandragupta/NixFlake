@@ -9,6 +9,7 @@ networking = {
 programs = {
   localsend.enable = true;
   nm-applet.enable = true;
+  amnezia-vpn.enable = true;
 };
 
 }

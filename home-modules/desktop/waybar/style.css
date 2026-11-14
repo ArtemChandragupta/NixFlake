@@ -10,7 +10,7 @@ window#waybar {
 }
 
 tooltip {
-  background: rgba(40, 40, 40, 1);
+  background: rgb(40, 40, 40);
   border: none;
   border-radius: 10px;
 }
@@ -28,7 +28,7 @@ tooltip {
 #backlight,
 #pulseaudio,
 #pulseaudio.home {
-  background: rgba(40, 40, 40, 0.9);
+  background: rgb(40, 40, 40);
   padding: 0 10px;
   border-radius: 10px;
 }

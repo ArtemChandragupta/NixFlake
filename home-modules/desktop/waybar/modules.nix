@@ -21,9 +21,15 @@ programs.waybar.settings.mainBar = {
 
   "tray" = {
     spacing = 8;
-    # icons = {
-    #   "tray-id" = "sunshine";
-    # };
+    icons = {
+      AmneziaVPN = "krb-valid-ticket";
+      PortProtonQt = "portproton_tray";
+    };
+    order = {
+      Network = 1;
+      blueman = 2;
+      TelegramDesktop = 3;
+    };
   };
 
   "hyprland/workspaces" = {
