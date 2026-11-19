@@ -7,7 +7,7 @@ fonts.packages = with pkgs; [
   stix-two # Best font for scientific documents
   cormorant # Impressive font
 
-  iosevka  # Only for clock on nix output manager
+  # iosevka  # Only for clock on nix output manager
 
   noto-fonts # Fonts for all writing systems
   noto-fonts-cjk-sans # And for hieroglific too!

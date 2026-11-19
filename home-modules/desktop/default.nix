@@ -2,6 +2,7 @@
 
 imports = [
   # ./hyprland
+  ./noctalia
   ./rofi-appgrid
   ./scripts
   ./style

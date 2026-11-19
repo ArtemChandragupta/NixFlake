@@ -21,7 +21,6 @@ in
       modules = [
         ./configuration.nix
         inputs.home-manager.nixosModules.default
-        inputs.stylix.nixosModules.stylix
       ];
     };
 
@@ -39,7 +38,6 @@ in
       modules = [
         ./configuration.nix
         inputs.home-manager.nixosModules.default
-        inputs.stylix.nixosModules.stylix
       ];
     };
   };

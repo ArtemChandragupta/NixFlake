@@ -14,7 +14,6 @@ programs.gamescope.enable = true;
 
 # programs.haguichi.enable = true;
 # services.logmein-hamachi.enable = true;
-# services.tailscale.enable = true;
 
 services.syncthing = {
   enable = true;

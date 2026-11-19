@@ -18,10 +18,6 @@ xdg.desktopEntries = {
     name      = "yazi";
     noDisplay = true;
   };
-  numbat = {
-    name      = "numbat";
-    noDisplay = true;
-  };
   cups = {
     name      = "Printing";
     noDisplay = true;

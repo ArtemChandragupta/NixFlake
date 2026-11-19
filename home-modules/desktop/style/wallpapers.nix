@@ -30,12 +30,12 @@ in
 services.awww.enable = true;
 
 home.file = {
-  ".wallpaper/BetterSonoma.png".source = BetterSonoma;
-  ".wallpaper/BlissDay.png".source   = BlissDay;
-  ".wallpaper/BlissRainy.png".source = BlissRainy;
-  ".wallpaper/FlutterBronze.png".source = FlutterBronze;
-  ".wallpaper/MontGray.png".source = MontGray;
-  ".wallpaper/MontBronze.png".source = MontBronze;
+  ".themes/.wallpaper/BetterSonoma.png".source = BetterSonoma;
+  ".themes/.wallpaper/BlissDay.png".source = BlissDay;
+  ".themes/.wallpaper/BlissRainy.png".source = BlissRainy;
+  ".themes/.wallpaper/FlutterBronze.png".source = FlutterBronze;
+  ".themes/.wallpaper/MontGray.png".source = MontGray;
+  ".themes/.wallpaper/MontBronze.png".source = MontBronze;
 };
 
 }

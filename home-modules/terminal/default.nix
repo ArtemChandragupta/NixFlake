@@ -12,7 +12,6 @@ imports = [
   ./direnv.nix
   ./fastfetch.nix
   ./kitty.nix
-  ./numbat.nix
 ];
 
 }

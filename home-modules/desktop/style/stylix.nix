@@ -2,6 +2,7 @@
 
 stylix = {
   enable = true;
+  autoEnable = false;
   polarity = "dark";
   base16Scheme = {
     base00 = "#282828"; # Default Background
@@ -21,8 +22,10 @@ stylix = {
     base0E = "#d3869b"; # pink
     base0F = "#d65d0e"; # brown
   };
-  targets.gtk.enable = true;
-  targets.gtk.flatpakSupport.enable = true;
+  targets.gtk = {
+    enable = true;
+    flatpakSupport.enable = true;
+  };
 
   cursor = {
     package = pkgs.bibata-cursors;

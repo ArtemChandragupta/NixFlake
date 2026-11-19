@@ -11,6 +11,7 @@ home-manager = {
     inherit inputs;
     inherit var;
   };
+  sharedModules = [ inputs.stylix.homeModules.stylix ];
   backupFileExtension = "hm-backup";
 };
 
