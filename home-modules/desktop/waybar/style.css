@@ -125,3 +125,43 @@ tooltip {
 #pulseaudio.home {
   color: #d79921;
 }
+
+
+/* niri window minimap */
+.cffi-niri-windows .column:first-child .tile:first-child {
+  border-top-left-radius: 10px;
+}
+.cffi-niri-windows .column:first-child .tile:last-child {
+  border-bottom-left-radius: 10px;
+}
+.cffi-niri-windows .column:last-child .tile:first-child {
+  border-top-right-radius: 10px;
+}
+.cffi-niri-windows .column:last-child .tile:last-child {
+  border-bottom-right-radius: 10px;
+}
+.cffi-niri-windows .tile {
+  background-color: rgb(40, 40, 40);
+  color: #d79921;
+}
+.cffi-niri-windows .tile label {
+  color: #d79921;
+}
+.cffi-niri-windows .tile:hover {
+  background-color: #3c3836;
+}
+.cffi-niri-windows .tile:active {
+  background-color: #504945;
+}
+.cffi-niri-windows .tile:active label {
+  color: #fabd2f;
+}
+.cffi-niri-windows .tile.urgent {
+  background-color: rgba(204, 36, 29, 0.55);
+}
+.cffi-niri-windows .tile.urgent:hover {
+  background-color: rgba(204, 36, 29, 0.7);
+}
+.cffi-niri-windows .tile.urgent:active {
+  background-color: rgba(204, 36, 29, 0.85);
+}
