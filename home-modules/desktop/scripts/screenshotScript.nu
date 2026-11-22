@@ -1,8 +1,11 @@
 let nameBase = $'($env.Home)/Pictures/(date now | format date "%Y-%m-%d-%H%M%S")'
-let screen = try {
-  hyprctl -j monitors | from json | where focused | get name.0
-} catch {
-  niri msg -j focused-output | from json | get name
+
+def screen-name [] {
+  try {
+    hyprctl -j monitors | from json | where focused | get name.0
+  } catch {
+    niri msg -j focused-output | from json | get name
+  }
 }
 
 def main [mode:string] {
@@ -30,6 +33,7 @@ def window [] {
 
 def screen [] {
   let name   = $'($nameBase)-screen.png'
+  let screen = screen-name
 
   grim -o $screen $name
   cat $name | wl-copy
@@ -38,7 +42,8 @@ def screen [] {
 
 def redact [] {
   let name   = $'($nameBase)-redact.png'
+  let screen = screen-name
 
-  grim -o $screen -
+  grim -l 0 -o $screen -
   | satty --filename - --output-filename $name
 }

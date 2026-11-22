@@ -7,6 +7,12 @@ home.packages = with pkgs; [
 
 programs.satty = {
   enable = true;
+  package = pkgs.symlinkJoin {
+    name = "satty-wrapped";
+    paths = [ pkgs.satty ];
+    nativeBuildInputs = [ pkgs.makeBinaryWrapper ];
+    postBuild = ''wrapProgram $out/bin/satty --set GSK_RENDERER gl'';
+  };
   settings = {
     general = {
       fullscreen   = true;
@@ -18,7 +24,7 @@ programs.satty = {
       arrow = "a";
     };
     font = {
-      family = "stix-two";
+      family = "STIX Two Text";
     };
     color-palette.palette = [
       "#cc241dff"
