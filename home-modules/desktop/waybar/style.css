@@ -9,10 +9,22 @@ window#waybar {
   background: transparent;
 }
 
-tooltip {
+tooltip,
+tooltip.background {
   background: rgb(40, 40, 40);
+  background-clip: padding-box;
   border: none;
   border-radius: 10px;
+  box-shadow: none;
+  text-shadow: none;
+}
+tooltip decoration,
+tooltip.csd decoration {
+  background: transparent;
+  border: none;
+  border-radius: 10px;
+  box-shadow: none;
+  margin: 0;
 }
 
 
