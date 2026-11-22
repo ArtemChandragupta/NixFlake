@@ -22,7 +22,6 @@ programs.waybar.settings.mainBar = {
   "tray" = {
     spacing = 8;
     icons = {
-      AmneziaVPN = "krb-valid-ticket";
       PortProtonQt = "portproton_tray";
     };
     order = {

@@ -84,36 +84,49 @@ browser {
   z-index:   1 !important; /*v137 fix*/
 }
 
+/* Anchor for the floating toolbar: it must follow the browser area, because
+   notification bars (e.g. captive portal / public Wi-Fi) push #browser down
+   but leave position:fixed elements where they are. */
+#browser {
+  anchor-name: --uc-browser;
+}
+
 /* Move buttons */
 #PanelUI-button { /*settings button*/
   position: fixed !important;
   top:        5px !important;
+  top: calc(anchor(--uc-browser top) + 5px) !important;
   left:       5px !important;
 }
 #unified-extensions-button { /*extension button*/
   list-style-image: url("chrome://global/skin/icons/chevron.svg") !important;
   position: fixed !important;
   top:       5px  !important;
+  top: calc(anchor(--uc-browser top) + 5px) !important;
   left:     38px  !important;
 }
 #downloads-button { /*download button*/
   position: fixed !important;
   top:       5px  !important;
+  top: calc(anchor(--uc-browser top) + 5px) !important;
   left:     71px  !important;
 }
 #back-button {
   position: fixed !important;
   top:        5px !important;
+  top: calc(anchor(--uc-browser top) + 5px) !important;
   left:     135px !important;
 }
 #forward-button {
   position: fixed !important;
   top:        5px !important;
+  top: calc(anchor(--uc-browser top) + 5px) !important;
   left:     165px !important;
 }
 #stop-reload-button {
   position: fixed !important;
   top:        5px !important;
+  top: calc(anchor(--uc-browser top) + 5px) !important;
   left:     195px !important;
 }
 
@@ -169,13 +182,15 @@ browser {
   #urlbar {
     position: fixed !important;
     top:   40px !important;
+    top: calc(anchor(--uc-browser top) + 40px) !important;
     left:  8px !important;
     right: auto;
     width: 220px !important;
 
     /* No "wings": keep the open urlbar and its results the same width */
     --urlbar-background-overhang-open: 0px !important;
-    --urlbarView-margin-inline: 0px !important;
+    --urlbarView-margin-inline: 0px !important;  /* Firefox <= 159 */
+    --urlbarview-margin-inline: 0px !important;  /* Firefox 160+ (renamed) */
   }
   #urlbar .urlbarView-background {
     inset-inline: 0 !important; /* keep the results card the same width as the urlbar */
