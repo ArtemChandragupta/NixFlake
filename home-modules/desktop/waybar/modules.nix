@@ -22,7 +22,7 @@ programs.waybar.settings.mainBar = {
   "tray" = {
     spacing = 8;
     icons = {
-      PortProtonQt = "tray_portproton";
+      PortProtonQt = "portproton_tray";
     };
     order = {
       Network = 1;
