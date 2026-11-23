@@ -22,7 +22,7 @@ programs.waybar.settings.mainBar = {
   "tray" = {
     spacing = 8;
     icons = {
-      PortProtonQt = "portproton_tray";
+      PortProtonQt = "tray_portproton";
     };
     order = {
       Network = 1;
@@ -97,6 +97,9 @@ programs.waybar.settings.mainBar = {
         { icon = ""; app-id = "libreoffice-calc"; }
         { icon = ""; app-id = "libreoffice-startcenter"; }
         { icon = "󰈧"; app-id = "libreoffice-impress"; }
+        { icon = "󰊖"; app-id = "ru.linux_gaming.PortProtonQt"; }
+        { icon = "󰊖"; app-id = "steam_proton"; }
+        { icon = "󰌆"; app-id = "AmneziaVPN"; }
         # { icon = ""; app-id = ""; }
       ];
     };
@@ -122,53 +125,61 @@ programs.waybar.settings.mainBar = {
 
 
   "battery" = {
-    format = "{icon} {capacity}% {time}";
+    format = "{capacity}% {time}";
     format-time     = "{H}:{m}";
     tooltip-format  = "{timeTo} {capacity}%";
-    format-charging = "󱐋 {capacity}% {time}";
-    format-plugged  = " ";
-    format-icons    = ["󰂎" "󰁻" "󰁾" "󰂀" "󰁹"];
-    # format-icons    = [" " " " " " " " " "];
-    states = { critical = 20; };
+    format-charging = "{capacity}% {time}";
+    format-plugged  = "{capacity}% {time}";
+    states = {
+      critical = 20;
+      low = 40;
+      medium = 60;
+      good = 85;
+      full = 100;
+    };
   };
 
   "cpu" = {
-    format = " {usage}%";
+    format = "{usage}%";
     on-click = "open-resourceMonitor";
   };
   "temperature" = {
-    format = "󰔐 {temperatureC}°C";
+    format = "{temperatureC}°C";
     critical-threshold = 50;
   };
   "memory" = {
-    format = " {}%";
+    format = "{}%";
   };
 
   "idle_inhibitor" = {
-    format = "{icon}";
-    format-icons = {
-      activated   = "󰈉";
-      deactivated = "󰈈";
-    };
+    format = " ";
   };
   "backlight" = {
-    format = "{icon}{percent}%";
-    format-icons   = ["󰃞 " "󰃟 " "󰃠 "];
+    format = "{percent}%";
+    states = {
+      low = 25;
+      medium = 50;
+      high = 75;
+    };
   };
   "pulseaudio" = {
-    format-icons = [" " " " " " ];
-    format = "{icon}{volume}% {format_source}";
-    format-muted = "<span color='#6D5930'> {volume}%</span> {format_source}";
-    format-source = "";
-    format-source-muted = "<span color='#6D5930'></span>";
+    format = "{volume}%";
+    format-muted = "<span color='#6D5930'>{volume}%</span>";
+    states = {
+      low = 33;
+      medium = 66;
+      high = 100;
+    };
     on-click = "pwvucontrol";
   };
   "pulseaudio#home" = {
-    format-icons = [" " " " " " ];
-    format = "{icon}{volume}% {format_source}";
-    format-muted = "<span color='#6D5930'> {volume}%</span> {format_source}";
-    format-source = "";
-    format-source-muted = "<span color='#6D5930'></span>";
+    format = "{volume}%";
+    format-muted = "<span color='#6D5930'>{volume}%</span>";
+    states = {
+      low = 33;
+      medium = 66;
+      high = 100;
+    };
     on-click = "pwvucontrol";
   };
 };

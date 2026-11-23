@@ -18,9 +18,9 @@ services.swaync = {
     ];
     widget-config = {
       buttons-grid.actions = [
-        { label = "󰐥"; command = "systemctl poweroff"; }
-        { label = "󰑐"; command = "systemctl reboot";   }
-        { label = "󰌿"; command = "hyprlock";           }
+        { label = " "; command = "systemctl poweroff"; }
+        { label = " "; command = "systemctl reboot";   }
+        { label = " "; command = "hyprlock";           }
       ];
       dnd = {
         text = "Do not disturb";
@@ -28,7 +28,7 @@ services.swaync = {
       title = {
         text = "Notifications";
         clear-all-button = true;
-        button-text = "󰆴";
+        button-text = " ";
       };
     };
   };

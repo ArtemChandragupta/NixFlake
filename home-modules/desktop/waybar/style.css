@@ -1,7 +1,7 @@
 * {
   font-family: "Noto Sans NF";
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 
@@ -81,15 +81,35 @@ tooltip.csd decoration {
 
 #battery {
   color: #b8bb26;
+  background-image: -gtk-icontheme("battery-full-symbolic");
+  background-repeat: no-repeat;
+  background-position: 9px center;
+  background-size: 18px 18px;
+  padding-left: 31px;
 }
 #battery.critical:not(.charging),
 #battery.critical:not(.plugged) {
   color: #cc241d;
 }
 #battery.charging, #battery.plugged {
-  background: #b8bb26;
+  background-color: #b8bb26;
   color: #282828;
   font-weight: 500;
+}
+#battery.critical {
+  background-image: -gtk-icontheme("battery-caution-symbolic");
+}
+#battery.low {
+  background-image: -gtk-icontheme("battery-low-symbolic");
+}
+#battery.medium {
+  background-image: -gtk-icontheme("battery-medium-symbolic");
+}
+#battery.good {
+  background-image: -gtk-icontheme("battery-good-symbolic");
+}
+#battery.full {
+  background-image: -gtk-icontheme("battery-full-symbolic");
 }
 
 
@@ -102,7 +122,7 @@ tooltip.csd decoration {
 #temperature {
   color: #83a589;
   border-radius: 0;
-  padding: 0;
+  padding: 0 10px 0 31px;
 }
 #temperature.critical {
   color: #cc241d;
@@ -114,19 +134,53 @@ tooltip.csd decoration {
   margin-right: 8px;
 }
 
+#cpu,
+#temperature,
+#memory {
+  background-repeat: no-repeat;
+  background-position: 9px center;
+  background-size: 18px 18px;
+  padding-left: 31px;
+}
+#cpu {
+  background-image: -gtk-icontheme("cpu-symbolic");
+}
+#temperature {
+  background-image: -gtk-icontheme("sensors-temperature-symbolic");
+}
+#memory {
+  background-image: -gtk-icontheme("dev-memory-symbolic");
+}
+
 
 #idle_inhibitor {
   color: #6D5930;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+  background-image: -gtk-icontheme("eye-open-negative-filled-symbolic");
+  background-repeat: no-repeat;
+  background-position: 9px center;
+  background-size: 18px 18px;
+  padding: 0 10px 0 31px;
 }
 #idle_inhibitor.activated {
   color: #d79921;
+  background-image: -gtk-icontheme("eye-not-looking-symbolic");
 }
 #backlight {
   color: #d79921;
   border-radius: 0;
-  padding: 0;
+  padding: 0 10px 0 31px;
+  background-image: -gtk-icontheme("display-brightness-low-symbolic");
+  background-repeat: no-repeat;
+  background-position: 9px center;
+  background-size: 18px 18px;
+}
+#backlight.medium {
+  background-image: -gtk-icontheme("display-brightness-medium-symbolic");
+}
+#backlight.high {
+  background-image: -gtk-icontheme("display-brightness-high-symbolic");
 }
 #pulseaudio {
   color: #d79921;
@@ -136,6 +190,78 @@ tooltip.csd decoration {
 
 #pulseaudio.home {
   color: #d79921;
+}
+
+#pulseaudio {
+  background-image: -gtk-icontheme("audio-volume-high-symbolic"),
+                    -gtk-icontheme("audio-input-microphone-symbolic");
+  background-repeat: no-repeat;
+  background-position: 6px center, calc(100% - 8px) center;
+  background-size: 16px 16px;
+  padding-left: 26px;
+  padding-right: 30px;
+}
+#pulseaudio.low {
+  background-image: -gtk-icontheme("audio-volume-low-symbolic"),
+                    -gtk-icontheme("audio-input-microphone-symbolic");
+}
+#pulseaudio.medium {
+  background-image: -gtk-icontheme("audio-volume-medium-symbolic"),
+                    -gtk-icontheme("audio-input-microphone-symbolic");
+}
+#pulseaudio.high {
+  background-image: -gtk-icontheme("audio-volume-high-symbolic"),
+                    -gtk-icontheme("audio-input-microphone-symbolic");
+}
+#pulseaudio.muted {
+  background-image: -gtk-icontheme("audio-volume-muted-symbolic"),
+                    -gtk-icontheme("audio-input-microphone-symbolic");
+}
+#pulseaudio.source-muted.low {
+  background-image: -gtk-icontheme("audio-volume-low-symbolic"),
+                    -gtk-icontheme("audio-input-microphone-muted-symbolic");
+}
+#pulseaudio.source-muted.medium {
+  background-image: -gtk-icontheme("audio-volume-medium-symbolic"),
+                    -gtk-icontheme("audio-input-microphone-muted-symbolic");
+}
+#pulseaudio.source-muted.high {
+  background-image: -gtk-icontheme("audio-volume-high-symbolic"),
+                    -gtk-icontheme("audio-input-microphone-muted-symbolic");
+}
+#pulseaudio.source-muted.muted {
+  background-image: -gtk-icontheme("audio-volume-muted-symbolic"),
+                    -gtk-icontheme("audio-input-microphone-muted-symbolic");
+}
+
+#battery,
+#cpu,
+#temperature,
+#memory,
+#idle_inhibitor,
+#backlight {
+  background-position: 6px center;
+  background-size: 16px 16px;
+  padding-left: 26px;
+  padding-right: 4px;
+}
+#battery,
+#memory {
+  padding-right: 10px;
+}
+#battery,
+#cpu,
+#idle_inhibitor {
+  background-position: 9px center;
+  padding-left: 29px;
+}
+#idle_inhibitor {
+  padding-left: 25px;
+  padding-right: 0;
+}
+#temperature {
+  background-position: 3px center;
+  padding-left: 20px;
 }
 
 

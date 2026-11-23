@@ -17,6 +17,7 @@ home.packages = with pkgs; [
   snapshot           # Gnome camera
   gnome-disk-utility # Gnome disk scanner
   refine             # GTK settings - remove buttons
+  icon-library
 
   hyprpicker
   opencode

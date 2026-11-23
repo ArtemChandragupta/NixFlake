@@ -135,7 +135,7 @@ programs.yazi.theme.icon.globs = [
         { url = "*virtual.nix";   text = ""; fg = "#7ebae4"; }
 
     { url = "*pkgs/";         text = "󰏖"; }
-      { url = "*distrobox.nix"; text = "󰬋"; fg = "#7ebae4"; }
+      { url = "*amnezia/";      text = "󰌆"; }
       { url = "*flatpak.nix";   text = "󰹍"; fg = "#7ebae4"; }
       { url = "*fonts.nix";     text = ""; fg = "#7ebae4"; }
       { url = "*games.nix";     text = "󰊖"; fg = "#7ebae4"; }

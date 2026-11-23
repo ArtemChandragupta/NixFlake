@@ -19,13 +19,25 @@
   color: #989899;
 }
 .widget-buttons-grid>flowbox>flowboxchild>button {
-  padding: 6px 62px;
+  padding: 6px 66px;
   background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 28px 28px;
   border-radius: 8px;
+}
+.widget-buttons-grid>flowbox>flowboxchild:nth-child(1)>button {
+  background-image: -gtk-icontheme("system-shutdown-symbolic");
+}
+.widget-buttons-grid>flowbox>flowboxchild:nth-child(2)>button {
+  background-image: -gtk-icontheme("system-reboot-symbolic");
+}
+.widget-buttons-grid>flowbox>flowboxchild:nth-child(3)>button {
+  background-image: -gtk-icontheme("system-lock-screen-symbolic");
 }
 .widget-buttons-grid>flowbox>flowboxchild>button:hover {
   color: #282828;
-  background: #b8bb26;
+  background-color: #b8bb26;
 }
 .widget-buttons-grid>flowbox>flowboxchild:last-child {
   border-left: 2px solid #989899;
@@ -71,15 +83,19 @@
 .widget-title button {
   border-radius: 16px;
   color: #383838;
-  background: #d79921;
+  background-color: #d79921;
+  background-image: -gtk-icontheme("trash-symbolic");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px 18px;
   padding: 0 16px;
-  font-size: 24px
+  font-size: 24px;
 }
 .widget-title button:hover {
-  background: #fabd2f;
+  background-color: #fabd2f;
 }
 .widget-title button:active {
-  background: #cc241d;
+  background-color: #cc241d;
 }
 
 .notification-background {
