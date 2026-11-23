@@ -81,35 +81,32 @@ tooltip.csd decoration {
 
 #battery {
   color: #b8bb26;
-  background-image: -gtk-icontheme("battery-full-symbolic");
+  background-image: -gtk-icontheme("battery-100-symbolic");
   background-repeat: no-repeat;
   background-position: 9px center;
   background-size: 18px 18px;
   padding-left: 31px;
 }
-#battery.critical:not(.charging),
-#battery.critical:not(.plugged) {
+#battery.b0   { background-image: -gtk-icontheme("battery-000-symbolic"); }
+#battery.b10  { background-image: -gtk-icontheme("battery-010-symbolic"); }
+#battery.b20  { background-image: -gtk-icontheme("battery-020-symbolic"); }
+#battery.b30  { background-image: -gtk-icontheme("battery-030-symbolic"); }
+#battery.b40  { background-image: -gtk-icontheme("battery-040-symbolic"); }
+#battery.b50  { background-image: -gtk-icontheme("battery-050-symbolic"); }
+#battery.b60  { background-image: -gtk-icontheme("battery-060-symbolic"); }
+#battery.b70  { background-image: -gtk-icontheme("battery-070-symbolic"); }
+#battery.b80  { background-image: -gtk-icontheme("battery-080-symbolic"); }
+#battery.b90  { background-image: -gtk-icontheme("battery-090-symbolic"); }
+#battery.b100 { background-image: -gtk-icontheme("battery-100-symbolic"); }
+#battery.b0:not(.charging):not(.plugged),
+#battery.b10:not(.charging):not(.plugged),
+#battery.b20:not(.charging):not(.plugged) {
   color: #cc241d;
 }
 #battery.charging, #battery.plugged {
   background-color: #b8bb26;
   color: #282828;
   font-weight: 500;
-}
-#battery.critical {
-  background-image: -gtk-icontheme("battery-caution-symbolic");
-}
-#battery.low {
-  background-image: -gtk-icontheme("battery-low-symbolic");
-}
-#battery.medium {
-  background-image: -gtk-icontheme("battery-medium-symbolic");
-}
-#battery.good {
-  background-image: -gtk-icontheme("battery-good-symbolic");
-}
-#battery.full {
-  background-image: -gtk-icontheme("battery-full-symbolic");
 }
 
 

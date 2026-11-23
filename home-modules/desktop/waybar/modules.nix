@@ -131,11 +131,17 @@ programs.waybar.settings.mainBar = {
     format-charging = "{capacity}% {time}";
     format-plugged  = "{capacity}% {time}";
     states = {
-      critical = 20;
-      low = 40;
-      medium = 60;
-      good = 85;
-      full = 100;
+      b0 = 0;
+      b10 = 10;
+      b20 = 20;
+      b30 = 30;
+      b40 = 40;
+      b50 = 50;
+      b60 = 60;
+      b70 = 70;
+      b80 = 80;
+      b90 = 90;
+      b100 = 100;
     };
   };
 
